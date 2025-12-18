@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "690783697",
+    "Type": "User",
+    "GUID": "{98A7620B-1BE0-4051-B7A1-81F1E6963177}",
+    "Color": "26",
+    "Language": "SFX",
+    "Hash": "{89DBEF78-E618-9A26-1485-512C098BED58}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Test",
+    "ShortName": "SB_Test",
+    "Path": "SB_Test.bnk",
+    "Media": [
+     {
+      "Id": "53887463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_PAD_Cave_LP.wav",
+      "CachePath": "84/{84C6F6F5-5714-3284-59AA-8B86489C0736}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2976252989",
+      "Name": "Play_AMB_Test",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_Test",
+      "GUID": "{DA6803E1-F066-4D10-A86A-21A5473D2B5F}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "53887463"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0B2F89DB-9701-F97D-CA44-D1C5C5149BA8}"
+ }
+}

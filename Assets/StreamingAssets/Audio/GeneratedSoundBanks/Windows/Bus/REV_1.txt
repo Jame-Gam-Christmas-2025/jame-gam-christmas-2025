@@ -1,0 +1,3 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3043617852	REV_1			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_1	
+

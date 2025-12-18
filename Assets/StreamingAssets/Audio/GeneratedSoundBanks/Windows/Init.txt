@@ -1,0 +1,30 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	119136829	Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences	
+	180661997	Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Attack	
+	393239870	SFX			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\SFX_WU\SFX	
+	712161704	Run			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\Run	
+	1117531639	AMB			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB	
+	1202187523	Master_SD			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD	
+	1551306167	UI			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\UI_WU\UI	
+	1560169506	BOSS			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS	
+	1685527061	MC			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC	
+	2108779966	Walk			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\Walk	
+	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2275900680	PRS_Jumps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Jumps	
+	2385628198	Footsteps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps	
+	2901498470	FT_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Attack	
+	3094890996	FT_Lands			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Lands	
+	3242069405	FT_Jumps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Jumps	
+	3545700988	Reverbs			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs	
+	3575123633	PRS_Lands			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Lands	
+	3816827997	PRS_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Attack	
+	3944324759	Master_MUS			\Default Work Unit\Main Audio Bus\Master_MUS_WU\Master_MUS	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3043617852	REV_1			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_1	
+	3043617855	REV_2			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_2	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

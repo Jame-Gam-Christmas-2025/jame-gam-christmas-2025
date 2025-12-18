@@ -83,7 +83,7 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -825,7 +825,23 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: ADDRESSABLES_API_2025_DEFAULT
+    EmbeddedLinux: ADDRESSABLES_API_2025_DEFAULT
+    GameCoreScarlett: ADDRESSABLES_API_2025_DEFAULT
+    GameCoreXboxOne: ADDRESSABLES_API_2025_DEFAULT
+    Kepler: ADDRESSABLES_API_2025_DEFAULT
+    LinuxHeadlessSimulation: ADDRESSABLES_API_2025_DEFAULT
+    Nintendo Switch: ADDRESSABLES_API_2025_DEFAULT
+    Nintendo Switch 2: ADDRESSABLES_API_2025_DEFAULT
+    PS4: ADDRESSABLES_API_2025_DEFAULT
+    PS5: ADDRESSABLES_API_2025_DEFAULT
+    QNX: ADDRESSABLES_API_2025_DEFAULT
+    Standalone: WWISE_ADDRESSABLES_23_1_OR_LATER;WWISE_ADDRESSABLES_24_1_OR_LATER;ADDRESSABLES_API_2025_DEFAULT;WWISE_2024_OR_LATER
+    VisionOS: ADDRESSABLES_API_2025_DEFAULT
+    WebGL: ADDRESSABLES_API_2025_DEFAULT
+    XboxOne: ADDRESSABLES_API_2025_DEFAULT
+    tvOS: ADDRESSABLES_API_2025_DEFAULT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
