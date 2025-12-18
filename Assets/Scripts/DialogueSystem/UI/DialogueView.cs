@@ -98,8 +98,8 @@ namespace UI
 
             string currentText = "";
 
-            // Set language depending from GameManager
-            switch (GameManager.Instance.Language)
+            // Set language depending from LocalizationManager
+            switch (LocalizationManager.s_Instance.Language)
             {
                 case Language.English:
                     currentText = DialogueData.dialogueText.english;
