@@ -1,0 +1,22 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2711878180",
+    "Type": "User",
+    "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
+    "Color": "19",
+    "Language": "SFX",
+    "Hash": "{D942F301-DB62-BD08-DDF3-D0E1941C73B3}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
+    "ShortName": "SB_Global",
+    "Path": "SB_Global.bnk"
+   }
+  ],
+  "FileHash": "{F08C5F69-760E-85F9-45F0-B837B7335D8F}"
+ }
+}

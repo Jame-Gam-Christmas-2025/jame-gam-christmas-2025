@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3854155799	Play_Footsteps			\Default Work Unit\MC_WU\Play_Footsteps	
+

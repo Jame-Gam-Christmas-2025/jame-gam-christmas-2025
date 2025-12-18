@@ -1,0 +1,30 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3043617855",
+    "Type": "Bus",
+    "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+    "Language": "SFX",
+    "Hash": "{CAF046D8-1FE8-16F2-F797-A96F7B139EE7}",
+    "ObjectPath": "REV_2",
+    "ShortName": "REV_2",
+    "Path": "Bus/REV_2.bnk",
+    "AuxBusses": [
+     {
+      "Id": "3043617855",
+      "Name": "REV_2",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_2",
+      "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+      "Color": "1"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A1533657-695F-CD67-A810-FF3BB05E209B}"
+ }
+}
