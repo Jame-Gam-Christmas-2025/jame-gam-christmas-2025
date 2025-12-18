@@ -105,3 +105,4 @@ InitTestScene*.unity*
 # IDE
 .idea/
 .vscode/
+.vsconfig
