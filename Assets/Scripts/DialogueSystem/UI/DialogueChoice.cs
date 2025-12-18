@@ -33,7 +33,7 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
 
         string choiceText = "";
 
-        switch (GameManager.Instance.Language)
+        switch (LocalizationManager.s_Instance.Language)
         {
             case Language.English:
                 choiceText = choiceData.text.english;
