@@ -5,6 +5,7 @@ public class Bootstrap : MonoBehaviour
 {
     public GameObject gameManagerComponent;
     public GameObject gameSceneManagerComponent;
+    public GameObject audioManagerComponent;
     private void Awake() {
         InitializeManagers();
         LoadMainScene();
@@ -19,6 +20,11 @@ public class Bootstrap : MonoBehaviour
         if(gameSceneManagerComponent != null)
         {
             Object.Instantiate(gameSceneManagerComponent);
+        }
+
+        if(audioManagerComponent != null)
+        {
+            Object.Instantiate(audioManagerComponent);
         }
     }
 
