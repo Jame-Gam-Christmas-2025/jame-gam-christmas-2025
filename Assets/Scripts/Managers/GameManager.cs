@@ -12,9 +12,15 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
 
-        switch (lockCursor)
+        /* switch (lockCursor)
         {
             case true:
                 Cursor.lockState = CursorLockMode.Locked;
@@ -22,7 +28,7 @@ public class GameManager : MonoBehaviour
             case false:
                 Cursor.lockState = CursorLockMode.None;
                 break;
-        }
+        } */
     }
 
     public void QuitApplication()
