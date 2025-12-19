@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UIElements;
+using AK.Wwise;
 
 public class AudioManager : MonoBehaviour
 {
@@ -32,7 +32,9 @@ public class AudioManager : MonoBehaviour
     // Function calling wwise events
     public static void ExampleFn()
     {
-        //Put some logic (preparing data) and call wise events
+        //Put some logic (preparing data)
         Debug.Log("Hit example fn");
+
+        //Call wwise events
     }
 }
