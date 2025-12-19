@@ -32,10 +32,11 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    public void OnInteract(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    public void OnInteract()
     {
-        if (context.performed && interactablesInRange.Count > 0)
+        if (interactablesInRange.Count > 0)
         {
+            Debug.Log("Interacting!"); 
             interactablesInRange[0].Interact();
         }
     }
