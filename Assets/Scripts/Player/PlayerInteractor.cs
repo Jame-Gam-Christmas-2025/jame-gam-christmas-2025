@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class PlayerInteractor : MonoBehaviour
 {
@@ -32,12 +32,15 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    public void OnInteract()
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        if (interactablesInRange.Count > 0)
+        if (context.performed)
         {
-            Debug.Log("Interacting!"); 
-            interactablesInRange[0].Interact();
+            if (interactablesInRange.Count > 0)
+            {
+                Debug.Log("Interacting!");
+                interactablesInRange[0].Interact();
+            }
         }
     }
 
