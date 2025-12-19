@@ -52,6 +52,8 @@ public class SettingsView : MonoBehaviour
         // Requires a slider range (0.0001 to 1) to handle sound well
         float newMasterGain = _SliderValueToGain(newSliderValue);
         Debug.Log("Master Gain: " + newMasterGain);
+
+        // AudioManager.ExampleFn();
     }
 
     public void UpdateMusicGain(float newSliderValue)
