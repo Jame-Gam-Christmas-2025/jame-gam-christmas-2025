@@ -1,9 +1,11 @@
+using UI;
 using UnityEngine;
 
 public class TestInteractable : MonoBehaviour, IInteractable
 {
-    [Header("UI")]
     [SerializeField] private GameObject _interactionWorldUI;
+
+    
 
 
     private void Awake()
@@ -12,17 +14,22 @@ public class TestInteractable : MonoBehaviour, IInteractable
         {
             _interactionWorldUI.SetActive(false);
         }
+
+
     }
 
     public void Interact()
     {
-        //Debug.Log("Interacted with: " + gameObject.name);
+        Debug.Log("You are interacting");
+        
+        
     }
 
     public void OnInteractionAvailable()
     {
         //Debug.Log("Player near: " + gameObject.name);
         _interactionWorldUI.SetActive(true);
+    
     }
 
     public void OnInteractionUnavailable()
