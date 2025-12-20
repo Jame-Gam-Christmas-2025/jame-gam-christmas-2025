@@ -3,29 +3,73 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI; // IMPORTANT : ajout du using pour Slider
 
 public class SettingsView : MonoBehaviour
 {
+    [Header("Resolution")]
     public TMP_Dropdown resolutionDropdown;
+
+    [Header("Audio Sliders")]
+    [SerializeField] private Slider masterVolumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private Slider sfxVolumeSlider;
 
     private List<Resolution> _resolutions = new();
     private List<string> _resolutionLabels = new();
     private int _minimumResWidth = 800;
     private int _minimumResHeight = 600;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start est appelé une seule fois
     void Start()
     {
-        foreach(Resolution res in Screen.resolutions)
+        // === AUDIO SETUP ===
+        SetupAudioSliders();
+
+        // === RESOLUTION SETUP ===
+        SetupResolutionDropdown();
+    }
+
+    private void SetupAudioSliders()
+    {
+        // Setup slider listeners
+        if (masterVolumeSlider != null)
+        {
+            masterVolumeSlider.minValue = 0f;
+            masterVolumeSlider.maxValue = 100f;
+            masterVolumeSlider.value = 50f;
+            masterVolumeSlider.onValueChanged.AddListener(UpdateMasterVolume);
+        }
+
+        if (musicVolumeSlider != null)
+        {
+            musicVolumeSlider.minValue = 0f;
+            musicVolumeSlider.maxValue = 100f;
+            musicVolumeSlider.value = 50f;
+            musicVolumeSlider.onValueChanged.AddListener(UpdateMusicVolume);
+        }
+
+        if (sfxVolumeSlider != null)
+        {
+            sfxVolumeSlider.minValue = 0f;
+            sfxVolumeSlider.maxValue = 100f;
+            sfxVolumeSlider.value = 50f;
+            sfxVolumeSlider.onValueChanged.AddListener(UpdateSfxVolume);
+        }
+    }
+
+    private void SetupResolutionDropdown()
+    {
+        foreach (Resolution res in Screen.resolutions)
         {
             int resWidth = res.width;
             int resHeight = res.height;
 
-            if(resWidth >= _minimumResWidth && resHeight >= _minimumResHeight)
+            if (resWidth >= _minimumResWidth && resHeight >= _minimumResHeight)
             {
                 string resLabel = resWidth.ToString() + " x " + resHeight.ToString();
 
-                if(!_resolutionLabels.Contains(resLabel))
+                if (!_resolutionLabels.Contains(resLabel))
                 {
                     _resolutionLabels.Add(resLabel);
                     _resolutions.Add(res);
@@ -33,50 +77,47 @@ public class SettingsView : MonoBehaviour
             }
         }
 
-        Resolution defaultRes = _resolutions.Last();
-
-        resolutionDropdown.AddOptions(_resolutionLabels);
-        resolutionDropdown.SetValueWithoutNotify(_resolutions.Count - 1);
-        Screen.SetResolution(defaultRes.width, defaultRes.height, true);
+        if (_resolutions.Count > 0)
+        {
+            Resolution defaultRes = _resolutions.Last();
+            resolutionDropdown.AddOptions(_resolutionLabels);
+            resolutionDropdown.SetValueWithoutNotify(_resolutions.Count - 1);
+            Screen.SetResolution(defaultRes.width, defaultRes.height, true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    // === AUDIO METHODS ===
+    public void UpdateMasterVolume(float sliderValue)
     {
-        
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetMasterVolume(sliderValue);
+        }
     }
 
-    // Audio
-    public void UpdateMasterGain(float newSliderValue)
+    public void UpdateMusicVolume(float sliderValue)
     {
-        // Requires a slider range (0.0001 to 1) to handle sound well
-        float newMasterGain = _SliderValueToGain(newSliderValue);
-        Debug.Log("Master Gain: " + newMasterGain);
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetMusicVolume(sliderValue);
+        }
     }
 
-    public void UpdateMusicGain(float newSliderValue)
+    public void UpdateSfxVolume(float sliderValue)
     {
-        // Requires a slider range (0.0001 to 1) to handle sound well
-        float newMusicGain = _SliderValueToGain(newSliderValue);
-        Debug.Log("Music Gain: " + newMusicGain);
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetSFXVolume(sliderValue);
+        }
     }
 
-    public void UpdateSfxGain(float newSliderValue)
-    {
-        // Requires a slider range (0.0001 to 1) to handle sound well
-        float newSfxGain = _SliderValueToGain(newSliderValue);
-        Debug.Log("SFX Gain: " + newSfxGain);
-    }
-
-    private float _SliderValueToGain(float newSliderValue)
-    {
-        return Mathf.Log10(newSliderValue) * 20;
-    }
-
-    // Resolution
+    // === RESOLUTION METHOD ===
     public void UpdateResolution(int dropdownIdx)
     {
-        Resolution defaultRes = _resolutions.ElementAt(dropdownIdx);
-        Screen.SetResolution(defaultRes.width, defaultRes.height, true);
+        if (dropdownIdx >= 0 && dropdownIdx < _resolutions.Count)
+        {
+            Resolution selectedRes = _resolutions.ElementAt(dropdownIdx);
+            Screen.SetResolution(selectedRes.width, selectedRes.height, true);
+        }
     }
 }
