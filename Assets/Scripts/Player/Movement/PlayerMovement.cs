@@ -70,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         _isSprinting = context.performed;
     }
 
+
     private void StartDodge()
     {
         _isDodging = true;
@@ -86,6 +87,9 @@ public class PlayerMovement : MonoBehaviour
     // Called by Animation Event
     public void DisableInput()
     {
+        Debug.Log("DisableInput");
+
+
         if (_playerInput != null)
         {
             _playerInput.enabled = false;
@@ -95,6 +99,8 @@ public class PlayerMovement : MonoBehaviour
     // Called by Animation Event
     public void EnableInput()
     {
+        Debug.Log("EnableInput");
+
         if (_playerInput != null)
         {
             _playerInput.enabled = true;
