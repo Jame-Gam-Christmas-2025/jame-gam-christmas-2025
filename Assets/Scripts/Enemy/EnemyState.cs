@@ -1,8 +1,17 @@
+using System.Collections;
 using UnityEngine;
+using ImpactFrameSystem;
 
 public class EnemyState : MonoBehaviour, IDamageable
 {
+    
+    [Header("Settings")]
+    [SerializeField] private float _deathDelay = 0.3f;
     [SerializeField] private float _maxHealth = 50f;
+
+    [Header("Impact Frame Settings")]
+    [SerializeField] private float _impactDuration = 2f;
+    [SerializeField] private float _impactIntensity = 1.2f;
 
     public float CurrentHealth { get; private set; }
 
@@ -26,7 +35,22 @@ public class EnemyState : MonoBehaviour, IDamageable
 
     public void Die()
     {
-        Debug.Log($"{gameObject.name} is dead");
+        StartCoroutine(DeathSequence());
+    }
+
+    private IEnumerator DeathSequence()
+    {
+        
+        ImpactFrameManager.Instance.TriggerImpactFrame(
+            _impactDuration,
+            _impactIntensity,
+            transform.position
+        );
+
+        
+        yield return new WaitForSeconds(_deathDelay);
+
+        
         Destroy(gameObject);
     }
 
