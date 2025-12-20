@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 91268554806268071}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18110514, y: -0.072607696, z: 0.013408571, w: 0.98068815}
-  m_LocalPosition: {x: -1.9449601, y: 1.4274992, z: -6.598875}
+  m_LocalPosition: {x: 0.45499003, y: 2.5527792, z: -4.9300246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -249,9 +249,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2611616617855358000}
   - component: {fileID: 5268432018768986513}
-  - component: {fileID: 3239838728616238738}
   - component: {fileID: 2620171631574068388}
   - component: {fileID: 7758977735047701261}
+  - component: {fileID: 6673513403255666138}
+  - component: {fileID: 4772486531578660466}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -268,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 2512720568439984315}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18110514, y: -0.072607696, z: 0.013408571, w: 0.98068815}
-  m_LocalPosition: {x: -1.9449601, y: 1.4274992, z: -6.598875}
+  m_LocalPosition: {x: 0.45499003, y: 2.5527792, z: -4.9300246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -325,14 +326,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3239838728616238738
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2512720568439984315}
-  m_Enabled: 1
 --- !u!114 &2620171631574068388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,3 +402,43 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &6673513403255666138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512720568439984315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935877991ce48e043a45c9785421d50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &4772486531578660466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512720568439984315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a830c132562e74db3b4b795ec16eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
+  isDefaultListener: 1
+  bOverrideScalingFactor: 0
+  scalingFactor: -1
+  listenerId: 0
