@@ -3,9 +3,21 @@ using UnityEngine;
 public class PlayerAlignment : MonoBehaviour
 {
     [SerializeField] private int alignmentScore;
+    [SerializeField] private Alignment alignment;
 
-    public static Alignment s_Alignment { get; private set; }
+    public int AlignmentScore
+    {
+        get { return alignmentScore; }
+        set
+        {
+            Alignment = alignmentScore >= 0 ? Alignment.Good : Alignment.Bad;
 
-    public void AddAlignmentScore(int score) => alignmentScore += score;
-    public void SubtractAlignmentScore(int score) => s_Alignment -= score;
+            alignmentScore = value;
+        }
+    }
+
+    public Alignment Alignment { get; private set; }
+
+    public void AddAlignmentScore(int score) => AlignmentScore += score;
+    public void SubtractAlignmentScore(int score) => AlignmentScore -= score;
 }

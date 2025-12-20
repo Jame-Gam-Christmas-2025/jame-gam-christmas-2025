@@ -184,6 +184,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Name
       value: Player
@@ -228,7 +236,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1631994387562447631, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+    - {fileID: 3963795531225292488, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+    - {fileID: 8918487591375328788, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+    - {fileID: 5789790500774759857, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -254,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAlignment
   alignmentScore: 0
+  alignment: 0
 --- !u!1 &995989070
 GameObject:
   m_ObjectHideFlags: 0
