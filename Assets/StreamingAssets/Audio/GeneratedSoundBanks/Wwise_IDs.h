@@ -15,7 +15,37 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
         static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace SW_MC_FOOTSTEPSMATERIAL
+        {
+            static const AkUniqueID GROUP = 996959485U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_FT_CONCRETE = 916436602U;
+                static const AkUniqueID SW_FT_DIRT = 2399563152U;
+                static const AkUniqueID SW_FT_SNOW = 3850745462U;
+            } // namespace SWITCH
+        } // namespace SW_MC_FOOTSTEPSMATERIAL
+
+        namespace SW_MC_FOOTSTEPSMOVEMENT
+        {
+            static const AkUniqueID GROUP = 2700451361U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_FT_ATTACK = 4253136415U;
+                static const AkUniqueID SW_FT_ROLL = 1388451578U;
+                static const AkUniqueID SW_FT_RUN = 2162921054U;
+                static const AkUniqueID SW_FT_WALK = 303207424U;
+            } // namespace SWITCH
+        } // namespace SW_MC_FOOTSTEPSMOVEMENT
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
@@ -44,10 +74,7 @@ namespace AK
         static const AkUniqueID ATTACKS_YULE = 327602828U;
         static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID FT_ATTACK = 2901498470U;
-        static const AkUniqueID FT_JUMPS = 3242069405U;
         static const AkUniqueID FT_KRAMPUS = 1566882829U;
-        static const AkUniqueID FT_LANDS = 3094890996U;
         static const AkUniqueID FT_NAHAGAME = 361833422U;
         static const AkUniqueID FT_YULE = 1342630121U;
         static const AkUniqueID KRAMPUS = 496251272U;
@@ -64,10 +91,8 @@ namespace AK
         static const AkUniqueID PRS_JUMPS = 2275900680U;
         static const AkUniqueID PRS_LANDS = 3575123633U;
         static const AkUniqueID REVERBS = 3545700988U;
-        static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID UI = 1551306167U;
-        static const AkUniqueID WALK = 2108779966U;
         static const AkUniqueID YULE = 2154073102U;
     } // namespace BUSSES
 

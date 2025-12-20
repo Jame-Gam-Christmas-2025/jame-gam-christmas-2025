@@ -20,11 +20,41 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
 
+    [Header("MC_Footsteps")] 
+    public AK.Wwise.Event MC_Footsteps;
+    
+    [Header("Switch Footsteps - Movement")]
+    public AK.Wwise.Switch SW_Footsteps_Walk;
+    public AK.Wwise.Switch SW_Footsteps_Run;
+    
+    [Header("Switch Footsteps - Surface")]
+    public AK.Wwise.Switch SW_Surface_Concrete;
+    
     private Rigidbody rb;
     private Vector2 _moveInput;
     private bool _isSprinting;
     private bool _isDodging;
 
+    public void PlayFootstep()
+    {
+        // Sécurité : éviter les pas à l'arrêt
+        if (_moveInput.magnitude < 0.1f)
+            return;
+
+        // MovementType
+        if (_isSprinting)
+            SW_Footsteps_Run.SetValue(gameObject);
+        else
+            SW_Footsteps_Walk.SetValue(gameObject);
+
+        // SurfaceType (temporaire)
+        SW_Surface_Concrete.SetValue(gameObject);
+
+        // Event
+        MC_Footsteps.Post(gameObject);
+    }
+
+ 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
