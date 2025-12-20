@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{D132A4B8-1F2A-0A62-A552-182814D559CD}",
+    "Hash": "{27055497-4241-B7D8-FFB4-F46426DB1E23}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -315,9 +315,9 @@
     ],
     "Events": [
      {
-      "Id": "3854155799",
-      "Name": "Play_Footsteps",
-      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_Footsteps",
+      "Id": "2368357634",
+      "Name": "Play_MC_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Footsteps",
       "GUID": "{2C8CD91D-A507-45E7-BE51-A2B9742E98F4}",
       "Color": "7",
       "DurationType": "OneShot",
@@ -588,6 +588,6 @@
     ]
    }
   ],
-  "FileHash": "{6DC7DD80-13A9-B13B-C836-EDC587B7B3A4}"
+  "FileHash": "{A4E38C50-4925-3940-3B2F-9F8D4CC60CAC}"
  }
 }

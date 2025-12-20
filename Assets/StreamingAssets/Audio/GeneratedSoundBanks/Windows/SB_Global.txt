@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3854155799	Play_Footsteps			\Default Work Unit\MC_WU\Play_Footsteps	
+	2368357634	Play_MC_Footsteps			\Default Work Unit\MC_WU\Play_MC_Footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	996959485	SW_MC_FootstepsMaterial			\Default Work Unit\MC_WU\SW_MC_FootstepsMaterial	

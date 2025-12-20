@@ -1,0 +1,55 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2368357634	Play_MC_Footsteps			\Default Work Unit\MC_WU\Play_MC_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	996959485	SW_MC_FootstepsMaterial			\Default Work Unit\MC_WU\SW_MC_FootstepsMaterial	
+	2700451361	SW_MC_FootstepsMovement			\Default Work Unit\MC_WU\SW_MC_FootstepsMovement	
+
+Switch	ID	Name	Switch Group			Notes
+	916436602	SW_FT_Concrete	SW_MC_FootstepsMaterial			
+	2399563152	SW_FT_Dirt	SW_MC_FootstepsMaterial			
+	3850745462	SW_FT_Snow	SW_MC_FootstepsMaterial			
+	303207424	SW_FT_Walk	SW_MC_FootstepsMovement			
+	1388451578	SW_FT_Roll	SW_MC_FootstepsMovement			
+	2162921054	SW_FT_Run	SW_MC_FootstepsMovement			
+	4253136415	SW_FT_Attack	SW_MC_FootstepsMovement			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	11804355	FOL_MC_FT_WalkConcrete_02	.cache\45\{45EB5B5E-5062-1EA3-DE85-80C9F56D7442}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_02		39208
+	90871712	FOL_MC_FT_RunConcrete_13	.cache\EA\{EA62E31C-1DA7-D247-FD15-A427E273AA4D}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_13		24708
+	92653261	FOL_Walk_Gravel _02	.cache\AC\{ACE5A56A-B554-7AF4-6EBA-B1D9069BF82F}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _02		22496
+	109995337	FOL_MC_FT_RunConcrete_09	.cache\BC\{BCAFD089-0AE7-A6E4-5B82-E6CD2922CB33}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_09		24708
+	139395830	FOL_MC_FT_WalkConcrete_06	.cache\A0\{A0F9A846-AB0C-5C53-10CB-3B449276E380}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_06		39208
+	169027683	FOL_MC_FT_WalkConcrete_07	.cache\5A\{5A6F01FB-26E0-098D-5CF4-D49DE99DC91B}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_07		39208
+	190120119	FOL_MC_FT_WalkConcrete_13	.cache\76\{76735C7A-F814-B567-E3CE-85951DC0D208}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_13		39208
+	271533246	FOL_MC_FT_RunConcrete_08	.cache\75\{754164E9-023D-1E62-E10B-1F9E49B8CE80}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_08		24708
+	310087946	FOL_Walk_Leaf_02	.cache\6A\{6AAE5300-6C9B-8522-2014-8D12A0751744}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_RunDirt\FOL_Walk_Leaf_02		22496
+	341686374	FOL_MC_FT_WalkConcrete_12	.cache\1E\{1EEA401D-A70A-5E82-6856-EBF946A67BEF}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_12		39208
+	360482745	FOL_MC_FT_RunConcrete_15	.cache\52\{52587984-6327-284C-1778-CC5922107760}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_15		24708
+	372312143	FOL_MC_FT_RunConcrete_11	.cache\4C\{4C78A4AD-B36B-5929-4104-209B0E2AB194}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_11		24708
+	411207177	FOL_MC_FT_WalkConcrete_15	.cache\EC\{EC8FA999-DD53-E9DF-B864-95AE0F02DFF7}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_15		29550
+	446808271	FOL_MC_FT_RunConcrete_04	.cache\34\{3435C689-B249-E309-87C0-F97A870BFFA9}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_04		24708
+	503533404	FOL_MC_FT_WalkConcrete_08	.cache\EE\{EE15B4BB-B5BB-A6FC-C722-0C296E980280}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_08		39208
+	524863978	FOL_MC_FT_RunConcrete_05	.cache\65\{65747A8F-8335-41F0-77FD-EBB96BDF1F26}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_05		24708
+	607893173	FOL_MC_FT_RunConcrete_07	.cache\A8\{A8912ED6-BE1A-DA38-5B7F-4FD107F0F422}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_07		24708
+	625851457	FOL_MC_FT_RunConcrete_10	.cache\C3\{C38CF7F1-82E8-65AB-DFCF-263534C8286A}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_10		24708
+	626318865	FOL_MC_FT_RunConcrete_14	.cache\C2\{C2B2524E-9E82-1F6D-9CC4-2CBBA75051CD}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_14		24708
+	664596365	FOL_MC_FT_WalkConcrete_16	.cache\7C\{7C09501A-DBDA-6090-0D9F-B65869BBD157}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_16		29550
+	710604565	FOL_MC_FT_RunConcrete_02	.cache\B7\{B7FE90E8-5813-B54A-82D5-3C3519C02721}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_02		24708
+	727572224	FOL_MC_FT_WalkConcrete_14	.cache\EA\{EAA20603-BEC3-9286-00CE-C1C3076D573E}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_14		32222
+	740658667	FOL_MC_FT_WalkConcrete_10	.cache\76\{762DBD9C-0A7B-9B8B-C0A3-76DD5FD6C341}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_10		39208
+	759820996	FOL_MC_FT_WalkConcrete_09	.cache\84\{84265A9B-4D30-D9FD-EE0D-4894CD540176}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_09		39208
+	803154887	FOL_MC_FT_WalkConcrete_11	.cache\60\{60BBB1D0-FF0F-47E0-B897-599B0C3A2B24}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_11		39208
+	850160418	FOL_Walk_Gravel _01	.cache\7F\{7F4A204E-7EF0-5B67-3E37-A2EC6FCD4DE5}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _01		22496
+	861431005	FOL_Walk_Gravel _03	.cache\C6\{C692E808-A6F9-99D4-7546-A9CE1A2FD98E}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _03		22496
+	881044852	FOL_Walk_Leaf_03	.cache\88\{88A0DBAC-2561-EB96-A1DA-662364BB506B}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_RunDirt\FOL_Walk_Leaf_03		22496
+	881365248	FOL_MC_FT_RunConcrete_01	.cache\BC\{BCA160FD-B1AA-EA8A-412A-B88CF11AAC50}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_01		24708
+	932368073	FOL_MC_FT_WalkConcrete_03	.cache\7A\{7A1F1F87-2ABF-7B37-16CF-03E4158FFD38}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_03		39208
+	947699993	FOL_MC_FT_RunConcrete_12	.cache\E9\{E99E8375-81E4-F2EC-6AAA-F7FE5765B8E9}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_12		24708
+	948011064	FOL_MC_FT_WalkConcrete_01	.cache\B9\{B94D0B83-05C3-A515-F1FE-4304F590E329}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_01		39208
+	949098261	FOL_MC_FT_WalkConcrete_04	.cache\B2\{B2BB6A57-91CE-5720-25D8-EEFDB13EB159}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_04		39208
+	983377634	FOL_MC_FT_RunConcrete_03	.cache\49\{4967E3EE-0ABF-852E-65DD-2437B783039B}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_03		24708
+	1021483769	FOL_MC_FT_RunConcrete_06	.cache\30\{3007D091-9064-6B22-1537-D26463B92CF8}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_06		24708
+	1035052216	FOL_Walk_Leaf_01	.cache\E8\{E8DF84CD-F5A9-8EA5-B98F-00B229AE90AB}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_RunDirt\FOL_Walk_Leaf_01		22496
+	1058650070	FOL_MC_FT_WalkConcrete_05	.cache\66\{664E9B04-1436-0409-5C13-04344A701EDE}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_05		39208
+

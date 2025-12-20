@@ -17,6 +17,14 @@ public class PlayerCombatController : MonoBehaviour
     [Header("Projectile Settings")]
     [SerializeField] private float _projectileDamage = 15f;
     [SerializeField] private float _projectileSelfDamage = 5f;
+    
+    [Header("SFX_MC_Attack")]
+    public AK.Wwise.Event Play_MC_Attacks; // ton Event unique pour toutes les attaques
+
+    [Header("Switch_MC_AttackType")]
+    public AK.Wwise.Switch SW_MC_Attack_Light;
+    public AK.Wwise.Switch SW_MC_Attack_Heavy;
+    public AK.Wwise.Switch SW_MC_Attack_Distance;
 
     private int _currentComboIndex = 0;
     private int _attackIndexForDamage = 0;
@@ -64,6 +72,9 @@ public class PlayerCombatController : MonoBehaviour
 
         _animator.SetTrigger("RangedAttack");
         _isAttacking = true;
+        
+        SW_MC_Attack_Distance.SetValue(gameObject);
+        Play_MC_Attacks.Post(gameObject);
     }
 
     private void PerformAttack()
@@ -79,6 +90,26 @@ public class PlayerCombatController : MonoBehaviour
 
         _animator.SetInteger("ComboIndex", _currentComboIndex);
         _animator.SetTrigger("Attack");
+        
+        // Wwise switch pour l'attaque
+        switch (_currentComboIndex)
+        {
+            case 0:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                break;
+            case 1:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                break;
+            case 2:
+                SW_MC_Attack_Heavy.SetValue(gameObject);
+                break;
+            default:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                break;
+        }
+
+        // Event
+        Play_MC_Attacks.Post(gameObject);
     }
 
     private IEnumerator ComboResetTimer(float delay)

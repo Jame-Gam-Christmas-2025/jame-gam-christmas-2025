@@ -15,7 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
         static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
-        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -45,6 +45,30 @@ namespace AK
             } // namespace SWITCH
         } // namespace SW_MC_FOOTSTEPSMOVEMENT
 
+        namespace SW_MC_TYPEOFATTACKHIT
+        {
+            static const AkUniqueID GROUP = 4054447005U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_MC_ATTACKDISTANCEHIT = 1907146023U;
+                static const AkUniqueID SW_MC_ATTACKMELEEHEAVYHIT = 3302953275U;
+                static const AkUniqueID SW_MC_ATTACKMELEELIGHTHIT = 2734195228U;
+            } // namespace SWITCH
+        } // namespace SW_MC_TYPEOFATTACKHIT
+
+        namespace SW_MC_TYPEOFENEMY
+        {
+            static const AkUniqueID GROUP = 2119059778U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_MC_HITKRAMPUS = 397687435U;
+                static const AkUniqueID SW_MC_HITNAHAGAME = 2506029772U;
+                static const AkUniqueID SW_MC_HITYULE = 295887543U;
+            } // namespace SWITCH
+        } // namespace SW_MC_TYPEOFENEMY
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -68,7 +92,6 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMB = 1117531639U;
-        static const AkUniqueID ATTACK = 180661997U;
         static const AkUniqueID ATTACKS_KRAMPUS = 738454910U;
         static const AkUniqueID ATTACKS_NAHAGAME = 1552412047U;
         static const AkUniqueID ATTACKS_YULE = 327602828U;
@@ -92,6 +115,8 @@ namespace AK
         static const AkUniqueID PRS_LANDS = 3575123633U;
         static const AkUniqueID REVERBS = 3545700988U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SFX_MC_ATTACK = 854716996U;
+        static const AkUniqueID SFX_MC_ATTACKHITENNEMY = 1128311319U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID YULE = 2154073102U;
     } // namespace BUSSES

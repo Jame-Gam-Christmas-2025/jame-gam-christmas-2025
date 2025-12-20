@@ -5,14 +5,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	119136829	Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences	
-	180661997	Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Attack	
 	327602828	Attacks_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\Attacks_Yule	
 	361833422	FT_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\FT_Nahagame	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\SFX_WU\SFX	
 	496251272	Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus	
 	738454910	Attacks_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\Attacks_Krampus	
 	786071385	Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame	
+	854716996	SFX_MC_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\SFX_MC_Attack	
 	1117531639	AMB			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB	
+	1128311319	SFX_MC_AttackHitEnnemy			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\SFX_MC_AttackHitEnnemy	
 	1202187523	Master_SD			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD	
 	1342630121	FT_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\FT_Yule	
 	1551306167	UI			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\UI_WU\UI	

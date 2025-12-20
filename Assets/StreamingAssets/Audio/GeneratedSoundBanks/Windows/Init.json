@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C32BDA6E-9537-1E34-3D48-B78C1C967BE0}",
+    "Hash": "{9A9B7A12-D180-BB72-C0EE-AF897AA01711}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -40,13 +40,6 @@
       "Name": "Presences",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences",
       "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
-      "Color": "8"
-     },
-     {
-      "Id": "180661997",
-      "Name": "Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Attack",
-      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
       "Color": "8"
      },
      {
@@ -92,11 +85,25 @@
       "Color": "19"
      },
      {
+      "Id": "854716996",
+      "Name": "SFX_MC_Attack",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Attack",
+      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
+      "Color": "8"
+     },
+     {
       "Id": "1117531639",
       "Name": "AMB",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB",
       "GUID": "{79216540-D445-4EB8-B77B-2309691E4C49}",
       "Color": "4"
+     },
+     {
+      "Id": "1128311319",
+      "Name": "SFX_MC_AttackHitEnnemy",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_AttackHitEnnemy",
+      "GUID": "{60F508D5-5534-4AA2-BC0D-215E0DD188BF}",
+      "Color": "8"
      },
      {
       "Id": "1202187523",
@@ -294,6 +301,36 @@
       ]
      },
      {
+      "Id": "2119059778",
+      "Name": "SW_MC_TypeOfEnemy",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy",
+      "GUID": "{72CE13B6-FA40-49AB-A207-B7DCD2A186B2}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "295887543",
+        "Name": "SW_MC_HitYule",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitYule",
+        "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+        "Color": "8"
+       },
+       {
+        "Id": "397687435",
+        "Name": "SW_MC_HitKrampus",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitKrampus",
+        "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2506029772",
+        "Name": "SW_MC_HitNahagame",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitNahagame",
+        "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
       "Id": "2700451361",
       "Name": "SW_MC_FootstepsMovement",
       "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement",
@@ -326,6 +363,36 @@
         "Name": "SW_FT_Attack",
         "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Attack",
         "GUID": "{B8EC0148-2299-4C45-A9D2-91FE3B5DDFF1}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "4054447005",
+      "Name": "SW_MC_TypeOfAttackHit",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit",
+      "GUID": "{DDEF692F-689F-4653-A4AD-1578D21FDC8B}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "1907146023",
+        "Name": "SW_MC_AttackDistanceHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackDistanceHit",
+        "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+        "Color": "8"
+       },
+       {
+        "Id": "2734195228",
+        "Name": "SW_MC_AttackMeleeLightHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeLightHit",
+        "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+        "Color": "8"
+       },
+       {
+        "Id": "3302953275",
+        "Name": "SW_MC_AttackMeleeHeavyHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeHeavyHit",
+        "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
         "Color": "8"
        }
       ]
@@ -810,6 +877,6 @@
     ]
    }
   ],
-  "FileHash": "{BA888D15-7744-3B0D-D170-D6FC3E73025B}"
+  "FileHash": "{DFBF06D8-43CF-4990-DEC4-3EB65C9C47EE}"
  }
 }

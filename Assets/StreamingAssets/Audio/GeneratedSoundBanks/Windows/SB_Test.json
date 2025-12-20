@@ -11,7 +11,7 @@
     "GUID": "{98A7620B-1BE0-4051-B7A1-81F1E6963177}",
     "Color": "26",
     "Language": "SFX",
-    "Hash": "{AC777109-6CA8-166F-C2E4-B779E33DF55F}",
+    "Hash": "{68F33DF0-ABAA-CC20-A2BE-85DDC953634F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Test",
     "ShortName": "SB_Test",
     "Path": "SB_Test.bnk",
@@ -46,13 +46,6 @@
       "Name": "Presences",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences",
       "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
-      "Color": "8"
-     },
-     {
-      "Id": "180661997",
-      "Name": "Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Attack",
-      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
       "Color": "8"
      },
      {
@@ -98,11 +91,25 @@
       "Color": "19"
      },
      {
+      "Id": "854716996",
+      "Name": "SFX_MC_Attack",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Attack",
+      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
+      "Color": "8"
+     },
+     {
       "Id": "1117531639",
       "Name": "AMB",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB",
       "GUID": "{79216540-D445-4EB8-B77B-2309691E4C49}",
       "Color": "4"
+     },
+     {
+      "Id": "1128311319",
+      "Name": "SFX_MC_AttackHitEnnemy",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_AttackHitEnnemy",
+      "GUID": "{60F508D5-5534-4AA2-BC0D-215E0DD188BF}",
+      "Color": "8"
      },
      {
       "Id": "1202187523",
@@ -270,6 +277,6 @@
     ]
    }
   ],
-  "FileHash": "{63997869-AFC2-9020-27FD-60C4B5AA9F82}"
+  "FileHash": "{B94982F5-C12A-BCA2-0088-3751CEBE10B8}"
  }
 }
