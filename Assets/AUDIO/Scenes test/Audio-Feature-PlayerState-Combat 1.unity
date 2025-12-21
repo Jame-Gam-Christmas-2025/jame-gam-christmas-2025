@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1569646648647533784, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.29
@@ -343,6 +347,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131604998199745383, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_Attack_Hit_Enemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
+    - target: {fileID: 4131604998199745383, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackDistanceHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e60b28c695f0a6a4bb07fd6361b52d9d, type: 2}
+    - target: {fileID: 6183466650530820751, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
@@ -393,6 +409,18 @@ PrefabInstance:
       propertyPath: SW_Surface_Concrete.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 313ff7b5b644a3f42b670530c96ae1f2, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_Attack_Hit_Enemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d825ccc918412c449f650950d1f9767, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackMeleeHeavyHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c71d6c8bebe31644ba3bd20d34bbe9c7, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackMeleeLightHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6249c5d333e27b04186dda6007d04478, type: 2}
     - target: {fileID: 9131764875738041555, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1689,15 +1717,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45499003
+      value: -0.54501
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5527792
+      value: 3.64925
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.9300246
+      value: -5.40879
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268432018768986513, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: field of view
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5319156676598472805, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: Target.TrackingTarget
@@ -1972,6 +2004,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyState
   _deathDelay: 1
   _maxHealth: 50
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   _impactDuration: 1
   _impactIntensity: 1
 --- !u!136 &1273027491
@@ -2395,6 +2430,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6ea2d48988e7d640921248bfa5d7a56, type: 3}
       propertyPath: m_Name
       value: Y Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6ea2d48988e7d640921248bfa5d7a56, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
