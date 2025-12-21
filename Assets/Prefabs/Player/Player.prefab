@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 5429552093080602139}
   - component: {fileID: 5449872859741518663}
   - component: {fileID: 2846713812286565881}
+  - component: {fileID: 4862203301868415009}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -345,13 +346,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cc06c27154db544bed4074b45c47aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  _walkSpeed: 5
+  _walkSpeed: 2.5
   _sprintSpeed: 8
   _rotationSpeed: 15
   _dodgeForce: 10
   _cameraTransform: {fileID: 0}
   _playerInput: {fileID: 49786256838526143}
   _animator: {fileID: 5449872859741518663}
+  MC_Presences_Walk:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MC_Presences_Action:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayFOL_MC_Roll:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MC_Footsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_Footsteps_Walk:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_Footsteps_Run:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_Surface_Concrete:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &6453850940745606093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +428,37 @@ MonoBehaviour:
   - 1
   _projectileDamage: 15
   _projectileSelfDamage: 5
+  Play_MC_Attacks:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Play_MC_TakeDamage:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Play_SFX_MC_AttackHitEnemy:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_MC_Attack_Light:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_MC_Attack_Heavy:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_MC_Attack_Distance:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  showDebugLogs: 1
 --- !u!114 &5429552093080602139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,6 +513,20 @@ MonoBehaviour:
   lockOnInput: {fileID: 0}
   enemyWeight: 1
   enemyRadius: 1
+--- !u!114 &4862203301868415009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301988727454975743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87e64c17a7eb564ab57c9073a459958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAlignment
+  alignmentScore: 0
+  alignment: 0
 --- !u!1 &1363018708199292369
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +950,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f37600feda4b47acd4f2e86856532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHitbox
+  Play_Attack_Hit_Enemy:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_MC_AttackMeleeLightHit:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SW_MC_AttackMeleeHeavyHit:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &1804228892778166665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -884,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6ea2d48988e7d640921248bfa5d7a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.918
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6ea2d48988e7d640921248bfa5d7a56, type: 3}
       propertyPath: m_LocalPosition.z
