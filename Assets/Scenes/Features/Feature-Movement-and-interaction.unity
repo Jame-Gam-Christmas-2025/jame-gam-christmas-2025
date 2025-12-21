@@ -523,6 +523,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1824710406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+  m_PrefabInstance: {fileID: 7779379900653961073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824710417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824710406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0d68d53eb2174478f7c87c42ab162d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkBank
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c5d40e5333675554b8ddf4adebdad1d2, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1944065654
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,15 +713,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25501013
+      value: -0.5450101
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4292501
+      value: 3.64925
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1614399
+      value: -5.40879
       objectReference: {fileID: 0}
     - target: {fileID: 5268432018768986513, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: field of view
@@ -814,6 +844,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_MC_Attacks.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d825ccc918412c449f650950d1f9767, type: 2}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_MC_TakeDamage.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ea2c6d4041105254c89459dc0080bf54, type: 2}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_Attack_Heavy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c71d6c8bebe31644ba3bd20d34bbe9c7, type: 2}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_Attack_Light.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6249c5d333e27b04186dda6007d04478, type: 2}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_Attack_Distance.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e60b28c695f0a6a4bb07fd6361b52d9d, type: 2}
+    - target: {fileID: 3242100963793109548, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_SFX_MC_AttackHitEnemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
     - target: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.35355
@@ -854,6 +908,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4131604998199745383, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_Attack_Hit_Enemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
+    - target: {fileID: 4131604998199745383, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackDistanceHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e60b28c695f0a6a4bb07fd6361b52d9d, type: 2}
     - target: {fileID: 5752741977742291620, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -870,14 +932,57 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 1616986784}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: MC_Footsteps.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e881539015a6a5c4cbca427b04ef3df0, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: PlayFOL_MC_Roll.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8569ccc6834c6b440869f04ed9184685, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_Footsteps_Run.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 007f8b838a47a2e4096b45adeebb991e, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: MC_Presences_Walk.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 230627b84d5322e45b33afec0e7c42a1, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_Footsteps_Walk.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cdaa3b18d52af94b8360793f4a5ff16, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: MC_Presences_Action.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 984931a929d42e643bd57850fa6b5118, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_Surface_Concrete.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 313ff7b5b644a3f42b670530c96ae1f2, type: 2}
     - target: {fileID: 7999380140286772124, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 196f01ff4373b934d98bb44098cfa4ac, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: Play_Attack_Hit_Enemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackMeleeHeavyHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c71d6c8bebe31644ba3bd20d34bbe9c7, type: 2}
+    - target: {fileID: 8613777011200438392, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: SW_MC_AttackMeleeLightHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6249c5d333e27b04186dda6007d04478, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1824710417}
   m_SourcePrefab: {fileID: 100100000, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
