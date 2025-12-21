@@ -13,8 +13,8 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
     [SerializeField] private NavigationSubmitEvent submitEvent;
     [SerializeField] private TextMeshProUGUI textMesh;
 
-    public DialogueData nextDialogue { get; set; }
-
+    // Data variables
+    private DialogueData _nextDialogue;
     private ChoiceData _choiceData;
 
     private void Awake()
@@ -33,6 +33,7 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
 
         string choiceText = "";
 
+        // Set choice text depending on game language
         switch (LocalizationManager.s_Instance.Language)
         {
             case Language.English:
@@ -44,7 +45,7 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
         }
 
         SetText(choiceText);
-        nextDialogue = choiceData.nextDialogue;
+        _nextDialogue = choiceData.nextDialogue;
     }
 
     public void SetText(string text)
@@ -56,20 +57,24 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
     public void OnClick()
     {
         DialogueView dialogueView = FindFirstObjectByType<DialogueView>();
-
         ChoiceCondition choiceCondition = _choiceData.choiceCondition;
 
-        if (choiceCondition != null)
+        // Happen only if there is a condition in dialogue
+        if (choiceCondition)
         {
             choiceCondition.CheckRequirement();
 
             if (choiceCondition.ConditionIsTrue == true)
-                nextDialogue = choiceCondition.conditionTrueDialogue;
+                _nextDialogue = choiceCondition.conditionTrueDialogue;
             else
-                nextDialogue = choiceCondition.conditionFalseDialogue;
+                _nextDialogue = choiceCondition.conditionFalseDialogue;
         }
 
-        dialogueView.StartDialogue(nextDialogue);
+        // Add alignment bonus to player
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus);
+
+        // Start next dialogue
+        dialogueView.StartDialogue(_nextDialogue);
     }
     #endregion
 

@@ -10,7 +10,6 @@ namespace UI
 {
     public class DialogueView : MonoBehaviour, ISubmitHandler,ICancelHandler, IPointerClickHandler
     {
-        public DialogueData DialogueData { get; private set; }
         public Sprite AvatarSprite { get; private set; }
         public string NpcName { get; private set; }
 
@@ -24,6 +23,7 @@ namespace UI
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Transform choicesParent;
         
+        private DialogueData _currentDialogue;
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
         private Coroutine _textAnimCoroutine;
@@ -33,7 +33,8 @@ namespace UI
         private void Start()
         {
 #if UNITY_EDITOR
-            if (SceneManager.GetActiveScene().name == "Feature-Dialogue_System")
+            if (SceneManager.GetActiveScene().name == "Feature-Dialogue_System" 
+                || SceneManager.GetActiveScene().name == "FeaturePlayerAlignment")
             {
                 EditorStartDialogue();
             }
@@ -64,7 +65,7 @@ namespace UI
 
             /* TODO
              * 
-             * Disable NPC interaction
+             * Enable NPC interaction
              */
 
             gameObject.SetActive(false);
@@ -80,7 +81,7 @@ namespace UI
         {
             Show();
 
-            DialogueData = dialogueData;
+            _currentDialogue = dialogueData;
             AvatarSprite = avatarSprite;
             NpcName = npcName;
 
@@ -92,7 +93,7 @@ namespace UI
         /// </summary>
         public void StartDialogue(DialogueData nextDialogue)
         {
-            DialogueData = nextDialogue;
+            _currentDialogue = nextDialogue;
 
             EventSystem.current.SetSelectedGameObject(gameObject);
 
@@ -102,13 +103,14 @@ namespace UI
             switch (LocalizationManager.s_Instance.Language)
             {
                 case Language.English:
-                    currentText = DialogueData.dialogueText.english;
+                    currentText = _currentDialogue.dialogueText.english;
                     break;
                 case Language.French:
-                    currentText = DialogueData.dialogueText.french;
+                    currentText = _currentDialogue.dialogueText.french;
                     break;
             }
 
+            // 
             dialogueTextMesh.text = currentText;
 
             avatarImage.sprite = AvatarSprite;
@@ -118,7 +120,7 @@ namespace UI
 
             ClearChoices();
 
-            foreach (ChoiceData c in DialogueData.choices)
+            foreach (ChoiceData c in _currentDialogue.choices)
             {
                 AddChoice(c);
             }

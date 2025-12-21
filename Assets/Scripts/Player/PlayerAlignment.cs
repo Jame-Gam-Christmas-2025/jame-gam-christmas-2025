@@ -10,14 +10,21 @@ public class PlayerAlignment : MonoBehaviour
         get { return alignmentScore; }
         set
         {
-            Alignment = alignmentScore >= 0 ? Alignment.Good : Alignment.Bad;
-
             alignmentScore = value;
+            Alignment = alignmentScore >= 0 ? Alignment.Good : Alignment.Bad;
         }
     }
 
-    public Alignment Alignment { get; private set; }
+    public Alignment Alignment { 
+        get
+        {
+            return alignment;
+        }
+        private set
+        {
+            alignment = value;
+        }
+    }
 
-    public void AddAlignmentScore(int score) => AlignmentScore += score;
-    public void SubtractAlignmentScore(int score) => AlignmentScore -= score;
+    public void AddAlignmentBonus(int score) => AlignmentScore += score;
 }
