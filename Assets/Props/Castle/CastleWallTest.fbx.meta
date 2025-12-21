@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: deb2b7d97d6ad934583c7eebf41274ee
+guid: e9c77b3d22864224db980dfcdfaf5d5b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -56,7 +56,7 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
+    generateMeshLods: 1
     meshLodGenerationFlags: 0
     maximumMeshLod: -1
     meshOptimizationFlags: -1
