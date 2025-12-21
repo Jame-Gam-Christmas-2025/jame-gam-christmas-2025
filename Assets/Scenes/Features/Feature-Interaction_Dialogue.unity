@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32695467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6784110928507745699, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+  m_PrefabInstance: {fileID: 1974376336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114091378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1344,14 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 840926058}
+    - target: {fileID: 6453850940745606093, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: _interactionUI
+      value: 
+      objectReference: {fileID: 32695467}
+    - target: {fileID: 6784110928507745699, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7999380140286772124, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Material
       value: 
@@ -1382,22 +1395,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 840926056}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: avatar
-      value: 
-      objectReference: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: npcName
-      value: Gorg
-      objectReference: {fileID: 0}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: 17af263006a41d44cada29d77faaa0db, type: 2}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: interactionWorldUI
-      value: 
-      objectReference: {fileID: 2145563860}
     - target: {fileID: 8427149578245598712, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1463,11 +1460,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
---- !u!1 &2145563860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4655616445093365497, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-  m_PrefabInstance: {fileID: 1993213063}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
