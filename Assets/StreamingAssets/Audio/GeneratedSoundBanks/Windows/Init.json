@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B1F1CAFA-342A-F7F0-05D5-32C59EE6D330}",
+    "Hash": "{C9A7C4D9-093D-5BBA-8427-C714F02C71F0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -50,6 +50,20 @@
       "Color": "8"
      },
      {
+      "Id": "327602828",
+      "Name": "Attacks_Yule",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule\\Attacks_Yule",
+      "GUID": "{B38A899C-99A7-4854-BE09-555848E75655}",
+      "Color": "19"
+     },
+     {
+      "Id": "361833422",
+      "Name": "FT_Nahagame",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\FT_Nahagame",
+      "GUID": "{34F618EC-C2AE-4C88-AC89-21C7E33EAE53}",
+      "Color": "19"
+     },
+     {
       "Id": "393239870",
       "Name": "SFX",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\SFX_WU\\SFX",
@@ -57,11 +71,32 @@
       "Color": "10"
      },
      {
+      "Id": "496251272",
+      "Name": "Krampus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus",
+      "GUID": "{21DCC8DD-7B2B-4239-8F78-558665873530}",
+      "Color": "19"
+     },
+     {
       "Id": "712161704",
       "Name": "Run",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\Run",
       "GUID": "{751E61E6-3FBD-4C6F-AAF8-7BABD8FD6C8F}",
       "Color": "8"
+     },
+     {
+      "Id": "738454910",
+      "Name": "Attacks_Krampus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus\\Attacks_Krampus",
+      "GUID": "{A5582E06-6621-4CDC-8374-356658734D84}",
+      "Color": "19"
+     },
+     {
+      "Id": "786071385",
+      "Name": "Nahagame",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame",
+      "GUID": "{CC26A457-F676-4E20-8A64-D597E09A6977}",
+      "Color": "19"
      },
      {
       "Id": "1117531639",
@@ -77,6 +112,13 @@
       "GUID": "{4E2EA48E-22C9-45B6-94CA-3E252719040B}"
      },
      {
+      "Id": "1342630121",
+      "Name": "FT_Yule",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule\\FT_Yule",
+      "GUID": "{0DF75B4E-B61E-44A1-8011-43516292EEA8}",
+      "Color": "19"
+     },
+     {
       "Id": "1551306167",
       "Name": "UI",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\UI_WU\\UI",
@@ -84,10 +126,24 @@
       "Color": "11"
      },
      {
+      "Id": "1552412047",
+      "Name": "Attacks_Nahagame",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\Attacks_Nahagame",
+      "GUID": "{D53F54D5-A340-4368-9836-DB063735BCDA}",
+      "Color": "19"
+     },
+     {
       "Id": "1560169506",
       "Name": "BOSS",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS",
       "GUID": "{42479D79-8773-43FC-ACF1-7C77AA24F8AF}",
+      "Color": "19"
+     },
+     {
+      "Id": "1566882829",
+      "Name": "FT_Krampus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus\\FT_Krampus",
+      "GUID": "{38D1E1D3-F252-4FA7-96F9-AF300C6A91CC}",
       "Color": "19"
      },
      {
@@ -105,6 +161,13 @@
       "Color": "8"
      },
      {
+      "Id": "2154073102",
+      "Name": "Yule",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule",
+      "GUID": "{AED6CF8E-EDDD-4E6E-A43E-8092CEC77216}",
+      "Color": "19"
+     },
+     {
       "Id": "2246998526",
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
@@ -118,11 +181,25 @@
       "Color": "8"
      },
      {
+      "Id": "2285774913",
+      "Name": "PRES_Krampus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus\\PRES_Krampus",
+      "GUID": "{7A38378D-F8E6-4C21-8D70-E0BFE66D2678}",
+      "Color": "19"
+     },
+     {
       "Id": "2385628198",
       "Name": "Footsteps",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps",
       "GUID": "{99DB3CF4-D517-4DFC-9646-70FA083F4D8D}",
       "Color": "8"
+     },
+     {
+      "Id": "2749025162",
+      "Name": "PRES_Nahagame",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\PRES_Nahagame",
+      "GUID": "{D1FBEB69-BE8D-446C-9F23-22288C67C8A1}",
+      "Color": "19"
      },
      {
       "Id": "2901498470",
@@ -172,6 +249,13 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_MUS_WU\\Master_MUS",
       "GUID": "{65AC121D-EF98-4BC5-959E-FEECE4C4E97E}",
       "Color": "16"
+     },
+     {
+      "Id": "4114299389",
+      "Name": "PRES_Yule",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule\\PRES_Yule",
+      "GUID": "{6841CCE9-7B7B-449B-8BBB-933DCFF904A9}",
+      "Color": "19"
      }
     ],
     "AuxBusses": [
@@ -188,6 +272,29 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_2",
       "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
       "Color": "1"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "424266135",
+      "Name": "RTPC_VolumeMaster",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeMaster",
+      "GUID": "{66281E71-F09D-4CBE-8429-27A3A2D4F1EF}",
+      "Color": "11"
+     },
+     {
+      "Id": "3047961690",
+      "Name": "RTPC_VolumeMUS",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeMUS",
+      "GUID": "{595C786D-06BF-4EB1-8C44-B7366784C3CD}",
+      "Color": "11"
+     },
+     {
+      "Id": "3270307726",
+      "Name": "RTPC_VolumeSFX",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeSFX",
+      "GUID": "{5CAD7533-91A8-4AA4-8638-33D7C772477B}",
+      "Color": "11"
      }
     ],
     "AcousticTextures": [
@@ -669,6 +776,6 @@
     ]
    }
   ],
-  "FileHash": "{1DB66B2C-1621-E1AE-B3DB-FAEFEA53AD69}"
+  "FileHash": "{0E0DB446-3B30-C539-5FCB-215AB41ED7D4}"
  }
 }

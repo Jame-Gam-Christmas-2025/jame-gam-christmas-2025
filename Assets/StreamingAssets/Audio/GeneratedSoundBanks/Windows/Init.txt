@@ -1,17 +1,33 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	424266135	RTPC_VolumeMaster			\Default Work Unit\UI_WU\RTPC_VolumeMaster	
+	3047961690	RTPC_VolumeMUS			\Default Work Unit\UI_WU\RTPC_VolumeMUS	
+	3270307726	RTPC_VolumeSFX			\Default Work Unit\UI_WU\RTPC_VolumeSFX	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	119136829	Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences	
 	180661997	Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Attack	
+	327602828	Attacks_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\Attacks_Yule	
+	361833422	FT_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\FT_Nahagame	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\SFX_WU\SFX	
+	496251272	Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus	
 	712161704	Run			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\Run	
+	738454910	Attacks_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\Attacks_Krampus	
+	786071385	Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame	
 	1117531639	AMB			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB	
 	1202187523	Master_SD			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD	
+	1342630121	FT_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\FT_Yule	
 	1551306167	UI			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\UI_WU\UI	
+	1552412047	Attacks_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\Attacks_Nahagame	
 	1560169506	BOSS			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS	
+	1566882829	FT_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\FT_Krampus	
 	1685527061	MC			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC	
 	2108779966	Walk			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\Walk	
+	2154073102	Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2275900680	PRS_Jumps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Jumps	
+	2285774913	PRES_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\PRES_Krampus	
 	2385628198	Footsteps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps	
+	2749025162	PRES_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\PRES_Nahagame	
 	2901498470	FT_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Attack	
 	3094890996	FT_Lands			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Lands	
 	3242069405	FT_Jumps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps\FT_Jumps	
@@ -19,6 +35,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3575123633	PRS_Lands			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Lands	
 	3816827997	PRS_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Attack	
 	3944324759	Master_MUS			\Default Work Unit\Main Audio Bus\Master_MUS_WU\Master_MUS	
+	4114299389	PRES_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\PRES_Yule	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3043617852	REV_1			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_1	

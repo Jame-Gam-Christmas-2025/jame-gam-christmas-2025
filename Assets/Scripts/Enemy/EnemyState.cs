@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using ImpactFrameSystem;
+using UnityEngine.Events;
 
 public class EnemyState : MonoBehaviour, IDamageable
 {
@@ -8,6 +9,7 @@ public class EnemyState : MonoBehaviour, IDamageable
     [Header("Settings")]
     [SerializeField] private float _deathDelay = 0.3f;
     [SerializeField] private float _maxHealth = 50f;
+    public UnityEvent OnDeath;
 
     [Header("Impact Frame Settings")]
     [SerializeField] private float _impactDuration = 2f;
@@ -50,7 +52,7 @@ public class EnemyState : MonoBehaviour, IDamageable
         
         yield return new WaitForSeconds(_deathDelay);
 
-        
+        OnDeath?.Invoke();
         Destroy(gameObject);
     }
 

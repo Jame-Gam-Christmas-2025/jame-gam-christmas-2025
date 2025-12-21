@@ -18,6 +18,7 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private float _projectileDamage = 15f;
     [SerializeField] private float _projectileSelfDamage = 5f;
 
+    private bool _canAttack = true;
     private int _currentComboIndex = 0;
     private int _attackIndexForDamage = 0;
     private bool _isAttacking = false;

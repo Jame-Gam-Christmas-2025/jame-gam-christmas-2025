@@ -5,7 +5,10 @@ public class TestInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject _interactionWorldUI;
 
-    
+    [Header("Dialogue")]
+    [SerializeField] private DialogueData dialogue;
+    [SerializeField] private Sprite avatar;
+    [SerializeField] private string npcName;
 
 
     private void Awake()
@@ -21,8 +24,13 @@ public class TestInteractable : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("You are interacting");
-        
-        
+
+        Debug.Log($"Interacting with: {name}");
+        DialogueView dialogueView = FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include);
+        if(dialogueView != null)
+        {
+            dialogueView.StartNewDialogue(dialogue, avatar, npcName);
+        }
     }
 
     public void OnInteractionAvailable()
