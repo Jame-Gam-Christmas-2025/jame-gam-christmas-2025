@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 91268554806268071}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18110514, y: -0.072607696, z: 0.013408571, w: 0.98068815}
-  m_LocalPosition: {x: 0.45499003, y: 2.5527792, z: -4.9300246}
+  m_LocalPosition: {x: 0.16499001, y: 4.772779, z: -10.177375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,8 +268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607559414573986702}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.057844695, y: 0.04523322, z: -0.0026235941, w: 0.99729687}
-  m_LocalPosition: {x: -0.25501, y: 1.42925, z: -0.1614399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.54501, y: 3.64925, z: -5.40879}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336,10 +336,10 @@ MonoBehaviour:
   CameraSide: 0
   CameraDistance: 0
   AvoidObstacles:
-    Enabled: 1
+    Enabled: 0
     CollisionFilter:
       serializedVersion: 2
-      m_Bits: 512
+      m_Bits: 0
     IgnoreTag: 
     CameraRadius: 0.2
     DampingIntoCollision: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineGroupFraming
   FramingMode: 2
-  FramingSize: 0.08
+  FramingSize: 0.47
   CenterOffset: {x: 0, y: 0}
   Damping: 0
   SizeAdjustment: 2
@@ -407,8 +407,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2512720568439984315}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.057844695, y: 0.04523322, z: -0.0026235941, w: 0.99729687}
-  m_LocalPosition: {x: -0.85790753, y: 2.2044349, z: -6.794075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.54501, y: 2.9292498, z: -7.5364447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -447,7 +447,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 89.99906
+  field of view: 90.00013
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -489,7 +489,7 @@ MonoBehaviour:
     DefaultMode: 2
   DefaultBlend:
     Style: 1
-    Time: 2
+    Time: 0.1
     CustomCurve:
       serializedVersion: 2
       m_Curve: []
