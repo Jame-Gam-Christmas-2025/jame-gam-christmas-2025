@@ -42,12 +42,12 @@ public class PlayerCombatController : MonoBehaviour
     private bool _hasQueuedInput = false;
     private Coroutine _comboResetCoroutine;
 
-    void Start()
+    private void Start()
     {
         _weaponHitbox.SetOwner(gameObject);
     }
 
-    void Update()
+    private void Update()
     {
         // Traiter l'input en queue uniquement si on n'attaque plus
         if (_hasQueuedInput && !_isAttacking)
@@ -57,8 +57,20 @@ public class PlayerCombatController : MonoBehaviour
         }
     }
 
+    public void EnableAttack()
+    {
+        _canAttack = true;
+    }
+
+    public void DisableAttack()
+    {
+        _canAttack = false;
+    }
+
     public void OnLightAttack(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        if (!_canAttack) return;
+
         // Ne traiter que le moment du press, pas le hold
         if (!context.performed) return;
 
@@ -78,6 +90,8 @@ public class PlayerCombatController : MonoBehaviour
 
     public void OnRangedAttack(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        if (!_canAttack) return;
+
         if (!context.performed) return;
         if (_isAttacking) return;
 
@@ -118,6 +132,8 @@ public class PlayerCombatController : MonoBehaviour
     
     private void PerformAttack()
     {
+        if (!_canAttack) return;
+
         _isAttacking = true;
         _attackIndexForDamage = _currentComboIndex;
 

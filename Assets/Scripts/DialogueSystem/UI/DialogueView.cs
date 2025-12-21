@@ -30,6 +30,7 @@ namespace UI
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
         private PlayerInteractor _playerInteractor;
+        private PlayerCombatController _playerCombatController;
 
         // Dialogue animation variables
         private Coroutine _textAnimCoroutine;
@@ -49,7 +50,10 @@ namespace UI
 
         private void Initialize()
         {
-            _playerInteractor = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteractor>();
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            _playerInteractor = player.GetComponent<PlayerInteractor>();
+            _playerCombatController = player.GetComponent<PlayerCombatController>();
 
             _initialized = true;
         }
@@ -64,8 +68,11 @@ namespace UI
 
             Cursor.lockState = CursorLockMode.None;
 
+            // Disable interaction, combat and movement
             _playerInteractor.DisableInteraction();
+            _playerCombatController.DisableAttack();
 
+            // Show UI
             gameObject.SetActive(true);
         }
 
@@ -76,8 +83,11 @@ namespace UI
         {
             Cursor.lockState = CursorLockMode.Locked;
 
+            // Enable interaction, combat and movement
             _playerInteractor.EnableInteraction();
+            _playerCombatController.EnableAttack();
 
+            // Hide UI
             gameObject.SetActive(false);
         }
 
