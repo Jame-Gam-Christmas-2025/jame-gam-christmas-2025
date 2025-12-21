@@ -15,7 +15,11 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
         static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
+        static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
+        static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
+        static const AkUniqueID PLAY_MC_PRESENCES_WALK = 3206799055U;
+        static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -96,7 +100,9 @@ namespace AK
         static const AkUniqueID ATTACKS_NAHAGAME = 1552412047U;
         static const AkUniqueID ATTACKS_YULE = 327602828U;
         static const AkUniqueID BOSS = 1560169506U;
-        static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID FOL_MC_FOOTSTEPS = 3692117971U;
+        static const AkUniqueID FOL_MC_PRESENCES = 1773447876U;
+        static const AkUniqueID FOL_MC_ROLL = 2268577727U;
         static const AkUniqueID FT_KRAMPUS = 1566882829U;
         static const AkUniqueID FT_NAHAGAME = 361833422U;
         static const AkUniqueID FT_YULE = 1342630121U;
@@ -109,10 +115,6 @@ namespace AK
         static const AkUniqueID PRES_KRAMPUS = 2285774913U;
         static const AkUniqueID PRES_NAHAGAME = 2749025162U;
         static const AkUniqueID PRES_YULE = 4114299389U;
-        static const AkUniqueID PRESENCES = 119136829U;
-        static const AkUniqueID PRS_ATTACK = 3816827997U;
-        static const AkUniqueID PRS_JUMPS = 2275900680U;
-        static const AkUniqueID PRS_LANDS = 3575123633U;
         static const AkUniqueID REVERBS = 3545700988U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID SFX_MC_ATTACK = 854716996U;

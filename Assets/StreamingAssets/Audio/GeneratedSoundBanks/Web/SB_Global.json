@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{27055497-4241-B7D8-FFB4-F46426DB1E23}",
+    "Hash": "{4D6ECAEF-49EC-8B9D-C931-42FEA87D412A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -41,6 +41,14 @@
       "CachePath": "AC/{ACE5A56A-B554-7AF4-6EBA-B1D9069BF82F}.wem"
      },
      {
+      "Id": "95403465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_11.wav",
+      "CachePath": "BA/{BAE67965-B5FD-28A4-7209-82222DA91494}.wem"
+     },
+     {
       "Id": "109995337",
       "Language": "SFX",
       "Streaming": "false",
@@ -65,6 +73,22 @@
       "CachePath": "5A/{5A6F01FB-26E0-098D-5CF4-D49DE99DC91B}.wem"
      },
      {
+      "Id": "172412349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_01.wav",
+      "CachePath": "BA/{BAE6E5D5-C082-F2A6-5C89-17200A2BC1BA}.wem"
+     },
+     {
+      "Id": "183270401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_04.wav",
+      "CachePath": "19/{191FFF0E-698A-D0C9-0074-459AC0F9902C}.wem"
+     },
+     {
       "Id": "190120119",
       "Language": "SFX",
       "Streaming": "false",
@@ -73,12 +97,28 @@
       "CachePath": "76/{76735C7A-F814-B567-E3CE-85951DC0D208}.wem"
      },
      {
+      "Id": "225381729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_01.wav",
+      "CachePath": "9B/{9B8F2DC2-CCCC-2192-5BFD-1AD4BD919F58}.wem"
+     },
+     {
       "Id": "271533246",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunConcrete_08.wav",
       "CachePath": "75/{754164E9-023D-1E62-E10B-1F9E49B8CE80}.wem"
+     },
+     {
+      "Id": "280841403",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_03.wav",
+      "CachePath": "DF/{DF9147F8-63F4-02EE-D6A6-B40DD4648E22}.wem"
      },
      {
       "Id": "310087946",
@@ -97,12 +137,36 @@
       "CachePath": "1E/{1EEA401D-A70A-5E82-6856-EBF946A67BEF}.wem"
      },
      {
+      "Id": "344997668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_01.wav",
+      "CachePath": "DA/{DA71394C-C70C-FCF9-1E28-6638FA06823F}.wem"
+     },
+     {
+      "Id": "353540037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_02.wav",
+      "CachePath": "BD/{BD45A523-F805-6B4B-CE6E-3CDA308EF148}.wem"
+     },
+     {
       "Id": "360482745",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunConcrete_15.wav",
       "CachePath": "52/{52587984-6327-284C-1778-CC5922107760}.wem"
+     },
+     {
+      "Id": "367277238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_05.wav",
+      "CachePath": "11/{11F370D5-CD15-3385-0BB9-FC4AA42CFCD6}.wem"
      },
      {
       "Id": "372312143",
@@ -113,12 +177,28 @@
       "CachePath": "4C/{4C78A4AD-B36B-5929-4104-209B0E2AB194}.wem"
      },
      {
+      "Id": "372468713",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_02.wav",
+      "CachePath": "2A/{2A1479BA-6589-7B85-EAB3-7EC9E4A85862}.wem"
+     },
+     {
       "Id": "411207177",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkConcrete_15.wav",
       "CachePath": "EC/{EC8FA999-DD53-E9DF-B864-95AE0F02DFF7}.wem"
+     },
+     {
+      "Id": "427882681",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_07.wav",
+      "CachePath": "AF/{AF487927-169C-2EF5-6788-3C5831C15E92}.wem"
      },
      {
       "Id": "446808271",
@@ -137,6 +217,22 @@
       "CachePath": "EE/{EE15B4BB-B5BB-A6FC-C722-0C296E980280}.wem"
      },
      {
+      "Id": "508848196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_05.wav",
+      "CachePath": "17/{17F96874-3956-C2AC-17F3-338277683FE5}.wem"
+     },
+     {
+      "Id": "511596542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_04.wav",
+      "CachePath": "68/{6850ED40-1B90-AAE5-AFB4-E1A7A0A5B5FC}.wem"
+     },
+     {
       "Id": "524863978",
       "Language": "SFX",
       "Streaming": "false",
@@ -145,12 +241,44 @@
       "CachePath": "65/{65747A8F-8335-41F0-77FD-EBB96BDF1F26}.wem"
      },
      {
+      "Id": "530854242",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_01.wav",
+      "CachePath": "75/{755415BA-49FA-E394-D2C5-DECB44BB8810}.wem"
+     },
+     {
+      "Id": "550225039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_06.wav",
+      "CachePath": "AA/{AA364ECF-2ED4-01FC-E73C-E808758342F6}.wem"
+     },
+     {
+      "Id": "570903100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_04.wav",
+      "CachePath": "41/{41D1161B-63FD-24EF-FEF7-8BB67D7FA04D}.wem"
+     },
+     {
       "Id": "607893173",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunConcrete_07.wav",
       "CachePath": "A8/{A8912ED6-BE1A-DA38-5B7F-4FD107F0F422}.wem"
+     },
+     {
+      "Id": "625548551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_03.wav",
+      "CachePath": "65/{6520F371-9313-3586-8CAE-204AADA448A4}.wem"
      },
      {
       "Id": "625851457",
@@ -177,12 +305,28 @@
       "CachePath": "7C/{7C09501A-DBDA-6090-0D9F-B65869BBD157}.wem"
      },
      {
+      "Id": "680860104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_08.wav",
+      "CachePath": "3F/{3F1167CF-DA6C-0AFE-028C-649BC47DAC20}.wem"
+     },
+     {
       "Id": "710604565",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunConcrete_02.wav",
       "CachePath": "B7/{B7FE90E8-5813-B54A-82D5-3C3519C02721}.wem"
+     },
+     {
+      "Id": "720550314",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_02.wav",
+      "CachePath": "E8/{E812B04C-E486-BEED-41B7-467BF913AED8}.wem"
      },
      {
       "Id": "727572224",
@@ -215,6 +359,22 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkConcrete_11.wav",
       "CachePath": "60/{60BBB1D0-FF0F-47E0-B897-599B0C3A2B24}.wem"
+     },
+     {
+      "Id": "806877309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_03.wav",
+      "CachePath": "37/{372C3490-7A02-630F-8338-ACA086338C8D}.wem"
+     },
+     {
+      "Id": "836707253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_04.wav",
+      "CachePath": "79/{79641836-4A65-B2F3-E0E5-FD6E788371E0}.wem"
      },
      {
       "Id": "850160418",
@@ -281,12 +441,36 @@
       "CachePath": "B2/{B2BB6A57-91CE-5720-25D8-EEFDB13EB159}.wem"
      },
      {
+      "Id": "979592972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_05.wav",
+      "CachePath": "0A/{0A3AFCF4-B556-E3E0-F165-3F44C0148A8E}.wem"
+     },
+     {
       "Id": "983377634",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunConcrete_03.wav",
       "CachePath": "49/{4967E3EE-0ABF-852E-65DD-2437B783039B}.wem"
+     },
+     {
+      "Id": "1005721163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_10.wav",
+      "CachePath": "34/{34253375-FA8A-7F71-0ABE-D247174D3179}.wem"
+     },
+     {
+      "Id": "1016620596",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_09.wav",
+      "CachePath": "8F/{8FDE88D4-454B-D4AF-5CA6-A71B8A362B5F}.wem"
      },
      {
       "Id": "1021483769",
@@ -297,12 +481,36 @@
       "CachePath": "30/{3007D091-9064-6B22-1537-D26463B92CF8}.wem"
      },
      {
+      "Id": "1023270544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_02.wav",
+      "CachePath": "F0/{F0A59BAE-8DE7-CEAA-E520-95D296A9B58C}.wem"
+     },
+     {
       "Id": "1035052216",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_Walk_Leaf_01.wav",
       "CachePath": "E8/{E8DF84CD-F5A9-8EA5-B98F-00B229AE90AB}.wem"
+     },
+     {
+      "Id": "1038722288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_05.wav",
+      "CachePath": "7A/{7AD4661D-C11F-52C9-F391-756230BB8E00}.wem"
+     },
+     {
+      "Id": "1043558583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_03.wav",
+      "CachePath": "F8/{F8575770-6159-0D50-8123-369D9DABCED6}.wem"
      },
      {
       "Id": "1058650070",
@@ -314,6 +522,168 @@
      }
     ],
     "Events": [
+     {
+      "Id": "1271315640",
+      "Name": "Play_MC_AttackHitEnemy",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_AttackHitEnemy",
+      "GUID": "{66054A71-245A-4DAC-A873-1130A62BDDE9}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.53333336",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "2734195228",
+         "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+         "Color": "8",
+         "Default": "true"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "295887543",
+           "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "2506029772",
+           "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "397687435",
+           "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "1907146023",
+         "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+         "Color": "8"
+        },
+        "Children": []
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "3302953275",
+         "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+         "Color": "8"
+        },
+        "Children": []
+       }
+      ]
+     },
+     {
+      "Id": "1852516592",
+      "Name": "Play_MC_Attacks",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Attacks",
+      "GUID": "{F9770724-7F4B-429E-8264-41DAE00CBF1E}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.4362031",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "2734195228",
+         "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+         "Color": "8",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "183270401"
+         },
+         {
+          "Id": "508848196"
+         },
+         {
+          "Id": "530854242"
+         },
+         {
+          "Id": "720550314"
+         },
+         {
+          "Id": "806877309"
+         }
+        ]
+       }
+      ]
+     },
      {
       "Id": "2368357634",
       "Name": "Play_MC_Footsteps",
@@ -515,6 +885,78 @@
         "Children": []
        }
       ]
+     },
+     {
+      "Id": "3206799055",
+      "Name": "Play_MC_Presences_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Presences_Walk",
+      "GUID": "{F2D535F3-4D34-4D43-8994-8DFF386DC004}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.39167145",
+      "DurationMax": "0.7453135",
+      "MediaRefs": [
+       {
+        "Id": "95403465"
+       },
+       {
+        "Id": "225381729"
+       },
+       {
+        "Id": "367277238"
+       },
+       {
+        "Id": "427882681"
+       },
+       {
+        "Id": "550225039"
+       },
+       {
+        "Id": "570903100"
+       },
+       {
+        "Id": "625548551"
+       },
+       {
+        "Id": "680860104"
+       },
+       {
+        "Id": "1005721163"
+       },
+       {
+        "Id": "1016620596"
+       },
+       {
+        "Id": "1023270544"
+       }
+      ]
+     },
+     {
+      "Id": "1213444204",
+      "Name": "Play_MC_Roll",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Roll",
+      "GUID": "{A1B11F64-0636-4FA0-A855-2A95C4F3F96B}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "1.302479",
+      "DurationMax": "1.7657719",
+      "MediaRefs": [
+       {
+        "Id": "280841403"
+       },
+       {
+        "Id": "344997668"
+       },
+       {
+        "Id": "372468713"
+       },
+       {
+        "Id": "836707253"
+       },
+       {
+        "Id": "979592972"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -544,6 +986,36 @@
         "Name": "SW_FT_Snow",
         "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Snow",
         "GUID": "{DB88FFE9-2BD9-4602-A835-00A93B5358DE}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "2119059778",
+      "Name": "SW_MC_TypeOfEnemy",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy",
+      "GUID": "{72CE13B6-FA40-49AB-A207-B7DCD2A186B2}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "295887543",
+        "Name": "SW_MC_HitYule",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitYule",
+        "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+        "Color": "8"
+       },
+       {
+        "Id": "397687435",
+        "Name": "SW_MC_HitKrampus",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitKrampus",
+        "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2506029772",
+        "Name": "SW_MC_HitNahagame",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitNahagame",
+        "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
         "Color": "8"
        }
       ]
@@ -584,10 +1056,40 @@
         "Color": "8"
        }
       ]
+     },
+     {
+      "Id": "4054447005",
+      "Name": "SW_MC_TypeOfAttackHit",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit",
+      "GUID": "{DDEF692F-689F-4653-A4AD-1578D21FDC8B}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "1907146023",
+        "Name": "SW_MC_AttackDistanceHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackDistanceHit",
+        "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+        "Color": "8"
+       },
+       {
+        "Id": "2734195228",
+        "Name": "SW_MC_AttackMeleeLightHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeLightHit",
+        "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+        "Color": "8"
+       },
+       {
+        "Id": "3302953275",
+        "Name": "SW_MC_AttackMeleeHeavyHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeHeavyHit",
+        "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+        "Color": "8"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{6FE4E081-DE5D-8910-0C28-F39875D416C8}"
+  "FileHash": "{31F16087-3461-62F5-851F-D4264724D55A}"
  }
 }

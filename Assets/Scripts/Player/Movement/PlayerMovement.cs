@@ -20,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
 
+    [Header("MC_Presences_Walk")] 
+    public AK.Wwise.Event MC_Presences_Walk;
+    
+    [Header("FOL_MC_Roll")] 
+    public AK.Wwise.Event PlayFOL_MC_Roll;
+    
     [Header("MC_Footsteps")] 
     public AK.Wwise.Event MC_Footsteps;
     
@@ -52,6 +58,16 @@ public class PlayerMovement : MonoBehaviour
 
         // Event
         MC_Footsteps.Post(gameObject);
+    }
+
+    public void PlayPresences_Walk()
+    {
+        MC_Presences_Walk.Post(gameObject);
+    }
+    
+    public void FOL_MC_Roll()
+    {
+        PlayFOL_MC_Roll.Post(gameObject);
     }
 
  

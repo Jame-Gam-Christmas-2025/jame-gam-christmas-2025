@@ -7,7 +7,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3270307726	RTPC_VolumeSFX			\Default Work Unit\UI_WU\RTPC_VolumeSFX	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	119136829	Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences	
 	327602828	Attacks_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\Attacks_Yule	
 	361833422	FT_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\FT_Nahagame	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\SFX_WU\SFX	
@@ -24,15 +23,14 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1560169506	BOSS			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS	
 	1566882829	FT_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\FT_Krampus	
 	1685527061	MC			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC	
+	1773447876	FOL_MC_Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Presences	
 	2154073102	Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
-	2275900680	PRS_Jumps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Jumps	
+	2268577727	FOL_MC_Roll			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Roll	
 	2285774913	PRES_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\PRES_Krampus	
-	2385628198	Footsteps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Footsteps	
 	2749025162	PRES_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\PRES_Nahagame	
 	3545700988	Reverbs			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs	
-	3575123633	PRS_Lands			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Lands	
-	3816827997	PRS_Attack			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\Presences\PRS_Attack	
+	3692117971	FOL_MC_Footsteps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Footsteps	
 	3944324759	Master_MUS			\Default Work Unit\Main Audio Bus\Master_MUS_WU\Master_MUS	
 	4114299389	PRES_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\PRES_Yule	
 
