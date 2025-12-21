@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AAB9718D-83D2-9CA2-62FA-2D2C4046534D}",
+    "Hash": "{A8AC8014-8AAD-0AB4-2EE4-1846CE87B84F}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -144,6 +144,13 @@
       "Name": "MC",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC",
       "GUID": "{D766127C-9D69-4A40-B6D4-2F23C70AA2CD}",
+      "Color": "8"
+     },
+     {
+      "Id": "1743438368",
+      "Name": "SFX_MC_Player_TakeDamage",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Player_TakeDamage",
+      "GUID": "{FC8EC863-4435-4B1F-B2B7-50D74EDBB7F7}",
       "Color": "8"
      },
      {
@@ -863,6 +870,6 @@
     ]
    }
   ],
-  "FileHash": "{9B5AB663-FAD0-91E8-1CAE-0A6F5A37DB23}"
+  "FileHash": "{8E7451B0-9BF2-256F-9F65-B15F6F489E75}"
  }
 }

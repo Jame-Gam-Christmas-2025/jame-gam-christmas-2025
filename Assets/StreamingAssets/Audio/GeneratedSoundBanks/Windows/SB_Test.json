@@ -11,7 +11,7 @@
     "GUID": "{98A7620B-1BE0-4051-B7A1-81F1E6963177}",
     "Color": "26",
     "Language": "SFX",
-    "Hash": "{419A9FA3-7DD7-4BFC-A1B7-8E1195E1912E}",
+    "Hash": "{FF4F7F95-8226-46C9-1A58-2356A0898469}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Test",
     "ShortName": "SB_Test",
     "Path": "SB_Test.bnk",
@@ -153,6 +153,13 @@
       "Color": "8"
      },
      {
+      "Id": "1743438368",
+      "Name": "SFX_MC_Player_TakeDamage",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Player_TakeDamage",
+      "GUID": "{FC8EC863-4435-4B1F-B2B7-50D74EDBB7F7}",
+      "Color": "8"
+     },
+     {
       "Id": "1773447876",
       "Name": "FOL_MC_Presences",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Presences",
@@ -263,6 +270,6 @@
     ]
    }
   ],
-  "FileHash": "{7E23EDE7-9F01-FED7-10FE-800FE6C7B94A}"
+  "FileHash": "{EE8173F5-18F0-18FF-5801-2F277C465CA7}"
  }
 }

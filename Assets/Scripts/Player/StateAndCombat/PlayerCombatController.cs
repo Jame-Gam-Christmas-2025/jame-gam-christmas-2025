@@ -20,7 +20,13 @@ public class PlayerCombatController : MonoBehaviour
     
     [Header("SFX_MC_Attack")]
     public AK.Wwise.Event Play_MC_Attacks;
+    
+    [Header("SFX_MC_TakeDamage")]
+    public AK.Wwise.Event Play_MC_TakeDamage;
 
+    [Header("SFX_MC_AttackHitEnemy")]
+    public AK.Wwise.Event Play_SFX_MC_AttackHitEnemy;
+    
     [Header("Switch_MC_AttackType")]
     public AK.Wwise.Switch SW_MC_Attack_Light;
     public AK.Wwise.Switch SW_MC_Attack_Heavy;
@@ -38,11 +44,6 @@ public class PlayerCombatController : MonoBehaviour
     void Start()
     {
         _weaponHitbox.SetOwner(gameObject);
-        
-        if (showDebugLogs)
-        {
-            Debug.Log("PlayerCombatController initialized");
-        }
     }
 
     void Update()
@@ -50,11 +51,6 @@ public class PlayerCombatController : MonoBehaviour
         // Traiter l'input en queue uniquement si on n'attaque plus
         if (_hasQueuedInput && !_isAttacking)
         {
-            if (showDebugLogs)
-            {
-                Debug.Log("Processing queued input");
-            }
-            
             _hasQueuedInput = false;
             PerformAttack();
         }
@@ -65,22 +61,12 @@ public class PlayerCombatController : MonoBehaviour
         // Ne traiter que le moment du press, pas le hold
         if (!context.performed) return;
 
-        if (showDebugLogs)
-        {
-            Debug.Log($"OnLightAttack: _isAttacking={_isAttacking}, _hasQueuedInput={_hasQueuedInput}");
-        }
-
         // Si on attaque déjà, mettre en queue
         if (_isAttacking)
         {
             if (!_hasQueuedInput)
             {
                 _hasQueuedInput = true;
-                
-                if (showDebugLogs)
-                {
-                    Debug.Log("Input queued for combo");
-                }
             }
             return;
         }
@@ -93,11 +79,6 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (!context.performed) return;
         if (_isAttacking) return;
-
-        if (showDebugLogs)
-        {
-            Debug.Log("Performing ranged attack");
-        }
 
         _animator.SetTrigger("RangedAttack");
         _isAttacking = true;
@@ -114,13 +95,12 @@ public class PlayerCombatController : MonoBehaviour
     {
         // Le switch est déjà set dans PerformAttack(), donc on poste juste l'event
         Play_MC_Attacks.Post(gameObject);
-        
-        if (showDebugLogs)
-        {
-            Debug.Log($"Melee attack sound played - ComboIndex: {_attackIndexForDamage}");
-        }
     }
     
+    public void SFX_MC_TakeDamage()
+    {
+        Play_MC_TakeDamage.Post(gameObject);
+    }
     /// <summary>
     /// Called by Animation Event - Play ranged attack sound
     /// </summary>
@@ -128,27 +108,15 @@ public class PlayerCombatController : MonoBehaviour
     {
         SW_MC_Attack_Distance.SetValue(gameObject);
         Play_MC_Attacks.Post(gameObject);
-        
-        if (showDebugLogs)
-        {
-            Debug.Log("Ranged attack sound played");
-        }
     }
 
+    public void SFX_MC_AttackHitEnemy()
+    {
+        Play_SFX_MC_AttackHitEnemy.Post(gameObject);
+    }
+    
     private void PerformAttack()
     {
-        // PROTECTION : Bloquer si déjà en train d'attaquer
-        if (_isAttacking)
-        {
-            Debug.LogWarning("⚠️ PerformAttack called while already attacking! BLOCKED to prevent loop.");
-            return;
-        }
-
-        if (showDebugLogs)
-        {
-            Debug.Log($"PerformAttack called - ComboIndex: {_currentComboIndex}");
-        }
-
         _isAttacking = true;
         _attackIndexForDamage = _currentComboIndex;
 
@@ -186,35 +154,16 @@ public class PlayerCombatController : MonoBehaviour
                 SW_MC_Attack_Light.SetValue(gameObject);
                 break;
         }
-
-        // NOTE: Le son sera joué par l'Animation Event AE_PlayMeleeAttackSound()
-        // Ne PAS poster l'event ici pour avoir le timing exact avec l'animation
     }
 
     private IEnumerator ComboResetTimer(float delay)
     {
-        if (showDebugLogs)
-        {
-            Debug.Log($"Combo reset timer started: {delay}s");
-        }
-        
         yield return new WaitForSeconds(delay);
-        
-        if (showDebugLogs)
-        {
-            Debug.Log("Combo reset timer expired - resetting combo");
-        }
-        
         ResetCombo();
     }
 
     private void ResetCombo()
     {
-        if (showDebugLogs)
-        {
-            Debug.Log("=== COMBO RESET ===");
-        }
-        
         _currentComboIndex = 0;
         _isAttacking = false;
         _hasQueuedInput = false;
@@ -226,33 +175,42 @@ public class PlayerCombatController : MonoBehaviour
     {
         float damage = _comboDamages[_attackIndexForDamage];
         _weaponHitbox.SetDamage(damage);
+    
+        // Set attack type based on combo index
+        string attackType = "Light";
+        switch (_attackIndexForDamage)
+        {
+            case 0:
+            case 1:
+                attackType = "Light";
+                break;
+            case 2:
+                attackType = "Heavy";
+                break;
+        }
+    
+        // IMPORTANT: Set attack type BEFORE enabling hitbox
+        _weaponHitbox.SetAttackType(attackType);
         _weaponHitbox.EnableHitbox();
-        
+    
         if (showDebugLogs)
         {
-            Debug.Log($"Weapon hitbox enabled - Damage: {damage}");
+            Debug.Log($"Weapon hitbox enabled - Damage: {damage}, Type: {attackType}");
         }
+        //float damage = _comboDamages[_attackIndexForDamage];
+        //_weaponHitbox.SetDamage(damage);
+        //_weaponHitbox.EnableHitbox();
     }
 
     // Called by Animation Event
     public void DisableWeaponHitbox()
     {
         _weaponHitbox.DisableHitbox();
-        
-        if (showDebugLogs)
-        {
-            Debug.Log("Weapon hitbox disabled");
-        }
     }
 
     // Called by Animation Event - MUST be at the END of attack animation
     public void OnAttackAnimationEnd()
     {
-        if (showDebugLogs)
-        {
-            Debug.Log($"=== OnAttackAnimationEnd === HasQueuedInput: {_hasQueuedInput}, ComboIndex: {_currentComboIndex}");
-        }
-        
         _isAttacking = false;
 
         // Si pas d'input en queue, démarrer le timer de reset
@@ -271,11 +229,6 @@ public class PlayerCombatController : MonoBehaviour
             // Si on dépasse le nombre d'attaques, reset
             if (_currentComboIndex >= _comboDamages.Length)
             {
-                if (showDebugLogs)
-                {
-                    Debug.Log("Combo finished - resetting to 0");
-                }
-                
                 _currentComboIndex = 0;
                 _hasQueuedInput = false;
             }
@@ -292,11 +245,6 @@ public class PlayerCombatController : MonoBehaviour
     // Called by Animation Event
     public void OnRangedAttackAnimationEnd()
     {
-        if (showDebugLogs)
-        {
-            Debug.Log("Ranged attack animation ended");
-        }
-        
         _isAttacking = false;
     }
 
@@ -321,11 +269,6 @@ public class PlayerCombatController : MonoBehaviour
             if (projectileController != null)
             {
                 projectileController.Initialize(_projectileDamage, gameObject, _projectilePool);
-            }
-            
-            if (showDebugLogs)
-            {
-                Debug.Log("Projectile spawned");
             }
         }
     }

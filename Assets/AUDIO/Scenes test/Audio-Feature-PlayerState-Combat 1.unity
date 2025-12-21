@@ -386,6 +386,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9cdaa3b18d52af94b8360793f4a5ff16, type: 2}
     - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: MC_Presences_Action.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 984931a929d42e643bd57850fa6b5118, type: 2}
+    - target: {fileID: 6411020061383149294, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: SW_Surface_Concrete.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 313ff7b5b644a3f42b670530c96ae1f2, type: 2}
@@ -1895,6 +1899,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f37600feda4b47acd4f2e86856532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHitbox
+  Play_Attack_Hit_Enemy:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
+  SW_MC_AttackMeleeLightHit:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6249c5d333e27b04186dda6007d04478, type: 2}
+  SW_MC_AttackMeleeHeavyHit:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c71d6c8bebe31644ba3bd20d34bbe9c7, type: 2}
 --- !u!136 &1074730464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2612,6 +2632,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7d825ccc918412c449f650950d1f9767, type: 2}
+  Play_MC_TakeDamage:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ea2c6d4041105254c89459dc0080bf54, type: 2}
+  Play_SFX_MC_AttackHitEnemy:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
   SW_MC_Attack_Light:
     idInternal: 0
     valueGuidInternal: 
@@ -2695,6 +2723,14 @@ PrefabInstance:
       propertyPath: _launchDelay
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6302182420285377979, guid: c486e549086e14e429e88e98b9a255b4, type: 3}
+      propertyPath: Play_Attack_Hit_Enemy.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a45a46e01d5332f45aaab6f6d9375007, type: 2}
+    - target: {fileID: 6302182420285377979, guid: c486e549086e14e429e88e98b9a255b4, type: 3}
+      propertyPath: SW_MC_AttackDistanceHit.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e60b28c695f0a6a4bb07fd6361b52d9d, type: 2}
     - target: {fileID: 8024364672713723499, guid: c486e549086e14e429e88e98b9a255b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000059127808

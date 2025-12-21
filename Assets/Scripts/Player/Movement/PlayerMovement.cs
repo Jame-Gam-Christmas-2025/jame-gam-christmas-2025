@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("MC_Presences_Walk")] 
     public AK.Wwise.Event MC_Presences_Walk;
     
+    [Header("MC_Presences_Action")] 
+    public AK.Wwise.Event MC_Presences_Action;
+    
     [Header("FOL_MC_Roll")] 
     public AK.Wwise.Event PlayFOL_MC_Roll;
     
@@ -65,6 +68,10 @@ public class PlayerMovement : MonoBehaviour
         MC_Presences_Walk.Post(gameObject);
     }
     
+    public void PlayPresences_Action()
+    {
+        MC_Presences_Action.Post(gameObject);
+    }
     public void FOL_MC_Roll()
     {
         PlayFOL_MC_Roll.Post(gameObject);

@@ -14,6 +14,10 @@ public class ProjectileController : MonoBehaviour
     private float _spawnTime;
     private Collider _projectileCollider;
     private bool _isActive = false;
+    
+    [Header("Audio - Distance Hit")]
+    public AK.Wwise.Event Play_Attack_Hit_Enemy;
+    public AK.Wwise.Switch SW_MC_AttackDistanceHit;
 
     void Awake()
     {
@@ -68,9 +72,29 @@ public class ProjectileController : MonoBehaviour
         if (damageable != null)
         {
             damageable.TakeDamage(_damage);
+            Play_SFX_AttackDistanceHit(other.gameObject);
         }
 
         ReturnToPool();
+    }
+    
+    /// <summary>
+    /// Play the distance hit sound when projectile hits an enemy
+    /// </summary>
+    private void Play_SFX_AttackDistanceHit(GameObject hitTarget)
+    {
+        // Set the Distance switch
+        if (SW_MC_AttackDistanceHit != null)
+        {
+            SW_MC_AttackDistanceHit.SetValue(hitTarget);
+        }
+        
+        // Post the hit event
+        if (Play_Attack_Hit_Enemy != null && Play_Attack_Hit_Enemy.IsValid())
+        {
+            Play_Attack_Hit_Enemy.Post(hitTarget);
+            Debug.Log($"Distance hit sound played on {hitTarget.name}");
+        }
     }
 
     private void ReturnToPool()

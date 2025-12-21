@@ -20,6 +20,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1560169506	BOSS			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS	
 	1566882829	FT_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\FT_Krampus	
 	1685527061	MC			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC	
+	1743438368	SFX_MC_Player_TakeDamage			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\SFX_MC_Player_TakeDamage	
 	1773447876	FOL_MC_Presences			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Presences	
 	2154073102	Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	

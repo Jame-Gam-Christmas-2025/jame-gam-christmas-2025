@@ -18,8 +18,13 @@ namespace AK
         static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
         static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
+        static const AkUniqueID PLAY_MC_PLAYERDIE = 1566142524U;
+        static const AkUniqueID PLAY_MC_PRESENCES_ACTION = 2216081418U;
         static const AkUniqueID PLAY_MC_PRESENCES_WALK = 3206799055U;
         static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
+        static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
+        static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
+        static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -119,6 +124,7 @@ namespace AK
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID SFX_MC_ATTACK = 854716996U;
         static const AkUniqueID SFX_MC_ATTACKHITENNEMY = 1128311319U;
+        static const AkUniqueID SFX_MC_PLAYER_TAKEDAMAGE = 1743438368U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID YULE = 2154073102U;
     } // namespace BUSSES
