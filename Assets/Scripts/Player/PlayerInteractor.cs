@@ -10,9 +10,9 @@ public class PlayerInteractor : MonoBehaviour
     [Header("Trigger")]
     [SerializeField] private Collider _interactionTrigger;
 
-    
+    private List<Interactable> interactablesInRange = new List<Interactable>();
 
-    private List<IInteractable> interactablesInRange = new List<IInteractable>();
+    private bool _canInteract = true;
 
     private void Awake()
     {
@@ -20,7 +20,6 @@ public class PlayerInteractor : MonoBehaviour
         {
             _interactionUI.SetActive(false);
         }
-
         
         if (_interactionTrigger == null)
         {
@@ -34,6 +33,8 @@ public class PlayerInteractor : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
+        if (!_canInteract) return;
+
         if (context.performed)
         {
             if (interactablesInRange.Count > 0)
@@ -44,38 +45,65 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
+    public void EnableInteraction()
+    {
+        _canInteract = true;
+
+        // Enable interaction UI if there are interactables around
+        if (interactablesInRange.Count > 0)
+        {
+            _interactionUI.SetActive(true);
+
+            // Enable every interactable
+            foreach (Interactable i in interactablesInRange)
+            {
+                i.OnInteractionAvailable();
+            }
+        }
+    }
+
+    public void DisableInteraction()
+    {
+        _canInteract = false;
+
+        // Disable interaction UI
+        _interactionUI.SetActive(false);
+
+        foreach (Interactable i in interactablesInRange)
+        {
+            i.OnInteractionUnavailable();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        
-
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        Interactable interactable = other.GetComponent<Interactable>();
 
         if (interactable != null && !interactablesInRange.Contains(interactable))
         {
             interactablesInRange.Add(interactable);
-            interactable.OnInteractionAvailable();
 
-            if (_interactionUI != null)
+            if (_canInteract)
             {
-                _interactionUI.SetActive(true);
+                interactable.OnInteractionAvailable();
 
+                _interactionUI.SetActive(true);
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        Interactable interactable = other.GetComponent<Interactable>();
 
         if (interactable != null && interactablesInRange.Contains(interactable))
         {
             interactablesInRange.Remove(interactable);
             interactable.OnInteractionUnavailable();
 
-            if (interactablesInRange.Count == 0 && _interactionUI != null)
+            if (interactablesInRange.Count == 0)
             {
                 _interactionUI.SetActive(false);
-                
             }
         }
     }

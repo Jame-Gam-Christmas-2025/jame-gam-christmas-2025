@@ -884,6 +884,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &831274624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+  m_PrefabInstance: {fileID: 1974376336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &840926055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -910,15 +915,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25501013
+      value: -0.5450101
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4292501
+      value: 3.64925
       objectReference: {fileID: 0}
     - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1614399
+      value: -5.40879
       objectReference: {fileID: 0}
     - target: {fileID: 5268432018768986513, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: field of view
@@ -1262,6 +1267,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 840926056}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionId
+      value: 4920aea0-b580-494a-9f4f-1172cc69e2c9
+      objectReference: {fileID: 0}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionName
+      value: 'Global/TogglePause[/Keyboard/escape]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1329,13 +1346,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1974376347}
   m_SourcePrefab: {fileID: 100100000, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
 --- !u!4 &1974376337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
   m_PrefabInstance: {fileID: 1974376336}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1974376347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831274624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87e64c17a7eb564ab57c9073a459958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAlignment
+  alignmentScore: 0
+  alignment: 0
 --- !u!1001 &1993213063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1360,6 +1394,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 17af263006a41d44cada29d77faaa0db, type: 2}
+    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
+      propertyPath: interactionWorldUI
+      value: 
+      objectReference: {fileID: 2145563860}
     - target: {fileID: 8427149578245598712, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1425,6 +1463,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
+--- !u!1 &2145563860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4655616445093365497, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
+  m_PrefabInstance: {fileID: 1993213063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
