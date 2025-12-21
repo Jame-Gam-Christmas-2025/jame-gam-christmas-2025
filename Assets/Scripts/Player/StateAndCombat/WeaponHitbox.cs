@@ -7,7 +7,16 @@ public class WeaponHitbox : MonoBehaviour
     private float _currentDamage;
     private GameObject _owner; 
     private List<GameObject> _hitTargets = new List<GameObject>(); 
+    
+    [Header("Audio")]
+    public AK.Wwise.Event Play_Attack_Hit_Enemy;
+    
+    [Header("Audio - Attack Type Switches")]
+    public AK.Wwise.Switch SW_MC_AttackMeleeLightHit;
+    public AK.Wwise.Switch SW_MC_AttackMeleeHeavyHit;
 
+    // Current attack type (set from PlayerCombatController)
+    private string _currentAttackType = "Light";
     void Awake()
     {
         _collider = GetComponent<Collider>();
@@ -24,6 +33,17 @@ public class WeaponHitbox : MonoBehaviour
     {
         _currentDamage = damage;
     }
+    
+    /// <summary>
+    /// Set the current attack type for hit sounds
+    /// Call this from PlayerCombatController before enabling the hitbox
+    /// </summary>
+    public void SetAttackType(string attackType)
+    {
+        _currentAttackType = attackType;
+        Debug.Log($"Attack type set to: {attackType}");
+    }
+
 
     public void EnableHitbox()
     {
@@ -50,6 +70,20 @@ public class WeaponHitbox : MonoBehaviour
         {
             damageable.TakeDamage(_currentDamage);
             _hitTargets.Add(other.gameObject);
+            
+            if (Play_Attack_Hit_Enemy != null && Play_Attack_Hit_Enemy.IsValid())
+            {
+                switch (_currentAttackType)
+                {
+                    case "Light":
+                        SW_MC_AttackMeleeLightHit.SetValue(other.gameObject);
+                        break;
+                    case "Heavy":
+                        SW_MC_AttackMeleeHeavyHit.SetValue(other.gameObject);
+                        break;
+                }
+                Play_Attack_Hit_Enemy.Post(other.gameObject);
+            }
 
             Debug.Log($"Hit {other.gameObject.name} for {_currentDamage} damage");
         }

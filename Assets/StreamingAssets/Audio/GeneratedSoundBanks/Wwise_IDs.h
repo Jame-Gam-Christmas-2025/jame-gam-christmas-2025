@@ -15,7 +15,70 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
         static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
+        static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
+        static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
+        static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
+        static const AkUniqueID PLAY_MC_PLAYERDIE = 1566142524U;
+        static const AkUniqueID PLAY_MC_PRESENCES_ACTION = 2216081418U;
+        static const AkUniqueID PLAY_MC_PRESENCES_WALK = 3206799055U;
+        static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
+        static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
+        static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
+        static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace SW_MC_FOOTSTEPSMATERIAL
+        {
+            static const AkUniqueID GROUP = 996959485U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_FT_CONCRETE = 916436602U;
+                static const AkUniqueID SW_FT_DIRT = 2399563152U;
+                static const AkUniqueID SW_FT_SNOW = 3850745462U;
+            } // namespace SWITCH
+        } // namespace SW_MC_FOOTSTEPSMATERIAL
+
+        namespace SW_MC_FOOTSTEPSMOVEMENT
+        {
+            static const AkUniqueID GROUP = 2700451361U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_FT_ATTACK = 4253136415U;
+                static const AkUniqueID SW_FT_ROLL = 1388451578U;
+                static const AkUniqueID SW_FT_RUN = 2162921054U;
+                static const AkUniqueID SW_FT_WALK = 303207424U;
+            } // namespace SWITCH
+        } // namespace SW_MC_FOOTSTEPSMOVEMENT
+
+        namespace SW_MC_TYPEOFATTACKHIT
+        {
+            static const AkUniqueID GROUP = 4054447005U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_MC_ATTACKDISTANCEHIT = 1907146023U;
+                static const AkUniqueID SW_MC_ATTACKMELEEHEAVYHIT = 3302953275U;
+                static const AkUniqueID SW_MC_ATTACKMELEELIGHTHIT = 2734195228U;
+            } // namespace SWITCH
+        } // namespace SW_MC_TYPEOFATTACKHIT
+
+        namespace SW_MC_TYPEOFENEMY
+        {
+            static const AkUniqueID GROUP = 2119059778U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SW_MC_HITKRAMPUS = 397687435U;
+                static const AkUniqueID SW_MC_HITNAHAGAME = 2506029772U;
+                static const AkUniqueID SW_MC_HITYULE = 295887543U;
+            } // namespace SWITCH
+        } // namespace SW_MC_TYPEOFENEMY
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
@@ -38,16 +101,14 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMB = 1117531639U;
-        static const AkUniqueID ATTACK = 180661997U;
         static const AkUniqueID ATTACKS_KRAMPUS = 738454910U;
         static const AkUniqueID ATTACKS_NAHAGAME = 1552412047U;
         static const AkUniqueID ATTACKS_YULE = 327602828U;
         static const AkUniqueID BOSS = 1560169506U;
-        static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID FT_ATTACK = 2901498470U;
-        static const AkUniqueID FT_JUMPS = 3242069405U;
+        static const AkUniqueID FOL_MC_FOOTSTEPS = 3692117971U;
+        static const AkUniqueID FOL_MC_PRESENCES = 1773447876U;
+        static const AkUniqueID FOL_MC_ROLL = 2268577727U;
         static const AkUniqueID FT_KRAMPUS = 1566882829U;
-        static const AkUniqueID FT_LANDS = 3094890996U;
         static const AkUniqueID FT_NAHAGAME = 361833422U;
         static const AkUniqueID FT_YULE = 1342630121U;
         static const AkUniqueID KRAMPUS = 496251272U;
@@ -59,15 +120,12 @@ namespace AK
         static const AkUniqueID PRES_KRAMPUS = 2285774913U;
         static const AkUniqueID PRES_NAHAGAME = 2749025162U;
         static const AkUniqueID PRES_YULE = 4114299389U;
-        static const AkUniqueID PRESENCES = 119136829U;
-        static const AkUniqueID PRS_ATTACK = 3816827997U;
-        static const AkUniqueID PRS_JUMPS = 2275900680U;
-        static const AkUniqueID PRS_LANDS = 3575123633U;
         static const AkUniqueID REVERBS = 3545700988U;
-        static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SFX_MC_ATTACK = 854716996U;
+        static const AkUniqueID SFX_MC_ATTACKHITENNEMY = 1128311319U;
+        static const AkUniqueID SFX_MC_PLAYER_TAKEDAMAGE = 1743438368U;
         static const AkUniqueID UI = 1551306167U;
-        static const AkUniqueID WALK = 2108779966U;
         static const AkUniqueID YULE = 2154073102U;
     } // namespace BUSSES
 
