@@ -441,4 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4a3bdb7abc7ec42b77759d3dfb0550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestInteractable
-  _interactionWorldUI: {fileID: 7983057704059918641}
+  interactionWorldUI: {fileID: 4655616445093365497}
+  dialogue: {fileID: 11400000, guid: 17af263006a41d44cada29d77faaa0db, type: 2}
+  avatar: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  npcName: Gorg

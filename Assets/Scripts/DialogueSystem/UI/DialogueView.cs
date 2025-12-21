@@ -22,10 +22,16 @@ namespace UI
         [Header("Choices")]
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Transform choicesParent;
-        
+
+        private bool _initialized = false;
+
+
         private DialogueData _currentDialogue;
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
+        private PlayerInteractor _playerInteractor;
+
+        // Dialogue animation variables
         private Coroutine _textAnimCoroutine;
         private string _dialogueText = "";
         private bool _dialogueAnim = false;
@@ -40,18 +46,25 @@ namespace UI
             }
 #endif
         }
-        
+
+        private void Initialize()
+        {
+            _playerInteractor = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteractor>();
+
+            _initialized = true;
+        }
+
         /// <summary>
         /// Show dialogue UI.
         /// </summary>
         public void Show()
         {
+            // Initalize object if not initialized
+            if (!_initialized) Initialize();
+
             Cursor.lockState = CursorLockMode.None;
 
-            /* TODO
-             * 
-             * Disable NPC interaction
-             */
+            _playerInteractor.DisableInteraction();
 
             gameObject.SetActive(true);
         }
@@ -63,10 +76,7 @@ namespace UI
         {
             Cursor.lockState = CursorLockMode.Locked;
 
-            /* TODO
-             * 
-             * Enable NPC interaction
-             */
+            _playerInteractor.EnableInteraction();
 
             gameObject.SetActive(false);
         }
