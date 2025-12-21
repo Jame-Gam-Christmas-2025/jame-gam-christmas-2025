@@ -26,7 +26,11 @@ public class TestInteractable : MonoBehaviour, IInteractable
         Debug.Log("You are interacting");
 
         Debug.Log($"Interacting with: {name}");
-        FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(dialogue, avatar, npcName);
+        DialogueView dialogueView = FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include);
+        if(dialogueView != null)
+        {
+            dialogueView.StartNewDialogue(dialogue, avatar, npcName);
+        }
     }
 
     public void OnInteractionAvailable()
