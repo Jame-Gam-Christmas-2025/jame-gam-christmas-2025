@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
-    [SerializeField] private float _walkSpeed = 5f;
+    [SerializeField] private float _walkSpeed = 2.5f;
     [SerializeField] private float _sprintSpeed = 8f;
     [SerializeField] private float _rotationSpeed = 15f;
 
@@ -20,15 +20,68 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
 
-    private Rigidbody rb;
+    [Header("MC_Presences_Walk")] 
+    public AK.Wwise.Event MC_Presences_Walk;
+    
+    [Header("MC_Presences_Action")] 
+    public AK.Wwise.Event MC_Presences_Action;
+    
+    [Header("FOL_MC_Roll")] 
+    public AK.Wwise.Event PlayFOL_MC_Roll;
+    
+    [Header("MC_Footsteps")] 
+    public AK.Wwise.Event MC_Footsteps;
+    
+    [Header("Switch Footsteps - Movement")]
+    public AK.Wwise.Switch SW_Footsteps_Walk;
+    public AK.Wwise.Switch SW_Footsteps_Run;
+    
+    [Header("Switch Footsteps - Surface")]
+    public AK.Wwise.Switch SW_Surface_Concrete;
+    
+    private Rigidbody _rb;
     private Vector2 _moveInput;
     private bool _isSprinting;
     private bool _isDodging;
+    private bool _canMove = true;
 
+    public void PlayFootstep()
+    {
+        // Sécurité : éviter les pas à l'arrêt
+        if (_moveInput.magnitude < 0.1f)
+            return;
+
+        // MovementType
+        if (_isSprinting)
+            SW_Footsteps_Run.SetValue(gameObject);
+        else
+            SW_Footsteps_Walk.SetValue(gameObject);
+
+        // SurfaceType (temporaire)
+        SW_Surface_Concrete.SetValue(gameObject);
+
+        // Event
+        MC_Footsteps.Post(gameObject);
+    }
+
+    public void PlayPresences_Walk()
+    {
+        MC_Presences_Walk.Post(gameObject);
+    }
+    
+    public void PlayPresences_Action()
+    {
+        MC_Presences_Action.Post(gameObject);
+    }
+    public void FOL_MC_Roll()
+    {
+        PlayFOL_MC_Roll.Post(gameObject);
+    }
+ 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        _rb = GetComponent<Rigidbody>();
+        _rb.freezeRotation = true;
 
         if (_cameraTransform == null)
         {
@@ -43,8 +96,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-
         if (!_isDodging)
         {
             MoveCharacter();
@@ -52,8 +103,25 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void EnableMovement()
+    {
+        _canMove = true;
+    }
+
+    public void DisableMovement()
+    {
+        _canMove = false;
+    }
+
     public void OnMove(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        // Stop method if the player is not able to move
+        if (!_canMove)
+        {
+            _moveInput = Vector2.zero;
+            return;
+        }
+
         _moveInput = context.ReadValue<Vector2>();
     }
 
@@ -73,10 +141,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void StartDodge()
     {
+        // Stop method if the player is not able to move
+        if (!_canMove) return;
+
         _isDodging = true;
 
         Vector3 dodgeDirection = transform.forward;
-        rb.linearVelocity = dodgeDirection * _dodgeForce;
+        _rb.linearVelocity = dodgeDirection * _dodgeForce;
 
         if (_animator != null)
         {
@@ -113,13 +184,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = CalculateMoveDirection(_moveInput);
         float currentSpeed = _isSprinting ? _sprintSpeed : _walkSpeed;
         Vector3 targetVelocity = moveDirection * currentSpeed;
-        targetVelocity.y = rb.linearVelocity.y;
-        rb.linearVelocity = targetVelocity;
+        targetVelocity.y = _rb.linearVelocity.y;
+        _rb.linearVelocity = targetVelocity;
 
         if (moveDirection.magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
+            _rb.rotation = Quaternion.Slerp(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
         }
     }
 

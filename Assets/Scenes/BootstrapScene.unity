@@ -151,6 +151,7 @@ MonoBehaviour:
   gameManagerComponent: {fileID: 4086992455683220455, guid: c22e107b825128c4eab06cc5023ee9ca, type: 3}
   gameSceneManagerComponent: {fileID: 4534567462081060421, guid: 816199183898dc04c8f9f84fe8d7fc56, type: 3}
   audioManagerComponent: {fileID: 7484305050083235011, guid: eefd3697c1c60524388c553c079f0260, type: 3}
+  inputManagerComponent: {fileID: 4301751608792887621, guid: 5f82658bf75386e409b786814ef114f9, type: 3}
 --- !u!4 &1378596433
 Transform:
   m_ObjectHideFlags: 0

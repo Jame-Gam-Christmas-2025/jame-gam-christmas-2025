@@ -11,7 +11,7 @@
     "GUID": "{98A7620B-1BE0-4051-B7A1-81F1E6963177}",
     "Color": "26",
     "Language": "SFX",
-    "Hash": "{6C23C2FC-538C-8B84-D9A3-D479A4328504}",
+    "Hash": "{FF4F7F95-8226-46C9-1A58-2356A0898469}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Test",
     "ShortName": "SB_Test",
     "Path": "SB_Test.bnk",
@@ -42,20 +42,6 @@
     ],
     "Busses": [
      {
-      "Id": "119136829",
-      "Name": "Presences",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences",
-      "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
-      "Color": "8"
-     },
-     {
-      "Id": "180661997",
-      "Name": "Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Attack",
-      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
-      "Color": "8"
-     },
-     {
       "Id": "327602828",
       "Name": "Attacks_Yule",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule\\Attacks_Yule",
@@ -84,13 +70,6 @@
       "Color": "19"
      },
      {
-      "Id": "712161704",
-      "Name": "Run",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\Run",
-      "GUID": "{751E61E6-3FBD-4C6F-AAF8-7BABD8FD6C8F}",
-      "Color": "8"
-     },
-     {
       "Id": "738454910",
       "Name": "Attacks_Krampus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus\\Attacks_Krampus",
@@ -105,11 +84,25 @@
       "Color": "19"
      },
      {
+      "Id": "854716996",
+      "Name": "SFX_MC_Attack",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Attack",
+      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
+      "Color": "8"
+     },
+     {
       "Id": "1117531639",
       "Name": "AMB",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB",
       "GUID": "{79216540-D445-4EB8-B77B-2309691E4C49}",
       "Color": "4"
+     },
+     {
+      "Id": "1128311319",
+      "Name": "SFX_MC_AttackHitEnnemy",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_AttackHitEnnemy",
+      "GUID": "{60F508D5-5534-4AA2-BC0D-215E0DD188BF}",
+      "Color": "8"
      },
      {
       "Id": "1202187523",
@@ -160,10 +153,17 @@
       "Color": "8"
      },
      {
-      "Id": "2108779966",
-      "Name": "Walk",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\Walk",
-      "GUID": "{1D017C52-2B6D-4675-8B73-E23A0A76991A}",
+      "Id": "1743438368",
+      "Name": "SFX_MC_Player_TakeDamage",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Player_TakeDamage",
+      "GUID": "{FC8EC863-4435-4B1F-B2B7-50D74EDBB7F7}",
+      "Color": "8"
+     },
+     {
+      "Id": "1773447876",
+      "Name": "FOL_MC_Presences",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Presences",
+      "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
       "Color": "8"
      },
      {
@@ -180,10 +180,10 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      },
      {
-      "Id": "2275900680",
-      "Name": "PRS_Jumps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Jumps",
-      "GUID": "{1EE9E86F-7D97-4114-A82B-F0AB38841358}",
+      "Id": "2268577727",
+      "Name": "FOL_MC_Roll",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Roll",
+      "GUID": "{9EFE8429-E068-4212-8522-6EE12C2E9FBA}",
       "Color": "8"
      },
      {
@@ -194,39 +194,11 @@
       "Color": "19"
      },
      {
-      "Id": "2385628198",
-      "Name": "Footsteps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps",
-      "GUID": "{99DB3CF4-D517-4DFC-9646-70FA083F4D8D}",
-      "Color": "8"
-     },
-     {
       "Id": "2749025162",
       "Name": "PRES_Nahagame",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\PRES_Nahagame",
       "GUID": "{D1FBEB69-BE8D-446C-9F23-22288C67C8A1}",
       "Color": "19"
-     },
-     {
-      "Id": "2901498470",
-      "Name": "FT_Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Attack",
-      "GUID": "{E6348F7A-6DBE-4B5F-ADB2-AE4921B088FE}",
-      "Color": "8"
-     },
-     {
-      "Id": "3094890996",
-      "Name": "FT_Lands",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Lands",
-      "GUID": "{4042B58A-A576-4A93-A327-64D5BD4DF745}",
-      "Color": "8"
-     },
-     {
-      "Id": "3242069405",
-      "Name": "FT_Jumps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Jumps",
-      "GUID": "{84DF2EFC-8B75-4516-B254-26C4212C8FDC}",
-      "Color": "8"
      },
      {
       "Id": "3545700988",
@@ -236,17 +208,10 @@
       "Color": "1"
      },
      {
-      "Id": "3575123633",
-      "Name": "PRS_Lands",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Lands",
-      "GUID": "{BCF9C59F-54FF-4176-B262-7DBDE01282B9}",
-      "Color": "8"
-     },
-     {
-      "Id": "3816827997",
-      "Name": "PRS_Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Attack",
-      "GUID": "{285E209F-D5F4-44FD-8E14-A89E9CD90F83}",
+      "Id": "3692117971",
+      "Name": "FOL_MC_Footsteps",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Footsteps",
+      "GUID": "{99DB3CF4-D517-4DFC-9646-70FA083F4D8D}",
       "Color": "8"
      },
      {
@@ -305,6 +270,6 @@
     ]
    }
   ],
-  "FileHash": "{6A5B3729-EB4E-1F6F-A9FA-7EA6103533CC}"
+  "FileHash": "{EE8173F5-18F0-18FF-5801-2F277C465CA7}"
  }
 }

@@ -18,17 +18,20 @@ MonoBehaviour:
     french: As-tu vu Toad? Je n'ai pas eu de nouvelles de lui depuis 2017...
   choices:
   - text:
-      english: Yes
+      english: Yes (+1)
       french: Oui
+    alignmentBonus: 1
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
   - text:
-      english: No
+      english: No (+3)
       french: Non
+    alignmentBonus: 3
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
   - text:
-      english: Maybe
+      english: Maybe (-2)
       french: "Peut-\xEAtre"
+    alignmentBonus: -2
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}

@@ -8,6 +8,13 @@
   "CacheRoot": "../../../../../JameGam2025_Wwise/JameGam2025_Wwise/.cache",
   "Platforms": [
    {
+    "Name": "Web",
+    "GUID": "{46C6EE0C-05D9-4793-BA9E-AFBCC0BAFAB4}",
+    "BasePlatform": "Web",
+    "BasePlatformGUID": "{639AD233-23F2-4C0F-9127-79F44C15E1DA}",
+    "Path": "Web"
+   },
+   {
     "Name": "Windows",
     "GUID": "{855A86FA-4FAF-4B2C-9188-F9294A78F7F7}",
     "BasePlatform": "Windows",
@@ -24,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{74AD79FD-9599-1FB6-4C52-BCC928C95FBD}"
+  "FileHash": "{8F53A578-CB8C-06F1-53A6-F5BC9C3E54CE}"
  }
 }

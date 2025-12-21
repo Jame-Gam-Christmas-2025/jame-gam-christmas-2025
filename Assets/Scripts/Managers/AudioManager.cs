@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Test - Remove in production")]
     [SerializeField] private bool showDebugLogs = true;
+    
     private void Awake()
     {
         if (Instance == null)

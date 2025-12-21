@@ -10,7 +10,6 @@ namespace UI
 {
     public class DialogueView : MonoBehaviour, ISubmitHandler,ICancelHandler, IPointerClickHandler
     {
-        public DialogueData DialogueData { get; private set; }
         public Sprite AvatarSprite { get; private set; }
         public string NpcName { get; private set; }
 
@@ -23,9 +22,19 @@ namespace UI
         [Header("Choices")]
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Transform choicesParent;
-        
+
+        private bool _initialized = false;
+
+
+        private DialogueData _currentDialogue;
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
+        // Player objects variables
+        private PlayerInteractor _playerInteractor;
+        private PlayerCombatController _playerCombatController;
+        private PlayerMovement _playerMovement;
+
+        // Dialogue animation variables
         private Coroutine _textAnimCoroutine;
         private string _dialogueText = "";
         private bool _dialogueAnim = false;
@@ -33,25 +42,42 @@ namespace UI
         private void Start()
         {
 #if UNITY_EDITOR
-            if (SceneManager.GetActiveScene().name == "Feature-Dialogue_System")
+            if (SceneManager.GetActiveScene().name == "Feature-Dialogue_System" 
+                || SceneManager.GetActiveScene().name == "FeaturePlayerAlignment")
             {
                 EditorStartDialogue();
             }
 #endif
         }
-        
+
+        private void Initialize()
+        {
+            // Store player objects in variables
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            _playerInteractor = player.GetComponent<PlayerInteractor>();
+            _playerCombatController = player.GetComponent<PlayerCombatController>();
+            _playerMovement = player.GetComponent<PlayerMovement>();
+
+            _initialized = true;
+        }
+
         /// <summary>
         /// Show dialogue UI.
         /// </summary>
         public void Show()
         {
+            // Initalize object if not initialized
+            if (!_initialized) Initialize();
+
             Cursor.lockState = CursorLockMode.None;
 
-            /* TODO
-             * 
-             * Disable NPC interaction
-             */
+            // Disable interaction, combat and movement
+            _playerInteractor.DisableInteraction();
+            _playerCombatController.DisableAttack();
+            _playerMovement.DisableInput();
 
+            // Show UI
             gameObject.SetActive(true);
         }
 
@@ -62,11 +88,12 @@ namespace UI
         {
             Cursor.lockState = CursorLockMode.Locked;
 
-            /* TODO
-             * 
-             * Disable NPC interaction
-             */
+            // Enable interaction, combat and movement
+            _playerInteractor.EnableInteraction();
+            _playerCombatController.EnableAttack();
+            _playerMovement.EnableInput();
 
+            // Hide UI
             gameObject.SetActive(false);
         }
 
@@ -80,7 +107,7 @@ namespace UI
         {
             Show();
 
-            DialogueData = dialogueData;
+            _currentDialogue = dialogueData;
             AvatarSprite = avatarSprite;
             NpcName = npcName;
 
@@ -92,7 +119,7 @@ namespace UI
         /// </summary>
         public void StartDialogue(DialogueData nextDialogue)
         {
-            DialogueData = nextDialogue;
+            _currentDialogue = nextDialogue;
 
             EventSystem.current.SetSelectedGameObject(gameObject);
 
@@ -102,13 +129,14 @@ namespace UI
             switch (LocalizationManager.s_Instance.Language)
             {
                 case Language.English:
-                    currentText = DialogueData.dialogueText.english;
+                    currentText = _currentDialogue.dialogueText.english;
                     break;
                 case Language.French:
-                    currentText = DialogueData.dialogueText.french;
+                    currentText = _currentDialogue.dialogueText.french;
                     break;
             }
 
+            // 
             dialogueTextMesh.text = currentText;
 
             avatarImage.sprite = AvatarSprite;
@@ -118,7 +146,7 @@ namespace UI
 
             ClearChoices();
 
-            foreach (ChoiceData c in DialogueData.choices)
+            foreach (ChoiceData c in _currentDialogue.choices)
             {
                 AddChoice(c);
             }

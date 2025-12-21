@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C9A7C4D9-093D-5BBA-8427-C714F02C71F0}",
+    "Hash": "{37776782-43FE-AF1B-16D0-CCD3FCAAF3D3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -35,20 +35,6 @@
      ]
     },
     "Busses": [
-     {
-      "Id": "119136829",
-      "Name": "Presences",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences",
-      "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
-      "Color": "8"
-     },
-     {
-      "Id": "180661997",
-      "Name": "Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Attack",
-      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
-      "Color": "8"
-     },
      {
       "Id": "327602828",
       "Name": "Attacks_Yule",
@@ -78,13 +64,6 @@
       "Color": "19"
      },
      {
-      "Id": "712161704",
-      "Name": "Run",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\Run",
-      "GUID": "{751E61E6-3FBD-4C6F-AAF8-7BABD8FD6C8F}",
-      "Color": "8"
-     },
-     {
       "Id": "738454910",
       "Name": "Attacks_Krampus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Krampus\\Attacks_Krampus",
@@ -99,11 +78,25 @@
       "Color": "19"
      },
      {
+      "Id": "854716996",
+      "Name": "SFX_MC_Attack",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Attack",
+      "GUID": "{A0E30CE3-3589-4A46-B235-DBB8DFABEB32}",
+      "Color": "8"
+     },
+     {
       "Id": "1117531639",
       "Name": "AMB",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB",
       "GUID": "{79216540-D445-4EB8-B77B-2309691E4C49}",
       "Color": "4"
+     },
+     {
+      "Id": "1128311319",
+      "Name": "SFX_MC_AttackHitEnnemy",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_AttackHitEnnemy",
+      "GUID": "{60F508D5-5534-4AA2-BC0D-215E0DD188BF}",
+      "Color": "8"
      },
      {
       "Id": "1202187523",
@@ -154,10 +147,17 @@
       "Color": "8"
      },
      {
-      "Id": "2108779966",
-      "Name": "Walk",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\Walk",
-      "GUID": "{1D017C52-2B6D-4675-8B73-E23A0A76991A}",
+      "Id": "1743438368",
+      "Name": "SFX_MC_Player_TakeDamage",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\SFX_MC_Player_TakeDamage",
+      "GUID": "{FC8EC863-4435-4B1F-B2B7-50D74EDBB7F7}",
+      "Color": "8"
+     },
+     {
+      "Id": "1773447876",
+      "Name": "FOL_MC_Presences",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Presences",
+      "GUID": "{CDFD4F7B-55A1-4743-8360-63243C79D7F7}",
       "Color": "8"
      },
      {
@@ -174,10 +174,10 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      },
      {
-      "Id": "2275900680",
-      "Name": "PRS_Jumps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Jumps",
-      "GUID": "{1EE9E86F-7D97-4114-A82B-F0AB38841358}",
+      "Id": "2268577727",
+      "Name": "FOL_MC_Roll",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Roll",
+      "GUID": "{9EFE8429-E068-4212-8522-6EE12C2E9FBA}",
       "Color": "8"
      },
      {
@@ -188,39 +188,11 @@
       "Color": "19"
      },
      {
-      "Id": "2385628198",
-      "Name": "Footsteps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps",
-      "GUID": "{99DB3CF4-D517-4DFC-9646-70FA083F4D8D}",
-      "Color": "8"
-     },
-     {
       "Id": "2749025162",
       "Name": "PRES_Nahagame",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\PRES_Nahagame",
       "GUID": "{D1FBEB69-BE8D-446C-9F23-22288C67C8A1}",
       "Color": "19"
-     },
-     {
-      "Id": "2901498470",
-      "Name": "FT_Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Attack",
-      "GUID": "{E6348F7A-6DBE-4B5F-ADB2-AE4921B088FE}",
-      "Color": "8"
-     },
-     {
-      "Id": "3094890996",
-      "Name": "FT_Lands",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Lands",
-      "GUID": "{4042B58A-A576-4A93-A327-64D5BD4DF745}",
-      "Color": "8"
-     },
-     {
-      "Id": "3242069405",
-      "Name": "FT_Jumps",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Footsteps\\FT_Jumps",
-      "GUID": "{84DF2EFC-8B75-4516-B254-26C4212C8FDC}",
-      "Color": "8"
      },
      {
       "Id": "3545700988",
@@ -230,17 +202,10 @@
       "Color": "1"
      },
      {
-      "Id": "3575123633",
-      "Name": "PRS_Lands",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Lands",
-      "GUID": "{BCF9C59F-54FF-4176-B262-7DBDE01282B9}",
-      "Color": "8"
-     },
-     {
-      "Id": "3816827997",
-      "Name": "PRS_Attack",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\Presences\\PRS_Attack",
-      "GUID": "{285E209F-D5F4-44FD-8E14-A89E9CD90F83}",
+      "Id": "3692117971",
+      "Name": "FOL_MC_Footsteps",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\MC_WU\\MC\\FOL_MC_Footsteps",
+      "GUID": "{99DB3CF4-D517-4DFC-9646-70FA083F4D8D}",
       "Color": "8"
      },
      {
@@ -295,6 +260,135 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeSFX",
       "GUID": "{5CAD7533-91A8-4AA4-8638-33D7C772477B}",
       "Color": "11"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "996959485",
+      "Name": "SW_MC_FootstepsMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial",
+      "GUID": "{929E3FEA-8CCA-4FD6-BF71-8F1AD642D091}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "916436602",
+        "Name": "SW_FT_Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Concrete",
+        "GUID": "{36DA891B-588E-47A4-B9EF-92711D68214E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2399563152",
+        "Name": "SW_FT_Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Dirt",
+        "GUID": "{D76FD1AE-D80C-4420-9445-E5FD4425AA8F}",
+        "Color": "8"
+       },
+       {
+        "Id": "3850745462",
+        "Name": "SW_FT_Snow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Snow",
+        "GUID": "{DB88FFE9-2BD9-4602-A835-00A93B5358DE}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "2119059778",
+      "Name": "SW_MC_TypeOfEnemy",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy",
+      "GUID": "{72CE13B6-FA40-49AB-A207-B7DCD2A186B2}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "295887543",
+        "Name": "SW_MC_HitYule",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitYule",
+        "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+        "Color": "8"
+       },
+       {
+        "Id": "397687435",
+        "Name": "SW_MC_HitKrampus",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitKrampus",
+        "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2506029772",
+        "Name": "SW_MC_HitNahagame",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitNahagame",
+        "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "2700451361",
+      "Name": "SW_MC_FootstepsMovement",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement",
+      "GUID": "{BFFCE3C7-31C3-492A-A0FF-4E73EEF1E68C}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "303207424",
+        "Name": "SW_FT_Walk",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Walk",
+        "GUID": "{4EBF9B7E-35CB-4189-8471-96177E8BFE3F}",
+        "Color": "8"
+       },
+       {
+        "Id": "1388451578",
+        "Name": "SW_FT_Roll",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Roll",
+        "GUID": "{40BECA8B-458F-4A42-855D-825FF1EB843B}",
+        "Color": "8"
+       },
+       {
+        "Id": "2162921054",
+        "Name": "SW_FT_Run",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Run",
+        "GUID": "{F1B3D11F-0452-464C-91CA-DD8F60222A40}",
+        "Color": "8"
+       },
+       {
+        "Id": "4253136415",
+        "Name": "SW_FT_Attack",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Attack",
+        "GUID": "{B8EC0148-2299-4C45-A9D2-91FE3B5DDFF1}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "4054447005",
+      "Name": "SW_MC_TypeOfAttackHit",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit",
+      "GUID": "{DDEF692F-689F-4653-A4AD-1578D21FDC8B}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "1907146023",
+        "Name": "SW_MC_AttackDistanceHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackDistanceHit",
+        "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+        "Color": "8"
+       },
+       {
+        "Id": "2734195228",
+        "Name": "SW_MC_AttackMeleeLightHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeLightHit",
+        "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+        "Color": "8"
+       },
+       {
+        "Id": "3302953275",
+        "Name": "SW_MC_AttackMeleeHeavyHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeHeavyHit",
+        "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+        "Color": "8"
+       }
+      ]
      }
     ],
     "AcousticTextures": [
@@ -776,6 +870,6 @@
     ]
    }
   ],
-  "FileHash": "{0E0DB446-3B30-C539-5FCB-215AB41ED7D4}"
+  "FileHash": "{44A0199D-367D-C13B-A56B-E5C2252536B5}"
  }
 }

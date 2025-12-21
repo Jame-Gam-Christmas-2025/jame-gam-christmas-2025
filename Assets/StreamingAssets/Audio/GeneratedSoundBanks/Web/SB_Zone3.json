@@ -1,0 +1,22 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2490956262",
+    "Type": "User",
+    "GUID": "{B7313DB0-91B6-4233-A509-2CCAD4528B08}",
+    "Color": "5",
+    "Language": "SFX",
+    "Hash": "{97BF7869-4889-8AD4-5298-48D6866DD932}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Zone3",
+    "ShortName": "SB_Zone3",
+    "Path": "SB_Zone3.bnk"
+   }
+  ],
+  "FileHash": "{08211A8F-EBA2-FE61-234C-F41C5F53F944}"
+ }
+}

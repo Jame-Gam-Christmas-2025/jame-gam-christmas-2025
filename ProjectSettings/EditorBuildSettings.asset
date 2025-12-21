@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Features/Feature-Movement-and-interaction.unity
     guid: 90cfae71af3f9f8469e19ad2d06d7f5a
   - enabled: 1
+    path: Assets/Scenes/Features/Feature-Interaction_Dialogue.unity
+    guid: 00e41e59f9ea41a488904e58660e9187
+  - enabled: 1
+    path: Assets/Scenes/Features/Feature-PlayerState-Combat.unity
+    guid: 458729fb4ffc4014d9adc60d27cd84a5
+  - enabled: 1
     path: Assets/Scenes/leveldesign.unity
     guid: 026192a3c56ff534ca1886f64d299409
   m_configObjects:

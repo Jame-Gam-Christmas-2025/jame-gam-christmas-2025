@@ -119,6 +119,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &114091378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114091380}
+  - component: {fileID: 114091379}
+  m_Layer: 0
+  m_Name: CameraManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114091379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114091378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceec8db0127f86e419fb50b3317992ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraManager
+  followCamera: {fileID: 1650618182}
+  lockOnCamera: {fileID: 1650618181}
+  activePriority: 10
+  inactivePriority: 0
+--- !u!4 &114091380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114091378}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.92179, y: 0, z: 8.82588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &123126880
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +896,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camerarig
       objectReference: {fileID: 0}
+    - target: {fileID: 718746655460187058, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9449601
+      objectReference: {fileID: 0}
+    - target: {fileID: 718746655460187058, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5054992
+      objectReference: {fileID: 0}
+    - target: {fileID: 718746655460187058, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.598875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5450101
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.64925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611616617855358000, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.40879
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268432018768986513, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+      propertyPath: field of view
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5319156676598472805, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
@@ -1073,6 +1149,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af828a03c36e4df4e8911166a456fc2a, type: 3}
+--- !u!114 &1650618181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8279966130024118403, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+  m_PrefabInstance: {fileID: 840926055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+--- !u!114 &1650618182 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5319156676598472805, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
+  m_PrefabInstance: {fileID: 840926055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &1906284002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1262,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 840926056}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionId
+      value: 4920aea0-b580-494a-9f4f-1172cc69e2c9
+      objectReference: {fileID: 0}
+    - target: {fileID: 49786256838526143, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionName
+      value: 'Global/TogglePause[/Keyboard/escape]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1301988727454975743, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1174,7 +1284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.922
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1224,10 +1334,10 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 840926058}
-    - target: {fileID: 7999380140286772124, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 196f01ff4373b934d98bb44098cfa4ac, type: 2}
+    - target: {fileID: 6784110928507745699, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1250,18 +1360,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 840926056}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: avatar
-      value: 
-      objectReference: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: npcName
-      value: Gorg
-      objectReference: {fileID: 0}
-    - target: {fileID: 3622722054595810189, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: 17af263006a41d44cada29d77faaa0db, type: 2}
     - target: {fileID: 8427149578245598712, guid: a47d3c4466ac4254b8f2356d06258af2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1341,3 +1439,4 @@ SceneRoots:
   - {fileID: 840926055}
   - {fileID: 1106948864}
   - {fileID: 1993213063}
+  - {fileID: 114091380}

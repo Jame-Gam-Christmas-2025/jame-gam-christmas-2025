@@ -11,7 +11,12 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Ignore trigger colliders
+        if (other.isTrigger)
+            return;
+
         IDamageable damageable = other.GetComponent<IDamageable>();
+
         if (damageable != null && !_damageCoroutines.ContainsKey(damageable))
         {
             Coroutine coroutine = StartCoroutine(DamageOverTime(damageable));
@@ -21,7 +26,12 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // Ignore trigger colliders
+        if (other.isTrigger)
+            return;
+
         IDamageable damageable = other.GetComponent<IDamageable>();
+
         if (damageable != null && _damageCoroutines.ContainsKey(damageable))
         {
             StopCoroutine(_damageCoroutines[damageable]);
