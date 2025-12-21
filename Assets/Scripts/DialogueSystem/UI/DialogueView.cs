@@ -29,8 +29,10 @@ namespace UI
         private DialogueData _currentDialogue;
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
+        // Player objects variables
         private PlayerInteractor _playerInteractor;
         private PlayerCombatController _playerCombatController;
+        private PlayerMovement _playerMovement;
 
         // Dialogue animation variables
         private Coroutine _textAnimCoroutine;
@@ -50,10 +52,12 @@ namespace UI
 
         private void Initialize()
         {
+            // Store player objects in variables
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
             _playerInteractor = player.GetComponent<PlayerInteractor>();
             _playerCombatController = player.GetComponent<PlayerCombatController>();
+            _playerMovement = player.GetComponent<PlayerMovement>();
 
             _initialized = true;
         }
@@ -71,6 +75,7 @@ namespace UI
             // Disable interaction, combat and movement
             _playerInteractor.DisableInteraction();
             _playerCombatController.DisableAttack();
+            _playerMovement.DisableInput();
 
             // Show UI
             gameObject.SetActive(true);
@@ -86,6 +91,7 @@ namespace UI
             // Enable interaction, combat and movement
             _playerInteractor.EnableInteraction();
             _playerCombatController.EnableAttack();
+            _playerMovement.EnableInput();
 
             // Hide UI
             gameObject.SetActive(false);
