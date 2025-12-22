@@ -85635,6 +85635,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.46666667
+    functionName: DisableInput
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.73333335
     functionName: PlayPresences_Action
     data: 
@@ -85656,13 +85663,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.0666667
-    functionName: DisableInput
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 1.3
     functionName: DisableWeaponHitbox
     data: 
@@ -85670,15 +85670,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.3
-    functionName: EnableInput
+  - time: 2.1333334
+    functionName: OnAttackAnimationEnd
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.2
-    functionName: OnAttackAnimationEnd
+  - time: 2.1666667
+    functionName: EnableInput
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
