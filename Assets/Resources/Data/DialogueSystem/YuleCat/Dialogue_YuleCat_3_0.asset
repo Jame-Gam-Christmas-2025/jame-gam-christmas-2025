@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_example_1
-  m_EditorClassIdentifier: 
-  id: 0
+  m_Name: Dialogue_YuleCat_3_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: Anyway... Have fun!
+    english: "Hmph. So you chose the path of threats... <i>Kj\xE1nalegt</i>."
     french: 
   choices: []
+  nextDialogue: {fileID: 11400000, guid: eafbc1969b26ad14e90fa482cdd944ea, type: 2}

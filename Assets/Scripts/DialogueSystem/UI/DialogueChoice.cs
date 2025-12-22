@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, ISelectHandler, IDeselectHandler, ISubmitHandler
 {
@@ -17,9 +18,13 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
     private DialogueData _nextDialogue;
     private ChoiceData _choiceData;
 
+    private GameObject _player;
+
     private void Awake()
     {
         cocheImage.enabled = false;
+
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void ShowCoche(bool enabled)
@@ -70,8 +75,11 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
                 _nextDialogue = choiceCondition.conditionFalseDialogue;
         }
 
-        // Add alignment bonus to player
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus);
+        if (_player)
+        {
+            // Add alignment bonus to player
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus);
+        }
 
         // Start next dialogue
         dialogueView.StartDialogue(_nextDialogue);
