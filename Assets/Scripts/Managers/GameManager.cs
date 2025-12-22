@@ -5,19 +5,33 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    private static GameManager _instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                GameObject gameObject = new GameObject("GameManager");
+                _instance = gameObject.AddComponent<GameManager>();
+                DontDestroyOnLoad(gameObject);
+            }
+            return _instance;
+        }
+    }
 
     [SerializeField] private bool lockCursor = true;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        } else
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         /* switch (lockCursor)
@@ -31,12 +45,44 @@ public class GameManager : MonoBehaviour
         } */
     }
 
+    private void Start()
+    {
+        // Load the game
+    }
     public void QuitApplication()
     {
-#if UNITY_EDITOR
-        EditorApplication.ExitPlaymode();
-#else
-        Application.Quit();
-#endif
+        #if UNITY_EDITOR
+                EditorApplication.ExitPlaymode();
+        #else
+                Application.Quit();
+        #endif
+    }
+
+    public void GameOver()
+    {
+        // Notify Player
+
+        // Reload Scene
+
+        // Reset Player States, then use checkpoints location
+
+        // Reset Scene States
+
+        GameSceneManager.Instance.ReloadScene();
+    }
+
+    public void SaveGame()
+    {
+        
+    }
+
+    public void ToggleArenaMode()
+    {
+        
+    }
+
+    public void PostProcessing()
+    {
+        
     }
 }

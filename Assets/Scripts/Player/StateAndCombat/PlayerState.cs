@@ -41,9 +41,7 @@ public class PlayerState : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        //TODO: add Die() from gameManager later
-        Debug.Log("you ar dead");
-        Destroy(gameObject);
+        GameManager.Instance.GameOver();
     }
 
     public void Heal(float healAmount)
