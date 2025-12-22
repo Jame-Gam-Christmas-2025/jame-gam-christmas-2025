@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NUnit.Framework.Internal;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
@@ -23,6 +21,8 @@ public class GameSceneManager : MonoBehaviour
         }
     }
 
+    private string _currentScene;
+
     private bool _isMenuOpen = false;
 
     private void Awake()
@@ -36,8 +36,6 @@ public class GameSceneManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
-        Debug.Log(this);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -62,6 +60,16 @@ public class GameSceneManager : MonoBehaviour
 
         // Load scene
         SceneManager.LoadScene(sceneName);
+        _currentScene = sceneName;
+    }
+
+    public void ReloadScene()
+    {
+        #if UNITY_EDITOR
+            _currentScene = SceneManager.GetActiveScene().name;
+        #endif
+
+        SceneManager.LoadScene(_currentScene);
     }
 
     public List<string> GetAllBuiltSceneNames()
