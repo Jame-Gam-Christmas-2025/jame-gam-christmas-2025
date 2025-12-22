@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1335611711	Play_AMB_PAD_Forest_LP			\Default Work Unit\AMB_WU\Play_AMB_PAD_Forest_LP	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	898540644	AMB_PAD_Forest_LP	.cache\9D\{9D639BFB-FD47-3B72-3367-C40B77BE396F}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_PAD_Forest_LP		12480096
-

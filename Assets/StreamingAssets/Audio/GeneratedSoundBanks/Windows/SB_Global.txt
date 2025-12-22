@@ -2,11 +2,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	1096879491	Play_MC_TakeDamage			\Default Work Unit\MC_WU\Play_MC_TakeDamage	
 	1213444204	Play_MC_Roll			\Default Work Unit\MC_WU\Play_MC_Roll	
 	1271315640	Play_MC_AttackHitEnemy			\Default Work Unit\MC_WU\Play_MC_AttackHitEnemy	
+	1280196573	Stop_AMB_PAD_Blend_LP			\Default Work Unit\AMB_WU\Stop_AMB_PAD_Blend_LP	
 	1566142524	Play_MC_PlayerDie			\Default Work Unit\MC_WU\Play_MC_PlayerDie	
 	1852516592	Play_MC_Attacks			\Default Work Unit\MC_WU\Play_MC_Attacks	
 	2216081418	Play_MC_Presences_Action			\Default Work Unit\MC_WU\Play_MC_Presences_Action	
 	2368357634	Play_MC_Footsteps			\Default Work Unit\MC_WU\Play_MC_Footsteps	
+	2490489396	Play_AMB_RFX_ForestFar			\Default Work Unit\AMB_WU\Play_AMB_RFX_ForestFar	
 	2577559157	Play_SFX_BellRinging			\Default Work Unit\SFX_WU\Play_SFX_BellRinging	
+	2760358305	Play_AMB_RFX_ForestMid			\Default Work Unit\AMB_WU\Play_AMB_RFX_ForestMid	
+	2929275903	Play_AMB_PAD_Blend_LP			\Default Work Unit\AMB_WU\Play_AMB_PAD_Blend_LP	
 	3206799055	Play_MC_Presences_Walk			\Default Work Unit\MC_WU\Play_MC_Presences_Walk	
 	3498899374	Play_UI_ClickConfirmation			\Default Work Unit\UI_WU\Play_UI_ClickConfirmation	
 
@@ -31,9 +35,14 @@ Switch	ID	Name	Switch Group			Notes
 	2734195228	SW_MC_AttackMeleeLightHit	SW_MC_TypeOfAttackHit			
 	3302953275	SW_MC_AttackMeleeHeavyHit	SW_MC_TypeOfAttackHit			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2274156727	RTPC_PAD_AMB_Transition			\Default Work Unit\AMB_WU\RTPC_PAD_AMB_Transition	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9780065	SFX_MC_AttackMeleeHeavyHit_02	.cache\BB\{BB38A0E4-35FB-E659-4B81-813B73271161}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_AttackMeleeHeavyHit\SFX_MC_HeavyHit_Nobody\SFX_MC_AttackMeleeHeavyHit_02		174320
 	11804355	FOL_MC_FT_WalkConcrete_02	.cache\45\{45EB5B5E-5062-1EA3-DE85-80C9F56D7442}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_02		39208
+	20019814	AMB_RFX_Forest_Mid_08	.cache\A7\{A77E0DEC-51AC-6AA2-BB71-CD802DA9224B}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_08		960096
+	49681000	AMB_RFX_Forest_Mid_06	.cache\C4\{C4019956-D986-5A34-CFD6-3ED6A6F5F959}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_06		704096
 	90871712	FOL_MC_FT_RunConcrete_13	.cache\EA\{EA62E31C-1DA7-D247-FD15-A427E273AA4D}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_13		24708
 	92653261	FOL_Walk_Gravel _02	.cache\AC\{ACE5A56A-B554-7AF4-6EBA-B1D9069BF82F}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _02		22496
 	95403465	FOL_MC_PRES_Run_11	.cache\BA\{BAE67965-B5FD-28A4-7209-82222DA91494}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Walk\FOL_MC_PRES_Run_11		54496
@@ -51,6 +60,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	283906744	SFX_RingingBell_02	.cache\27\{27715E05-D306-8726-1AB5-6447E5386DA8}.wem		\Containers\Default Work Unit\SFX_WU\SFX\SFX_RingingBell\SFX_RingingBell_02		1056096
 	287596685	SFX_MC_TakeDamage_04	.cache\6E\{6EA544EE-F710-4C6C-763C-962A78EA3A7B}.wem		\Containers\Default Work Unit\MC_WU\MC\General\SFX_MC_TakeDamage\SFX_MC_TakeDamage_04		89696
 	310087946	FOL_Walk_Leaf_02	.cache\6A\{6AAE5300-6C9B-8522-2014-8D12A0751744}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_RunDirt\FOL_Walk_Leaf_02		22496
+	319059734	AMB_RFX_Forest_Mid_02	.cache\AF\{AF0FB3A1-3B62-2EAF-E8F3-28546A7B2262}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_02		1664096
 	326443615	SFX_MC_AttackMeleeHeavy_04	.cache\A0\{A0CD9B2E-6966-5E7C-717B-3C8E14D38A2C}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeHeavy\SFX_MC_AttackMeleeHeavy_04		499296
 	341686374	FOL_MC_FT_WalkConcrete_12	.cache\1E\{1EEA401D-A70A-5E82-6856-EBF946A67BEF}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_12		39208
 	344997668	FOL_MC_Roll_01	.cache\DA\{DA71394C-C70C-FCF9-1E28-6638FA06823F}.wem		\Containers\Default Work Unit\MC_WU\MC\General\FOL_MC_Roll\FOL_MC_Roll_01		268896
@@ -62,19 +72,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	372468713	FOL_MC_Roll_02	.cache\2A\{2A1479BA-6589-7B85-EAB3-7EC9E4A85862}.wem		\Containers\Default Work Unit\MC_WU\MC\General\FOL_MC_Roll\FOL_MC_Roll_02		320096
 	404103143	SFX_MC_AttackMeleeHeavyHit_01	.cache\FC\{FCA8DC54-704F-E1A6-2888-28146D06E0A2}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_AttackMeleeHeavyHit\SFX_MC_HeavyHit_Nobody\SFX_MC_AttackMeleeHeavyHit_01		160096
 	411207177	FOL_MC_FT_WalkConcrete_15	.cache\EC\{EC8FA999-DD53-E9DF-B864-95AE0F02DFF7}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_15		29550
+	418819584	AMB_RFX_Forest_Mid_09	.cache\10\{1069B970-2CB3-5846-B6DF-458249B00B3F}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_09		896096
 	427882681	FOL_MC_PRES_Run_07	.cache\AF\{AF487927-169C-2EF5-6788-3C5831C15E92}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Walk\FOL_MC_PRES_Run_07		41696
 	446198023	SFX_MC_AttackDistanceHit_01	.cache\07\{07931882-0AE7-AD60-C5AC-77A55F5C2D1C}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_MC_AttackDistanceHit\SFX_MC_DistanceHit_Nobody\SFX_MC_AttackDistanceHit_01		211296
 	446808271	FOL_MC_FT_RunConcrete_04	.cache\34\{3435C689-B249-E309-87C0-F97A870BFFA9}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_04		24708
 	455239519	FOL_MC_PRES_Action_10	.cache\44\{4464D112-642E-06C9-5F0A-BAC64B5C37E0}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_10		38496
 	458611526	SFX_MC_AttackMeleeHeavy_03	.cache\96\{96906491-5FDD-6B9B-15FC-4CA3914EFDCA}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeHeavy\SFX_MC_AttackMeleeHeavy_03		497320
+	462008002	AMB_RFX_Forest_Mid_05	.cache\D3\{D3D677B3-56C1-E834-C336-1158CE37BF17}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_05		736096
+	463717273	AMB_PAD_Flower_LP	.cache\E8\{E80C1679-AD56-70CC-5E2C-9E101BF90695}.wem		\Containers\Default Work Unit\AMB_WU\AMB\AMB_PADS_ZONES\AMB_PAD_Flower_LP		12480096
 	473990191	FOL_MC_PRES_Action_03	.cache\EA\{EA15E094-099C-074E-7143-071DF6BE9D38}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_03		38496
 	479266954	FOL_MC_PRES_Action_05	.cache\73\{734F320A-F4CC-61BA-CB56-944B0690BED5}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_05		38496
+	492307395	AMB_PAD_Castle_LP	.cache\D6\{D6610749-47E7-A551-D62B-49E870324ACE}.wem		\Containers\Default Work Unit\AMB_WU\AMB\AMB_PADS_ZONES\AMB_PAD_Castle_LP		12480096
 	499320855	SFX_MC_AttackDistanceHit_03	.cache\89\{899AA58D-0F9E-F746-497A-4640E7C95D91}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_MC_AttackDistanceHit\SFX_MC_DistanceHit_Nobody\SFX_MC_AttackDistanceHit_03		211296
+	502236504	AMB_RFX_Forest_Mid_01	.cache\78\{7896EDCD-C170-F653-DA23-58EF6BD49663}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_01		1344096
 	503533404	FOL_MC_FT_WalkConcrete_08	.cache\EE\{EE15B4BB-B5BB-A6FC-C722-0C296E980280}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_08		39208
 	508848196	SFX_MC_AttakMeleeLight_05	.cache\17\{17F96874-3956-C2AC-17F3-338277683FE5}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeLight\SFX_MC_AttakMeleeLight_05		76896
 	511596542	SFX_MC_AttackMeleeLightHit_04	.cache\68\{6850ED40-1B90-AAE5-AFB4-E1A7A0A5B5FC}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_MC_AttackMeleeLightHit\SFX_MC_LightHit_Nobody\SFX_MC_AttackMeleeLightHit_04		102496
 	517903892	SFX_MC_TakeDamage_01	.cache\6B\{6BE2553A-77BE-D7F1-BF78-91A16EF1C851}.wem		\Containers\Default Work Unit\MC_WU\MC\General\SFX_MC_TakeDamage\SFX_MC_TakeDamage_01		185696
 	522220936	FOL_MC_PRES_Action_07	.cache\D2\{D27F9973-ED31-064C-69C6-72CF0E012CDF}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_07		38496
+	522957038	AMB_RFX_Forest_Mid_04	.cache\E8\{E8F1563E-C1CA-5F08-987C-B2A8CC841EC5}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_04		608096
 	524354383	SFX_MC_Attackdistance_05	.cache\31\{316CAD83-8A64-9CAE-8855-4E04D524FEC7}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackDistance\SFX_MC_Attackdistance_05		416096
 	524863978	FOL_MC_FT_RunConcrete_05	.cache\65\{65747A8F-8335-41F0-77FD-EBB96BDF1F26}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_05		24708
 	529905666	SFX_MC_AttackMeleeHeavyHit_04	.cache\7F\{7FD38716-6755-0BD6-221C-39011E40A759}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_AttackMeleeHeavyHit\SFX_MC_HeavyHit_Nobody\SFX_MC_AttackMeleeHeavyHit_04		160096
@@ -91,18 +107,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	625548551	FOL_MC_PRES_Run_03	.cache\65\{6520F371-9313-3586-8CAE-204AADA448A4}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Walk\FOL_MC_PRES_Run_03		41696
 	625851457	FOL_MC_FT_RunConcrete_10	.cache\C3\{C38CF7F1-82E8-65AB-DFCF-263534C8286A}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_10		24708
 	626318865	FOL_MC_FT_RunConcrete_14	.cache\C2\{C2B2524E-9E82-1F6D-9CC4-2CBBA75051CD}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_14		24708
+	640081363	AMB_RFX_Forest_Mid_07	.cache\F3\{F3F00863-351C-5614-1F3C-D81F0DBCF777}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_07		800096
 	645044226	SFX_MC_AttackDistanceHit_02	.cache\0A\{0ACD5B9E-47F9-C1B1-BEFE-9284A6AE68FA}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_MC_AttackDistanceHit\SFX_MC_DistanceHit_Nobody\SFX_MC_AttackDistanceHit_02		204896
 	653697373	SFX_MC_AttackMeleeHeavy_02	.cache\78\{787D2388-8CED-40C1-F9CB-18F56E554F5D}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeHeavy\SFX_MC_AttackMeleeHeavy_02		497320
 	662958141	UI_ClicConfirm_01	.cache\B6\{B63FAFC9-3AB9-194E-B702-55798DD48AB7}.wem		\Containers\Default Work Unit\UI_WU\UI\UI_ClickConfirmation\UI_ClicConfirm_01		460896
 	664596365	FOL_MC_FT_WalkConcrete_16	.cache\7C\{7C09501A-DBDA-6090-0D9F-B65869BBD157}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_16		29550
 	675059672	UI_ClicConfirm_03	.cache\B4\{B443EE99-CDFA-1FD0-47C9-7116748B0460}.wem		\Containers\Default Work Unit\UI_WU\UI\UI_ClickConfirmation\UI_ClicConfirm_03		460896
 	680860104	FOL_MC_PRES_Run_08	.cache\3F\{3F1167CF-DA6C-0AFE-028C-649BC47DAC20}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Walk\FOL_MC_PRES_Run_08		41696
+	688956824	AMB_RFX_Forest_Mid_10	.cache\43\{4302787C-DC4B-3C92-0DB1-8FF42DC80EFE}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_10		1024096
 	702145405	SFX_MC_Attackdistance_04	.cache\73\{739D03C9-57CB-C1C5-E38D-6B6FC1DBAB31}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackDistance\SFX_MC_Attackdistance_04		422496
 	710604565	FOL_MC_FT_RunConcrete_02	.cache\B7\{B7FE90E8-5813-B54A-82D5-3C3519C02721}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_02		24708
 	720550314	SFX_MC_AttakMeleeLight_02	.cache\E8\{E812B04C-E486-BEED-41B7-467BF913AED8}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeLight\SFX_MC_AttakMeleeLight_02		76896
 	727572224	FOL_MC_FT_WalkConcrete_14	.cache\EA\{EAA20603-BEC3-9286-00CE-C1C3076D573E}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_14		32222
 	740658667	FOL_MC_FT_WalkConcrete_10	.cache\76\{762DBD9C-0A7B-9B8B-C0A3-76DD5FD6C341}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_10		39208
 	759820996	FOL_MC_FT_WalkConcrete_09	.cache\84\{84265A9B-4D30-D9FD-EE0D-4894CD540176}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_09		39208
+	784274814	AMB_PAD_Village_LP	.cache\DD\{DDFB7DB7-5F7C-52E3-8EDD-7E05CAC3F2BA}.wem		\Containers\Default Work Unit\AMB_WU\AMB\AMB_PADS_ZONES\AMB_PAD_Village_LP		12480096
 	802787763	FOL_MC_PRES_Action_06	.cache\C3\{C3232477-BFC6-9BC2-23C3-264B912910DA}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_06		38496
 	803154887	FOL_MC_FT_WalkConcrete_11	.cache\60\{60BBB1D0-FF0F-47E0-B897-599B0C3A2B24}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_11		39208
 	806877309	SFX_MC_AttakMeleeLight_03	.cache\37\{372C3490-7A02-630F-8338-ACA086338C8D}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeLight\SFX_MC_AttakMeleeLight_03		76896
@@ -111,8 +130,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	850160418	FOL_Walk_Gravel _01	.cache\7F\{7F4A204E-7EF0-5B67-3E37-A2EC6FCD4DE5}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _01		22496
 	861431005	FOL_Walk_Gravel _03	.cache\C6\{C692E808-A6F9-99D4-7546-A9CE1A2FD98E}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_WalkDirt\FOL_Walk_Gravel _03		22496
 	875074251	SFX_RingingBell_03	.cache\50\{5042BD57-6BEE-48D0-D120-7275C83C628D}.wem		\Containers\Default Work Unit\SFX_WU\SFX\SFX_RingingBell\SFX_RingingBell_03		1056096
+	877681428	AMB_RFX_Forest_Mid_03	.cache\8C\{8C1439AE-C688-1315-587F-11141DD67EC2}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_03		704096
 	881044852	FOL_Walk_Leaf_03	.cache\88\{88A0DBAC-2561-EB96-A1DA-662364BB506B}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Dirt\MC_FT_RunDirt\FOL_Walk_Leaf_03		22496
 	881365248	FOL_MC_FT_RunConcrete_01	.cache\BC\{BCA160FD-B1AA-EA8A-412A-B88CF11AAC50}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_RunConcrete\FOL_MC_FT_RunConcrete_01		24708
+	898540644	AMB_PAD_Forest_LP	.cache\9D\{9D639BFB-FD47-3B72-3367-C40B77BE396F}.wem		\Containers\Default Work Unit\AMB_WU\AMB\AMB_PADS_ZONES\AMB_PAD_Forest_LP		12480096
 	907063592	FOL_MC_PRES_Action_04	.cache\25\{258047B8-71DD-E11A-09C0-AD1B827D4D19}.wem		\Containers\Default Work Unit\MC_WU\MC\Presences\MC_PRES_Action\FOL_MC_PRES_Action_04		38496
 	931222370	SFX_MC_TakeDamage_02	.cache\59\{5960FA99-E205-5D1B-73C3-7D1F5E6267D4}.wem		\Containers\Default Work Unit\MC_WU\MC\General\SFX_MC_TakeDamage\SFX_MC_TakeDamage_02		172896
 	932368073	FOL_MC_FT_WalkConcrete_03	.cache\7A\{7A1F1F87-2ABF-7B37-16CF-03E4158FFD38}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Concrete\MC_FT_WalkConcrete\FOL_MC_FT_WalkConcrete_03		39208

@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
-        static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
+        static const AkUniqueID PLAY_AMB_PAD_BLEND_LP = 2929275903U;
+        static const AkUniqueID PLAY_AMB_RFX_FORESTFAR = 2490489396U;
+        static const AkUniqueID PLAY_AMB_RFX_FORESTMID = 2760358305U;
         static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
         static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
@@ -25,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
         static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
         static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
+        static const AkUniqueID STOP_AMB_PAD_BLEND_LP = 1280196573U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -82,6 +84,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID RTPC_PAD_AMB_TRANSITION = 2274156727U;
         static const AkUniqueID RTPC_VOLUMEMASTER = 424266135U;
         static const AkUniqueID RTPC_VOLUMEMUS = 3047961690U;
         static const AkUniqueID RTPC_VOLUMESFX = 3270307726U;
@@ -91,7 +94,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID SB_GLOBAL = 2711878180U;
-        static const AkUniqueID SB_TEST = 690783697U;
         static const AkUniqueID SB_ZONE1 = 2490956260U;
         static const AkUniqueID SB_ZONE2 = 2490956263U;
         static const AkUniqueID SB_ZONE3 = 2490956262U;
@@ -101,6 +103,10 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID AMB_ZONE1_FOREST = 2724184479U;
+        static const AkUniqueID AMB_ZONE2_FLOWER = 3135360100U;
+        static const AkUniqueID AMB_ZONE3_VILLAGE = 470444002U;
+        static const AkUniqueID AMB_ZONE4_CASTLE = 4210410935U;
         static const AkUniqueID ATTACKS_KRAMPUS = 738454910U;
         static const AkUniqueID ATTACKS_NAHAGAME = 1552412047U;
         static const AkUniqueID ATTACKS_YULE = 327602828U;

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{37776782-43FE-AF1B-16D0-CCD3FCAAF3D3}",
+    "Hash": "{F1E04AE7-5AD0-FD3B-877B-0F34C03C25E9}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -55,6 +55,13 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\SFX_WU\\SFX",
       "GUID": "{D0317191-1CE8-49F7-B6DF-FC1F68974329}",
       "Color": "10"
+     },
+     {
+      "Id": "470444002",
+      "Name": "AMB_Zone3_Village",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB\\AMB_Zone3_Village",
+      "GUID": "{338591E4-0041-4043-90DF-F88E5229151E}",
+      "Color": "4"
      },
      {
       "Id": "496251272",
@@ -188,11 +195,25 @@
       "Color": "19"
      },
      {
+      "Id": "2724184479",
+      "Name": "AMB_Zone1_Forest",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB\\AMB_Zone1_Forest",
+      "GUID": "{82B28836-1B1F-45BA-96FF-4ED4306BA941}",
+      "Color": "4"
+     },
+     {
       "Id": "2749025162",
       "Name": "PRES_Nahagame",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Nahagame\\PRES_Nahagame",
       "GUID": "{D1FBEB69-BE8D-446C-9F23-22288C67C8A1}",
       "Color": "19"
+     },
+     {
+      "Id": "3135360100",
+      "Name": "AMB_Zone2_Flower",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB\\AMB_Zone2_Flower",
+      "GUID": "{CE70F2BD-25ED-4C27-A373-1ED5CC5EB0F8}",
+      "Color": "4"
      },
      {
       "Id": "3545700988",
@@ -221,6 +242,13 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\BOSS_WU\\BOSS\\Yule\\PRES_Yule",
       "GUID": "{6841CCE9-7B7B-449B-8BBB-933DCFF904A9}",
       "Color": "19"
+     },
+     {
+      "Id": "4210410935",
+      "Name": "AMB_Zone4_Castle",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\AMB_WU\\AMB\\AMB_Zone4_Castle",
+      "GUID": "{42CDB689-D257-46FB-BEC8-0DB00F44FD63}",
+      "Color": "4"
      }
     ],
     "AuxBusses": [
@@ -246,6 +274,13 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeMaster",
       "GUID": "{66281E71-F09D-4CBE-8429-27A3A2D4F1EF}",
       "Color": "11"
+     },
+     {
+      "Id": "2274156727",
+      "Name": "RTPC_PAD_AMB_Transition",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AMB_WU\\RTPC_PAD_AMB_Transition",
+      "GUID": "{5ECD96AC-9D82-4237-9289-27C0CEF25036}",
+      "Color": "4"
      },
      {
       "Id": "3047961690",
@@ -870,6 +905,6 @@
     ]
    }
   ],
-  "FileHash": "{44A0199D-367D-C13B-A56B-E5C2252536B5}"
+  "FileHash": "{DB2B1EA4-ED95-B7CF-E670-FBA788B4C6ED}"
  }
 }
