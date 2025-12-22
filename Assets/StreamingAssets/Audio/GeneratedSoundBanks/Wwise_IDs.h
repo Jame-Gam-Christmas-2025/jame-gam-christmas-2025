@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_BLEND_LP = 2929275903U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTFAR = 2490489396U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTMID = 2760358305U;
+        static const AkUniqueID PLAY_FOL_FT_YULE_WALK = 2425283306U;
         static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
         static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;

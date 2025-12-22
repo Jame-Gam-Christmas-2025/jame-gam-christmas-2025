@@ -126,9 +126,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   zoneID: 0
   fallbackZoneID: -1
+  enterCrossfadeDuration: -1
+  exitCrossfadeDuration: -1
   useChildColliders: 0
   gizmoColor: {r: 0, g: 1, b: 0, a: 1}
   showGizmo: 1
+  showZoneLabel: 1
 --- !u!1 &1551413270193049987
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,9 +200,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
   zoneID: 3
   fallbackZoneID: 0
+  enterCrossfadeDuration: -1
+  exitCrossfadeDuration: -1
   useChildColliders: 0
   gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   showGizmo: 1
+  showZoneLabel: 1
 --- !u!1 &2235933454297187751
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,8 +251,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508997299963156114}
-  - component: {fileID: 2109272049330767575}
   - component: {fileID: 6653884089614771755}
+  - component: {fileID: 8798595921475777607}
   m_Layer: 0
   m_Name: AMB_Zone_2_Village
   m_TagString: Untagged
@@ -263,33 +269,12 @@ Transform:
   m_GameObject: {fileID: 2685981585572228005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 431.5}
+  m_LocalPosition: {x: 52.1, y: -11.2, z: 232.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7409927891059167680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2109272049330767575
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2685981585572228005}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6653884089614771755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,9 +289,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
   zoneID: 2
   fallbackZoneID: 0
+  enterCrossfadeDuration: -1
+  exitCrossfadeDuration: -1
   useChildColliders: 0
   gizmoColor: {r: 0.2941177, g: 0, b: 0.509804, a: 1}
   showGizmo: 1
+  showZoneLabel: 1
+--- !u!135 &8798595921475777607
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685981585572228005}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 33.710205
+  m_Center: {x: -7.904354, y: 21.316795, z: 3.9890404}
 --- !u!1 &4711989973015665283
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,9 +363,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
   zoneID: 1
   fallbackZoneID: 0
+  enterCrossfadeDuration: -1
+  exitCrossfadeDuration: -1
   useChildColliders: 0
   gizmoColor: {r: 0.6980392, g: 0.1333333, b: 0.1333333, a: 1}
   showGizmo: 1
+  showZoneLabel: 1
 --- !u!135 &3389329247555406770
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -431,5 +443,31 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: baccf60a3ebc5c64984d58d915153754, type: 2}
   zoneRTPCName: RTPC_PAD_AMB_Transition
-  transitionSpeed: 1
+  defaultCrossfadeDuration: 2
+  crossfadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hysteresisDelay: 0.3
   showDebugLogs: 1
+  showDebugUI: 1
