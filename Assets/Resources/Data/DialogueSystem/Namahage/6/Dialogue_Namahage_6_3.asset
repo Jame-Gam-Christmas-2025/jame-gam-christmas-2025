@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Namahage_0
+  m_Name: Dialogue_Namahage_6_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: ...
+    english: Before I knew it I... I was no longer needed, and what is not needed
+      is easily locked away.
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 66e5ed973f50cd24999da097dcca8ba0, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 0a285c0101b062144bc286ac6f596c9e, type: 2}

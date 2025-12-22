@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Namahage_0
+  m_Name: Dialogue_Namahage_5_6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: ...
+    english: Everything I do is not to conquer, but to provoke. I make way for different
+      things to follow my path.
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 66e5ed973f50cd24999da097dcca8ba0, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 72f7febf7928eee42a6a14e45c188816, type: 2}

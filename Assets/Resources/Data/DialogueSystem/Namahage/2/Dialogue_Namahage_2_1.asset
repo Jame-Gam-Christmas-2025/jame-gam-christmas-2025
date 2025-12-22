@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Namahage_0
+  m_Name: Dialogue_Namahage_2_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: ...
+    english: People began obeying the comfort he promised.
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 66e5ed973f50cd24999da097dcca8ba0, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 4ad460d0bf9384b43847a4a4f612d3ef, type: 2}
