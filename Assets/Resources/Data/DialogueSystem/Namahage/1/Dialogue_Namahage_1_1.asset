@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_Namahage_1_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueText:
+    english: Your vision is true, flame bearer. But I did not hold back, you are
+      as mighty as you look.
+    french: 
+  choices: []
+  nextDialogue: {fileID: 11400000, guid: d2cba7a563044724ebb10be75a5c83b8, type: 2}

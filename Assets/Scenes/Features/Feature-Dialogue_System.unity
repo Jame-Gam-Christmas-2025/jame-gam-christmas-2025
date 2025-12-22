@@ -742,6 +742,14 @@ PrefabInstance:
       propertyPath: m_VerticalFit
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6667398661839755364, guid: a6d05df87945f9f43bcef6066afea7d8, type: 3}
+      propertyPath: testNpcName
+      value: Krampus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667398661839755364, guid: a6d05df87945f9f43bcef6066afea7d8, type: 3}
+      propertyPath: testDialogue
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7913617486479644068, guid: a6d05df87945f9f43bcef6066afea7d8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
