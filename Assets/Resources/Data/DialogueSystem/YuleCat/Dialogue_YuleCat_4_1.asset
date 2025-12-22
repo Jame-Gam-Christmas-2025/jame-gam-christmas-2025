@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_YuleCat_4_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueText:
+    english: I'll lend you my strength, but don't you think you can roll me over
+      and scratch my belly!
+    french: 
+  choices: []
+  nextDialogue: {fileID: 11400000, guid: 86c2e6d5e378b9f449aa79c69266a16f, type: 2}

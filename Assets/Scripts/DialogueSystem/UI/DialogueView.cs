@@ -13,6 +13,13 @@ namespace UI
         public Sprite AvatarSprite { get; private set; }
         public string NpcName { get; private set; }
 
+#if UNITY_EDITOR
+        [Header("Editor only")]
+        [SerializeField] private TestDialogue testDialogue;
+        [SerializeField] private Sprite testAvatarSprite;
+        [SerializeField] private string testNpcName;
+#endif
+
         [Header("Dialogue view")]
         [SerializeField] private TextMeshProUGUI dialogueTextMesh;
         [SerializeField] private TextMeshProUGUI npcNameTextMesh; 
@@ -30,6 +37,7 @@ namespace UI
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
 
         // Player objects variables
+        private GameObject _player;
         private PlayerInteractor _playerInteractor;
         private PlayerCombatController _playerCombatController;
         private PlayerMovement _playerMovement;
@@ -53,11 +61,14 @@ namespace UI
         private void Initialize()
         {
             // Store player objects in variables
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            _player = GameObject.FindGameObjectWithTag("Player");
 
-            _playerInteractor = player.GetComponent<PlayerInteractor>();
-            _playerCombatController = player.GetComponent<PlayerCombatController>();
-            _playerMovement = player.GetComponent<PlayerMovement>();
+            if (_player)
+            {
+                _playerInteractor = _player.GetComponent<PlayerInteractor>();
+                _playerCombatController = _player.GetComponent<PlayerCombatController>();
+                _playerMovement = _player.GetComponent<PlayerMovement>();
+            }          
 
             _initialized = true;
         }
@@ -72,10 +83,13 @@ namespace UI
 
             Cursor.lockState = CursorLockMode.None;
 
-            // Disable interaction, combat and movement
-            _playerInteractor.DisableInteraction();
-            _playerCombatController.DisableAttack();
-            _playerMovement.DisableInput();
+            if (_player)
+            {
+                // Disable interaction, combat and movement
+                _playerInteractor.DisableInteraction();
+                _playerCombatController.DisableAttack();
+                _playerMovement.DisableInput();
+            }
 
             // Show UI
             gameObject.SetActive(true);
@@ -88,10 +102,13 @@ namespace UI
         {
             Cursor.lockState = CursorLockMode.Locked;
 
-            // Enable interaction, combat and movement
-            _playerInteractor.EnableInteraction();
-            _playerCombatController.EnableAttack();
-            _playerMovement.EnableInput();
+            if (_player)
+            {
+                // Enable interaction, combat and movement
+                _playerInteractor.EnableInteraction();
+                _playerCombatController.EnableAttack();
+                _playerMovement.EnableInput();
+            }
 
             // Hide UI
             gameObject.SetActive(false);
@@ -247,15 +264,20 @@ namespace UI
             if (_dialogueAnim)
             {
                 OnTextAnimEnd();
+                return;
             }
-            else
-            {
-                if (_choices.Count == 0)
-                {
-                    // Show player view
 
-                    Hide();
+            if (_choices.Count == 0)
+            {
+                if (_currentDialogue.nextDialogue)
+                {
+                    StartDialogue(_currentDialogue.nextDialogue);
+                    return;
                 }
+                
+                // Show player view
+
+                Hide();        
             }
         }
 
@@ -278,12 +300,23 @@ namespace UI
 
         #region Editor
 #if UNITY_EDITOR
+        private enum TestDialogue
+        {
+            YuleCat,
+            Krampus,
+            Namahage,
+            FlavorText,
+            Ending1,
+            Ending2,
+            Test
+        }
+
         [ContextMenu("Start example dialogue")]
         public void EditorStartDialogue()
         {
-            DialogueData dialogueData = Resources.Load<DialogueData>("Data/Dialogue System/Example/Dialogue_example_0");
-            Sprite avatarSprite = null;
-            string npcName = "Example NPC";
+            DialogueData dialogueData = Resources.Load<DialogueData>($"Data/DialogueSystem/{testDialogue.ToString()}/Dialogue_{testDialogue.ToString()}_0");
+            Sprite avatarSprite = testAvatarSprite;
+            string npcName = testNpcName;
 
             StartNewDialogue(dialogueData, avatarSprite, npcName);
         }
