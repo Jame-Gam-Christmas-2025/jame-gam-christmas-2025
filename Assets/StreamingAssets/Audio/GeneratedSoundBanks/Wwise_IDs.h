@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_AMB_PAD_BLEND_LP = 2929275903U;
+        static const AkUniqueID PLAY_AMB_PAD_CASTLE = 1661945423U;
+        static const AkUniqueID PLAY_AMB_PAD_FLOWER = 2459718302U;
+        static const AkUniqueID PLAY_AMB_PAD_FOREST = 2928511412U;
+        static const AkUniqueID PLAY_AMB_PAD_VILLAGE = 4196331637U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTFAR = 2490489396U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTMID = 2760358305U;
         static const AkUniqueID PLAY_FOL_FT_YULE_WALK = 2425283306U;
@@ -26,9 +29,29 @@ namespace AK
         static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
         static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
         static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
+        static const AkUniqueID PLAY_SFX_YULE_ATTACKHITPLAYER = 3295576996U;
+        static const AkUniqueID PLAY_SFX_YULE_ATTACKPOUNCE = 1923946266U;
+        static const AkUniqueID PLAY_SFX_YULEATTACKCLAW = 1023339604U;
         static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
-        static const AkUniqueID STOP_AMB_PAD_BLEND_LP = 1280196573U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace STATE_AMB_PAD_ZONES
+        {
+            static const AkUniqueID GROUP = 1516422471U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_AMB_PAD_CASTLE = 3490686090U;
+                static const AkUniqueID ST_AMB_PAD_FLOWER = 1692906379U;
+                static const AkUniqueID ST_AMB_PAD_FOREST = 2882467217U;
+                static const AkUniqueID ST_AMB_PAD_VILLAGE = 1351658826U;
+            } // namespace STATE
+        } // namespace STATE_AMB_PAD_ZONES
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -85,7 +108,6 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_PAD_AMB_TRANSITION = 2274156727U;
         static const AkUniqueID RTPC_VOLUMEMASTER = 424266135U;
         static const AkUniqueID RTPC_VOLUMEMUS = 3047961690U;
         static const AkUniqueID RTPC_VOLUMESFX = 3270307726U;
@@ -138,8 +160,10 @@ namespace AK
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID REV_1 = 3043617852U;
-        static const AkUniqueID REV_2 = 3043617855U;
+        static const AkUniqueID REV_CASTLE = 1216683595U;
+        static const AkUniqueID REV_FLOWER = 1574958010U;
+        static const AkUniqueID REV_FOREST = 3910197480U;
+        static const AkUniqueID REV_VILLAGE = 4120165417U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

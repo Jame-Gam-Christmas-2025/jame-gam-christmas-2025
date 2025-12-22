@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673394377268525059}
   - component: {fileID: 2268901457744529729}
-  - component: {fileID: 3097520670513954266}
+  - component: {fileID: 2250286226642270957}
   m_Layer: 0
   m_Name: AMB_Zone_0_Forest
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.89680356, y: 1, z: 2.258836}
   m_Center: {x: 0.05159861, y: 0, z: 0.6294183}
---- !u!114 &3097520670513954266
+--- !u!114 &2250286226642270957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,17 +121,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1083229963512082091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84dee7154b029f4e854c89b51068e21, type: 3}
+  m_Script: {fileID: 11500000, guid: b1423110f5529a84a84ef7545232e268, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  zoneID: 0
-  fallbackZoneID: -1
-  enterCrossfadeDuration: -1
-  exitCrossfadeDuration: -1
-  useChildColliders: 0
-  gizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  showGizmo: 1
-  showZoneLabel: 1
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneTriggerState
+  zoneStateID: 0
+  fallbackStateID: -1
+  stateGroupName: STATE_AMB_PAD_Zones
+  showDebugLogs: 1
 --- !u!1 &1551413270193049987
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,15 +137,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556713720142067653}
-  - component: {fileID: 6001376779470759667}
-  - component: {fileID: 630602466121752993}
+  - component: {fileID: 2456087697064045480}
+  - component: {fileID: 4247102376155613370}
   m_Layer: 0
   m_Name: AMB_Zone_3_Castle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1556713720142067653
 Transform:
   m_ObjectHideFlags: 0
@@ -159,14 +155,30 @@ Transform:
   m_GameObject: {fileID: 1551413270193049987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 27.4, y: 84.4, z: 731.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7409927891059167680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6001376779470759667
-BoxCollider:
+--- !u!114 &2456087697064045480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551413270193049987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1423110f5529a84a84ef7545232e268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneTriggerState
+  zoneStateID: 3
+  fallbackStateID: 0
+  stateGroupName: STATE_AMB_PAD_Zones
+  showDebugLogs: 1
+--- !u!135 &4247102376155613370
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -184,28 +196,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &630602466121752993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1551413270193049987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84dee7154b029f4e854c89b51068e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
-  zoneID: 3
-  fallbackZoneID: 0
-  enterCrossfadeDuration: -1
-  exitCrossfadeDuration: -1
-  useChildColliders: 0
-  gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  showGizmo: 1
-  showZoneLabel: 1
+  m_Radius: 105.80157
+  m_Center: {x: 0, y: -89.202194, z: -194.5036}
 --- !u!1 &2235933454297187751
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,15 +243,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508997299963156114}
-  - component: {fileID: 6653884089614771755}
   - component: {fileID: 8798595921475777607}
+  - component: {fileID: 5346341896625335833}
   m_Layer: 0
   m_Name: AMB_Zone_2_Village
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1508997299963156114
 Transform:
   m_ObjectHideFlags: 0
@@ -269,32 +261,12 @@ Transform:
   m_GameObject: {fileID: 2685981585572228005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.1, y: -11.2, z: 232.3}
+  m_LocalPosition: {x: 52.1, y: -60.4, z: 232.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7409927891059167680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6653884089614771755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2685981585572228005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84dee7154b029f4e854c89b51068e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
-  zoneID: 2
-  fallbackZoneID: 0
-  enterCrossfadeDuration: -1
-  exitCrossfadeDuration: -1
-  useChildColliders: 0
-  gizmoColor: {r: 0.2941177, g: 0, b: 0.509804, a: 1}
-  showGizmo: 1
-  showZoneLabel: 1
 --- !u!135 &8798595921475777607
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -310,12 +282,28 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 33.710205
-  m_Center: {x: -7.904354, y: 21.316795, z: 3.9890404}
+  m_Radius: 55.129158
+  m_Center: {x: -7.904354, y: 42.73575, z: 3.9890404}
+--- !u!114 &5346341896625335833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685981585572228005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1423110f5529a84a84ef7545232e268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneTriggerState
+  zoneStateID: 2
+  fallbackStateID: 0
+  stateGroupName: STATE_AMB_PAD_Zones
+  showDebugLogs: 1
 --- !u!1 &4711989973015665283
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +313,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1454530948486071663}
-  - component: {fileID: 1634974129969627065}
   - component: {fileID: 3389329247555406770}
+  - component: {fileID: 876593041198574414}
   m_Layer: 0
   m_Name: AMB_Zone_1_Flower
   m_TagString: Untagged
@@ -343,32 +331,12 @@ Transform:
   m_GameObject: {fileID: 4711989973015665283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40, y: -8.4, z: 248}
+  m_LocalPosition: {x: 48.7, y: 8.3, z: 64.7}
   m_LocalScale: {x: 36.82251, y: 105.32119, z: 6.621534}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7409927891059167680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1634974129969627065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4711989973015665283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84dee7154b029f4e854c89b51068e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZoneTrigger
-  zoneID: 1
-  fallbackZoneID: 0
-  enterCrossfadeDuration: -1
-  exitCrossfadeDuration: -1
-  useChildColliders: 0
-  gizmoColor: {r: 0.6980392, g: 0.1333333, b: 0.1333333, a: 1}
-  showGizmo: 1
-  showZoneLabel: 1
 --- !u!135 &3389329247555406770
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -388,8 +356,24 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.48371264
+  m_Center: {x: 0, y: -0.016287327, z: 0}
+--- !u!114 &876593041198574414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4711989973015665283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1423110f5529a84a84ef7545232e268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneTriggerState
+  zoneStateID: 1
+  fallbackStateID: 0
+  stateGroupName: STATE_AMB_PAD_Zones
+  showDebugLogs: 1
 --- !u!1 &7410780054122763031
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +383,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2152076151867295430}
-  - component: {fileID: 1447898090205508945}
+  - component: {fileID: 6357967172506030549}
+  - component: {fileID: 513638603490155852}
   m_Layer: 0
   m_Name: AMB_ZoneAmbianceManager
   m_TagString: Untagged
@@ -422,7 +407,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7409927891059167680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447898090205508945
+--- !u!114 &6357967172506030549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -431,43 +416,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 7410780054122763031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1423110f5529a84a84ef7545232e268, type: 3}
+  m_Script: {fileID: 11500000, guid: 935877991ce48e043a45c9785421d50e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  playAmbianceEvent:
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &513638603490155852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410780054122763031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ec4603fd837a34a90c5ee411416976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: ae8d9d44f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2e941f54dc863d7489992620352fe91a, type: 2}
-  stopAmbianceEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: baccf60a3ebc5c64984d58d915153754, type: 2}
-  zoneRTPCName: RTPC_PAD_AMB_Transition
-  defaultCrossfadeDuration: 2
-  crossfadeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  hysteresisDelay: 0.3
-  showDebugLogs: 1
-  showDebugUI: 1
+    WwiseObjectReference: {fileID: 11400000, guid: 7a871fcb968b1134b9e726e848625943, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}

@@ -10,11 +10,37 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{403B2196-17CF-1709-1DD5-22DA5EBA2FDE}",
+    "Hash": "{B8AE59E2-5BD2-FC85-FF14-F1DDD2CFB350}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1144018367",
+       "Name": "Plate_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
+       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1706684651",
+       "Name": "Plate_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Medium",
+       "GUID": "{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -253,18 +279,60 @@
     ],
     "AuxBusses": [
      {
-      "Id": "3043617852",
-      "Name": "REV_1",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_1",
-      "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
-      "Color": "1"
+      "Id": "1216683595",
+      "Name": "REV_Castle",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+      "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+      "Color": "1",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1144018367"
+        }
+       ]
+      }
      },
      {
-      "Id": "3043617855",
-      "Name": "REV_2",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_2",
+      "Id": "1574958010",
+      "Name": "REV_Flower",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+      "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+      "Color": "1",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3910197480",
+      "Name": "REV_Forest",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+      "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+      "Color": "1",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4120165417",
+      "Name": "REV_Village",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
       "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
-      "Color": "1"
+      "Color": "1",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1706684651"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -274,13 +342,6 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeMaster",
       "GUID": "{66281E71-F09D-4CBE-8429-27A3A2D4F1EF}",
       "Color": "11"
-     },
-     {
-      "Id": "2274156727",
-      "Name": "RTPC_PAD_AMB_Transition",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AMB_WU\\RTPC_PAD_AMB_Transition",
-      "GUID": "{5ECD96AC-9D82-4237-9289-27C0CEF25036}",
-      "Color": "4"
      },
      {
       "Id": "3047961690",
@@ -295,6 +356,52 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_WU\\RTPC_VolumeSFX",
       "GUID": "{5CAD7533-91A8-4AA4-8638-33D7C772477B}",
       "Color": "11"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1516422471",
+      "Name": "STATE_AMB_PAD_Zones",
+      "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones",
+      "GUID": "{C0A8B467-BF14-41BB-BD7B-18DA4FA85435}",
+      "Color": "4",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones\\None",
+        "GUID": "{A139F30D-EF9F-4C81-BBE5-D18837226A20}",
+        "Color": "4"
+       },
+       {
+        "Id": "1351658826",
+        "Name": "ST_AMB_PAD_Village",
+        "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones\\ST_AMB_PAD_Village",
+        "GUID": "{42339B21-DC1F-4625-A212-E4426C603935}",
+        "Color": "4"
+       },
+       {
+        "Id": "1692906379",
+        "Name": "ST_AMB_PAD_Flower",
+        "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones\\ST_AMB_PAD_Flower",
+        "GUID": "{98947382-6AB1-41A6-B97E-637B15B0A595}",
+        "Color": "4"
+       },
+       {
+        "Id": "2882467217",
+        "Name": "ST_AMB_PAD_Forest",
+        "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones\\ST_AMB_PAD_Forest",
+        "GUID": "{5888258C-30DD-4D9B-A20D-B316EBF2BA72}",
+        "Color": "4"
+       },
+       {
+        "Id": "3490686090",
+        "Name": "ST_AMB_PAD_Castle",
+        "ObjectPath": "\\States\\Default Work Unit\\AMB_WU\\STATE_AMB_PAD_Zones\\ST_AMB_PAD_Castle",
+        "GUID": "{6CD8EDD5-F740-4D98-A89A-541B8A19D37B}",
+        "Color": "4"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -905,6 +1012,6 @@
     ]
    }
   ],
-  "FileHash": "{D161AA58-7D35-320D-9353-EDF662952C44}"
+  "FileHash": "{CF49A004-36F6-9058-2DAA-F3C7E5C78DC3}"
  }
 }

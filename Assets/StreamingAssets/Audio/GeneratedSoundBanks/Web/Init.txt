@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1516422471	STATE_AMB_PAD_Zones			\Default Work Unit\AMB_WU\STATE_AMB_PAD_Zones	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STATE_AMB_PAD_Zones			
+	1351658826	ST_AMB_PAD_Village	STATE_AMB_PAD_Zones			
+	1692906379	ST_AMB_PAD_Flower	STATE_AMB_PAD_Zones			
+	2882467217	ST_AMB_PAD_Forest	STATE_AMB_PAD_Zones			
+	3490686090	ST_AMB_PAD_Castle	STATE_AMB_PAD_Zones			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	424266135	RTPC_VolumeMaster			\Default Work Unit\UI_WU\RTPC_VolumeMaster	
 	3047961690	RTPC_VolumeMUS			\Default Work Unit\UI_WU\RTPC_VolumeMUS	
@@ -37,8 +47,15 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4210410935	AMB_Zone4_Castle			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB\AMB_Zone4_Castle	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	3043617852	REV_1			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_1	
-	3043617855	REV_2			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_2	
+	1216683595	REV_Castle			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Castle	
+	1574958010	REV_Flower			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Flower	
+	3910197480	REV_Forest			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Forest	
+	4120165417	REV_Village			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Village	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1144018367	Plate_Large	Wwise RoomVerb			
+	1706684651	Plate_Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

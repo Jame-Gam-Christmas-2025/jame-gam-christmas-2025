@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{BDE815B3-BF52-47A4-C56B-5D64B35173EF}",
+    "Hash": "{C0B94DF4-B286-D4B2-5EEF-F2D9B4BEDE64}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -47,6 +47,14 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkConcrete_02.wav",
       "CachePath": "45/{45EB5B5E-5062-1EA3-DE85-80C9F56D7442}.wem"
+     },
+     {
+      "Id": "16808915",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_Hit_Player_02.wav",
+      "CachePath": "CE/{CE47B56B-C5DB-5A01-FE03-F87EE75B5B3B}.wem"
      },
      {
       "Id": "20019814",
@@ -151,6 +159,14 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkConcrete_06.wav",
       "CachePath": "A0/{A0F9A846-AB0C-5C53-10CB-3B449276E380}.wem"
+     },
+     {
+      "Id": "145139408",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_01.wav",
+      "CachePath": "B9/{B9E49DC2-D1AC-0DA5-A916-1BA17CA6BCB4}.wem"
      },
      {
       "Id": "148228222",
@@ -319,6 +335,22 @@
       "Location": "Memory",
       "ShortName": "BOSS\\FOL_FT_JustSnow_01.wav",
       "CachePath": "0F/{0F646DEC-82EB-2D1B-A91B-73491AB23CDE}.wem"
+     },
+     {
+      "Id": "295906540",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_Hit_Player_01.wav",
+      "CachePath": "FF/{FF954E7F-6C7A-91E5-975D-E7E3E238C2AE}.wem"
+     },
+     {
+      "Id": "299809344",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_03.wav",
+      "CachePath": "3E/{3E238D3B-B109-9740-0990-A786D18AFBC1}.wem"
      },
      {
       "Id": "310087946",
@@ -777,6 +809,14 @@
       "CachePath": "38/{387ED32F-EF64-802B-9E52-0F7E0C1CF281}.wem"
      },
      {
+      "Id": "596100519",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_02.wav",
+      "CachePath": "87/{873C2EF4-DCD4-9EB8-2AE5-7CCEA0553EC3}.wem"
+     },
+     {
       "Id": "599503421",
       "Language": "SFX",
       "Streaming": "false",
@@ -953,6 +993,14 @@
       "CachePath": "B7/{B7FE90E8-5813-B54A-82D5-3C3519C02721}.wem"
      },
      {
+      "Id": "712366129",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_02.wav",
+      "CachePath": "E2/{E222D95C-45DE-3E5C-62CD-0D41C7A3E85B}.wem"
+     },
+     {
       "Id": "720550314",
       "Language": "SFX",
       "Streaming": "false",
@@ -1095,6 +1143,14 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_Walk_Gravel _01.wav",
       "CachePath": "7F/{7F4A204E-7EF0-5B67-3E37-A2EC6FCD4DE5}.wem"
+     },
+     {
+      "Id": "854231748",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_01.wav",
+      "CachePath": "6D/{6D7F7180-36DC-09C4-63DA-0A50E0AE2299}.wem"
      },
      {
       "Id": "861431005",
@@ -1305,6 +1361,14 @@
       "CachePath": "43/{43C4C2D9-D091-DAD6-049A-D7765056FE17}.wem"
      },
      {
+      "Id": "997510963",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_03.wav",
+      "CachePath": "6F/{6F293368-F42B-A58F-EF23-7D34442A27DE}.wem"
+     },
+     {
       "Id": "1002356096",
       "Language": "SFX",
       "Streaming": "false",
@@ -1419,24 +1483,174 @@
     ],
     "Events": [
      {
-      "Id": "2929275903",
-      "Name": "Play_AMB_PAD_Blend_LP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Blend_LP",
-      "GUID": "{CD240E1C-0650-4070-872C-51385E10754A}",
+      "Id": "1661945423",
+      "Name": "Play_AMB_PAD_Castle",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Castle",
+      "GUID": "{F5990873-03B2-4ABB-BF7E-9333B680073C}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "492307395"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2459718302",
+      "Name": "Play_AMB_PAD_Flower",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Flower",
+      "GUID": "{70BB4828-3F5B-4D1D-BA67-900071F425C2}",
       "Color": "4",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "463717273"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
        },
        {
-        "Id": "492307395"
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
        },
        {
-        "Id": "784274814"
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
        },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2928511412",
+      "Name": "Play_AMB_PAD_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Forest",
+      "GUID": "{9432080A-E796-4D13-BB29-11D839BF6E47}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
        {
         "Id": "898540644"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "4196331637",
+      "Name": "Play_AMB_PAD_Village",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Village",
+      "GUID": "{E130320C-6A29-47C5-B385-6CDD10BF5869}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "784274814"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
        }
       ]
      },
@@ -1490,6 +1704,36 @@
        },
        {
         "Id": "877681428"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
        }
       ]
      },
@@ -1587,6 +1831,36 @@
        {
         "Id": "1025131302"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
       ]
      },
      {
@@ -1598,6 +1872,36 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "1.2347083",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1854,6 +2158,36 @@
       "DurationType": "OneShot",
       "DurationMin": "0.36154288",
       "DurationMax": "2.83532",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1942,6 +2276,36 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.4719246",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -2309,6 +2673,36 @@
        {
         "Id": "954940189"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
       ]
      },
      {
@@ -2354,6 +2748,36 @@
        {
         "Id": "1023270544"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
       ]
      },
      {
@@ -2380,6 +2804,36 @@
        },
        {
         "Id": "979592972"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
        }
       ]
      },
@@ -2408,6 +2862,36 @@
        {
         "Id": "931222370"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
       ]
      },
      {
@@ -2432,6 +2916,156 @@
       ]
      },
      {
+      "Id": "3295576996",
+      "Name": "Play_SFX_Yule_AttackHitPlayer",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_Yule_AttackHitPlayer",
+      "GUID": "{9FFAB0EC-F0A1-43C5-BDC4-B939CD2DBFFE}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.81347144",
+      "DurationMax": "1.4075885",
+      "MediaRefs": [
+       {
+        "Id": "16808915"
+       },
+       {
+        "Id": "295906540"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1923946266",
+      "Name": "Play_SFX_Yule_AttackPounce",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_Yule_AttackPounce",
+      "GUID": "{6679895C-B743-4389-9B16-4E5AF769376B}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2295144",
+      "DurationMax": "2.7687397",
+      "MediaRefs": [
+       {
+        "Id": "145139408"
+       },
+       {
+        "Id": "712366129"
+       },
+       {
+        "Id": "997510963"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1023339604",
+      "Name": "Play_SFX_YuleAttackClaw",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_YuleAttackClaw",
+      "GUID": "{A583DC6F-F577-4B33-A6F0-B57B283A62F5}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.98092985",
+      "DurationMax": "1.6462777",
+      "MediaRefs": [
+       {
+        "Id": "299809344"
+       },
+       {
+        "Id": "596100519"
+       },
+       {
+        "Id": "854231748"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
       "Id": "3498899374",
       "Name": "Play_UI_ClickConfirmation",
       "ObjectPath": "\\Events\\Default Work Unit\\UI_WU\\Play_UI_ClickConfirmation",
@@ -2451,26 +3085,6 @@
         "Id": "675059672"
        }
       ]
-     },
-     {
-      "Id": "1280196573",
-      "Name": "Stop_AMB_PAD_Blend_LP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Stop_AMB_PAD_Blend_LP",
-      "GUID": "{218F746F-390A-4363-ABE2-A37EBF62D244}",
-      "Color": "4",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     }
-    ],
-    "GameParameters": [
-     {
-      "Id": "2274156727",
-      "Name": "RTPC_PAD_AMB_Transition",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AMB_WU\\RTPC_PAD_AMB_Transition",
-      "GUID": "{5ECD96AC-9D82-4237-9289-27C0CEF25036}",
-      "Color": "4"
      }
     ],
     "SwitchGroups": [
@@ -2604,6 +3218,6 @@
     ]
    }
   ],
-  "FileHash": "{394DD2B5-E195-8D7E-D65C-B73E3B464B6C}"
+  "FileHash": "{5CC154F3-3AF4-3F7C-E8E4-8BF85FDE7D73}"
  }
 }
