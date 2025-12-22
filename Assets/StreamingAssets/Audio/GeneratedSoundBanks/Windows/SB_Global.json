@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{C0B94DF4-B286-D4B2-5EEF-F2D9B4BEDE64}",
+    "Hash": "{54D6831B-E746-78F7-F08F-7BD05DF8244B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -3218,6 +3218,6 @@
     ]
    }
   ],
-  "FileHash": "{5C2277EA-6BC5-E6EF-2101-73BD0BFFB486}"
+  "FileHash": "{1BE83B0E-BB06-D62C-1A77-DCB8BE8EC672}"
  }
 }
