@@ -1,7 +1,10 @@
+using UnityEngine;
+using System.Collections.Generic;
+
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,7 +23,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public GameObject playerGameObject;
+
     [SerializeField] private bool lockCursor = true;
+
+    private string _currentBossName ="YuleCat";
+    private List<string> _defeatedBossNames = new();
+
+    private Vector3 _lastCheckpointPosition;
 
     private void Awake()
     {
@@ -44,11 +54,6 @@ public class GameManager : MonoBehaviour
                 break;
         } */
     }
-
-    private void Start()
-    {
-        // Load the game
-    }
     public void QuitApplication()
     {
         #if UNITY_EDITOR
@@ -62,18 +67,39 @@ public class GameManager : MonoBehaviour
     {
         // Notify Player
 
-        // Reload Scene
-
-        // Reset Player States, then use checkpoints location
-
         // Reset Scene States
 
         GameSceneManager.Instance.ReloadScene();
     }
 
-    public void SaveGame()
+    // Called in SceneManager to be applied on right time
+    public void ApplyLastCheckpoint()
     {
-        
+        // Get new player instance
+        if(playerGameObject == null)
+        {
+            playerGameObject = GameObject.Find("Player");
+        }
+
+        // Place Player to last checkpoint position
+        if(_lastCheckpointPosition != null)
+        {
+            playerGameObject.transform.position = _lastCheckpointPosition;
+        } else
+        {
+            _lastCheckpointPosition = playerGameObject.transform.position;
+        }
+    }
+
+    public void SpawnBoss(string bossName, Vector3 checkpointPosition)
+    {
+        _currentBossName = bossName;
+        _lastCheckpointPosition = checkpointPosition;
+    }
+
+    public void DefeatBoss(string bossName)
+    {
+        _defeatedBossNames.Add(bossName);
     }
 
     public void ToggleArenaMode()
