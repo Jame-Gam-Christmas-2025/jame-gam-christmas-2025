@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_Krampus_0_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueText:
+    english: 'I am Krampus, the scourge, the chains and the horn,
+
+      I haunt
+      the dark forests from evening till morn''!'
+    french: 
+  choices:
+  - text:
+      english: "Careful now, don\u2019t push your luck, or I\u2019ll scorch those
+        horns and leave you stuck."
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: 4c25060fb0182e74a8bb053ce70bd72f, type: 2}
+  - text:
+      english: "You seem a merry fiend, so fierce and grand, come join the dance
+        lend me your \nhand!"
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: d827f73dc7d5eb1479cf22f05d11f827, type: 2}
+  nextDialogue: {fileID: 0}
