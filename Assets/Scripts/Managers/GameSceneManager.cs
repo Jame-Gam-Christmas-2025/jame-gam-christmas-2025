@@ -50,6 +50,25 @@ public class GameSceneManager : MonoBehaviour
         
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    // Apply game logic
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "Feature-PlayerState-Combat")
+        {
+            GameManager.Instance.ApplyLastCheckpoint();
+        }
+    }
+
     public void LoadSceneByName(string sceneName)
     {
         // Handle Controls
