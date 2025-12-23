@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Ending2_0
+  m_Name: Dialogue_SantaEnding1_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  characterData: {fileID: 11400000, guid: 34a851d4c29ab7a448337d7d35f45a42, type: 2}
   dialogueText:
-    english: 
+    english: She did not wield such power when I imprisoned her long ago!
     french: 
   choices: []
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 5d4c9dd61f120044f985b897b71c5352, type: 2}

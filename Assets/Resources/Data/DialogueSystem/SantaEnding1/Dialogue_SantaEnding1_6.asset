@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Krampus_0
+  m_Name: Dialogue_SantaEnding1_6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
+  characterData: {fileID: 11400000, guid: e70b097da57dd3e49a1e63ccb26cb06a, type: 2}
   dialogueText:
-    english: ACHHHH! You've won, ja, you've won, or so you think!
+    english: Hunger has been clawing at me lately, and the more I look at you, the
+      more you resemble a tasty little snack.
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 7714e4adfcadb02479897c5edd482ccf, type: 2}
+  nextDialogue: {fileID: 11400000, guid: ca22ee68012e2964fab49414e38a2257, type: 2}

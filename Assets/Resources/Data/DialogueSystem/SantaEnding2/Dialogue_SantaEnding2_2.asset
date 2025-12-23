@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Krampus_0
+  m_Name: Dialogue_SantaEnding2_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
+  characterData: {fileID: 11400000, guid: 34a851d4c29ab7a448337d7d35f45a42, type: 2}
   dialogueText:
-    english: ACHHHH! You've won, ja, you've won, or so you think!
+    english: "So Mithra, too, has sinned through pride\u2026 Or perhaps you understood
+      that there must always be a jailer?"
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 7714e4adfcadb02479897c5edd482ccf, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 7d53a59e0dc355c4fae1c5d1493b72e7, type: 2}
