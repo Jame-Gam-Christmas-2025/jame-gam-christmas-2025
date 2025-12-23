@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1516422471	STATE_AMB_PAD_Zones			\Default Work Unit\AMB_WU\STATE_AMB_PAD_Zones	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STATE_AMB_PAD_Zones			
+	1351658826	ST_AMB_PAD_Village	STATE_AMB_PAD_Zones			
+	1692906379	ST_AMB_PAD_Flower	STATE_AMB_PAD_Zones			
+	2882467217	ST_AMB_PAD_Forest	STATE_AMB_PAD_Zones			
+	3490686090	ST_AMB_PAD_Castle	STATE_AMB_PAD_Zones			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	424266135	RTPC_VolumeMaster			\Default Work Unit\UI_WU\RTPC_VolumeMaster	
 	3047961690	RTPC_VolumeMUS			\Default Work Unit\UI_WU\RTPC_VolumeMUS	
@@ -7,6 +17,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	327602828	Attacks_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\Attacks_Yule	
 	361833422	FT_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\FT_Nahagame	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\SFX_WU\SFX	
+	470444002	AMB_Zone3_Village			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB\AMB_Zone3_Village	
 	496251272	Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus	
 	738454910	Attacks_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\Attacks_Krampus	
 	786071385	Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame	
@@ -26,15 +37,25 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2268577727	FOL_MC_Roll			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Roll	
 	2285774913	PRES_Krampus			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Krampus\PRES_Krampus	
+	2724184479	AMB_Zone1_Forest			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB\AMB_Zone1_Forest	
 	2749025162	PRES_Nahagame			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Nahagame\PRES_Nahagame	
+	3135360100	AMB_Zone2_Flower			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB\AMB_Zone2_Flower	
 	3545700988	Reverbs			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs	
 	3692117971	FOL_MC_Footsteps			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\MC_WU\MC\FOL_MC_Footsteps	
 	3944324759	Master_MUS			\Default Work Unit\Main Audio Bus\Master_MUS_WU\Master_MUS	
 	4114299389	PRES_Yule			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\BOSS_WU\BOSS\Yule\PRES_Yule	
+	4210410935	AMB_Zone4_Castle			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\AMB_WU\AMB\AMB_Zone4_Castle	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	3043617852	REV_1			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_1	
-	3043617855	REV_2			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_2	
+	1216683595	REV_Castle			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Castle	
+	1574958010	REV_Flower			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Flower	
+	3910197480	REV_Forest			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Forest	
+	4120165417	REV_Village			\Default Work Unit\Main Audio Bus\Master_SD_WU\Master_SD\REVERBS_WU\Reverbs\REV_Village	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1144018367	Plate_Large	Wwise RoomVerb			
+	1706684651	Plate_Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

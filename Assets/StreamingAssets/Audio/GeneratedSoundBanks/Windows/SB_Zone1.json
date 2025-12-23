@@ -11,37 +11,12 @@
     "GUID": "{ECC99A71-9F9A-4F8A-8096-38F8D0AE70D6}",
     "Color": "25",
     "Language": "SFX",
-    "Hash": "{A24107A2-AB80-E673-19BC-3AE05B3DFF5E}",
+    "Hash": "{CAE40572-A4D5-E171-C107-1052AA1FBAFC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Zone1",
     "ShortName": "SB_Zone1",
-    "Path": "SB_Zone1.bnk",
-    "Media": [
-     {
-      "Id": "898540644",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB\\AMB_PAD_Forest_LP.wav",
-      "CachePath": "9D/{9D639BFB-FD47-3B72-3367-C40B77BE396F}.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "1335611711",
-      "Name": "Play_AMB_PAD_Forest_LP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Forest_LP",
-      "GUID": "{1E32199F-2967-4830-96B3-72BF9960CB7E}",
-      "Color": "4",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "898540644"
-       }
-      ]
-     }
-    ]
+    "Path": "SB_Zone1.bnk"
    }
   ],
-  "FileHash": "{8B83F1CD-71EB-B3D5-5EA4-9223F30074BE}"
+  "FileHash": "{F64F544D-4B57-E0EA-AB6C-5E53764C453E}"
  }
 }

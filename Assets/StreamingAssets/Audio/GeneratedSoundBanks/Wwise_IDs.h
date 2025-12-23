@@ -13,8 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_AMB_PAD_FOREST_LP = 1335611711U;
-        static const AkUniqueID PLAY_AMB_TEST = 2976252989U;
+        static const AkUniqueID PLAY_AMB_PAD_CASTLE = 1661945423U;
+        static const AkUniqueID PLAY_AMB_PAD_FLOWER = 2459718302U;
+        static const AkUniqueID PLAY_AMB_PAD_FOREST = 2928511412U;
+        static const AkUniqueID PLAY_AMB_PAD_VILLAGE = 4196331637U;
+        static const AkUniqueID PLAY_AMB_RFX_FORESTFAR = 2490489396U;
+        static const AkUniqueID PLAY_AMB_RFX_FORESTMID = 2760358305U;
+        static const AkUniqueID PLAY_FOL_FT_YULE_WALK = 2425283306U;
         static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
         static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
@@ -24,8 +29,29 @@ namespace AK
         static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
         static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
         static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
+        static const AkUniqueID PLAY_SFX_YULE_ATTACKHITPLAYER = 3295576996U;
+        static const AkUniqueID PLAY_SFX_YULE_ATTACKPOUNCE = 1923946266U;
+        static const AkUniqueID PLAY_SFX_YULEATTACKCLAW = 1023339604U;
         static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace STATE_AMB_PAD_ZONES
+        {
+            static const AkUniqueID GROUP = 1516422471U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_AMB_PAD_CASTLE = 3490686090U;
+                static const AkUniqueID ST_AMB_PAD_FLOWER = 1692906379U;
+                static const AkUniqueID ST_AMB_PAD_FOREST = 2882467217U;
+                static const AkUniqueID ST_AMB_PAD_VILLAGE = 1351658826U;
+            } // namespace STATE
+        } // namespace STATE_AMB_PAD_ZONES
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -91,7 +117,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID SB_GLOBAL = 2711878180U;
-        static const AkUniqueID SB_TEST = 690783697U;
         static const AkUniqueID SB_ZONE1 = 2490956260U;
         static const AkUniqueID SB_ZONE2 = 2490956263U;
         static const AkUniqueID SB_ZONE3 = 2490956262U;
@@ -101,6 +126,10 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID AMB_ZONE1_FOREST = 2724184479U;
+        static const AkUniqueID AMB_ZONE2_FLOWER = 3135360100U;
+        static const AkUniqueID AMB_ZONE3_VILLAGE = 470444002U;
+        static const AkUniqueID AMB_ZONE4_CASTLE = 4210410935U;
         static const AkUniqueID ATTACKS_KRAMPUS = 738454910U;
         static const AkUniqueID ATTACKS_NAHAGAME = 1552412047U;
         static const AkUniqueID ATTACKS_YULE = 327602828U;
@@ -131,8 +160,10 @@ namespace AK
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID REV_1 = 3043617852U;
-        static const AkUniqueID REV_2 = 3043617855U;
+        static const AkUniqueID REV_CASTLE = 1216683595U;
+        static const AkUniqueID REV_FLOWER = 1574958010U;
+        static const AkUniqueID REV_FOREST = 3910197480U;
+        static const AkUniqueID REV_VILLAGE = 4120165417U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
