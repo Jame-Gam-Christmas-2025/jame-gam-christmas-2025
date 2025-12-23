@@ -63,10 +63,24 @@ public class GameSceneManager : MonoBehaviour
     // Apply game logic
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "Feature-PlayerState-Combat")
+        if (scene.name == "Feature-PlayerState-Combat")
         {
             GameManager.Instance.ApplyLastCheckpoint();
         }
+
+        CursorLockMode newCursorLockState;
+
+        switch (scene.name)
+        {
+            case "leveldesign":
+                newCursorLockState = CursorLockMode.Locked;
+                break;
+            default:
+                newCursorLockState = CursorLockMode.None;
+                break;
+        }
+
+        Cursor.lockState = newCursorLockState;
     }
 
     public void LoadSceneByName(string sceneName)
