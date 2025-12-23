@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
 using TMPro;
 using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine.UIElements;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, ISelectHandler, IDeselectHandler, ISubmitHandler
 {
