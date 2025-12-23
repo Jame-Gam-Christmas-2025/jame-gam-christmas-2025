@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_SantaEnding2_0
+  m_Name: Dialogue_SantaEnding2_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   characterData: {fileID: 11400000, guid: 34a851d4c29ab7a448337d7d35f45a42, type: 2}
   dialogueText:
-    english: Urgh, uff...
+    english: "Prepare yourself, flame-bearer. The crown is heavy\u2026 very heavy."
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 8766ce863b78c3f47b8b32f9bc872f48, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 79df9120a4a4ab04c9a405aa1485197c, type: 2}

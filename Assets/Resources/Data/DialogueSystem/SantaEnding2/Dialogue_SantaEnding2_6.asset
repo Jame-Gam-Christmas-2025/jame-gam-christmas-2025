@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_SantaEnding2_0
+  m_Name: Dialogue_SantaEnding2_6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   characterData: {fileID: 11400000, guid: 34a851d4c29ab7a448337d7d35f45a42, type: 2}
   dialogueText:
-    english: Urgh, uff...
+    english: Is nothing without... the hunt.
     french: 
   choices: []
-  nextDialogue: {fileID: 11400000, guid: 8766ce863b78c3f47b8b32f9bc872f48, type: 2}
+  nextDialogue: {fileID: 11400000, guid: d74e68ee1164a7541a85328f332386e7, type: 2}
