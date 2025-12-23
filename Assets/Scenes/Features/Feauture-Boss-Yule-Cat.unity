@@ -316,6 +316,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 12457862660487578, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 12457862660487578, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _launchDelay
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 996276693526110991, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4345122
@@ -363,6 +371,18 @@ PrefabInstance:
     - target: {fileID: 4326331834284275520, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
       propertyPath: m_Name
       value: PlayerSceneEssentials
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596137149750381804, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: edgeColor.b
+      value: 0.24820217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596137149750381804, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: edgeColor.g
+      value: 0.607428
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596137149750381804, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: edgeColor.r
+      value: 0.7924528
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
@@ -18,11 +17,15 @@ public class BossController : MonoBehaviour
     private Animator _anim;
     private BossAttack _currentAttack;
 
+    // States
     private bool _isAttacking;
     [SerializeField] private bool _isActive;
     private bool _isJumping;
 
-    private Vector3 _jumpTarget;
+    // Jump Calculation Vars
+    private Vector3 _jumpStartPos;
+    private Vector3 _jumpTargetPos;
+    private float _jumpTimer;
     private float _lastJumpTime = -999f;
 
     public bool IsActive
@@ -33,15 +36,9 @@ public class BossController : MonoBehaviour
             if (_isActive != value)
             {
                 _isActive = value;
-                if (_isActive)
+                if (_isActive && _config.activationBehavior == BossActivation.JumpToPlayer)
                 {
-                    // Immediately block FixedUpdate movement BEFORE the next physics frame
-                    if (_config.activationBehavior == BossActivation.JumpToPlayer)
-                    {
-                        _isJumping = true;
-                        _anim.SetFloat("Speed", 0);
-                        StartCoroutine(JumpToPlayerRoutine());
-                    }
+                    InitiateJump();
                 }
             }
         }
@@ -51,49 +48,43 @@ public class BossController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _anim = GetComponent<Animator>();
-
-        if (_player == null)
-        {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p) _player = p.transform;
-        }
-
+        if (_player == null) _player = GameObject.FindGameObjectWithTag("Player")?.transform;
         AssignAttackReferences();
     }
 
     void FixedUpdate()
     {
-        // 1. Check if boss is active
         if (!_isActive) return;
 
-        // 2. Check if boss is busy. 
-        // If _isJumping was set in the property setter, this returns immediately.
-        if (_isJumping || _isAttacking) return;
+        // BLOCK 1: Jump update
+        if (_isJumping)
+        {
+            UpdateJumpPhysics();
+            return; // Absolute lockout
+        }
 
-        if (_player == null) return;
+        if (_isAttacking || _player == null) return;
 
         RotateToPlayer();
 
         float distance = Vector3.Distance(transform.position, _player.position);
 
-        // 3. Combat Jump Logic
+        // BLOCK 2: Combat Jump Trigger
         if (_config.canJumpInCombat &&
             Time.time >= _lastJumpTime + _config.jumpCooldown &&
             distance >= _config.combatJumpMinDistance &&
             distance <= _config.combatJumpMaxDistance)
         {
-            // Update cooldown timer even if chance fails to prevent frame-spamming
             _lastJumpTime = Time.time;
 
             if (Random.Range(0f, 100f) < _config.combatJumpChance)
             {
-                _isJumping = true;
-                StartCoroutine(JumpToPlayerRoutine());
+                InitiateJump();
                 return;
             }
         }
 
-        // 4. Combat / Movement
+        // BLOCK 3: Standard AI
         if (distance <= _config.attackDistance)
         {
             TryAttack(distance);
@@ -104,23 +95,84 @@ public class BossController : MonoBehaviour
         }
     }
 
-    void RotateToPlayer()
+    private void InitiateJump()
     {
-        Vector3 direction = (_player.position - transform.position).normalized;
-        direction.y = 0;
-        if (direction != Vector3.zero)
+        if (_player == null) return;
+
+        _isJumping = true;
+        _jumpTimer = 0f;
+        _jumpStartPos = transform.position;
+        _jumpTargetPos = _player.position;
+
+        // PHYSICS RESET: Essential for vertical movement
+        _rb.useGravity = false;
+        _rb.isKinematic = true; // Temporary kinematic to bypass friction/gravity fighting
+        _rb.interpolation = RigidbodyInterpolation.None; // Prevent jitter during manual Lerp
+
+        _anim.SetFloat("Speed", 0);
+        _anim.SetTrigger("Jump");
+    }
+
+    private void UpdateJumpPhysics()
+    {
+        float duration = Mathf.Max(0.1f, _config.jumpDuration);
+        _jumpTimer += Time.fixedDeltaTime;
+        float t = _jumpTimer / duration;
+
+        // Parabola logic
+        Vector3 horizontal = Vector3.Lerp(_jumpStartPos, _jumpTargetPos, t);
+        float height = 4f * t * (1f - t) * _config.jumpHeight;
+
+        // Use movePosition or transform.position since we are Kinematic
+        _rb.MovePosition(horizontal + Vector3.up * height);
+
+        if (t >= 1.0f)
         {
-            Quaternion targetRot = Quaternion.LookRotation(direction);
-            _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, targetRot, _config.rotationSpeed * Time.fixedDeltaTime));
+            Landing();
         }
     }
 
+    private void Landing()
+    {
+        _isJumping = false;
+
+        // PHYSICS RESTORE
+        _rb.isKinematic = false;
+        _rb.useGravity = true;
+        _rb.interpolation = RigidbodyInterpolation.Interpolate;
+
+        // Final snap to target
+        transform.position = _jumpTargetPos;
+        _rb.linearVelocity = Vector3.zero;
+
+        // Damage
+        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
+        foreach (var hit in hits)
+        {
+            if (hit.gameObject != gameObject)
+                hit.GetComponent<IDamageable>()?.TakeDamage(_config.jumpDamage);
+        }
+    }
+
+    // --- Standard AI Methods ---
+
     void MoveToPlayer()
     {
-        Vector3 direction = (_player.position - transform.position).normalized;
-        direction.y = 0;
-        _rb.MovePosition(_rb.position + direction * _config.moveSpeed * Time.fixedDeltaTime);
+        Vector3 dir = (_player.position - transform.position).normalized;
+        dir.y = 0;
+        _rb.MovePosition(_rb.position + dir * _config.moveSpeed * Time.fixedDeltaTime);
         _anim.SetFloat("Speed", _config.moveSpeed);
+    }
+
+    void RotateToPlayer()
+    {
+        Vector3 dir = (_player.position - transform.position).normalized;
+        dir.y = 0;
+        if (dir != Vector3.zero)
+        {
+            Quaternion target = Quaternion.LookRotation(dir);
+            _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, target, _config.rotationSpeed * Time.fixedDeltaTime));
+        }
     }
 
     void TryAttack(float distance)
@@ -139,72 +191,20 @@ public class BossController : MonoBehaviour
         }
     }
 
-    IEnumerator JumpToPlayerRoutine()
-    {
-        _rb.useGravity = false;
-
-#if UNITY_6000_0_OR_NEWER
-        _rb.linearVelocity = Vector3.zero;
-#else
-            _rb.velocity = Vector3.zero;
-#endif
-
-        Vector3 startPos = transform.position;
-        _jumpTarget = _player.position;
-
-        float timer = 0f;
-        float duration = Mathf.Max(0.1f, _config.jumpDuration);
-
-        _anim.SetTrigger("Jump");
-
-        while (timer < duration)
-        {
-            timer += Time.fixedDeltaTime;
-            float t = Mathf.Clamp01(timer / duration);
-
-            Vector3 currentPos = Vector3.Lerp(startPos, _jumpTarget, t);
-            float height = 4f * t * (1f - t) * _config.jumpHeight;
-
-            _rb.MovePosition(currentPos + Vector3.up * height);
-
-            yield return new WaitForFixedUpdate();
-        }
-
-        CompleteLanding();
-    }
-
-    public void OnJumpLand() // Animation Event
-    {
-        CompleteLanding();
-    }
-
-    private void CompleteLanding()
-    {
-        if (!_isJumping) return;
-
-        _isJumping = false;
-        _rb.MovePosition(_jumpTarget);
-        _rb.useGravity = true;
-
-#if UNITY_6000_0_OR_NEWER
-        _rb.linearVelocity = Vector3.zero;
-#else
-            _rb.velocity = Vector3.zero;
-#endif
-
-        // Landing Damage
-        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
-        foreach (var hit in hits)
-        {
-            if (hit.gameObject == gameObject) continue;
-            var dmg = hit.GetComponent<IDamageable>();
-            dmg?.TakeDamage(_config.jumpDamage);
-        }
-    }
-
-    // --- Boilerplate Animation Events ---
+    // --- Boilerplate Setup ---
     public void OnAttackStart() => _currentAttack?.hitbox?.EnableHitbox();
     public void OnAttackEnd() { _currentAttack?.hitbox?.DisableHitbox(); _isAttacking = false; _currentAttack = null; }
-    public void OnProjectileSpawn() { /* logic same as before */ }
-    private void AssignAttackReferences() { /* logic same as before */ }
+    public void OnJumpLand() { if (_isJumping) Landing(); }
+
+    private void AssignAttackReferences()
+    {
+        if (_config?.attacks == null) return;
+        for (int i = 0; i < _config.attacks.Count; i++)
+        {
+            var a = _config.attacks[i];
+            if (!a.isRanged && i < _attackHitboxes.Length) a.hitbox = _attackHitboxes[i];
+            if (a.isRanged && i < _projectilePools.Length) a.pool = _projectilePools[i];
+            if (a.isRanged && i < _projectileSpawns.Length) a.spawnPoint = _projectileSpawns[i];
+        }
+    }
 }

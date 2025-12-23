@@ -53,7 +53,7 @@ public class EnemyState : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(_deathDelay);
 
         OnDeath?.Invoke();
-        Destroy(gameObject);
+        
     }
 
     public void Heal(float healAmount)

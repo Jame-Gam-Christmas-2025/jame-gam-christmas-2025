@@ -51,34 +51,29 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
     private IEnumerator DeathSequence()
     {
-        // Trigger impact frame
-        if (ImpactFrameManager.Instance != null)
+       
+        var bossController = GetComponent<BossController>();
+        if (bossController != null)
         {
-            ImpactFrameManager.Instance.TriggerImpactFrame(
-                _impactDuration,
-                _impactIntensity,
-                transform.position
-            );
+            bossController.IsActive = false; 
         }
 
-        yield return new WaitForSeconds(_deathDelay);
+        
+        if (ImpactFrameManager.Instance != null)
+        {
+            ImpactFrameManager.Instance.TriggerImpactFrame(_impactDuration, _impactIntensity, transform.position);
+        }
 
-        // Trigger death animation FIRST
+        
         var anim = GetComponent<Animator>();
         if (anim != null)
         {
             anim.SetTrigger("Die");
         }
 
-        // THEN deactivate boss (stops movement/attacks but animation still plays)
-        var bossController = GetComponent<BossController>();
-        if (bossController != null)
-        {
-            bossController.IsActive = false;
-        }
+        
+        yield return new WaitForSeconds(_deathDelay);
 
         OnDeath?.Invoke();
-
-        // Boss stays in scene - not destroyed
     }
 }

@@ -24,8 +24,8 @@ MonoBehaviour:
   canJumpInCombat: 1
   combatJumpMinDistance: 19.89
   combatJumpMaxDistance: 65.9
-  combatJumpChance: 30
-  jumpCooldown: 5
+  combatJumpChance: 100
+  jumpCooldown: 10
   attacks:
   - animationTrigger: Bite
     minRange: 0
