@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
   m_Name: Dialogue_Example_0
   m_EditorClassIdentifier: 
-  id: 1
+  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
   dialogueText:
     english: Did you see Toad? I did not have any news since 2017...
     french: As-tu vu Toad? Je n'ai pas eu de nouvelles de lui depuis 2017...
@@ -35,3 +35,4 @@ MonoBehaviour:
     alignmentBonus: -2
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
+  nextDialogue: {fileID: 0}

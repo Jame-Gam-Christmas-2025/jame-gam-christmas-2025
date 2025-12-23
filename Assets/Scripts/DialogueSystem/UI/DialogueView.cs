@@ -16,8 +16,6 @@ namespace UI
 #if UNITY_EDITOR
         [Header("Editor only")]
         [SerializeField] private TestDialogue testDialogue;
-        [SerializeField] private Sprite testAvatarSprite;
-        [SerializeField] private string testNpcName;
 #endif
 
         [Header("Dialogue view")]
@@ -120,13 +118,15 @@ namespace UI
         /// <param name="dialogueData"></param>
         /// <param name="avatarSprite"></param>
         /// <param name="npcName"></param>
-        public void StartNewDialogue(DialogueData dialogueData, Sprite avatarSprite, string npcName)
+        public void StartNewDialogue(DialogueData dialogueData)
         {
             Show();
 
             _currentDialogue = dialogueData;
-            AvatarSprite = avatarSprite;
-            NpcName = npcName;
+            CharacterData character = dialogueData.characterData;
+            if (character.avatar)
+                AvatarSprite = character.avatar;
+            NpcName = character.characterName;
 
             StartDialogue(dialogueData);
         }
@@ -137,6 +137,14 @@ namespace UI
         public void StartDialogue(DialogueData nextDialogue)
         {
             _currentDialogue = nextDialogue;
+
+            if (_currentDialogue.characterData)
+            {
+                CharacterData character = _currentDialogue.characterData;
+
+                AvatarSprite = character.avatar;
+                NpcName = character.characterName;
+            }
 
             EventSystem.current.SetSelectedGameObject(gameObject);
 
@@ -308,17 +316,15 @@ namespace UI
             FlavorText,
             Ending1,
             Ending2,
-            Test
+            Example
         }
 
         [ContextMenu("Start example dialogue")]
         public void EditorStartDialogue()
         {
             DialogueData dialogueData = Resources.Load<DialogueData>($"Data/DialogueSystem/{testDialogue.ToString()}/Dialogue_{testDialogue.ToString()}_0");
-            Sprite avatarSprite = testAvatarSprite;
-            string npcName = testNpcName;
 
-            StartNewDialogue(dialogueData, avatarSprite, npcName);
+            StartNewDialogue(dialogueData);
         }
 #endif
 #endregion

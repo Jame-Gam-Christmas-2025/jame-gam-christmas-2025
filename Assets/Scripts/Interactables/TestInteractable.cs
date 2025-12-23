@@ -19,7 +19,7 @@ public class TestInteractable : Interactable
 
         if (dialogueView != null)
         {
-            dialogueView.StartNewDialogue(dialogue, avatar, npcName);
+            dialogueView.StartNewDialogue(dialogue);
         }
     }
 
