@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Dialogue_Namahage_4_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: Take what you came for, but if our path were to cross again... There
-      won't be choices no more. Only the harshness of the blade.
+    english: Take what you came for, but if our path were to cross again... I might
+      be tempted to leave you no choice but the harshness of the blade
     french: 
   choices: []
   nextDialogue: {fileID: 0}
