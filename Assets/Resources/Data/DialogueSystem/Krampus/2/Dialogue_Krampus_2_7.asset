@@ -19,14 +19,14 @@ MonoBehaviour:
   choices:
   - text:
       english: "What if I told you that me, the J\xF3lak\xF6tturinn and Namahage
-        are on our way to \nsend a certain someone back where he belongs? (GOOD +1)"
+        are on our way to \nsend a certain someone back where he belongs?"
       french: 
     alignmentBonus: 1
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: d3b557c0fc8608243a17c21de866d76e, type: 2}
   - text:
       english: "Enough, Krumpus. Dancing and creeping over children won't make the
-        world a \nbetter place. Your powers, now. (EVIL +1)"
+        world a \nbetter place. Your powers, now."
       french: 
     alignmentBonus: -1
     choiceCondition: {fileID: 0}

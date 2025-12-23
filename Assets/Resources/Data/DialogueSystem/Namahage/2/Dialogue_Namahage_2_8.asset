@@ -17,15 +17,15 @@ MonoBehaviour:
     french: 
   choices:
   - text:
-      english: "Welcome to the team, Namahage. It's time to give choice the place
-        it deserves. \n(GOOD +1)"
+      english: Welcome to the team, Namahage. It's time to give choice the place
+        it deserves.
       french: 
     alignmentBonus: 0
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: 0c985d010fe9c124ea80449118b6b353, type: 2}
   - text:
       english: "Old traditions are meant to fade. Your armchair philosophy won\u2019t
-        bend the course \nof time. Your powers are mine. (EVIL +1)"
+        bend the course \nof time. Your powers are mine."
       french: 
     alignmentBonus: 0
     choiceCondition: {fileID: 0}

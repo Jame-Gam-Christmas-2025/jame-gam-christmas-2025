@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Dialogue_Krampus_4_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueText:
-    english: "My powers are yours. Now leave me, some journeys don't need more witnesses,
-      and I \nalready know how this one ends."
+    english: My powers are yours. Now leave me, some journeys don't need more witnesses,
+      and I might already know how this one ends.
     french: 
   choices: []
   nextDialogue: {fileID: 0}
