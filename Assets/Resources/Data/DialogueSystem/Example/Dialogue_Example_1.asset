@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
   m_Name: Dialogue_Example_1
   m_EditorClassIdentifier: 
-  id: 0
+  characterData: {fileID: 11400000, guid: e70b097da57dd3e49a1e63ccb26cb06a, type: 2}
   dialogueText:
     english: Anyway... Have fun!
     french: 
   choices: []
+  nextDialogue: {fileID: 0}
