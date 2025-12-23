@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -33,6 +34,8 @@ namespace UI
 
         private DialogueData _currentDialogue;
         private List<DialogueChoice> _choices = new List<DialogueChoice>();
+
+        private UnityEvent _onEndDialogue = null;
 
         // Player objects variables
         private GameObject _player;
@@ -115,17 +118,22 @@ namespace UI
         /// <summary>
         /// Call this method to launch a whole new dialogue.
         /// </summary>
-        /// <param name="dialogueData"></param>
-        /// <param name="avatarSprite"></param>
-        /// <param name="npcName"></param>
-        public void StartNewDialogue(DialogueData dialogueData)
+        /// <param name="dialogueData">First dialogue to launch.</param>
+        /// <param name="onEndDialogue">(Optionnal) event on end of dialogue.</param>
+        public void StartNewDialogue(DialogueData dialogueData, UnityEvent onEndDialogue = null)
         {
             Show();
 
             _currentDialogue = dialogueData;
+
+            if (onEndDialogue != null) 
+                _onEndDialogue = onEndDialogue;
+
             CharacterData character = dialogueData.characterData;
+
             if (character.avatar)
                 AvatarSprite = character.avatar;
+
             NpcName = character.characterName;
 
             StartDialogue(dialogueData);
@@ -282,6 +290,8 @@ namespace UI
                     StartDialogue(_currentDialogue.nextDialogue);
                     return;
                 }
+
+                _onEndDialogue?.Invoke();
                 
                 // Show player view
 
@@ -324,7 +334,10 @@ namespace UI
         {
             DialogueData dialogueData = Resources.Load<DialogueData>($"Data/DialogueSystem/{testDialogue.ToString()}/Dialogue_{testDialogue.ToString()}_0");
 
-            StartNewDialogue(dialogueData);
+            UnityEvent onEnd = new UnityEvent();
+            onEnd.AddListener(() => GameManager.Instance.QuitApplication());
+
+            StartNewDialogue(dialogueData, onEnd);
         }
 #endif
 #endregion
