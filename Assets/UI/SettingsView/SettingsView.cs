@@ -30,6 +30,16 @@ public class SettingsView : MonoBehaviour
         SetupResolutionDropdown();
     }
 
+    private void OnEnable()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void SetupAudioSliders()
     {
         // Setup slider listeners
