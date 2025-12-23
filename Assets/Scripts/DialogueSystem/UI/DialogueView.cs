@@ -314,8 +314,8 @@ namespace UI
             Krampus,
             Namahage,
             FlavorText,
-            Ending1,
-            Ending2,
+            SantaEnding1,
+            SantaEnding2,
             Example
         }
 

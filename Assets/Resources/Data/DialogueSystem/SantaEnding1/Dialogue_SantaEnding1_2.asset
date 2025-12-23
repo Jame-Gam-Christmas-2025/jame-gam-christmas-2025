@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
-  m_Name: Dialogue_Ending1_0
+  m_Name: Dialogue_SantaEnding1_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
   dialogueText:
-    english: 
+    english: "I\u2019m sorry, Santa, but Mithra did not come alone this time around,
+      no, no!"
     french: 
   choices: []
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: f09d210abd50de440af06d2788e829fd, type: 2}
