@@ -1,66 +1,54 @@
-using System.Collections;
 using UnityEngine;
-using ImpactFrameSystem;
 using UnityEngine.Events;
+using System.Collections;
+using ImpactFrameSystem;
 
-/// <summary>
-/// Boss version of EnemyState that doesn't destroy the GameObject on death.
-/// Instead, it transitions to a "Lie Down" state for further interactions.
-/// </summary>
 public class BossEnemyState : MonoBehaviour, IDamageable
 {
-    [Header("Boss Settings")]
     [SerializeField] private BossConfig _config;
-    
+
     [Header("Impact Frame Settings")]
     [SerializeField] private float _impactDuration = 2f;
     [SerializeField] private float _impactIntensity = 1.2f;
-    
+
+    [Header("Death Settings")]
+    [SerializeField] private float _deathDelay = 0.3f;
+
     public UnityEvent OnDeath;
     public UnityEvent OnDamageTaken;
-    
+
     public float CurrentHealth { get; private set; }
-    public float MaxHealth => _config != null ? _config.maxHealth : 500f;
+    public float MaxHealth => _config.maxHealth;
     public bool IsDead { get; private set; }
-    
-    private BossController _bossController;
-    
-    void Awake()
-    {
-        _bossController = GetComponent<BossController>();
-    }
-    
+
     void Start()
     {
         CurrentHealth = MaxHealth;
-        IsDead = false;
     }
-    
-    public void TakeDamage(float damageAmount)
+
+    public void TakeDamage(float damage)
     {
         if (IsDead) return;
-        
-        CurrentHealth -= damageAmount;
+
+        CurrentHealth -= damage;
         CurrentHealth = Mathf.Max(CurrentHealth, 0);
-        
+
         OnDamageTaken?.Invoke();
-        
-        Debug.Log($"{gameObject.name} took {damageAmount} damage. Current HP: {CurrentHealth}/{MaxHealth}");
-        
+
         if (CurrentHealth <= 0)
         {
             Die();
         }
     }
-    
+
     public void Die()
     {
         if (IsDead) return;
-        
+
         IsDead = true;
         StartCoroutine(DeathSequence());
     }
-    
+
     private IEnumerator DeathSequence()
     {
         // Trigger impact frame
@@ -72,41 +60,25 @@ public class BossEnemyState : MonoBehaviour, IDamageable
                 transform.position
             );
         }
-        
-        // Wait for death delay
-        float deathDelay = _config != null ? _config.deathDelay : 0.3f;
-        yield return new WaitForSeconds(deathDelay);
-        
-        // Notify boss controller to transition to death state
-        if (_bossController != null)
+
+        yield return new WaitForSeconds(_deathDelay);
+
+        // Trigger death animation FIRST
+        var anim = GetComponent<Animator>();
+        if (anim != null)
         {
-            _bossController.OnBossDied();
+            anim.SetTrigger("Die");
         }
-        
+
+        // THEN deactivate boss (stops movement/attacks but animation still plays)
+        var bossController = GetComponent<BossController>();
+        if (bossController != null)
+        {
+            bossController.IsActive = false;
+        }
+
         OnDeath?.Invoke();
-        
-        // NOTE: We do NOT destroy the GameObject - boss remains in scene
-        Debug.Log($"{gameObject.name} has died but remains in scene for interaction.");
-    }
-    
-    public void Heal(float healAmount)
-    {
-        if (IsDead) return;
-        
-        CurrentHealth += healAmount;
-        CurrentHealth = Mathf.Min(CurrentHealth, MaxHealth);
-        Debug.Log($"{gameObject.name} healed {healAmount}. Current HP: {CurrentHealth}/{MaxHealth}");
-    }
-    
-    /// <summary>
-    /// Set the boss config reference
-    /// </summary>
-    public void SetConfig(BossConfig config)
-    {
-        _config = config;
-        if (CurrentHealth == 0)
-        {
-            CurrentHealth = MaxHealth;
-        }
+
+        // Boss stays in scene - not destroyed
     }
 }
