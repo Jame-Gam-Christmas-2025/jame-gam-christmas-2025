@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
   m_Name: Dialogue_Krampus_0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
   dialogueText:
     english: ACHHHH! You've won, ja, you've won, or so you think!
     french: 
