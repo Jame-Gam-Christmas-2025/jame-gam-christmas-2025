@@ -20,14 +20,14 @@ MonoBehaviour:
   choices:
   - text:
       english: "You're a monster, end of story. \nLend me your power, or I'll take
-        it by force. (EVIL +1)"
+        it by force."
       french: 
     alignmentBonus: -1
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: fe433668978460b4999adcc1ac16edb1, type: 2}
   - text:
       english: "I see. Well, it seems we have a common enemy. \nLet's unite our forces,
-        J\xF3lak\xF6tturinn! (GOOD +1)"
+        J\xF3lak\xF6tturinn!"
       french: 
     alignmentBonus: 1
     choiceCondition: {fileID: 0}

@@ -23,4 +23,4 @@ MonoBehaviour:
     alignmentBonus: 0
     choiceCondition: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: 703d78b95a0f62d4a93e8a9009c4a0d7, type: 2}
-  nextDialogue: {fileID: 11400000, guid: 703d78b95a0f62d4a93e8a9009c4a0d7, type: 2}
+  nextDialogue: {fileID: 0}
