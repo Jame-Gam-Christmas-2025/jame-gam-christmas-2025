@@ -420,6 +420,22 @@ MonoBehaviour:
   - {fileID: 6066618937832109127}
   _projectilePools: []
   _projectileSpawns: []
+  BossFootsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8a90ff63ebdc4d44994f4c60d52a0bb1, type: 2}
+  BossAttack1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e0e4fad5e4a68da4cb0fc8835adea0bd, type: 2}
+  BossAttack2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7bb25e09706bfc34897c3cf0940f30ba, type: 2}
+  BossQueue:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e990dfb4d3a69f446b51382caa3fae18, type: 2}
 --- !u!114 &3360973596089112375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,10 +449,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossEnemyState
   _config: {fileID: 11400000, guid: 0433b64b71e01ad4e8c726bb7b71f4bc, type: 2}
+  _bossController: {fileID: 0}
   _impactDuration: 2
   _impactIntensity: 1.2
   _deathDelay: 0.3
   bossAreaPostProcess: {fileID: 0}
+  bossLimitWalls: {fileID: 0}
+  bossFirstDialogue: {fileID: 0}
   OnDeath:
     m_PersistentCalls:
       m_Calls: []

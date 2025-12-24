@@ -47,7 +47,7 @@ MonoBehaviour:
   masterVolumeRTPC: RTPC_VolumeMaster
   musicVolumeRTPC: RTPC_VolumeMUS
   sfxVolumeRTPC: RTPC_VolumeSFX
-  showDebugLogs: 0
+  showDebugLogs: 1
   PlayForestMusic:
     idInternal: 0
     valueGuidInternal: 
@@ -104,3 +104,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  PlayBellAltar:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8be3bd21e4716984d8b54053a3c7eefa, type: 2}

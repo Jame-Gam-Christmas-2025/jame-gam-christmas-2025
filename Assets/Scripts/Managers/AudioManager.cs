@@ -109,7 +109,14 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event StopGoodEndingMusic;
     public AK.Wwise.Event PlayMenuMusic;
     public AK.Wwise.Event StopMenuMusic;
+    
+    public AK.Wwise.Event PlayBellAltar;
 
+    public void PlayBellSFX(GameObject gameObject)
+    {
+        PlayBellAltar.Post(gameObject);
+    }
+    
     public void PlayNamahageMUS(GameObject gameObject)
     {
         PlayNamahageMusic.Post(gameObject);

@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{353F6CDD-6B88-5838-A3A5-7BD49CE8358B}",
+    "Hash": "{5445BC8E-4DAA-4F80-0DE1-490B473DFC26}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -911,6 +911,14 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttackDistanceHit_02.wav",
       "CachePath": "0A/{0ACD5B9E-47F9-C1B1-BEFE-9284A6AE68FA}.wem"
+     },
+     {
+      "Id": "647129184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Santa Boss Fight.wav",
+      "CachePath": "1B/{1B637B24-17E8-3259-5B6C-5B188EFBC293}.wem"
      },
      {
       "Id": "653697373",
@@ -3140,6 +3148,21 @@
       ]
      },
      {
+      "Id": "2441382156",
+      "Name": "Play_MUS_SantaBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_SantaBossFight",
+      "GUID": "{241F3D97-C1EE-462C-BB67-B0BA05327CC8}",
+      "Color": "16",
+      "DurationType": "OneShot",
+      "DurationMin": "101.64807",
+      "DurationMax": "101.64807",
+      "MediaRefs": [
+       {
+        "Id": "647129184"
+       }
+      ]
+     },
+     {
       "Id": "741827436",
       "Name": "Play_MUS_YuleBossFight",
       "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_YuleBossFight",
@@ -3411,6 +3434,17 @@
       "DurationMax": "0"
      },
      {
+      "Id": "2519430714",
+      "Name": "Stop_MUS_SantaBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_SantaBossFight",
+      "GUID": "{92803F36-9BA5-4709-98B3-2FA0CF06D7DC}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1324619110",
       "Name": "Stop_MUS_YuleBossFight",
       "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_YuleBossFight",
@@ -3553,6 +3587,6 @@
     ]
    }
   ],
-  "FileHash": "{0803EDDC-075B-A749-E09B-B5A780DFD212}"
+  "FileHash": "{E4CB27E8-EE48-0274-B1EC-D383FF54840E}"
  }
 }

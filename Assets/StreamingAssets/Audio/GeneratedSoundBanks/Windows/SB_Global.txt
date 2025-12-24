@@ -20,9 +20,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	2337301191	Stop_MUS_Exploration			\Default Work Unit\MUS_WU\Stop_MUS_Exploration	
 	2368357634	Play_MC_Footsteps			\Default Work Unit\MC_WU\Play_MC_Footsteps	
 	2425283306	Play_FOL_FT_Yule_Walk			\Default Work Unit\BOSS_WU\Play_FOL_FT_Yule_Walk	
+	2441382156	Play_MUS_SantaBossFight			\Default Work Unit\MUS_WU\Play_MUS_SantaBossFight	
 	2459718302	Play_AMB_PAD_Flower			\Default Work Unit\AMB_WU\Play_AMB_PAD_Flower	
 	2490489396	Play_AMB_RFX_ForestFar			\Default Work Unit\AMB_WU\Play_AMB_RFX_ForestFar	
 	2491360697	Play_MUS_NamahageBossFight			\Default Work Unit\MUS_WU\Play_MUS_NamahageBossFight	
+	2519430714	Stop_MUS_SantaBossFight			\Default Work Unit\MUS_WU\Stop_MUS_SantaBossFight	
 	2577559157	Play_SFX_BellRinging			\Default Work Unit\SFX_WU\Play_SFX_BellRinging	
 	2700456189	Play_MUS_Exploration			\Default Work Unit\MUS_WU\Play_MUS_Exploration	
 	2760358305	Play_AMB_RFX_ForestMid			\Default Work Unit\AMB_WU\Play_AMB_RFX_ForestMid	
@@ -181,6 +183,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	631560684	FOL_MC_FT_RunSnow_03	.cache\E3\{E35510F4-FB76-3AB4-6782-7AC00FE46C0F}.wem		\Containers\Default Work Unit\MC_WU\MC\Footsteps\MC_Footsteps_Material\MC_Footsteps_Snow\MC_FT_RunSnow\FOL_MC_FT_RunSnow_03		64096
 	640081363	AMB_RFX_Forest_Mid_07	.cache\F3\{F3F00863-351C-5614-1F3C-D81F0DBCF777}.wem		\Containers\Default Work Unit\AMB_WU\AMB\Zone1_Forest\AMB_RFX_ForestMid\AMB_RFX_Forest_Mid_07		800096
 	645044226	SFX_MC_AttackDistanceHit_02	.cache\0A\{0ACD5B9E-47F9-C1B1-BEFE-9284A6AE68FA}.wem		\Containers\Default Work Unit\MC_WU\MC\AttacksHitEnemy\SFX_MC_TypeOfAttackHit\SFX_MC_AttackDistanceHit\SFX_MC_DistanceHit_Nobody\SFX_MC_AttackDistanceHit_02		204896
+	647129184	MUS_SantaBossFight	.cache\1B\{1B637B24-17E8-3259-5B6C-5B188EFBC293}.wem		\Containers\Default Work Unit\MUS_WU\MUS\MUS_SantaBossFight		1895939
 	653697373	SFX_MC_AttackMeleeHeavy_02	.cache\78\{787D2388-8CED-40C1-F9CB-18F56E554F5D}.wem		\Containers\Default Work Unit\MC_WU\MC\Attacks\SFX_MC_Attack\SFX_MC_AttackMeleeHeavy\SFX_MC_AttackMeleeHeavy_02		497320
 	655657487	FOL_FT_Krampus_Walk_03	.cache\23\{23C447EC-9CF2-D0A2-04AB-009CA59ED1C1}.wem		\Containers\Default Work Unit\BOSS_WU\BOSS\Krampus\Footsteps\FOL_FT_Krampus_Run\FOL_FT_Krampus_Walk_03		57696
 	662958141	UI_ClicConfirm_01	.cache\B6\{B63FAFC9-3AB9-194E-B702-55798DD48AB7}.wem		\Containers\Default Work Unit\UI_WU\UI\UI_ClickConfirmation\UI_ClicConfirm_01		460896
