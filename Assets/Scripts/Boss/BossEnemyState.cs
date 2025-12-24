@@ -19,6 +19,9 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     [Header("Post Processing")]
     [SerializeField] private Volume bossAreaPostProcess;
 
+    [Header("On end")]
+    [SerializeField] private GameObject bossLimitWalls;
+
     public UnityEvent OnDeath;
     public UnityEvent OnDamageTaken;
 
@@ -32,8 +35,12 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
         OnDeath.AddListener(() =>
         {
+            // Transition of Post Process Volume
             bossAreaPostProcess.weight = 1f;
             DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
+
+            // Destroy boss walls
+            GameObject.Destroy(bossLimitWalls);
         });
     }
 
