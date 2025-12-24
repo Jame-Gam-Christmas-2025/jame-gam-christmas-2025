@@ -88,6 +88,100 @@ public class AudioManager : MonoBehaviour
         SetSFXVolume(50f);
         Debug.Log("=== Test Complete - Check Wwise Profiler ===");
     }
+    
+    
+    ///// Event Musiques //////
+    
+    [Header("Music Events")]
+    public AK.Wwise.Event PlayForestMusic;
+    public AK.Wwise.Event StopForestMusic;
+
+    public AK.Wwise.Event PlayKrampusMusic;
+    public AK.Wwise.Event StopKrampusMusic;
+    public AK.Wwise.Event PlayNamahageMusic;
+    public AK.Wwise.Event StopNamahageMusic;
+    public AK.Wwise.Event PlayYuleMusic;
+    public AK.Wwise.Event StopYuleMusic;
+    public AK.Wwise.Event PlayBadEndingMusic;
+
+    public AK.Wwise.Event StopBadEndingMusic;
+    public AK.Wwise.Event PlayGoodEndingMusic;
+    public AK.Wwise.Event StopGoodEndingMusic;
+    public AK.Wwise.Event PlayMenuMusic;
+    public AK.Wwise.Event StopMenuMusic;
+
+    public void PlayNamahageMUS(GameObject gameObject)
+    {
+        PlayNamahageMusic.Post(gameObject);
+    }
+    
+    public void StopNamahageMUS(GameObject gameObject)
+    {
+        StopNamahageMusic.Post(gameObject);
+    }
+    
+    public void PlayKrampusMUS(GameObject gameObject)
+    {
+        PlayKrampusMusic.Post(gameObject);
+    }
+    
+    public void StopKrampusMUS(GameObject gameObject)
+    {
+        StopKrampusMusic.Post(gameObject);
+    }
+    
+    public void PlayYuleMUS(GameObject gameObject)
+    {
+        PlayYuleMusic.Post(gameObject);
+    }
+    
+    public void StopYuleMUS(GameObject gameObject)
+    {
+        StopYuleMusic.Post(gameObject);
+    }
+    
+    public void PlayGoodEndingMUS(GameObject gameObject)
+    {
+        PlayGoodEndingMusic.Post(gameObject);
+    }
+    
+    public void StopGoodEndingMUS(GameObject gameObject)
+    {
+        StopGoodEndingMusic.Post(gameObject);
+    }
+    
+    public void PlayBadEndingMUS(GameObject gameObject)
+    {
+        PlayBadEndingMusic.Post(gameObject);
+    }
+    
+    public void StopBadEndingMUS(GameObject gameObject)
+    {
+        StopBadEndingMusic.Post(gameObject);
+    }
+    
+    public void PlayMenuMUS(GameObject gameObject)
+    {
+        PlayMenuMusic.Post(gameObject);
+    }
+    
+    public void StopMenuMUS(GameObject gameObject)
+    {
+        StopMenuMusic.Post(gameObject);
+    }
+    
+    public void PlayForestMUS(GameObject gameObject)
+    {
+        PlayForestMusic.Post(gameObject);
+    }
+    
+    public void StopForestMUS(GameObject gameObject)
+    {
+        StopForestMusic.Post(gameObject);
+    }
+    
+    ////////// Event Boss /////////
 }
+
 
    

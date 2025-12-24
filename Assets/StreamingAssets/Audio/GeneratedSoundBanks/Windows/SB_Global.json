@@ -11,7 +11,7 @@
     "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
     "Color": "19",
     "Language": "SFX",
-    "Hash": "{54D6831B-E746-78F7-F08F-7BD05DF8244B}",
+    "Hash": "{353F6CDD-6B88-5838-A3A5-7BD49CE8358B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
     "ShortName": "SB_Global",
     "Path": "SB_Global.bnk",
@@ -39,14 +39,6 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_02.wav",
       "CachePath": "BB/{BB38A0E4-35FB-E659-4B81-813B73271161}.wem"
-     },
-     {
-      "Id": "11804355",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_02.wav",
-      "CachePath": "45/{45EB5B5E-5062-1EA3-DE85-80C9F56D7442}.wem"
      },
      {
       "Id": "16808915",
@@ -89,12 +81,20 @@
       "CachePath": "C4/{C4019956-D986-5A34-CFD6-3ED6A6F5F959}.wem"
      },
      {
-      "Id": "90871712",
+      "Id": "60187880",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_13.wav",
-      "CachePath": "EA/{EA62E31C-1DA7-D247-FD15-A427E273AA4D}.wem"
+      "ShortName": "MUS\\Xmas Jam Krampus Boss (2).wav",
+      "CachePath": "79/{79915C33-BB3B-864A-4F35-C3E7DAE703DB}.wem"
+     },
+     {
+      "Id": "62287333",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_09.wav",
+      "CachePath": "CF/{CFF0906C-632A-DA40-8CFD-EC12F2D967EC}.wem"
      },
      {
       "Id": "92653261",
@@ -105,6 +105,14 @@
       "CachePath": "AC/{ACE5A56A-B554-7AF4-6EBA-B1D9069BF82F}.wem"
      },
      {
+      "Id": "94620058",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Japanese Boss (2).wav",
+      "CachePath": "87/{87154638-4B9D-8547-383A-AA54B5117FFB}.wem"
+     },
+     {
       "Id": "95403465",
       "Language": "SFX",
       "Streaming": "false",
@@ -113,20 +121,20 @@
       "CachePath": "BA/{BAE67965-B5FD-28A4-7209-82222DA91494}.wem"
      },
      {
+      "Id": "97988636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_10.wav",
+      "CachePath": "24/{24DD346A-2A4B-2DF7-B694-DA017FB150F3}.wem"
+     },
+     {
       "Id": "104245989",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BOSS\\FOL_FT_JustSnow_03.wav",
       "CachePath": "62/{62365FB0-33F6-E48E-FCB8-785AC5E0A7B0}.wem"
-     },
-     {
-      "Id": "109995337",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_09.wav",
-      "CachePath": "BC/{BCAFD089-0AE7-A6E4-5B82-E6CD2922CB33}.wem"
      },
      {
       "Id": "111629566",
@@ -153,14 +161,6 @@
       "CachePath": "7E/{7E3EA4C8-4907-7D47-5E11-7C2EA2F66450}.wem"
      },
      {
-      "Id": "139395830",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_06.wav",
-      "CachePath": "A0/{A0F9A846-AB0C-5C53-10CB-3B449276E380}.wem"
-     },
-     {
       "Id": "145139408",
       "Language": "SFX",
       "Streaming": "false",
@@ -177,12 +177,20 @@
       "CachePath": "AA/{AA80C9C1-241C-7752-C973-577C8CF0887B}.wem"
      },
      {
-      "Id": "169027683",
+      "Id": "153083772",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_07.wav",
-      "CachePath": "5A/{5A6F01FB-26E0-098D-5CF4-D49DE99DC91B}.wem"
+      "ShortName": "MUS\\Xmas Jam Good Ending.wav",
+      "CachePath": "48/{4822A20C-18E1-CEE0-7D16-A2E12A21B739}.wem"
+     },
+     {
+      "Id": "163571342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_03.wav",
+      "CachePath": "04/{04681DF0-8A73-2DDA-57C1-2633ED5D3363}.wem"
      },
      {
       "Id": "172412349",
@@ -209,20 +217,36 @@
       "CachePath": "80/{801C7B5A-B808-A41C-F71E-8051213F2656}.wem"
      },
      {
-      "Id": "190120119",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_13.wav",
-      "CachePath": "76/{76735C7A-F814-B567-E3CE-85951DC0D208}.wem"
-     },
-     {
       "Id": "191295604",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BOSS\\FOL_FT_JustSnow_14.wav",
       "CachePath": "1A/{1A815EF1-5BE8-87C6-72EE-1487DBC9BC04}.wem"
+     },
+     {
+      "Id": "203270636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Game Jam Bad Ending.wav",
+      "CachePath": "C4/{C458923D-8243-4B64-5702-4B92F0703F1E}.wem"
+     },
+     {
+      "Id": "213445104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_09.wav",
+      "CachePath": "6D/{6D851193-D606-1092-053B-AC7A2D114711}.wem"
+     },
+     {
+      "Id": "221660205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Icelandic Boss Fight.wav",
+      "CachePath": "BC/{BC8EFFB3-2D56-5A3E-8F73-64C58592DF7D}.wem"
      },
      {
       "Id": "225381729",
@@ -247,6 +271,22 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkSnow_16.wav",
       "CachePath": "33/{337A4410-BDC4-B214-5DF4-B01D4F71AA11}.wem"
+     },
+     {
+      "Id": "231643236",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerDie_01.wav",
+      "CachePath": "B6/{B6DB2A8D-1E58-28A4-A624-79A8A23A4108}.wem"
+     },
+     {
+      "Id": "232594364",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerDie_02.wav",
+      "CachePath": "07/{07260241-7F09-EEFB-4CF1-2E5E2C8D0520}.wem"
      },
      {
       "Id": "237193766",
@@ -279,14 +319,6 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunSnow_15.wav",
       "CachePath": "04/{04DC5156-D166-877B-77DA-905773A795D3}.wem"
-     },
-     {
-      "Id": "271533246",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_08.wav",
-      "CachePath": "75/{754164E9-023D-1E62-E10B-1F9E49B8CE80}.wem"
      },
      {
       "Id": "280841403",
@@ -327,6 +359,14 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_TakeDamage_04.wav",
       "CachePath": "6E/{6EA544EE-F710-4C6C-763C-962A78EA3A7B}.wem"
+     },
+     {
+      "Id": "293292482",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_14.wav",
+      "CachePath": "30/{30D5CA58-989A-F412-E820-E1D527E96431}.wem"
      },
      {
       "Id": "293638183",
@@ -393,14 +433,6 @@
       "CachePath": "BD/{BDF9CE69-3C13-7D34-84AD-8107CFBD529D}.wem"
      },
      {
-      "Id": "341686374",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_12.wav",
-      "CachePath": "1E/{1EEA401D-A70A-5E82-6856-EBF946A67BEF}.wem"
-     },
-     {
       "Id": "344997668",
       "Language": "SFX",
       "Streaming": "false",
@@ -433,12 +465,12 @@
       "CachePath": "BD/{BD45A523-F805-6B4B-CE6E-3CDA308EF148}.wem"
      },
      {
-      "Id": "360482745",
+      "Id": "358614350",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_15.wav",
-      "CachePath": "52/{52587984-6327-284C-1778-CC5922107760}.wem"
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_04.wav",
+      "CachePath": "62/{62E60F39-C075-A84B-95B3-4AA9A13B5494}.wem"
      },
      {
       "Id": "367277238",
@@ -449,14 +481,6 @@
       "CachePath": "11/{11F370D5-CD15-3385-0BB9-FC4AA42CFCD6}.wem"
      },
      {
-      "Id": "372312143",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_11.wav",
-      "CachePath": "4C/{4C78A4AD-B36B-5929-4104-209B0E2AB194}.wem"
-     },
-     {
       "Id": "372468713",
       "Language": "SFX",
       "Streaming": "false",
@@ -465,20 +489,20 @@
       "CachePath": "2A/{2A1479BA-6589-7B85-EAB3-7EC9E4A85862}.wem"
      },
      {
+      "Id": "390098488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_05.wav",
+      "CachePath": "A3/{A37F9955-FE35-0E5D-D6EE-636CDC889C4A}.wem"
+     },
+     {
       "Id": "404103143",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_01.wav",
       "CachePath": "FC/{FCA8DC54-704F-E1A6-2888-28146D06E0A2}.wem"
-     },
-     {
-      "Id": "411207177",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_15.wav",
-      "CachePath": "EC/{EC8FA999-DD53-E9DF-B864-95AE0F02DFF7}.wem"
      },
      {
       "Id": "418819584",
@@ -511,14 +535,6 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttackDistanceHit_01.wav",
       "CachePath": "07/{07931882-0AE7-AD60-C5AC-77A55F5C2D1C}.wem"
-     },
-     {
-      "Id": "446808271",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_04.wav",
-      "CachePath": "34/{3435C689-B249-E309-87C0-F97A870BFFA9}.wem"
      },
      {
       "Id": "455239519",
@@ -633,12 +649,12 @@
       "CachePath": "78/{7896EDCD-C170-F653-DA23-58EF6BD49663}.wem"
      },
      {
-      "Id": "503533404",
+      "Id": "506313612",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_08.wav",
-      "CachePath": "EE/{EE15B4BB-B5BB-A6FC-C722-0C296E980280}.wem"
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_01.wav",
+      "CachePath": "4E/{4EFA9D3B-EBCF-DF17-9A4A-13FF7B01EEC2}.wem"
      },
      {
       "Id": "508848196",
@@ -705,14 +721,6 @@
       "CachePath": "31/{316CAD83-8A64-9CAE-8855-4E04D524FEC7}.wem"
      },
      {
-      "Id": "524863978",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_05.wav",
-      "CachePath": "65/{65747A8F-8335-41F0-77FD-EBB96BDF1F26}.wem"
-     },
-     {
       "Id": "526363489",
       "Language": "SFX",
       "Streaming": "false",
@@ -743,6 +751,14 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttakMeleeLight_01.wav",
       "CachePath": "75/{755415BA-49FA-E394-D2C5-DECB44BB8810}.wem"
+     },
+     {
+      "Id": "534629551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_04.wav",
+      "CachePath": "F6/{F6D09D0E-5FB7-1347-2F9A-4E6D453C8D9A}.wem"
      },
      {
       "Id": "536770182",
@@ -801,6 +817,22 @@
       "CachePath": "41/{41D1161B-63FD-24EF-FEF7-8BB67D7FA04D}.wem"
      },
      {
+      "Id": "571658290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_06.wav",
+      "CachePath": "B3/{B3498DFE-DB08-F63F-DFBB-3C22B56946D5}.wem"
+     },
+     {
+      "Id": "573985444",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_06.wav",
+      "CachePath": "B2/{B2D6AF00-3D2B-266D-856B-4B024971AB08}.wem"
+     },
+     {
       "Id": "579610558",
       "Language": "SFX",
       "Streaming": "false",
@@ -841,14 +873,6 @@
       "CachePath": "C5/{C5E057F7-94AA-C54B-E5A3-61359A7031E7}.wem"
      },
      {
-      "Id": "607893173",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_07.wav",
-      "CachePath": "A8/{A8912ED6-BE1A-DA38-5B7F-4FD107F0F422}.wem"
-     },
-     {
       "Id": "624765908",
       "Language": "SFX",
       "Streaming": "false",
@@ -863,22 +887,6 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_PRES_Run_03.wav",
       "CachePath": "65/{6520F371-9313-3586-8CAE-204AADA448A4}.wem"
-     },
-     {
-      "Id": "625851457",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_10.wav",
-      "CachePath": "C3/{C38CF7F1-82E8-65AB-DFCF-263534C8286A}.wem"
-     },
-     {
-      "Id": "626318865",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_14.wav",
-      "CachePath": "C2/{C2B2524E-9E82-1F6D-9CC4-2CBBA75051CD}.wem"
      },
      {
       "Id": "631560684",
@@ -913,6 +921,14 @@
       "CachePath": "78/{787D2388-8CED-40C1-F9CB-18F56E554F5D}.wem"
      },
      {
+      "Id": "655657487",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_03.wav",
+      "CachePath": "23/{23C447EC-9CF2-D0A2-04AB-009CA59ED1C1}.wem"
+     },
+     {
       "Id": "662958141",
       "Language": "SFX",
       "Streaming": "false",
@@ -921,12 +937,12 @@
       "CachePath": "B6/{B63FAFC9-3AB9-194E-B702-55798DD48AB7}.wem"
      },
      {
-      "Id": "664596365",
+      "Id": "670288010",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_16.wav",
-      "CachePath": "7C/{7C09501A-DBDA-6090-0D9F-B65869BBD157}.wem"
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_07.wav",
+      "CachePath": "4D/{4DB60B7E-30C4-775A-C421-3284176697E8}.wem"
      },
      {
       "Id": "673507645",
@@ -953,6 +969,22 @@
       "CachePath": "3F/{3F1167CF-DA6C-0AFE-028C-649BC47DAC20}.wem"
      },
      {
+      "Id": "681054972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_12.wav",
+      "CachePath": "45/{458E9915-3DE1-B798-9F03-4EAB8C02C4A6}.wem"
+     },
+     {
+      "Id": "683109271",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_08.wav",
+      "CachePath": "8A/{8AA60646-85C1-BF99-509E-0EF8A25C7C72}.wem"
+     },
+     {
       "Id": "687823185",
       "Language": "SFX",
       "Streaming": "false",
@@ -967,6 +999,14 @@
       "Location": "Memory",
       "ShortName": "AMB\\AMB_RFX_Forest_Mid_10.wav",
       "CachePath": "43/{4302787C-DC4B-3C92-0DB1-8FF42DC80EFE}.wem"
+     },
+     {
+      "Id": "691336506",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_11.wav",
+      "CachePath": "E0/{E01A4271-D1F5-F166-468C-A3519A11F7C6}.wem"
      },
      {
       "Id": "700915839",
@@ -985,20 +1025,20 @@
       "CachePath": "73/{739D03C9-57CB-C1C5-E38D-6B6FC1DBAB31}.wem"
      },
      {
-      "Id": "710604565",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_02.wav",
-      "CachePath": "B7/{B7FE90E8-5813-B54A-82D5-3C3519C02721}.wem"
-     },
-     {
       "Id": "712366129",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BOSS\\SFX_Yule_AttackPounce_02.wav",
       "CachePath": "E2/{E222D95C-45DE-3E5C-62CD-0D41C7A3E85B}.wem"
+     },
+     {
+      "Id": "716687846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Game Jam Exploration.wav",
+      "CachePath": "F1/{F1F838B7-7DC6-1C99-30CD-83F308634611}.wem"
      },
      {
       "Id": "720550314",
@@ -1009,14 +1049,6 @@
       "CachePath": "E8/{E812B04C-E486-BEED-41B7-467BF913AED8}.wem"
      },
      {
-      "Id": "727572224",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_14.wav",
-      "CachePath": "EA/{EAA20603-BEC3-9286-00CE-C1C3076D573E}.wem"
-     },
-     {
       "Id": "729356419",
       "Language": "SFX",
       "Streaming": "false",
@@ -1025,28 +1057,12 @@
       "CachePath": "06/{06A8F5BD-D8A3-1D9C-0C3B-195331088AB3}.wem"
      },
      {
-      "Id": "740658667",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_10.wav",
-      "CachePath": "76/{762DBD9C-0A7B-9B8B-C0A3-76DD5FD6C341}.wem"
-     },
-     {
       "Id": "756009061",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_RunSnow_07.wav",
       "CachePath": "E1/{E1C89416-CA5B-8811-71AD-7D15AD9593AF}.wem"
-     },
-     {
-      "Id": "759820996",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_09.wav",
-      "CachePath": "84/{84265A9B-4D30-D9FD-EE0D-4894CD540176}.wem"
      },
      {
       "Id": "761450550",
@@ -1063,6 +1079,14 @@
       "Location": "Memory",
       "ShortName": "AMB\\AMB_PAD_Village_LP.wav",
       "CachePath": "DD/{DDFB7DB7-5F7C-52E3-8EDD-7E05CAC3F2BA}.wem"
+     },
+     {
+      "Id": "785163463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerRespawn_02.wav",
+      "CachePath": "9A/{9A10B061-5B58-2F8B-D9C9-623C13F5650D}.wem"
      },
      {
       "Id": "785209016",
@@ -1089,20 +1113,28 @@
       "CachePath": "C3/{C3232477-BFC6-9BC2-23C3-264B912910DA}.wem"
      },
      {
-      "Id": "803154887",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_11.wav",
-      "CachePath": "60/{60BBB1D0-FF0F-47E0-B897-599B0C3A2B24}.wem"
-     },
-     {
       "Id": "806877309",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttakMeleeLight_03.wav",
       "CachePath": "37/{372C3490-7A02-630F-8338-ACA086338C8D}.wem"
+     },
+     {
+      "Id": "819535937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_13.wav",
+      "CachePath": "23/{238A0AA3-2C77-C4D7-36EF-7E6F2A57EF36}.wem"
+     },
+     {
+      "Id": "820882496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_10.wav",
+      "CachePath": "38/{38A59AC3-5B21-9B73-1471-5FE045F417F9}.wem"
      },
      {
       "Id": "821121654",
@@ -1209,20 +1241,20 @@
       "CachePath": "88/{88A0DBAC-2561-EB96-A1DA-662364BB506B}.wem"
      },
      {
-      "Id": "881365248",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_01.wav",
-      "CachePath": "BC/{BCA160FD-B1AA-EA8A-412A-B88CF11AAC50}.wem"
-     },
-     {
       "Id": "881747019",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BOSS\\FOL_FT_Yule_Walk_04.wav",
       "CachePath": "19/{195E198B-CBBB-57A4-5C11-C8BF119C75D5}.wem"
+     },
+     {
+      "Id": "894585158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_05.wav",
+      "CachePath": "92/{92C52D97-529E-D094-4C4D-52836E320EB3}.wem"
      },
      {
       "Id": "898540644",
@@ -1249,6 +1281,14 @@
       "CachePath": "25/{258047B8-71DD-E11A-09C0-AD1B827D4D19}.wem"
      },
      {
+      "Id": "907935679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Menu.wav",
+      "CachePath": "A5/{A51CF367-E319-298E-EB5D-3CF7A0E8953E}.wem"
+     },
+     {
       "Id": "913956106",
       "Language": "SFX",
       "Streaming": "false",
@@ -1273,14 +1313,6 @@
       "CachePath": "59/{5960FA99-E205-5D1B-73C3-7D1F5E6267D4}.wem"
      },
      {
-      "Id": "932368073",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_03.wav",
-      "CachePath": "7A/{7A1F1F87-2ABF-7B37-16CF-03E4158FFD38}.wem"
-     },
-     {
       "Id": "937703334",
       "Language": "SFX",
       "Streaming": "false",
@@ -1289,28 +1321,12 @@
       "CachePath": "F9/{F9A27007-76DA-AD2C-329E-05D7DB3E465D}.wem"
      },
      {
-      "Id": "947699993",
+      "Id": "949684335",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_12.wav",
-      "CachePath": "E9/{E99E8375-81E4-F2EC-6AAA-F7FE5765B8E9}.wem"
-     },
-     {
-      "Id": "948011064",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_01.wav",
-      "CachePath": "B9/{B94D0B83-05C3-A515-F1FE-4304F590E329}.wem"
-     },
-     {
-      "Id": "949098261",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_04.wav",
-      "CachePath": "B2/{B2BB6A57-91CE-5720-25D8-EEFDB13EB159}.wem"
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_07.wav",
+      "CachePath": "21/{21D212E6-604E-FF5B-E877-F8698F3996BD}.wem"
      },
      {
       "Id": "954940189",
@@ -1319,6 +1335,14 @@
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_PRES_Action_01.wav",
       "CachePath": "73/{73F66301-6C79-CB37-518B-5A3E185422E2}.wem"
+     },
+     {
+      "Id": "957895546",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_02.wav",
+      "CachePath": "D5/{D536ED4D-143F-76E2-CFC8-DFB270F9A87A}.wem"
      },
      {
       "Id": "960767963",
@@ -1337,20 +1361,20 @@
       "CachePath": "0A/{0A3AFCF4-B556-E3E0-F165-3F44C0148A8E}.wem"
      },
      {
-      "Id": "983377634",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_03.wav",
-      "CachePath": "49/{4967E3EE-0ABF-852E-65DD-2437B783039B}.wem"
-     },
-     {
       "Id": "984720994",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MC\\FOL_MC_FT_WalkSnow_13.wav",
       "CachePath": "10/{10090647-E94B-F123-A4AD-88D7B5A406CF}.wem"
+     },
+     {
+      "Id": "985602594",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_11.wav",
+      "CachePath": "2A/{2AA1EDA6-F7B0-F417-324F-40C344B995E4}.wem"
      },
      {
       "Id": "990775825",
@@ -1393,6 +1417,22 @@
       "CachePath": "34/{34253375-FA8A-7F71-0ABE-D247174D3179}.wem"
      },
      {
+      "Id": "1008063990",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerRespawn_01.wav",
+      "CachePath": "4A/{4A1ACC60-4A4A-59AB-974C-62E3C7F83BBE}.wem"
+     },
+     {
+      "Id": "1014116135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_08.wav",
+      "CachePath": "78/{783B1C5D-2F7B-42DD-FBE1-41AE2FD89BC7}.wem"
+     },
+     {
       "Id": "1016620596",
       "Language": "SFX",
       "Streaming": "false",
@@ -1409,12 +1449,12 @@
       "CachePath": "64/{6449CE5D-FB82-9D22-5E80-E40726E065C5}.wem"
      },
      {
-      "Id": "1021483769",
+      "Id": "1018719249",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_RunConcrete_06.wav",
-      "CachePath": "30/{3007D091-9064-6B22-1537-D26463B92CF8}.wem"
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_02.wav",
+      "CachePath": "FF/{FF03C2BE-3CBC-374F-B5DA-A7BED54786BA}.wem"
      },
      {
       "Id": "1023270544",
@@ -1441,6 +1481,14 @@
       "CachePath": "E8/{E8DF84CD-F5A9-8EA5-B98F-00B229AE90AB}.wem"
      },
      {
+      "Id": "1036216972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_01.wav",
+      "CachePath": "A5/{A5F1C482-BBCE-799C-BD9D-005E092FC163}.wem"
+     },
+     {
       "Id": "1036940016",
       "Language": "SFX",
       "Streaming": "false",
@@ -1463,14 +1511,6 @@
       "Location": "Memory",
       "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_03.wav",
       "CachePath": "F8/{F8575770-6159-0D50-8123-369D9DABCED6}.wem"
-     },
-     {
-      "Id": "1058650070",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MC\\FOL_MC_FT_WalkConcrete_05.wav",
-      "CachePath": "66/{664E9B04-1436-0409-5C13-04344A701EDE}.wem"
      },
      {
       "Id": "1070432537",
@@ -1704,6 +1744,165 @@
        },
        {
         "Id": "877681428"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "177135426",
+      "Name": "Play_FOL_FT_Krampus_Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_FOL_FT_Krampus_Run",
+      "GUID": "{9161E0A7-FD8C-4DF0-8C37-FAEB9F0154B1}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26343787",
+      "DurationMax": "0.32246202",
+      "MediaRefs": [
+       {
+        "Id": "213445104"
+       },
+       {
+        "Id": "358614350"
+       },
+       {
+        "Id": "390098488"
+       },
+       {
+        "Id": "506313612"
+       },
+       {
+        "Id": "573985444"
+       },
+       {
+        "Id": "655657487"
+       },
+       {
+        "Id": "683109271"
+       },
+       {
+        "Id": "820882496"
+       },
+       {
+        "Id": "949684335"
+       },
+       {
+        "Id": "985602594"
+       },
+       {
+        "Id": "1018719249"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2026917111",
+      "Name": "Play_FOL_FT_Namahage_Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_FOL_FT_Namahage_Run",
+      "GUID": "{458D0639-D79A-428B-9555-2E7C8D73D2EB}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5502024",
+      "DurationMax": "0.8595823",
+      "MediaRefs": [
+       {
+        "Id": "62287333"
+       },
+       {
+        "Id": "97988636"
+       },
+       {
+        "Id": "163571342"
+       },
+       {
+        "Id": "293292482"
+       },
+       {
+        "Id": "534629551"
+       },
+       {
+        "Id": "571658290"
+       },
+       {
+        "Id": "670288010"
+       },
+       {
+        "Id": "681054972"
+       },
+       {
+        "Id": "691336506"
+       },
+       {
+        "Id": "819535937"
+       },
+       {
+        "Id": "894585158"
+       },
+       {
+        "Id": "957895546"
+       },
+       {
+        "Id": "1014116135"
+       },
+       {
+        "Id": "1036216972"
        }
       ],
       "AuxBusRefs": [
@@ -2315,124 +2514,7 @@
          "GUID": "{36DA891B-588E-47A4-B9EF-92711D68214E}",
          "Color": "8"
         },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2700451361",
-           "Id": "2162921054",
-           "GUID": "{F1B3D11F-0452-464C-91CA-DD8F60222A40}",
-           "Color": "8"
-          },
-          "MediaRefs": [
-           {
-            "Id": "90871712"
-           },
-           {
-            "Id": "109995337"
-           },
-           {
-            "Id": "271533246"
-           },
-           {
-            "Id": "360482745"
-           },
-           {
-            "Id": "372312143"
-           },
-           {
-            "Id": "446808271"
-           },
-           {
-            "Id": "524863978"
-           },
-           {
-            "Id": "607893173"
-           },
-           {
-            "Id": "625851457"
-           },
-           {
-            "Id": "626318865"
-           },
-           {
-            "Id": "710604565"
-           },
-           {
-            "Id": "881365248"
-           },
-           {
-            "Id": "947699993"
-           },
-           {
-            "Id": "983377634"
-           },
-           {
-            "Id": "1021483769"
-           }
-          ]
-         },
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2700451361",
-           "Id": "303207424",
-           "GUID": "{4EBF9B7E-35CB-4189-8471-96177E8BFE3F}",
-           "Color": "8",
-           "Default": "true"
-          },
-          "MediaRefs": [
-           {
-            "Id": "11804355"
-           },
-           {
-            "Id": "139395830"
-           },
-           {
-            "Id": "169027683"
-           },
-           {
-            "Id": "190120119"
-           },
-           {
-            "Id": "341686374"
-           },
-           {
-            "Id": "411207177"
-           },
-           {
-            "Id": "503533404"
-           },
-           {
-            "Id": "664596365"
-           },
-           {
-            "Id": "727572224"
-           },
-           {
-            "Id": "740658667"
-           },
-           {
-            "Id": "759820996"
-           },
-           {
-            "Id": "803154887"
-           },
-           {
-            "Id": "932368073"
-           },
-           {
-            "Id": "948011064"
-           },
-           {
-            "Id": "949098261"
-           },
-           {
-            "Id": "1058650070"
-           }
-          ]
-         }
-        ]
+        "Children": []
        },
        {
         "SwitchValue": {
@@ -2625,10 +2707,95 @@
       "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_PlayerDie",
       "GUID": "{3E0140C2-7326-4A3E-AEB6-18F1B8826268}",
       "Color": "7",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "5.6527166",
+      "DurationMax": "6.5441155",
+      "MediaRefs": [
+       {
+        "Id": "231643236"
+       },
+       {
+        "Id": "232594364"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1803431576",
+      "Name": "Play_MC_PlayerReborn",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_PlayerReborn",
+      "GUID": "{904EC495-8F7E-4E3E-A64B-A837DBB6DB81}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "4.026226",
+      "DurationMax": "5.969322",
+      "MediaRefs": [
+       {
+        "Id": "785163463"
+       },
+       {
+        "Id": "1008063990"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
      },
      {
       "Id": "2216081418",
@@ -2895,6 +3062,97 @@
       ]
      },
      {
+      "Id": "4214630550",
+      "Name": "Play_MUS_BadEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_BadEnding",
+      "GUID": "{A22D1504-1A67-4B31-8725-7AD119A65D55}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "203270636"
+       }
+      ]
+     },
+     {
+      "Id": "2700456189",
+      "Name": "Play_MUS_Exploration",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_Exploration",
+      "GUID": "{A0C16F14-84FA-4014-AB6F-3D8E5D59943E}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "716687846"
+       }
+      ]
+     },
+     {
+      "Id": "4199871780",
+      "Name": "Play_MUS_GoodEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_GoodEnding",
+      "GUID": "{29C5C7F4-C77E-43C9-9D1B-2C6900F35C9E}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "153083772"
+       }
+      ]
+     },
+     {
+      "Id": "3764083256",
+      "Name": "Play_MUS_KrampusBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_KrampusBossFight",
+      "GUID": "{E7C4683E-638F-4058-A891-34580A32DED2}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "60187880"
+       }
+      ]
+     },
+     {
+      "Id": "4249884003",
+      "Name": "Play_MUS_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_Menu",
+      "GUID": "{27B4F307-8128-49DD-BCA5-85735589E511}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "907935679"
+       }
+      ]
+     },
+     {
+      "Id": "2491360697",
+      "Name": "Play_MUS_NamahageBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_NamahageBossFight",
+      "GUID": "{9B09716B-84B6-4F9D-9F65-3911F4DE87F7}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "94620058"
+       }
+      ]
+     },
+     {
+      "Id": "741827436",
+      "Name": "Play_MUS_YuleBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_YuleBossFight",
+      "GUID": "{269434FD-2465-4C8E-A85B-6E2E253E647D}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "221660205"
+       }
+      ]
+     },
+     {
       "Id": "2577559157",
       "Name": "Play_SFX_BellRinging",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX_WU\\Play_SFX_BellRinging",
@@ -3085,6 +3343,83 @@
         "Id": "675059672"
        }
       ]
+     },
+     {
+      "Id": "1418863968",
+      "Name": "Stop_MUS_BadEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_BadEnding",
+      "GUID": "{E134DE69-68F6-4254-ADBD-30E6AE8D05F3}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2337301191",
+      "Name": "Stop_MUS_Exploration",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_Exploration",
+      "GUID": "{9F6C8CC3-2187-4B4D-9726-A30C666EEF25}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3369502474",
+      "Name": "Stop_MUS_GoodEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_GoodEnding",
+      "GUID": "{DBDF3A6C-4DF0-4877-8743-53063D42328F}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "354356402",
+      "Name": "Stop_MUS_KrampusBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_KrampusBossFight",
+      "GUID": "{4BC1CCD2-F69E-4D91-B40B-E539E60E2442}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "183729989",
+      "Name": "Stop_MUS_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_Menu",
+      "GUID": "{8CCFD652-F614-47F7-A205-6D56ED03C179}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "787210507",
+      "Name": "Stop_MUS_NamahageBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_NamahageBossFight",
+      "GUID": "{117D62C0-E5FE-4914-99BB-5DB9947E27F3}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1324619110",
+      "Name": "Stop_MUS_YuleBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_YuleBossFight",
+      "GUID": "{ED97E3BA-919B-457A-B118-E2E67C769F6A}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "SwitchGroups": [
@@ -3218,6 +3553,6 @@
     ]
    }
   ],
-  "FileHash": "{1BE83B0E-BB06-D62C-1A77-DCB8BE8EC672}"
+  "FileHash": "{E0BD44F8-5760-21D3-6D09-6EB8C5F4BC27}"
  }
 }
