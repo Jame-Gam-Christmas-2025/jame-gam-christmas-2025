@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
 {
+    public AkInitializationSettings _akInitializationSettings;
+
+    public bool test;
     private static GameSceneManager _instance;
     public static GameSceneManager Instance
     {
