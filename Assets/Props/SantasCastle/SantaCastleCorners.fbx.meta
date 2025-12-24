@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: e1a5c70c14b782b4d98d09128fb8347c
+guid: 2c99ee93cdb4d1946b5ddf77fb7c577f
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: DarkWood
-    second: {fileID: 2100000, guid: 8cf61eb483ea66044a5646752e0ac07c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Roof
-    second: {fileID: 2100000, guid: a6494341dbf474541b50ebeebb311d22, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lightWood
-    second: {fileID: 2100000, guid: ed204617c95e3de4c9ae6a4106c46a27, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metal
-    second: {fileID: 2100000, guid: a20287c5bb9e65a4298557267ebb1aed, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -76,7 +56,7 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 1
+    generateMeshLods: 0
     meshLodGenerationFlags: 0
     maximumMeshLod: -1
     meshOptimizationFlags: -1
