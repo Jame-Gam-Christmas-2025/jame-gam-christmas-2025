@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29db6d07ab003464e8b6c6e8a7239fca, type: 3}
   m_Name: YuleCat
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
+  bossName: YuleCat
   maxHealth: 50
   activationBehavior: 0
   moveSpeed: 7

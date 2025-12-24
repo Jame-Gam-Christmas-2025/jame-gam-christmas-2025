@@ -21,9 +21,6 @@ public class BossController : MonoBehaviour
     private bool _isActive;
 
     private bool _isJumping;
-    private Vector3 _jumpTarget;
-    private float _jumpTimer;
-    private float _jumpDuration;
     private float _lastJumpTime = -999f;
 
     public bool IsActive
@@ -31,9 +28,17 @@ public class BossController : MonoBehaviour
         get => _isActive;
         set
         {
-            // Setting to true - handle activation
             if (!_isActive && value)
             {
+                if (_config != null)
+                {
+                    var impactManager = FindFirstObjectByType<BossImpactFrameManager>();
+                    if (impactManager != null)
+                    {
+                        impactManager.SetColorsForBoss(_config.bossName);
+                    }
+                }
+
                 if (_config.activationBehavior == BossActivation.JumpToPlayer)
                 {
                     StartCoroutine(ActivationJump());
@@ -43,11 +48,9 @@ public class BossController : MonoBehaviour
                     _isActive = true;
                 }
             }
-            // Setting to false - always disable
             else if (!value)
             {
                 _isActive = false;
-                // Stop movement animation
                 if (_anim != null)
                 {
                     _anim.SetFloat("Speed", 0);
@@ -75,30 +78,40 @@ public class BossController : MonoBehaviour
 
     void AssignAttackReferences()
     {
+        int meleeIndex = 0;
+        int rangedIndex = 0;
+
         for (int i = 0; i < _config.attacks.Count; i++)
         {
             var attack = _config.attacks[i];
 
-            if (!attack.isRanged && i < _attackHitboxes.Length)
+            if (!attack.isRanged)
             {
-                attack.hitbox = _attackHitboxes[i];
+                // Melee attack - use meleeIndex
+                if (meleeIndex < _attackHitboxes.Length)
+                {
+                    attack.hitbox = _attackHitboxes[meleeIndex];
+                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned hitbox[{meleeIndex}]");
+                }
+                meleeIndex++;
             }
-
-            if (attack.isRanged)
+            else
             {
-                if (i < _projectilePools.Length)
-                    attack.pool = _projectilePools[i];
-                if (i < _projectileSpawns.Length)
-                    attack.spawnPoint = _projectileSpawns[i];
-            }
-        }
-    }
+                // Ranged attack - use rangedIndex
+                if (rangedIndex < _projectilePools.Length)
+                {
+                    attack.pool = _projectilePools[rangedIndex];
+                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned pool[{rangedIndex}]");
+                }
 
-    void PerformActivation()
-    {
-        if (_config.activationBehavior == BossActivation.JumpToPlayer)
-        {
-            StartCoroutine(ActivationJump());
+                if (rangedIndex < _projectileSpawns.Length)
+                {
+                    attack.spawnPoint = _projectileSpawns[rangedIndex];
+                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned spawn[{rangedIndex}]");
+                }
+
+                rangedIndex++;
+            }
         }
     }
 
@@ -106,13 +119,18 @@ public class BossController : MonoBehaviour
     {
         if (!_isActive) return;
 
+        var enemyState = GetComponent<BossEnemyState>();
+        if (enemyState != null && enemyState.IsDead)
+        {
+            return;
+        }
+
         RotateToPlayer();
 
         if (_isAttacking || _isJumping) return;
 
         float distance = Vector3.Distance(transform.position, _player.position);
 
-        // Combat jump check (only when cooldown ready)
         if (_config.canJumpInCombat && Time.time >= _lastJumpTime + _config.jumpCooldown)
         {
             if (distance >= _config.combatJumpMinDistance && distance <= _config.combatJumpMaxDistance)
@@ -169,14 +187,68 @@ public class BossController : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, _player.position);
 
+        // Try to find valid attack
+        BossAttack validAttack = null;
+        BossAttack fallbackAttack = null; // Attack in range but on cooldown
+
         foreach (var attack in _config.attacks)
         {
-            if (distance >= attack.minRange &&
-                distance <= attack.maxRange &&
-                !attack.IsOnCooldown())
+            bool inRange = distance >= attack.minRange && distance <= attack.maxRange;
+            bool onCooldown = attack.IsOnCooldown();
+
+            if (inRange && !onCooldown)
             {
-                PerformAttack(attack);
-                return;
+                // Perfect - in range and ready!
+                validAttack = attack;
+                break;
+            }
+            else if (inRange && onCooldown)
+            {
+                // In range but on cooldown - save as fallback
+                fallbackAttack = attack;
+            }
+        }
+
+        if (validAttack != null)
+        {
+            // Found valid attack - use it!
+            PerformAttack(validAttack);
+        }
+        else if (fallbackAttack != null)
+        {
+            // No ready attack but we're in range - use attack anyway (ignore cooldown)
+            Debug.Log("Using attack on cooldown - better than doing nothing!");
+            PerformAttack(fallbackAttack);
+        }
+        else
+        {
+            // No attack in range at all - move closer or away
+            Debug.Log($"No attacks in range for distance {distance:F1}m - adjusting position");
+
+            // Find closest attack range
+            float closestRange = float.MaxValue;
+            foreach (var attack in _config.attacks)
+            {
+                float midRange = (attack.minRange + attack.maxRange) / 2f;
+                if (Mathf.Abs(distance - midRange) < Mathf.Abs(distance - closestRange))
+                {
+                    closestRange = midRange;
+                }
+            }
+
+            // Move towards ideal range
+            if (distance > closestRange)
+            {
+                // Too far - move closer
+                MoveToPlayer();
+            }
+            else
+            {
+                // Too close - back up slightly
+                Vector3 awayDir = (transform.position - _player.position).normalized;
+                awayDir.y = 0;
+                _rb.MovePosition(_rb.position + awayDir * _config.moveSpeed * Time.fixedDeltaTime * 0.5f);
+                _anim.SetFloat("Speed", _config.moveSpeed * 0.5f);
             }
         }
     }
@@ -186,6 +258,9 @@ public class BossController : MonoBehaviour
         _isAttacking = true;
         _currentAttack = attack;
         _currentAttack.MarkAsUsed();
+
+        Debug.Log($"Performing attack: {attack.animationTrigger}, IsRanged: {attack.isRanged}");
+
         _anim.SetTrigger(attack.animationTrigger);
     }
 
@@ -193,6 +268,8 @@ public class BossController : MonoBehaviour
     {
         if (_currentAttack != null && _currentAttack.hitbox != null)
         {
+            // Set damage on hitbox
+            _currentAttack.hitbox.SetDamage(_currentAttack.damage);
             _currentAttack.hitbox.EnableHitbox();
         }
     }
@@ -210,19 +287,49 @@ public class BossController : MonoBehaviour
 
     public void OnProjectileSpawn()
     {
-        if (_currentAttack != null && _currentAttack.pool != null)
+        Debug.Log("=== OnProjectileSpawn CALLED! ===");
+
+        if (_currentAttack == null)
         {
-            GameObject proj = _currentAttack.pool.GetObject();
-            Transform spawn = _currentAttack.spawnPoint ?? transform;
+            Debug.LogError("_currentAttack is NULL!");
+            _isAttacking = false;
+            return;
+        }
 
-            proj.transform.position = spawn.position;
+        Debug.Log($"Current attack: {_currentAttack.animationTrigger}");
 
-            var projScript = proj.GetComponent<Projectile>();
-            if (projScript != null)
-            {
-                Vector3 dir = (_player.position - spawn.position).normalized;
-                projScript.Initialize(dir, _currentAttack.damage, gameObject, _currentAttack.pool);
-            }
+        if (_currentAttack.pool == null)
+        {
+            Debug.LogError("Projectile pool is NULL!");
+            _isAttacking = false;
+            return;
+        }
+
+        Debug.Log("Getting projectile from pool...");
+        GameObject proj = _currentAttack.pool.GetObject();
+
+        if (proj == null)
+        {
+            Debug.LogError("Pool returned NULL!");
+            _isAttacking = false;
+            return;
+        }
+
+        Transform spawn = _currentAttack.spawnPoint ?? transform;
+
+        proj.transform.position = spawn.position;
+        Debug.Log($"Projectile spawned at {spawn.position}");
+
+        var projScript = proj.GetComponent<Projectile>();
+        if (projScript != null)
+        {
+            Vector3 dir = (_player.position - spawn.position).normalized;
+            projScript.Initialize(dir, _currentAttack.damage, gameObject, _currentAttack.pool);
+            Debug.Log($"Projectile initialized with damage {_currentAttack.damage}");
+        }
+        else
+        {
+            Debug.LogError("No Projectile script on projectile!");
         }
 
         _isAttacking = false;
@@ -236,6 +343,12 @@ public class BossController : MonoBehaviour
             yield break;
         }
 
+        var impactManager = FindFirstObjectByType<BossImpactFrameManager>();
+        if (impactManager != null)
+        {
+            impactManager.SetColorsForBoss(_config.bossName);
+        }
+
         _rb.useGravity = false;
         _isJumping = true;
 
@@ -246,7 +359,6 @@ public class BossController : MonoBehaviour
 
         _anim.SetTrigger("Jump");
 
-        // Jump loop
         while (timer < duration)
         {
             timer += Time.deltaTime;
@@ -260,12 +372,10 @@ public class BossController : MonoBehaviour
             yield return null;
         }
 
-        // Jump finished - land
         _rb.MovePosition(target);
         _rb.useGravity = true;
         _isJumping = false;
 
-        // Deal landing damage
         Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
         foreach (var hit in hits)
         {
@@ -276,7 +386,6 @@ public class BossController : MonoBehaviour
             }
         }
 
-        // NOW activate boss after jump completes
         _isActive = true;
     }
 
@@ -292,7 +401,6 @@ public class BossController : MonoBehaviour
 
         _anim.SetTrigger("Jump");
 
-        // Jump loop
         while (timer < duration)
         {
             timer += Time.deltaTime;
@@ -306,12 +414,10 @@ public class BossController : MonoBehaviour
             yield return null;
         }
 
-        // Jump finished - land
         _rb.MovePosition(target);
         _rb.useGravity = true;
         _isJumping = false;
 
-        // Deal landing damage
         Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
         foreach (var hit in hits)
         {
@@ -325,47 +431,28 @@ public class BossController : MonoBehaviour
 
     public void OnJumpLand()
     {
-        if (!_isJumping) return;
-
-        _isJumping = false;
-        _rb.MovePosition(_jumpTarget);
-        _rb.useGravity = true;
-
-        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
-        foreach (var hit in hits)
-        {
-            var damageable = hit.GetComponent<IDamageable>();
-            if (damageable != null && hit.gameObject != gameObject)
-            {
-                damageable.TakeDamage(_config.jumpDamage);
-            }
-        }
+        // Not used anymore - jump handles landing itself
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
         if (_config == null) return;
 
-        // Attack Distance (Yellow)
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, _config.attackDistance);
 
-        // Combat Jump Min Distance (Green)
         if (_config.canJumpInCombat)
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, _config.combatJumpMinDistance);
 
-            // Combat Jump Max Distance (Cyan)
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(transform.position, _config.combatJumpMaxDistance);
         }
 
-        // Jump Landing Radius (Red)
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, _config.jumpRadius);
 
-        // Attack ranges for each attack (draw on ground)
         Vector3 groundPos = transform.position;
         groundPos.y = 0.1f;
 
@@ -373,13 +460,11 @@ public class BossController : MonoBehaviour
         {
             if (!attack.isRanged)
             {
-                // Melee attacks - white
                 Gizmos.color = new Color(1f, 1f, 1f, 0.3f);
                 Gizmos.DrawWireSphere(groundPos, attack.maxRange);
             }
             else
             {
-                // Ranged attacks - blue
                 Gizmos.color = new Color(0f, 0.5f, 1f, 0.3f);
                 Gizmos.DrawWireSphere(groundPos, attack.minRange);
                 Gizmos.DrawWireSphere(groundPos, attack.maxRange);

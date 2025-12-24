@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29db6d07ab003464e8b6c6e8a7239fca, type: 3}
+  m_Name: Santa
+  m_EditorClassIdentifier: Assembly-CSharp::BossConfig
+  bossName: Santa
+  maxHealth: 50
+  activationBehavior: 0
+  moveSpeed: 6
+  rotationSpeed: 5
+  attackDistance: 48.7
+  jumpHeight: 5
+  jumpDuration: 1.5
+  jumpDamage: 30
+  jumpRadius: 4
+  canJumpInCombat: 1
+  combatJumpMinDistance: 8
+  combatJumpMaxDistance: 20
+  combatJumpChance: 30
+  jumpCooldown: 10
+  attacks:
+  - animationTrigger: Attack1
+    minRange: 0
+    maxRange: 5
+    damage: 50
+    isRanged: 0
+    cooldown: 0.5
+  - animationTrigger: Attack2
+    minRange: 0
+    maxRange: 5
+    damage: 50
+    isRanged: 0
+    cooldown: 0.5
+  - animationTrigger: RangedAttack
+    minRange: 6
+    maxRange: 20
+    damage: 50
+    isRanged: 1
+    cooldown: 0.5
