@@ -93,9 +93,6 @@ public class AudioManager : MonoBehaviour
     ///// Event Musiques //////
     
     [Header("Music Events")]
-    public AK.Wwise.Event PlayForestMusic;
-    public AK.Wwise.Event StopForestMusic;
-
     public AK.Wwise.Event PlayKrampusMusic;
     public AK.Wwise.Event StopKrampusMusic;
     public AK.Wwise.Event PlayNamahageMusic;
@@ -109,7 +106,14 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event StopGoodEndingMusic;
     public AK.Wwise.Event PlayMenuMusic;
     public AK.Wwise.Event StopMenuMusic;
+    
+    public AK.Wwise.Event PlayBellAltar;
 
+    public void PlayBellSFX(GameObject gameObject)
+    {
+        PlayBellAltar.Post(gameObject);
+    }
+    
     public void PlayNamahageMUS(GameObject gameObject)
     {
         PlayNamahageMusic.Post(gameObject);
@@ -168,16 +172,6 @@ public class AudioManager : MonoBehaviour
     public void StopMenuMUS(GameObject gameObject)
     {
         StopMenuMusic.Post(gameObject);
-    }
-    
-    public void PlayForestMUS(GameObject gameObject)
-    {
-        PlayForestMusic.Post(gameObject);
-    }
-    
-    public void StopForestMUS(GameObject gameObject)
-    {
-        StopForestMusic.Post(gameObject);
     }
     
     ////////// Event Boss /////////

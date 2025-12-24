@@ -105,6 +105,7 @@ public class BellAltar : Interactable
                 }
 
                 _arenaParticleSyst.Play();
+                AudioManager.Instance.PlayBellSFX(gameObject);
             }
 
             GameManager.Instance.SpawnBoss(_arenaBossName, gameObject.transform.position);

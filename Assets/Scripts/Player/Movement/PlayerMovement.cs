@@ -95,9 +95,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // I know it has nothing to do here but CRUNCH!!!!
-        CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 1f;
-        canvasGroup.DOFade(0f, 4f);
+        GameObject fadeGameObject = GameObject.FindGameObjectWithTag("Fade");
+
+        if(fadeGameObject != null)
+        {
+            CanvasGroup canvasGroup = fadeGameObject.GetComponent<CanvasGroup>();
+            canvasGroup.alpha = 1f;
+            canvasGroup.DOFade(0f, 4f);
+        }
     }
 
     private void FixedUpdate()

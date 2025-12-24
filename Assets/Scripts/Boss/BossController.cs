@@ -471,4 +471,34 @@ public class BossController : MonoBehaviour
             }
         }
     }
+    
+    
+/////////////// AUDIO /////////////
+
+    [Header("SFX_MC_AttackHitEnemy")]
+    public AK.Wwise.Event BossFootsteps;
+    public AK.Wwise.Event BossAttack1;
+    public AK.Wwise.Event BossAttack2;
+    public AK.Wwise.Event BossQueue;
+    
+    public void SFX_Boss_Footsteps()
+    {
+        BossFootsteps.Post(gameObject);
+    }
+
+    public void SFX_BossAttack1()
+    {
+        BossAttack1.Post(gameObject);
+    }
+
+    public void SFX_BossAttack2()
+    {
+        BossAttack2.Post(gameObject);
+    }
+    
+    public void SFX_BossQueue()
+    {
+        BossQueue.Post(gameObject);
+    }
 }
+

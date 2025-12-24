@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_MUS_KRAMPUSBOSSFIGHT = 3764083256U;
         static const AkUniqueID PLAY_MUS_MENU = 4249884003U;
         static const AkUniqueID PLAY_MUS_NAMAHAGEBOSSFIGHT = 2491360697U;
+        static const AkUniqueID PLAY_MUS_SANTABOSSFIGHT = 2441382156U;
         static const AkUniqueID PLAY_MUS_YULEBOSSFIGHT = 741827436U;
         static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
         static const AkUniqueID PLAY_SFX_YULE_ATTACKHITPLAYER = 3295576996U;
@@ -49,6 +50,7 @@ namespace AK
         static const AkUniqueID STOP_MUS_KRAMPUSBOSSFIGHT = 354356402U;
         static const AkUniqueID STOP_MUS_MENU = 183729989U;
         static const AkUniqueID STOP_MUS_NAMAHAGEBOSSFIGHT = 787210507U;
+        static const AkUniqueID STOP_MUS_SANTABOSSFIGHT = 2519430714U;
         static const AkUniqueID STOP_MUS_YULEBOSSFIGHT = 1324619110U;
     } // namespace EVENTS
 

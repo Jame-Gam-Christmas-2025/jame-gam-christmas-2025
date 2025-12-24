@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/leveldesign.unity
     guid: 026192a3c56ff534ca1886f64d299409
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Features/Feauture-Boss-Yule-Cat.unity
     guid: 19026b6b0a8da3044b96b472988b4881
   - enabled: 0
