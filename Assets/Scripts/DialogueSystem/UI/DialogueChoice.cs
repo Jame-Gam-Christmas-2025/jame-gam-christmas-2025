@@ -58,7 +58,7 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
     public void OnClick()
     {
         DialogueView dialogueView = FindFirstObjectByType<DialogueView>();
-        ChoiceCondition choiceCondition = _choiceData.choiceCondition;
+        /* ChoiceCondition choiceCondition = _choiceData.choiceCondition;
 
         // Happen only if there is a condition in dialogue
         if (choiceCondition)
@@ -69,12 +69,12 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
                 _nextDialogue = choiceCondition.conditionTrueDialogue;
             else
                 _nextDialogue = choiceCondition.conditionFalseDialogue;
-        }
+        } */
 
         if (_player)
         {
             // Add alignment bonus to player
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus);
+            /* GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus); */
         }
 
         // Start next dialogue

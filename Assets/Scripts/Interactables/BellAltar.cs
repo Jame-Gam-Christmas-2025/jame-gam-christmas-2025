@@ -89,12 +89,13 @@ public class BellAltar : Interactable
         {
             _isActive = !_isActive;
 
-            CapsuleCollider collider = GetComponent<CapsuleCollider>();
 
-            if(_bellAltarProps != null && collider != null)
+            if(_bellAltarProps != null)
             {
+                CapsuleCollider altarCollider = _bellAltarProps.GetComponent<CapsuleCollider>();
+
                 _bellAltarProps.SetActive(false);
-                collider.enabled = false;
+                altarCollider.enabled = false;
 
                 GameObject player = GameObject.Find("Player");
             

@@ -33,32 +33,55 @@ public class PlayerInteractor : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (!_canInteract) return;
+        if (!_canInteract)
+        {
+            Debug.Log("Deny");
+            return;
+        } 
 
         if (context.performed)
         {
-            if (interactablesInRange.Count > 0)
+            // Vérifiez combien d'objets interactables sont dans la portée
+            int interactableCount = interactablesInRange.Count;
+
+            if (interactableCount > 0)
             {
-                Debug.Log("Interacting!");
+                GameObject firstInteractable = interactablesInRange[0].gameObject;
+
+                // Log des informations détaillées
+                Debug.Log($"Interacting with: {firstInteractable.name}");
+                Debug.Log($"Total interactables in range: {interactableCount}");
+
+                // Si l'objet a une interaction spécifique, loggez cela aussi
+                if (interactablesInRange[0] is Interactable interactable)
+                {
+                    Debug.Log($"Interactable Type: {interactable.GetType().Name}");
+                }
+                else
+                {
+                    Debug.Log("The first object is not an interactable.");
+                }
+
+                // Exécutez l'interaction
                 interactablesInRange[0].Interact();
             }
+            else
+            {
+                Debug.Log("No interactable objects in range.");
+            }
         }
+
     }
 
     public void EnableInteraction()
     {
         _canInteract = true;
 
+
         // Enable interaction UI if there are interactables around
         if (interactablesInRange.Count > 0)
         {
-            _interactionUI.SetActive(true);
-
-            // Enable every interactable
-            foreach (Interactable i in interactablesInRange)
-            {
-                i.OnInteractionAvailable();
-            }
+            interactablesInRange = new List<Interactable>();
         }
     }
 
@@ -77,7 +100,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Interactable interactable = other.GetComponent<Interactable>();
+        Interactable interactable = other.GetComponentInParent<Interactable>();
 
         if (interactable != null && !interactablesInRange.Contains(interactable))
         {
@@ -94,7 +117,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Interactable interactable = other.GetComponent<Interactable>();
+        Interactable interactable = other.GetComponentInParent<Interactable>();
 
         if (interactable != null && interactablesInRange.Contains(interactable))
         {

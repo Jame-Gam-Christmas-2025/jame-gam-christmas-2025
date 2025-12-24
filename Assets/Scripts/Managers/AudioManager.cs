@@ -185,15 +185,39 @@ public class AudioManager : MonoBehaviour
                 break;
 
             case "Namahage":
-                PlayYuleMUS(gameObject);
+                PlayNamahageMUS(gameObject);
                 break;
 
             case "Krampus":
-                PlayYuleMUS(gameObject);
+                PlayKrampusMUS(gameObject);
                 break;
 
             case "Santa":
                 PlayYuleMUS(gameObject);
+                break;
+            default:
+            break;
+        }
+    }
+
+    public void StopBossMusic(string bossName)
+    {
+        switch(bossName)
+        {
+            case "YuleCat":
+                StopYuleMUS(gameObject);
+                break;
+
+            case "Namahage":
+                StopNamahageMUS(gameObject);
+                break;
+
+            case "Krampus":
+                StopKrampusMUS(gameObject);
+                break;
+
+            case "Santa":
+                StopYuleMUS(gameObject);
                 break;
             default:
             break;

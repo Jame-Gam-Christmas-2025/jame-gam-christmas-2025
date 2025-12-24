@@ -400,6 +400,6 @@ public class BossController : MonoBehaviour
 
     public void SFX_BossQueue()
     {
-        BossQueue?.Post(gameObject);
+        /* BossQueue.Post(gameObject); */
     }
 }

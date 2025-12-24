@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
+
 
 
 #if UNITY_EDITOR
@@ -121,6 +123,24 @@ public class GameManager : MonoBehaviour
         {
             Destroy(bellAltar);
         }
+
+        AudioManager.Instance.StopBossMusic(bossName);
+    }
+
+    public void EndGame()
+    {
+        string lastDefeatedBoss = _defeatedBossNames.Last();
+        if(lastDefeatedBoss == "Santa")
+        {
+            GameSceneManager.Instance.LoadSceneByName("EndingScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
+
+    public string LastDefeatedBoss()
+    {
+        return _defeatedBossNames.Last();
     }
 
     public void ToggleArenaMode()

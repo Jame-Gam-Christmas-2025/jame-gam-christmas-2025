@@ -61,10 +61,14 @@ public class UIManager : MonoBehaviour
         {
             GameObject gameObject = Instantiate(settingsView);
             gameObject.name = "SettingsView";
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         } else
         {
             GameObject viewToDestroy = GameObject.Find("SettingsView");
             Destroy(viewToDestroy);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CharacterData_YuleCat
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Yule Cat
-  avatar: {fileID: 0}
+  avatar: {fileID: 21300000, guid: 00b8d409a24e2124fa13c516da36d75a, type: 3}
