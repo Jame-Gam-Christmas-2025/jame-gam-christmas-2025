@@ -1999,6 +1999,14 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 902016833}
+    - target: {fileID: 8343881340695286145, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
+      propertyPath: BossQueue.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500519410532267074, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
+      propertyPath: m_Name
+      value: YuleCat
+      objectReference: {fileID: 0}
     - target: {fileID: 9073365058327621498, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
       propertyPath: _player
       value: 

@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 8556989842508210705}
   - component: {fileID: 3360973596089112375}
   m_Layer: 0
-  m_Name: YuleCatBoss
+  m_Name: YuleCat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
