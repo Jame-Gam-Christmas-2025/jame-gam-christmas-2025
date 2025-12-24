@@ -100,6 +100,13 @@ public class GameManager : MonoBehaviour
     public void DefeatBoss(string bossName)
     {
         _defeatedBossNames.Add(bossName);
+
+        // Destroy the current boss altar
+        GameObject bellAltar = GameObject.FindWithTag(bossName);
+        if(bellAltar != null)
+        {
+            Destroy(bellAltar);
+        }
     }
 
     public void ToggleArenaMode()
