@@ -4,7 +4,6 @@ public class BellAltar : Interactable
 {
     public float arenaRadius;
 
-    [SerializeField] private SphereCollider _arenaCollider;
     [SerializeField] private ParticleSystem _arenaParticleSyst;
     [SerializeField] private Color _arenaParticleColor;
     [SerializeField] private string _arenaBossName;
@@ -32,11 +31,6 @@ public class BellAltar : Interactable
     // Update is called once per frame
     void UpdateParticleSystem()
     {
-        if(_arenaCollider != null)
-        {
-            _arenaCollider.radius = arenaRadius;
-        }
-
         if(_arenaParticleSyst != null)
         {
             ParticleSystem.ShapeModule particuleSyst = _arenaParticleSyst.shape;
@@ -56,7 +50,7 @@ public class BellAltar : Interactable
             if(playerGameObject != null)
             {
                 Vector3 playerPosition = playerGameObject.transform.position;
-                Vector3 arenaCenter = _arenaCollider.transform.position;
+                Vector3 arenaCenter = _arenaParticleSyst.transform.position;
 
                 float arenaPlayerDistance = Vector3.Distance(playerPosition, arenaCenter);
                 float worldArenaRadius = arenaRadius * transform.lossyScale.x;
