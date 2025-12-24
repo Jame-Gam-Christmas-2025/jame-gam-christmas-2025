@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: YuleCat
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: YuleCat
-  maxHealth: 50
+  maxHealth: 300
   activationBehavior: 0
-  moveSpeed: 7
-  rotationSpeed: 5
-  attackDistance: 22.5
+  moveSpeed: 3
+  rotationSpeed: 3
+  attackDistance: 11
   jumpHeight: 20.8
   jumpDuration: 2
   jumpDamage: 30
   jumpRadius: 5
   canJumpInCombat: 1
-  combatJumpMinDistance: 23.9
-  combatJumpMaxDistance: 69.8
+  combatJumpMinDistance: 11
+  combatJumpMaxDistance: 33.6
   combatJumpChance: 50
-  jumpCooldown: 10
+  jumpCooldown: 3
   attacks:
   - animationTrigger: Bite
     minRange: 0
-    maxRange: 51.81
+    maxRange: 11
     damage: 50
     isRanged: 0
-    cooldown: 2
+    cooldown: 5
   - animationTrigger: Paw
     minRange: 0
-    maxRange: 40.7
+    maxRange: 11
     damage: 50
     isRanged: 0
-    cooldown: 2
+    cooldown: 5
