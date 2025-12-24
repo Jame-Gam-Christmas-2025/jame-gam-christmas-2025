@@ -32,60 +32,6 @@ Transform:
   - {fileID: 3168103273208380194}
   m_Father: {fileID: 4458258218852834968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4638443155675438583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7280654372215001796}
-  - component: {fileID: 2490321579874939515}
-  m_Layer: 0
-  m_Name: ArenaCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7280654372215001796
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4638443155675438583}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 402239043867431961}
-  m_Father: {fileID: 4458258218852834968}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2490321579874939515
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4638443155675438583}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5315761399548098061
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +65,7 @@ Transform:
   m_Children:
   - {fileID: 7333307257685070212}
   - {fileID: 5210125077332715685}
-  - {fileID: 7280654372215001796}
+  - {fileID: 402239043867431961}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9158197379027465743
@@ -136,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BellAltar
   interactionWorldUI: {fileID: 8613278443297143949}
   arenaRadius: 20
-  _arenaCollider: {fileID: 2490321579874939515}
+  _arenaCollider: {fileID: 0}
   _arenaParticleSyst: {fileID: 2658448587372115189}
   _arenaParticleColor: {r: 1, g: 1, b: 1, a: 1}
   _arenaBossName: 
@@ -267,11 +213,11 @@ Transform:
   m_GameObject: {fileID: 7311498609885663113}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7079336, y: -0.00038814667, z: -0.00005324413, w: 0.7062789}
-  m_LocalPosition: {x: 0.0009460449, y: -1.9999944, z: 0.004676819}
+  m_LocalPosition: {x: 0.0009460449, y: -2, z: 0.004676819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7280654372215001796}
+  m_Father: {fileID: 4458258218852834968}
   m_LocalEulerAnglesHint: {x: -90.136, y: 11.423996, z: -11.460022}
 --- !u!198 &2658448587372115189
 ParticleSystem:
@@ -5231,7 +5177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7333307257685070212
 RectTransform:
   m_ObjectHideFlags: 0
