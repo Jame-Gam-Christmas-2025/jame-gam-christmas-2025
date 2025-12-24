@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 using ImpactFrameSystem;
+using UnityEngine.Rendering;
+using DG.Tweening;
 
 public class BossEnemyState : MonoBehaviour, IDamageable
 {
@@ -14,6 +16,9 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     [Header("Death Settings")]
     [SerializeField] private float _deathDelay = 0.3f;
 
+    [Header("Post Processing")]
+    [SerializeField] private Volume bossAreaPostProcess;
+
     public UnityEvent OnDeath;
     public UnityEvent OnDamageTaken;
 
@@ -24,6 +29,12 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     void Start()
     {
         CurrentHealth = MaxHealth;
+
+        OnDeath.AddListener(() =>
+        {
+            bossAreaPostProcess.weight = 1f;
+            DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
+        });
     }
 
     public void TakeDamage(float damage)
@@ -76,4 +87,12 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
         OnDeath?.Invoke();
     }
+
+#if UNITY_EDITOR
+    [ContextMenu("On death event")]
+    public void EditorDeathEvent()
+    {
+        OnDeath?.Invoke();
+    }
+#endif
 }
