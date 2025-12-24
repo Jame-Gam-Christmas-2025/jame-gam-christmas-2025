@@ -87,28 +87,19 @@ public class BossController : MonoBehaviour
 
             if (!attack.isRanged)
             {
-                // Melee attack - use meleeIndex
                 if (meleeIndex < _attackHitboxes.Length)
                 {
                     attack.hitbox = _attackHitboxes[meleeIndex];
-                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned hitbox[{meleeIndex}]");
                 }
                 meleeIndex++;
             }
             else
             {
-                // Ranged attack - use rangedIndex
                 if (rangedIndex < _projectilePools.Length)
-                {
                     attack.pool = _projectilePools[rangedIndex];
-                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned pool[{rangedIndex}]");
-                }
 
                 if (rangedIndex < _projectileSpawns.Length)
-                {
                     attack.spawnPoint = _projectileSpawns[rangedIndex];
-                    Debug.Log($"Attack {i} ({attack.animationTrigger}): Assigned spawn[{rangedIndex}]");
-                }
 
                 rangedIndex++;
             }
@@ -187,10 +178,7 @@ public class BossController : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, _player.position);
 
-        // Try to find valid attack
-        BossAttack validAttack = null;
-        BossAttack fallbackAttack = null; // Attack in range but on cooldown
-
+        // Find valid attack (in range AND not on cooldown)
         foreach (var attack in _config.attacks)
         {
             bool inRange = distance >= attack.minRange && distance <= attack.maxRange;
@@ -198,59 +186,13 @@ public class BossController : MonoBehaviour
 
             if (inRange && !onCooldown)
             {
-                // Perfect - in range and ready!
-                validAttack = attack;
-                break;
-            }
-            else if (inRange && onCooldown)
-            {
-                // In range but on cooldown - save as fallback
-                fallbackAttack = attack;
+                PerformAttack(attack);
+                return;
             }
         }
 
-        if (validAttack != null)
-        {
-            // Found valid attack - use it!
-            PerformAttack(validAttack);
-        }
-        else if (fallbackAttack != null)
-        {
-            // No ready attack but we're in range - use attack anyway (ignore cooldown)
-            Debug.Log("Using attack on cooldown - better than doing nothing!");
-            PerformAttack(fallbackAttack);
-        }
-        else
-        {
-            // No attack in range at all - move closer or away
-            Debug.Log($"No attacks in range for distance {distance:F1}m - adjusting position");
-
-            // Find closest attack range
-            float closestRange = float.MaxValue;
-            foreach (var attack in _config.attacks)
-            {
-                float midRange = (attack.minRange + attack.maxRange) / 2f;
-                if (Mathf.Abs(distance - midRange) < Mathf.Abs(distance - closestRange))
-                {
-                    closestRange = midRange;
-                }
-            }
-
-            // Move towards ideal range
-            if (distance > closestRange)
-            {
-                // Too far - move closer
-                MoveToPlayer();
-            }
-            else
-            {
-                // Too close - back up slightly
-                Vector3 awayDir = (transform.position - _player.position).normalized;
-                awayDir.y = 0;
-                _rb.MovePosition(_rb.position + awayDir * _config.moveSpeed * Time.fixedDeltaTime * 0.5f);
-                _anim.SetFloat("Speed", _config.moveSpeed * 0.5f);
-            }
-        }
+        // No valid attack - just wait
+        // Boss will keep trying every frame until cooldown is ready
     }
 
     void PerformAttack(BossAttack attack)
@@ -258,9 +200,6 @@ public class BossController : MonoBehaviour
         _isAttacking = true;
         _currentAttack = attack;
         _currentAttack.MarkAsUsed();
-
-        Debug.Log($"Performing attack: {attack.animationTrigger}, IsRanged: {attack.isRanged}");
-
         _anim.SetTrigger(attack.animationTrigger);
     }
 
@@ -268,7 +207,6 @@ public class BossController : MonoBehaviour
     {
         if (_currentAttack != null && _currentAttack.hitbox != null)
         {
-            // Set damage on hitbox
             _currentAttack.hitbox.SetDamage(_currentAttack.damage);
             _currentAttack.hitbox.EnableHitbox();
         }
@@ -287,49 +225,19 @@ public class BossController : MonoBehaviour
 
     public void OnProjectileSpawn()
     {
-        Debug.Log("=== OnProjectileSpawn CALLED! ===");
-
-        if (_currentAttack == null)
+        if (_currentAttack != null && _currentAttack.pool != null)
         {
-            Debug.LogError("_currentAttack is NULL!");
-            _isAttacking = false;
-            return;
-        }
+            GameObject proj = _currentAttack.pool.GetObject();
+            Transform spawn = _currentAttack.spawnPoint ?? transform;
 
-        Debug.Log($"Current attack: {_currentAttack.animationTrigger}");
+            proj.transform.position = spawn.position;
 
-        if (_currentAttack.pool == null)
-        {
-            Debug.LogError("Projectile pool is NULL!");
-            _isAttacking = false;
-            return;
-        }
-
-        Debug.Log("Getting projectile from pool...");
-        GameObject proj = _currentAttack.pool.GetObject();
-
-        if (proj == null)
-        {
-            Debug.LogError("Pool returned NULL!");
-            _isAttacking = false;
-            return;
-        }
-
-        Transform spawn = _currentAttack.spawnPoint ?? transform;
-
-        proj.transform.position = spawn.position;
-        Debug.Log($"Projectile spawned at {spawn.position}");
-
-        var projScript = proj.GetComponent<Projectile>();
-        if (projScript != null)
-        {
-            Vector3 dir = (_player.position - spawn.position).normalized;
-            projScript.Initialize(dir, _currentAttack.damage, gameObject, _currentAttack.pool);
-            Debug.Log($"Projectile initialized with damage {_currentAttack.damage}");
-        }
-        else
-        {
-            Debug.LogError("No Projectile script on projectile!");
+            var projScript = proj.GetComponent<Projectile>();
+            if (projScript != null)
+            {
+                Vector3 dir = (_player.position - spawn.position).normalized;
+                projScript.Initialize(dir, _currentAttack.damage, gameObject, _currentAttack.pool);
+            }
         }
 
         _isAttacking = false;
@@ -337,11 +245,7 @@ public class BossController : MonoBehaviour
 
     IEnumerator ActivationJump()
     {
-        if (_config == null)
-        {
-            Debug.LogError("BossConfig is NULL!");
-            yield break;
-        }
+        if (_config == null) yield break;
 
         var impactManager = FindFirstObjectByType<BossImpactFrameManager>();
         if (impactManager != null)
@@ -431,7 +335,7 @@ public class BossController : MonoBehaviour
 
     public void OnJumpLand()
     {
-        // Not used anymore - jump handles landing itself
+        // Not used anymore
     }
 
     void OnDrawGizmos()
@@ -471,34 +375,31 @@ public class BossController : MonoBehaviour
             }
         }
     }
-    
-    
-/////////////// AUDIO /////////////
 
-    [Header("SFX_MC_AttackHitEnemy")]
+    /////////////// AUDIO /////////////
+    [Header("SFX")]
     public AK.Wwise.Event BossFootsteps;
     public AK.Wwise.Event BossAttack1;
     public AK.Wwise.Event BossAttack2;
     public AK.Wwise.Event BossQueue;
-    
+
     public void SFX_Boss_Footsteps()
     {
-        BossFootsteps.Post(gameObject);
+        BossFootsteps?.Post(gameObject);
     }
 
     public void SFX_BossAttack1()
     {
-        BossAttack1.Post(gameObject);
+        BossAttack1?.Post(gameObject);
     }
 
     public void SFX_BossAttack2()
     {
-        BossAttack2.Post(gameObject);
+        BossAttack2?.Post(gameObject);
     }
-    
+
     public void SFX_BossQueue()
     {
-        BossQueue.Post(gameObject);
+        BossQueue?.Post(gameObject);
     }
 }
-

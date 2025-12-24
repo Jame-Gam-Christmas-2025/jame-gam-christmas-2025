@@ -13,36 +13,36 @@ MonoBehaviour:
   m_Name: Santa
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: Santa
-  maxHealth: 50
+  maxHealth: 500
   activationBehavior: 0
-  moveSpeed: 6
-  rotationSpeed: 5
-  attackDistance: 48.7
+  moveSpeed: 7
+  rotationSpeed: 3
+  attackDistance: 12
   jumpHeight: 5
-  jumpDuration: 1.5
-  jumpDamage: 30
-  jumpRadius: 4
+  jumpDuration: 2
+  jumpDamage: 40
+  jumpRadius: 2
   canJumpInCombat: 1
   combatJumpMinDistance: 8
   combatJumpMaxDistance: 20
   combatJumpChance: 30
-  jumpCooldown: 10
+  jumpCooldown: 4
   attacks:
   - animationTrigger: Attack1
     minRange: 0
     maxRange: 5
-    damage: 50
+    damage: 35
     isRanged: 0
     cooldown: 0.5
   - animationTrigger: Attack2
     minRange: 0
-    maxRange: 5
-    damage: 50
+    maxRange: 12
+    damage: 70
     isRanged: 0
-    cooldown: 0.5
+    cooldown: 3
   - animationTrigger: RangedAttack
-    minRange: 6
-    maxRange: 20
-    damage: 50
+    minRange: 2
+    maxRange: 53.3
+    damage: 40
     isRanged: 1
     cooldown: 0.5

@@ -13,36 +13,36 @@ MonoBehaviour:
   m_Name: Namehage
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: Namehage
-  maxHealth: 50
+  maxHealth: 450
   activationBehavior: 1
-  moveSpeed: 5
+  moveSpeed: 7
   rotationSpeed: 5
-  attackDistance: 3
+  attackDistance: 10.29
   jumpHeight: 10
   jumpDuration: 1.5
   jumpDamage: 40
-  jumpRadius: 4
+  jumpRadius: 2.7
   canJumpInCombat: 1
-  combatJumpMinDistance: 14.44
-  combatJumpMaxDistance: 43
-  combatJumpChance: 10.1
-  jumpCooldown: 10
+  combatJumpMinDistance: 8.9
+  combatJumpMaxDistance: 44.4
+  combatJumpChance: 30
+  jumpCooldown: 3
   attacks:
   - animationTrigger: Attack1
     minRange: 0
-    maxRange: 23.8
+    maxRange: 5
     damage: 50
     isRanged: 0
     cooldown: 2
   - animationTrigger: Attack2
     minRange: 0
-    maxRange: 10
-    damage: 55
+    maxRange: 8.88
+    damage: 70
     isRanged: 0
-    cooldown: 2
+    cooldown: 3
   - animationTrigger: Attack3
     minRange: 0
-    maxRange: 10
-    damage: 60
+    maxRange: 4
+    damage: 45
     isRanged: 0
-    cooldown: 2
+    cooldown: 3
