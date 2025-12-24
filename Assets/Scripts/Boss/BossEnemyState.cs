@@ -9,6 +9,7 @@ using UI;
 public class BossEnemyState : MonoBehaviour, IDamageable
 {
     [SerializeField] private BossConfig _config;
+    [SerializeField] private BossController _bossController;
 
     [Header("Impact Frame Settings")]
     [SerializeField] private float _impactDuration = 2f;
@@ -73,6 +74,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     public void TakeDamage(float damage)
     {
         if (IsDead) return;
+        if (!_bossController.IsActive) return;
 
         CurrentHealth -= damage;
         CurrentHealth = Mathf.Max(CurrentHealth, 0);

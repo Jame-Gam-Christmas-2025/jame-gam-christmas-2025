@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29db6d07ab003464e8b6c6e8a7239fca, type: 3}
   m_Name: Namehage
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
-  bossName: boss
+  bossName: Namehage
   maxHealth: 50
   activationBehavior: 1
   moveSpeed: 5

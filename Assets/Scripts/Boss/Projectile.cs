@@ -63,6 +63,7 @@ public class Projectile : MonoBehaviour
     {
         // Don't hit owner
         if (other.gameObject == _owner) return;
+        if (other.isTrigger) return;
 
         // Try to damage
         IDamageable damageable = other.GetComponent<IDamageable>();
