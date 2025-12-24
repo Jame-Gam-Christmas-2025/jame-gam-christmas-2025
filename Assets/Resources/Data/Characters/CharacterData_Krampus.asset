@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CharacterData_Krampus
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Krampus
-  avatar: {fileID: 0}
+  avatar: {fileID: 21300000, guid: ef60be33aadbdfe4a9671597dfed4c20, type: 3}

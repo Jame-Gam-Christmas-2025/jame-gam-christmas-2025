@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CharacterData_Namahage
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Namahage
-  avatar: {fileID: 0}
+  avatar: {fileID: 21300000, guid: c3e9a4447547fbb4bb735835687ed03c, type: 3}
