@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -92,6 +93,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerInput = GetComponent<PlayerInput>();
         }
+
+        // I know it has nothing to do here but CRUNCH!!!!
+        CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 1f;
+        canvasGroup.DOFade(0f, 2f);
     }
 
     private void FixedUpdate()
