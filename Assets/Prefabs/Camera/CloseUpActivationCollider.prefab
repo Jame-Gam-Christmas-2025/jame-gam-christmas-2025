@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2489579953187758254}
   - component: {fileID: 75122858256939848}
   m_Layer: 0
-  m_Name: CatCloseUpActivationCollider
+  m_Name: CloseUpActivationCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
