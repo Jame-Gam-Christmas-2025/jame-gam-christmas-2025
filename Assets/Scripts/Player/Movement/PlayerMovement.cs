@@ -145,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
         if (!_canMove) return;
 
         _isDodging = true;
+        GetComponent<PlayerCombatController>().IsAttacking = false;
 
         Vector3 dodgeDirection = transform.forward;
         _rb.linearVelocity = dodgeDirection * _dodgeForce;
