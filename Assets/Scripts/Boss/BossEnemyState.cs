@@ -35,29 +35,38 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     {
         CurrentHealth = MaxHealth;
 
-        OnDeath.AddListener(() =>
+        OnDeath.AddListener(OnDeathEvent);
+    }
+
+    /// <summary>
+    /// Method used for the variable OnDeath.
+    /// </summary>
+    private void OnDeathEvent()
+    {
+        // Transition of Post Process Volume
+        bossAreaPostProcess.weight = 1f;
+        DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
+
+        // Destroy boss walls
+        GameObject.Destroy(bossLimitWalls);
+
+        // Restore player health
+        PlayerState playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+        playerState.Heal(playerState.MaxHealth);
+
+        // Start fade in
+        CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+        canvasGroup.DOFade(1f, 2f).OnComplete(() =>
         {
-            // Transition of Post Process Volume
-            bossAreaPostProcess.weight = 1f;
-            DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
-
-            // Destroy boss walls
-            GameObject.Destroy(bossLimitWalls);
-
-            // Start fade in
-            CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
-            canvasGroup.DOFade(1f, 2f).OnComplete(() =>
+            UnityEvent dialogueEndEvent = new UnityEvent();
+            dialogueEndEvent.AddListener(() =>
             {
-                UnityEvent dialogueEndEvent = new UnityEvent();
-                dialogueEndEvent.AddListener(() =>
-                {
-                    CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
-                    canvasGroup.DOFade(0f, 2f);
-                });
-
-                // Launch dialogue
-                FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(bossFirstDialogue, dialogueEndEvent);
+                CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+                canvasGroup.DOFade(0f, 2f);
             });
+
+            // Launch dialogue
+            FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(bossFirstDialogue, dialogueEndEvent);
         });
     }
 
