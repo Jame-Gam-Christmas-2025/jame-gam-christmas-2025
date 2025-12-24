@@ -82,7 +82,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BellAltar
   interactionWorldUI: {fileID: 8613278443297143949}
   arenaRadius: 20
-  _arenaCollider: {fileID: 0}
   _arenaParticleSyst: {fileID: 2658448587372115189}
   _arenaParticleColor: {r: 1, g: 1, b: 1, a: 1}
   _arenaBossName: 
