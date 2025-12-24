@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 979256185799729863}
   - component: {fileID: 3272837084792076073}
   - component: {fileID: 3617427205735089420}
+  - component: {fileID: 5453885745409552381}
+  - component: {fileID: 435785696526273393}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -39,7 +41,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 454, y: -111.494995}
+  m_AnchoredPosition: {x: 454, y: -129.65}
   m_SizeDelta: {x: 892, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1023520145627609750
@@ -140,6 +142,40 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &5453885745409552381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976157021689419195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &435785696526273393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976157021689419195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 204
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &7990367113293135210
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +190,8 @@ GameObject:
   - component: {fileID: 3238892009414206298}
   - component: {fileID: 338250025643575353}
   - component: {fileID: 8194492821910523524}
+  - component: {fileID: 373199009841179161}
+  - component: {fileID: 6857771505363854147}
   m_Layer: 5
   m_Name: Text and choices
   m_TagString: Untagged
@@ -178,7 +216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 486, y: -305.495}
+  m_AnchoredPosition: {x: 486, y: -323.65}
   m_SizeDelta: {x: 908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7990367113293135220
@@ -260,6 +298,40 @@ MonoBehaviour:
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &8194492821910523524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990367113293135210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 220
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &373199009841179161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990367113293135210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &6857771505363854147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1688513812a5ff4448a865b00bbef555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.DialogueView
-  testDialogue: 6
+  testDialogue: 4
   dialogueTextMesh: {fileID: 4564317817621719317}
   npcNameTextMesh: {fileID: 7990367114375025958}
   avatarImage: {fileID: 7990367113848237437}
@@ -552,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.2031157, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -580,6 +652,7 @@ GameObject:
   - component: {fileID: 7990367114155821017}
   - component: {fileID: 1891686106275782268}
   - component: {fileID: 6354297323616297836}
+  - component: {fileID: 8980147065657499716}
   m_Layer: 5
   m_Name: Choices
   m_TagString: Untagged
@@ -605,7 +678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 446, y: -164.77}
+  m_AnchoredPosition: {x: 446, y: -189.98}
   m_SizeDelta: {x: 876, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891686106275782268
@@ -635,6 +708,20 @@ MonoBehaviour:
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
 --- !u!114 &6354297323616297836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990367114155821016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &8980147065657499716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1008,8 +1095,8 @@ MonoBehaviour:
   m_text: Hisssssss Emissary of Mithra... How dare you trample on my whiskers like
     I'm some kind of house cat!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 754e1e01101a6f846bcee349c104e1a3, type: 2}
+  m_sharedMaterial: {fileID: 3803089339358801041, guid: 754e1e01101a6f846bcee349c104e1a3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1116,19 +1203,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 518.87
+      value: 481.4
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 26.82
+      value: 37.92
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 283.435
+      value: 264.7
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.41
+      value: -18.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052647155518974860, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6052647156876567576, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_Name
@@ -1200,7 +1291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052647156876567579, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.41
+      value: -18.96
       objectReference: {fileID: 0}
     - target: {fileID: 6052647156876567579, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1263,19 +1354,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 790.05
+      value: 754.16
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 26.82
+      value: 37.92
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 419.025
+      value: 401.08
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974850, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.41
+      value: -18.96
       objectReference: {fileID: 0}
     - target: {fileID: 6052647155518974860, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_text
@@ -1352,7 +1443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052647156876567579, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -55.03
+      value: -71.67999
       objectReference: {fileID: 0}
     - target: {fileID: 6052647156876567579, guid: 8c91de8b1b8120b4eb852b9ab2c1288a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
