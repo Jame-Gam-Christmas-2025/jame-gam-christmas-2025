@@ -52,8 +52,24 @@ public class BossEnemyState : MonoBehaviour, IDamageable
         GameObject.Destroy(bossLimitWalls);
 
         // Restore player health
-        PlayerState playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerState playerState = player.GetComponent<PlayerState>();
         playerState.Heal(playerState.MaxHealth);
+
+        // Set dialogue for santa
+        if (name == "Santa")
+        {
+            PlayerAlignment playerAlignment = player.GetComponent<PlayerAlignment>();
+
+            if (playerAlignment.AlignmentScore >= 0f)
+            {
+                bossFirstDialogue = Resources.Load<DialogueData>($"Data/DialogueSystem/SantaEnding1/Dialogue_SantaEnding1_0");
+            }
+            else
+            {
+                bossFirstDialogue = Resources.Load<DialogueData>($"Data/DialogueSystem/SantaEnding2/Dialogue_SantaEnding2_0");
+            }
+        }
 
         // Start fade in
         CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
