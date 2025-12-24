@@ -174,6 +174,31 @@ public class AudioManager : MonoBehaviour
         StopMenuMusic.Post(gameObject);
     }
     
+    // Boss Music Handler
+
+    public void PlayBossMusic(string bossName)
+    {
+        switch(bossName)
+        {
+            case "YuleCat":
+                PlayYuleMUS(gameObject);
+                break;
+
+            case "Namahage":
+                PlayYuleMUS(gameObject);
+                break;
+
+            case "Krampus":
+                PlayYuleMUS(gameObject);
+                break;
+
+            case "Santa":
+                PlayYuleMUS(gameObject);
+                break;
+            default:
+            break;
+        }
+    }
     ////////// Event Boss /////////
 }
 

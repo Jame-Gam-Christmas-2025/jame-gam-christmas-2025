@@ -95,6 +95,8 @@ public class GameManager : MonoBehaviour
     {
         _currentBossName = bossName;
         _lastCheckpointPosition = checkpointPosition;
+
+        AudioManager.Instance.PlayBossMusic(bossName);
     }
 
     public void DefeatBoss(string bossName)
