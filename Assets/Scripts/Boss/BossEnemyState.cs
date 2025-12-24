@@ -4,6 +4,7 @@ using System.Collections;
 using ImpactFrameSystem;
 using UnityEngine.Rendering;
 using DG.Tweening;
+using UI;
 
 public class BossEnemyState : MonoBehaviour, IDamageable
 {
@@ -21,6 +22,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
     [Header("On end")]
     [SerializeField] private GameObject bossLimitWalls;
+    [SerializeField] private DialogueData bossFirstDialogue;
 
     public UnityEvent OnDeath;
     public UnityEvent OnDamageTaken;
@@ -41,6 +43,21 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
             // Destroy boss walls
             GameObject.Destroy(bossLimitWalls);
+
+            // Start fade in
+            CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+            canvasGroup.DOFade(1f, 2f).OnComplete(() =>
+            {
+                UnityEvent dialogueEndEvent = new UnityEvent();
+                dialogueEndEvent.AddListener(() =>
+                {
+                    CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+                    canvasGroup.DOFade(0f, 2f);
+                });
+
+                // Launch dialogue
+                FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(bossFirstDialogue, dialogueEndEvent);
+            });
         });
     }
 
