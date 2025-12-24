@@ -13,10 +13,16 @@ EditorBuildSettings:
     guid: 430657fbbe7a734468be5e348a62f0e6
   - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: e4eb116ab98f3064fa6e012892735e4e
   - enabled: 1
     path: Assets/Scenes/SettingsScene.unity
     guid: c4b9f865e3ae6d24a9573eb09df69b41
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 541d3ea3fff3df04d936da4f19b973e2
+  - enabled: 1
+    path: Assets/Scenes/DebugMainMenuScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: 8d925e9e6efa51745a830abe5d425438
