@@ -38,7 +38,7 @@ public class PlayerCombatController : MonoBehaviour
     private bool _canAttack = true;
     private int _currentComboIndex = 0;
     private int _attackIndexForDamage = 0;
-    private bool _isAttacking = false;
+    public bool IsAttacking { get; set; } = false;
     private bool _hasQueuedInput = false;
     private Coroutine _comboResetCoroutine;
 
@@ -50,11 +50,16 @@ public class PlayerCombatController : MonoBehaviour
     private void Update()
     {
         // Traiter l'input en queue uniquement si on n'attaque plus
-        if (_hasQueuedInput && !_isAttacking)
+        if (_hasQueuedInput && !IsAttacking)
         {
             _hasQueuedInput = false;
             PerformAttack();
         }
+    }
+
+    public void SetIsAttackingFalse()
+    {
+        IsAttacking = false;
     }
 
     public void EnableAttack()
@@ -75,7 +80,7 @@ public class PlayerCombatController : MonoBehaviour
         if (!context.performed) return;
 
         // Si on attaque déjà, mettre en queue
-        if (_isAttacking)
+        if (IsAttacking)
         {
             if (!_hasQueuedInput)
             {
@@ -93,10 +98,10 @@ public class PlayerCombatController : MonoBehaviour
         if (!_canAttack) return;
 
         if (!context.performed) return;
-        if (_isAttacking) return;
+        if (IsAttacking) return;
 
         _animator.SetTrigger("RangedAttack");
-        _isAttacking = true;
+        IsAttacking = true;
     }
     
     // === ANIMATION EVENT METHODS ===
@@ -134,7 +139,7 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (!_canAttack) return;
 
-        _isAttacking = true;
+        IsAttacking = true;
         _attackIndexForDamage = _currentComboIndex;
 
         // Arrêter le timer de reset si en cours
@@ -182,7 +187,7 @@ public class PlayerCombatController : MonoBehaviour
     private void ResetCombo()
     {
         _currentComboIndex = 0;
-        _isAttacking = false;
+        IsAttacking = false;
         _hasQueuedInput = false;
         _comboResetCoroutine = null;
     }
@@ -228,7 +233,7 @@ public class PlayerCombatController : MonoBehaviour
     // Called by Animation Event - MUST be at the END of attack animation
     public void OnAttackAnimationEnd()
     {
-        _isAttacking = false;
+        IsAttacking = false;
 
         // Si pas d'input en queue, démarrer le timer de reset
         if (!_hasQueuedInput)
@@ -262,7 +267,7 @@ public class PlayerCombatController : MonoBehaviour
     // Called by Animation Event
     public void OnRangedAttackAnimationEnd()
     {
-        _isAttacking = false;
+        IsAttacking = false;
     }
 
     // Called by Animation Event
