@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
@@ -16,16 +17,13 @@ public class BossController : MonoBehaviour
     private Rigidbody _rb;
     private Animator _anim;
     private BossAttack _currentAttack;
-
-    // States
     private bool _isAttacking;
-    [SerializeField] private bool _isActive;
-    private bool _isJumping;
+    private bool _isActive;
 
-    // Jump Calculation Vars
-    private Vector3 _jumpStartPos;
-    private Vector3 _jumpTargetPos;
+    private bool _isJumping;
+    private Vector3 _jumpTarget;
     private float _jumpTimer;
+    private float _jumpDuration;
     private float _lastJumpTime = -999f;
 
     public bool IsActive
@@ -33,12 +31,26 @@ public class BossController : MonoBehaviour
         get => _isActive;
         set
         {
-            if (_isActive != value)
+            // Setting to true - handle activation
+            if (!_isActive && value)
             {
-                _isActive = value;
-                if (_isActive && _config.activationBehavior == BossActivation.JumpToPlayer)
+                if (_config.activationBehavior == BossActivation.JumpToPlayer)
                 {
-                    InitiateJump();
+                    StartCoroutine(ActivationJump());
+                }
+                else
+                {
+                    _isActive = true;
+                }
+            }
+            // Setting to false - always disable
+            else if (!value)
+            {
+                _isActive = false;
+                // Stop movement animation
+                if (_anim != null)
+                {
+                    _anim.SetFloat("Speed", 0);
                 }
             }
         }
@@ -48,46 +60,79 @@ public class BossController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _anim = GetComponent<Animator>();
-        if (_player == null) _player = GameObject.FindGameObjectWithTag("Player")?.transform;
+
+        if (_player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                _player = playerObj.transform;
+            }
+        }
+
         AssignAttackReferences();
+    }
+
+    void AssignAttackReferences()
+    {
+        for (int i = 0; i < _config.attacks.Count; i++)
+        {
+            var attack = _config.attacks[i];
+
+            if (!attack.isRanged && i < _attackHitboxes.Length)
+            {
+                attack.hitbox = _attackHitboxes[i];
+            }
+
+            if (attack.isRanged)
+            {
+                if (i < _projectilePools.Length)
+                    attack.pool = _projectilePools[i];
+                if (i < _projectileSpawns.Length)
+                    attack.spawnPoint = _projectileSpawns[i];
+            }
+        }
+    }
+
+    void PerformActivation()
+    {
+        if (_config.activationBehavior == BossActivation.JumpToPlayer)
+        {
+            StartCoroutine(ActivationJump());
+        }
     }
 
     void FixedUpdate()
     {
         if (!_isActive) return;
 
-        // BLOCK 1: Jump update
-        if (_isJumping)
-        {
-            UpdateJumpPhysics();
-            return; // Absolute lockout
-        }
-
-        if (_isAttacking || _player == null) return;
-
         RotateToPlayer();
+
+        if (_isAttacking || _isJumping) return;
 
         float distance = Vector3.Distance(transform.position, _player.position);
 
-        // BLOCK 2: Combat Jump Trigger
-        if (_config.canJumpInCombat &&
-            Time.time >= _lastJumpTime + _config.jumpCooldown &&
-            distance >= _config.combatJumpMinDistance &&
-            distance <= _config.combatJumpMaxDistance)
+        // Combat jump check (only when cooldown ready)
+        if (_config.canJumpInCombat && Time.time >= _lastJumpTime + _config.jumpCooldown)
         {
-            _lastJumpTime = Time.time;
-
-            if (Random.Range(0f, 100f) < _config.combatJumpChance)
+            if (distance >= _config.combatJumpMinDistance && distance <= _config.combatJumpMaxDistance)
             {
-                InitiateJump();
-                return;
+                if (Random.Range(0f, 100f) < _config.combatJumpChance)
+                {
+                    _lastJumpTime = Time.time;
+                    StartCoroutine(CombatJump());
+                    return;
+                }
+                else
+                {
+                    _lastJumpTime = Time.time;
+                }
             }
         }
 
-        // BLOCK 3: Standard AI
         if (distance <= _config.attackDistance)
         {
-            TryAttack(distance);
+            TryAttack();
         }
         else
         {
@@ -95,116 +140,250 @@ public class BossController : MonoBehaviour
         }
     }
 
-    private void InitiateJump()
+    void RotateToPlayer()
     {
         if (_player == null) return;
 
-        _isJumping = true;
-        _jumpTimer = 0f;
-        _jumpStartPos = transform.position;
-        _jumpTargetPos = _player.position;
+        Vector3 direction = (_player.position - transform.position).normalized;
+        direction.y = 0;
 
-        // PHYSICS RESET: Essential for vertical movement
-        _rb.useGravity = false;
-        _rb.isKinematic = true; // Temporary kinematic to bypass friction/gravity fighting
-        _rb.interpolation = RigidbodyInterpolation.None; // Prevent jitter during manual Lerp
-
-        _anim.SetFloat("Speed", 0);
-        _anim.SetTrigger("Jump");
-    }
-
-    private void UpdateJumpPhysics()
-    {
-        float duration = Mathf.Max(0.1f, _config.jumpDuration);
-        _jumpTimer += Time.fixedDeltaTime;
-        float t = _jumpTimer / duration;
-
-        // Parabola logic
-        Vector3 horizontal = Vector3.Lerp(_jumpStartPos, _jumpTargetPos, t);
-        float height = 4f * t * (1f - t) * _config.jumpHeight;
-
-        // Use movePosition or transform.position since we are Kinematic
-        _rb.MovePosition(horizontal + Vector3.up * height);
-
-        if (t >= 1.0f)
+        if (direction != Vector3.zero)
         {
-            Landing();
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, targetRotation, _config.rotationSpeed * Time.fixedDeltaTime));
         }
     }
-
-    private void Landing()
-    {
-        _isJumping = false;
-
-        // PHYSICS RESTORE
-        _rb.isKinematic = false;
-        _rb.useGravity = true;
-        _rb.interpolation = RigidbodyInterpolation.Interpolate;
-
-        // Final snap to target
-        transform.position = _jumpTargetPos;
-        _rb.linearVelocity = Vector3.zero;
-
-        // Damage
-        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
-        foreach (var hit in hits)
-        {
-            if (hit.gameObject != gameObject)
-                hit.GetComponent<IDamageable>()?.TakeDamage(_config.jumpDamage);
-        }
-    }
-
-    // --- Standard AI Methods ---
 
     void MoveToPlayer()
     {
-        Vector3 dir = (_player.position - transform.position).normalized;
-        dir.y = 0;
-        _rb.MovePosition(_rb.position + dir * _config.moveSpeed * Time.fixedDeltaTime);
+        Vector3 direction = (_player.position - transform.position).normalized;
+        direction.y = 0;
+
+        _rb.MovePosition(_rb.position + direction * _config.moveSpeed * Time.fixedDeltaTime);
         _anim.SetFloat("Speed", _config.moveSpeed);
     }
 
-    void RotateToPlayer()
-    {
-        Vector3 dir = (_player.position - transform.position).normalized;
-        dir.y = 0;
-        if (dir != Vector3.zero)
-        {
-            Quaternion target = Quaternion.LookRotation(dir);
-            _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, target, _config.rotationSpeed * Time.fixedDeltaTime));
-        }
-    }
-
-    void TryAttack(float distance)
+    void TryAttack()
     {
         _anim.SetFloat("Speed", 0);
+
+        float distance = Vector3.Distance(transform.position, _player.position);
+
         foreach (var attack in _config.attacks)
         {
-            if (distance >= attack.minRange && distance <= attack.maxRange && !attack.IsOnCooldown())
+            if (distance >= attack.minRange &&
+                distance <= attack.maxRange &&
+                !attack.IsOnCooldown())
             {
-                _isAttacking = true;
-                _currentAttack = attack;
-                _currentAttack.MarkAsUsed();
-                _anim.SetTrigger(attack.animationTrigger);
+                PerformAttack(attack);
                 return;
             }
         }
     }
 
-    // --- Boilerplate Setup ---
-    public void OnAttackStart() => _currentAttack?.hitbox?.EnableHitbox();
-    public void OnAttackEnd() { _currentAttack?.hitbox?.DisableHitbox(); _isAttacking = false; _currentAttack = null; }
-    public void OnJumpLand() { if (_isJumping) Landing(); }
-
-    private void AssignAttackReferences()
+    void PerformAttack(BossAttack attack)
     {
-        if (_config?.attacks == null) return;
-        for (int i = 0; i < _config.attacks.Count; i++)
+        _isAttacking = true;
+        _currentAttack = attack;
+        _currentAttack.MarkAsUsed();
+        _anim.SetTrigger(attack.animationTrigger);
+    }
+
+    public void OnAttackStart()
+    {
+        if (_currentAttack != null && _currentAttack.hitbox != null)
         {
-            var a = _config.attacks[i];
-            if (!a.isRanged && i < _attackHitboxes.Length) a.hitbox = _attackHitboxes[i];
-            if (a.isRanged && i < _projectilePools.Length) a.pool = _projectilePools[i];
-            if (a.isRanged && i < _projectileSpawns.Length) a.spawnPoint = _projectileSpawns[i];
+            _currentAttack.hitbox.EnableHitbox();
+        }
+    }
+
+    public void OnAttackEnd()
+    {
+        if (_currentAttack != null && _currentAttack.hitbox != null)
+        {
+            _currentAttack.hitbox.DisableHitbox();
+        }
+
+        _isAttacking = false;
+        _currentAttack = null;
+    }
+
+    public void OnProjectileSpawn()
+    {
+        if (_currentAttack != null && _currentAttack.pool != null)
+        {
+            GameObject proj = _currentAttack.pool.GetObject();
+            Transform spawn = _currentAttack.spawnPoint ?? transform;
+
+            proj.transform.position = spawn.position;
+
+            var projScript = proj.GetComponent<Projectile>();
+            if (projScript != null)
+            {
+                Vector3 dir = (_player.position - spawn.position).normalized;
+                projScript.Initialize(dir, _currentAttack.damage, gameObject, _currentAttack.pool);
+            }
+        }
+
+        _isAttacking = false;
+    }
+
+    IEnumerator ActivationJump()
+    {
+        if (_config == null)
+        {
+            Debug.LogError("BossConfig is NULL!");
+            yield break;
+        }
+
+        _rb.useGravity = false;
+        _isJumping = true;
+
+        Vector3 start = transform.position;
+        Vector3 target = _player.position;
+        float timer = 0f;
+        float duration = _config.jumpDuration;
+
+        _anim.SetTrigger("Jump");
+
+        // Jump loop
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = Mathf.Clamp01(timer / duration);
+
+            Vector3 horizontalPos = Vector3.Lerp(start, target, progress);
+            float height = 4f * progress * (1f - progress) * _config.jumpHeight;
+
+            _rb.MovePosition(horizontalPos + Vector3.up * height);
+
+            yield return null;
+        }
+
+        // Jump finished - land
+        _rb.MovePosition(target);
+        _rb.useGravity = true;
+        _isJumping = false;
+
+        // Deal landing damage
+        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
+        foreach (var hit in hits)
+        {
+            var damageable = hit.GetComponent<IDamageable>();
+            if (damageable != null && hit.gameObject != gameObject)
+            {
+                damageable.TakeDamage(_config.jumpDamage);
+            }
+        }
+
+        // NOW activate boss after jump completes
+        _isActive = true;
+    }
+
+    IEnumerator CombatJump()
+    {
+        _rb.useGravity = false;
+        _isJumping = true;
+
+        Vector3 start = transform.position;
+        Vector3 target = _player.position;
+        float timer = 0f;
+        float duration = _config.jumpDuration;
+
+        _anim.SetTrigger("Jump");
+
+        // Jump loop
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = Mathf.Clamp01(timer / duration);
+
+            Vector3 horizontalPos = Vector3.Lerp(start, target, progress);
+            float height = 4f * progress * (1f - progress) * _config.jumpHeight;
+
+            _rb.MovePosition(horizontalPos + Vector3.up * height);
+
+            yield return null;
+        }
+
+        // Jump finished - land
+        _rb.MovePosition(target);
+        _rb.useGravity = true;
+        _isJumping = false;
+
+        // Deal landing damage
+        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
+        foreach (var hit in hits)
+        {
+            var damageable = hit.GetComponent<IDamageable>();
+            if (damageable != null && hit.gameObject != gameObject)
+            {
+                damageable.TakeDamage(_config.jumpDamage);
+            }
+        }
+    }
+
+    public void OnJumpLand()
+    {
+        if (!_isJumping) return;
+
+        _isJumping = false;
+        _rb.MovePosition(_jumpTarget);
+        _rb.useGravity = true;
+
+        Collider[] hits = Physics.OverlapSphere(transform.position, _config.jumpRadius);
+        foreach (var hit in hits)
+        {
+            var damageable = hit.GetComponent<IDamageable>();
+            if (damageable != null && hit.gameObject != gameObject)
+            {
+                damageable.TakeDamage(_config.jumpDamage);
+            }
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (_config == null) return;
+
+        // Attack Distance (Yellow)
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _config.attackDistance);
+
+        // Combat Jump Min Distance (Green)
+        if (_config.canJumpInCombat)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, _config.combatJumpMinDistance);
+
+            // Combat Jump Max Distance (Cyan)
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(transform.position, _config.combatJumpMaxDistance);
+        }
+
+        // Jump Landing Radius (Red)
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _config.jumpRadius);
+
+        // Attack ranges for each attack (draw on ground)
+        Vector3 groundPos = transform.position;
+        groundPos.y = 0.1f;
+
+        foreach (var attack in _config.attacks)
+        {
+            if (!attack.isRanged)
+            {
+                // Melee attacks - white
+                Gizmos.color = new Color(1f, 1f, 1f, 0.3f);
+                Gizmos.DrawWireSphere(groundPos, attack.maxRange);
+            }
+            else
+            {
+                // Ranged attacks - blue
+                Gizmos.color = new Color(0f, 0.5f, 1f, 0.3f);
+                Gizmos.DrawWireSphere(groundPos, attack.minRange);
+                Gizmos.DrawWireSphere(groundPos, attack.maxRange);
+            }
         }
     }
 }

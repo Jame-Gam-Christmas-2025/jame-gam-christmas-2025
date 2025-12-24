@@ -11,6 +11,9 @@ public enum BossActivation
 [CreateAssetMenu(fileName = "BossConfig", menuName = "Boss/Config")]
 public class BossConfig : ScriptableObject
 {
+    [Header("Name")]
+    public string bossName = "boss";
+
     [Header("Health")]
     public float maxHealth = 1000f;
 

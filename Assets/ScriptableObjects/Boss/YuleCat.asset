@@ -16,26 +16,26 @@ MonoBehaviour:
   activationBehavior: 0
   moveSpeed: 7
   rotationSpeed: 5
-  attackDistance: 10
-  jumpHeight: 20
+  attackDistance: 22.5
+  jumpHeight: 20.8
   jumpDuration: 2
   jumpDamage: 30
   jumpRadius: 5
   canJumpInCombat: 1
-  combatJumpMinDistance: 19.89
-  combatJumpMaxDistance: 65.9
-  combatJumpChance: 100
+  combatJumpMinDistance: 23.9
+  combatJumpMaxDistance: 69.8
+  combatJumpChance: 50
   jumpCooldown: 10
   attacks:
   - animationTrigger: Bite
     minRange: 0
-    maxRange: 10
+    maxRange: 51.81
     damage: 50
     isRanged: 0
     cooldown: 2
   - animationTrigger: Paw
     minRange: 0
-    maxRange: 7
+    maxRange: 40.7
     damage: 50
     isRanged: 0
     cooldown: 2
