@@ -19,20 +19,37 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_VILLAGE = 4196331637U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTFAR = 2490489396U;
         static const AkUniqueID PLAY_AMB_RFX_FORESTMID = 2760358305U;
+        static const AkUniqueID PLAY_FOL_FT_KRAMPUS_RUN = 177135426U;
+        static const AkUniqueID PLAY_FOL_FT_NAMAHAGE_RUN = 2026917111U;
         static const AkUniqueID PLAY_FOL_FT_YULE_WALK = 2425283306U;
         static const AkUniqueID PLAY_MC_ATTACKHITENEMY = 1271315640U;
         static const AkUniqueID PLAY_MC_ATTACKS = 1852516592U;
         static const AkUniqueID PLAY_MC_FOOTSTEPS = 2368357634U;
         static const AkUniqueID PLAY_MC_PLAYERDIE = 1566142524U;
+        static const AkUniqueID PLAY_MC_PLAYERREBORN = 1803431576U;
         static const AkUniqueID PLAY_MC_PRESENCES_ACTION = 2216081418U;
         static const AkUniqueID PLAY_MC_PRESENCES_WALK = 3206799055U;
         static const AkUniqueID PLAY_MC_ROLL = 1213444204U;
         static const AkUniqueID PLAY_MC_TAKEDAMAGE = 1096879491U;
+        static const AkUniqueID PLAY_MUS_BADENDING = 4214630550U;
+        static const AkUniqueID PLAY_MUS_EXPLORATION = 2700456189U;
+        static const AkUniqueID PLAY_MUS_GOODENDING = 4199871780U;
+        static const AkUniqueID PLAY_MUS_KRAMPUSBOSSFIGHT = 3764083256U;
+        static const AkUniqueID PLAY_MUS_MENU = 4249884003U;
+        static const AkUniqueID PLAY_MUS_NAMAHAGEBOSSFIGHT = 2491360697U;
+        static const AkUniqueID PLAY_MUS_YULEBOSSFIGHT = 741827436U;
         static const AkUniqueID PLAY_SFX_BELLRINGING = 2577559157U;
         static const AkUniqueID PLAY_SFX_YULE_ATTACKHITPLAYER = 3295576996U;
         static const AkUniqueID PLAY_SFX_YULE_ATTACKPOUNCE = 1923946266U;
         static const AkUniqueID PLAY_SFX_YULEATTACKCLAW = 1023339604U;
         static const AkUniqueID PLAY_UI_CLICKCONFIRMATION = 3498899374U;
+        static const AkUniqueID STOP_MUS_BADENDING = 1418863968U;
+        static const AkUniqueID STOP_MUS_EXPLORATION = 2337301191U;
+        static const AkUniqueID STOP_MUS_GOODENDING = 3369502474U;
+        static const AkUniqueID STOP_MUS_KRAMPUSBOSSFIGHT = 354356402U;
+        static const AkUniqueID STOP_MUS_MENU = 183729989U;
+        static const AkUniqueID STOP_MUS_NAMAHAGEBOSSFIGHT = 787210507U;
+        static const AkUniqueID STOP_MUS_YULEBOSSFIGHT = 1324619110U;
     } // namespace EVENTS
 
     namespace STATES

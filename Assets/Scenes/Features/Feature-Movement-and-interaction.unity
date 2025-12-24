@@ -124,17 +124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3851557905109793578, guid: e03e82f8d0fcfb34ba4eaf52de884dfe, type: 3}
   m_PrefabInstance: {fileID: 7779379900653961073}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &223841280 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8279966130024118403, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
-  m_PrefabInstance: {fileID: 7250418866083813842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &904242946
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,17 +251,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!114 &1355016024 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5319156676598472805, guid: 407634d8b5064dc439f34e3532aafa57, type: 3}
-  m_PrefabInstance: {fileID: 7250418866083813842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &1382940696
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,10 +280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceec8db0127f86e419fb50b3317992ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraManager
-  followCamera: {fileID: 1355016024}
-  lockOnCamera: {fileID: 223841280}
-  activePriority: 10
-  inactivePriority: 0
+  _followCamera: {fileID: 0}
+  _lockOnCamera: {fileID: 0}
+  _activePriority: 10
+  _inactivePriority: 0
 --- !u!4 &1382940698
 Transform:
   m_ObjectHideFlags: 0
