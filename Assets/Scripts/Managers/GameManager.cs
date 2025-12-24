@@ -97,6 +97,18 @@ public class GameManager : MonoBehaviour
         _lastCheckpointPosition = checkpointPosition;
 
         AudioManager.Instance.PlayBossMusic(bossName);
+
+        GameObject bossGameObject = GameObject.Find(bossName);
+
+        if(bossGameObject != null)
+        {
+            BossController bossController = bossGameObject.GetComponent<BossController>();
+
+            bossController.IsActive = true;
+        } else
+        {
+            Debug.Log("bossGAmeObject null in SpawnBoss GameManager");
+        }
     }
 
     public void DefeatBoss(string bossName)
