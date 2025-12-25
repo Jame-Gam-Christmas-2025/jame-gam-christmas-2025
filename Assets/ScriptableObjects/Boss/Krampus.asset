@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Krampus
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: Krampus
-  maxHealth: 300
+  maxHealth: 400
   activationBehavior: 1
   moveSpeed: 15
   rotationSpeed: 2

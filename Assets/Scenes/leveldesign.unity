@@ -2071,6 +2071,14 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 902016833}
+    - target: {fileID: 5555751524052495703, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555751524052495703, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5979410531025484468, guid: c5afa6350b01c9b458ccd0eeced2af42, type: 3}
       propertyPath: m_Name
       value: Bosses
@@ -15653,6 +15661,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1596331105}
     m_Modifications:
+    - target: {fileID: 2187942938175937261, guid: 6d8044c6a2fd5d04bb5e13d84c83069c, type: 3}
+      propertyPath: PlaySantaMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d2b04408ad7d046b34756aa35e9dae, type: 2}
+    - target: {fileID: 2187942938175937261, guid: 6d8044c6a2fd5d04bb5e13d84c83069c, type: 3}
+      propertyPath: StopSantaMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e9e80805810bd4142a392242825ba666, type: 2}
     - target: {fileID: 3244646221242283016, guid: 6d8044c6a2fd5d04bb5e13d84c83069c, type: 3}
       propertyPath: m_Name
       value: GlobalManagers (TO REMOVE)
