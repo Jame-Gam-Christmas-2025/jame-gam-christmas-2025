@@ -52,7 +52,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
         GameManager.Instance.DefeatBoss(gameObject.name);
 
         // Destroy boss walls
-        Destroy(bossLimitWalls);
+        if (bossLimitWalls) Destroy(bossLimitWalls);
 
         // Restore player health
         GameObject player = GameObject.FindGameObjectWithTag("Player");
