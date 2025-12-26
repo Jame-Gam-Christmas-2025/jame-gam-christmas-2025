@@ -49,14 +49,6 @@ MonoBehaviour:
   musicVolumeRTPC: RTPC_VolumeMUS
   sfxVolumeRTPC: RTPC_VolumeSFX
   showDebugLogs: 1
-  PlayForestMusic:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  StopForestMusic:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
   PlayKrampusMusic:
     idInternal: 0
     valueGuidInternal: 
@@ -81,6 +73,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 57cef822e52b2a140bf175a562b0bceb, type: 2}
+  PlaySantaMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 75d2b04408ad7d046b34756aa35e9dae, type: 2}
+  StopSantaMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e9e80805810bd4142a392242825ba666, type: 2}
   PlayBadEndingMusic:
     idInternal: 0
     valueGuidInternal: 

@@ -66,7 +66,7 @@ public class GameSceneManager : MonoBehaviour
     // Apply game logic
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Feature-PlayerState-Combat")
+        if (scene.name == "leveldesign")
         {
             GameManager.Instance.ApplyLastCheckpoint();
         }
