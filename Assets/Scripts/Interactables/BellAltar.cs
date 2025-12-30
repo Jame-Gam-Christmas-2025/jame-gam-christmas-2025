@@ -89,12 +89,13 @@ public class BellAltar : Interactable
         {
             _isActive = !_isActive;
 
-            CapsuleCollider collider = GetComponent<CapsuleCollider>();
 
-            if(_bellAltarProps != null && collider != null)
+            if(_bellAltarProps != null)
             {
+                CapsuleCollider altarCollider = _bellAltarProps.GetComponent<CapsuleCollider>();
+
                 _bellAltarProps.SetActive(false);
-                collider.enabled = false;
+                altarCollider.enabled = false;
 
                 GameObject player = GameObject.Find("Player");
             
@@ -106,9 +107,10 @@ public class BellAltar : Interactable
 
                 _arenaParticleSyst.Play();
                 AudioManager.Instance.PlayBellSFX(gameObject);
-            }
 
-            GameManager.Instance.SpawnBoss(_arenaBossName, gameObject.transform.position);
+                Debug.Log(_bellAltarProps.transform.position);
+                GameManager.Instance.SpawnBoss(_arenaBossName, _bellAltarProps.transform.position);
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: YuleCat
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: YuleCat
-  maxHealth: 300
+  maxHealth: 250
   activationBehavior: 0
   moveSpeed: 3
   rotationSpeed: 3

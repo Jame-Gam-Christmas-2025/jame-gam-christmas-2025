@@ -48,8 +48,11 @@ public class BossEnemyState : MonoBehaviour, IDamageable
         bossAreaPostProcess.weight = 1f;
         DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
 
+        // Update game progression
+        GameManager.Instance.DefeatBoss(gameObject.name);
+
         // Destroy boss walls
-        GameObject.Destroy(bossLimitWalls);
+        if (bossLimitWalls) Destroy(bossLimitWalls);
 
         // Restore player health
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -71,7 +74,12 @@ public class BossEnemyState : MonoBehaviour, IDamageable
             }
         }
 
-        // Start fade in
+        UnityEvent dialogueEndEvent = new UnityEvent();
+
+        FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(bossFirstDialogue, dialogueEndEvent);
+
+
+        /* // Start fade in
         CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
         canvasGroup.DOFade(1f, 2f).OnComplete(() =>
         {
@@ -80,11 +88,21 @@ public class BossEnemyState : MonoBehaviour, IDamageable
             {
                 CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
                 canvasGroup.DOFade(0f, 2f);
+                if(GameManager.Instance.LastDefeatedBoss() != "Santa")
+                {
+                    CanvasGroup canvasGroup = GameObject.FindGameObjectWithTag("Fade").GetComponent<CanvasGroup>();
+                    canvasGroup.DOFade(0f, 2f);
+                } else
+                {
+                    GameSceneManager.Instance.LoadSceneByName("EndingScene");
+                }
+
+
             });
 
             // Launch dialogue
             FindFirstObjectByType<DialogueView>(FindObjectsInactive.Include).StartNewDialogue(bossFirstDialogue, dialogueEndEvent);
-        });
+        }); */
     }
 
     public void TakeDamage(float damage)
@@ -113,11 +131,10 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
     private IEnumerator DeathSequence()
     {
-       
         var bossController = GetComponent<BossController>();
         if (bossController != null)
         {
-            bossController.IsActive = false; 
+            bossController.IsActive = false;
         }
 
         

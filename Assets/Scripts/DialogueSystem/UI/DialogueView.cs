@@ -83,6 +83,7 @@ namespace UI
             if (!_initialized) Initialize();
 
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
             if (_player)
             {
@@ -93,7 +94,17 @@ namespace UI
             }
 
             // Show UI
-            gameObject.SetActive(true);
+
+            // Access the parent Transform
+            Transform parentTransform = gameObject.transform.parent;
+
+            // Check if parentTransform is not null
+            if (parentTransform != null)
+            {
+                GameObject parentObject = parentTransform.gameObject; // Get the parent GameObject
+                parentObject.SetActive(true); // Set the parent GameObject to active
+            }
+            /* gameObject.SetActive(true); */
         }
 
         /// <summary>
@@ -111,8 +122,20 @@ namespace UI
                 _playerMovement.EnableInput();
             }
 
-            // Hide UI
-            gameObject.SetActive(false);
+            // Access the parent Transform
+            Transform parentTransform = gameObject.transform.parent;
+
+            // Check if parentTransform is not null
+            if (parentTransform != null)
+            {
+                GameObject parentObject = parentTransform.gameObject; // Get the parent GameObject
+                parentObject.SetActive(false); // Set the parent GameObject to active
+            }
+
+            GameManager.Instance.EndGame();
+
+            /* // Hide UI
+            gameObject.SetActive(false); */
         }
 
         /// <summary>

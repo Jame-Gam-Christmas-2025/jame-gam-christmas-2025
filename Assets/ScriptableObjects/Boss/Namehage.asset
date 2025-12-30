@@ -17,7 +17,7 @@ MonoBehaviour:
   activationBehavior: 1
   moveSpeed: 7
   rotationSpeed: 5
-  attackDistance: 10.29
+  attackDistance: 12
   jumpHeight: 10
   jumpDuration: 1.5
   jumpDamage: 40
@@ -33,7 +33,7 @@ MonoBehaviour:
     maxRange: 5
     damage: 50
     isRanged: 0
-    cooldown: 2
+    cooldown: 1
   - animationTrigger: Attack2
     minRange: 0
     maxRange: 8.88
@@ -45,4 +45,4 @@ MonoBehaviour:
     maxRange: 4
     damage: 45
     isRanged: 0
-    cooldown: 3
+    cooldown: 2

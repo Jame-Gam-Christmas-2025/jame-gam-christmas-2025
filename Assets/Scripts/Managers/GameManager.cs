@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
+
 
 
 #if UNITY_EDITOR
@@ -30,7 +32,7 @@ public class GameManager : MonoBehaviour
     private string _currentBossName ="YuleCat";
     private List<string> _defeatedBossNames = new();
 
-    private Vector3 _lastCheckpointPosition;
+    private Vector3? _lastCheckpointPosition;
 
     private void Awake()
     {
@@ -43,16 +45,6 @@ public class GameManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
-        /* switch (lockCursor)
-        {
-            case true:
-                Cursor.lockState = CursorLockMode.Locked;
-                break;
-            case false:
-                Cursor.lockState = CursorLockMode.None;
-                break;
-        } */
     }
     public void QuitApplication()
     {
@@ -69,16 +61,39 @@ public class GameManager : MonoBehaviour
 
         // Reset Scene States
 
+        AudioManager.Instance.StopBossMusic(_currentBossName);
         GameSceneManager.Instance.ReloadScene();
     }
 
     // Called in SceneManager to be applied on right time
     public void ApplyLastCheckpoint()
     {
-        // Get new player instance
+        playerGameObject = GameObject.Find("Player");
+
+        if(playerGameObject != null)
+        {
+            // Place Player to last checkpoint position
+            Debug.Log("last cp :" + _lastCheckpointPosition);
+            if (_lastCheckpointPosition != null)
+            {
+                playerGameObject.transform.position = _lastCheckpointPosition.Value;
+                Debug.Log("Player positioned at last checkpoint: " + playerGameObject.transform.position);
+            } 
+
+            Debug.Log("PlayerPos : " + playerGameObject.transform.position);
+
+            Debug.Log(playerGameObject.name);
+                Debug.Log(playerGameObject.transform.position);
+
+                GameObject player = GameObject.Find("Player");
+                Debug.Log(player.name);
+                Debug.Log(player.transform.position);
+            
+        }
+/*         // Get new player instance
         if(playerGameObject == null)
         {
-            playerGameObject = GameObject.Find("Player");
+            playerGameObject = GameObject.Find("PlayerSceneEssentials");
         }
 
         // Place Player to last checkpoint position
@@ -87,8 +102,11 @@ public class GameManager : MonoBehaviour
             playerGameObject.transform.position = _lastCheckpointPosition;
         } else
         {
-            _lastCheckpointPosition = playerGameObject.transform.position;
-        }
+            if(_initialPlayerPosition != null)
+            {
+                playerGameObject.transform.position = _initialPlayerPosition;
+            }
+        } */
     }
 
     public void SpawnBoss(string bossName, Vector3 checkpointPosition)
@@ -109,6 +127,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("bossGAmeObject null in SpawnBoss GameManager");
         }
+
+        Debug.Log(_lastCheckpointPosition);
     }
 
     public void DefeatBoss(string bossName)
@@ -121,6 +141,24 @@ public class GameManager : MonoBehaviour
         {
             Destroy(bellAltar);
         }
+
+        AudioManager.Instance.StopBossMusic(bossName);
+    }
+
+    public void EndGame()
+    {
+        string lastDefeatedBoss = _defeatedBossNames.Last();
+        if(lastDefeatedBoss == "Santa")
+        {
+            GameSceneManager.Instance.LoadSceneByName("EndingScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
+
+    public string LastDefeatedBoss()
+    {
+        return _defeatedBossNames.Last();
     }
 
     public void ToggleArenaMode()

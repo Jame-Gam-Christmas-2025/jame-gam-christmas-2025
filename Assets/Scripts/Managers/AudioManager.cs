@@ -99,6 +99,8 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event StopNamahageMusic;
     public AK.Wwise.Event PlayYuleMusic;
     public AK.Wwise.Event StopYuleMusic;
+    public AK.Wwise.Event PlaySantaMusic;
+    public AK.Wwise.Event StopSantaMusic;
     public AK.Wwise.Event PlayBadEndingMusic;
 
     public AK.Wwise.Event StopBadEndingMusic;
@@ -143,7 +145,17 @@ public class AudioManager : MonoBehaviour
     {
         StopYuleMusic.Post(gameObject);
     }
-    
+
+    public void PlaySantaMUS(GameObject gameObject)
+    {
+        PlaySantaMusic.Post(gameObject);
+    }
+
+    public void StopSantsMUS(GameObject gameObject)
+    {
+        StopSantaMusic.Post(gameObject);
+    }
+
     public void PlayGoodEndingMUS(GameObject gameObject)
     {
         PlayGoodEndingMusic.Post(gameObject);
@@ -185,15 +197,39 @@ public class AudioManager : MonoBehaviour
                 break;
 
             case "Namahage":
-                PlayYuleMUS(gameObject);
+                PlayNamahageMUS(gameObject);
                 break;
 
             case "Krampus":
-                PlayYuleMUS(gameObject);
+                PlayKrampusMUS(gameObject);
                 break;
 
             case "Santa":
-                PlayYuleMUS(gameObject);
+                PlaySantaMUS(gameObject);
+                break;
+            default:
+            break;
+        }
+    }
+
+    public void StopBossMusic(string bossName)
+    {
+        switch(bossName)
+        {
+            case "YuleCat":
+                StopYuleMUS(gameObject);
+                break;
+
+            case "Namahage":
+                StopNamahageMUS(gameObject);
+                break;
+
+            case "Krampus":
+                StopKrampusMUS(gameObject);
+                break;
+
+            case "Santa":
+                StopSantsMUS(gameObject);
                 break;
             default:
             break;

@@ -37,4 +37,9 @@ public abstract class Interactable : MonoBehaviour
     {
         DisableUI();
     }
+
+    void OnDestroy()
+    {
+        DisableUI();
+    }
 }
