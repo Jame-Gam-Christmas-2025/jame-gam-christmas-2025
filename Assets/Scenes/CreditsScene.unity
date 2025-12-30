@@ -3213,6 +3213,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2265274330924025294, guid: 06531b95721e81342be9f27146d1c68e, type: 3}
+      propertyPath: m_text
+      value: Ilias Messnaoui
+      objectReference: {fileID: 0}
+    - target: {fileID: 2265274330924025294, guid: 06531b95721e81342be9f27146d1c68e, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 3803089339358801041, guid: 754e1e01101a6f846bcee349c104e1a3, type: 2}
