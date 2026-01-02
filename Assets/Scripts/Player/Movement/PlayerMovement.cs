@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _isSprinting;
     private bool _isDodging;
     private bool _canMove = true;
+    private bool _canDodge = true;
 
     public void PlayFootstep()
     {
@@ -126,13 +127,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        // Stop method if the player is not able to move
-        if (!_canMove)
-        {
-            _moveInput = Vector2.zero;
-            return;
-        }
-
         _moveInput = context.ReadValue<Vector2>();
     }
 
@@ -153,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
     private void StartDodge()
     {
         // Stop method if the player is not able to move
-        if (!_canMove) return;
+        if (!_canDodge) return;
 
         _isDodging = true;
         GetComponent<PlayerCombatController>().IsAttacking = false;
@@ -194,19 +188,29 @@ public class PlayerMovement : MonoBehaviour
     private void MoveCharacter()
     {
         Vector3 moveDirection = CalculateMoveDirection(_moveInput);
-        float currentSpeed = _isSprinting ? _sprintSpeed : _walkSpeed;
-        Vector3 targetVelocity = moveDirection * currentSpeed;
-        targetVelocity.y = _rb.linearVelocity.y;
-        _rb.linearVelocity = targetVelocity;
 
         if (moveDirection.magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
             _rb.rotation = Quaternion.Slerp(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
         }
-    }
 
-  
+        // Reset velocity to 0 without overriding _moveInput
+        if (!_canMove)
+        {
+            if(!_rb.linearVelocity.Equals(new Vector3(0, 0, 0)))
+            {
+                _rb.linearVelocity = new Vector3(0, 0, 0);
+            }
+            return;
+        }
+
+        float currentSpeed = _isSprinting ? _sprintSpeed : _walkSpeed;
+        Vector3 targetVelocity = moveDirection * currentSpeed;
+        targetVelocity.y = _rb.linearVelocity.y;
+        _rb.linearVelocity = targetVelocity;
+
+    }
 
     private Vector3 CalculateMoveDirection(Vector2 input)
     {
@@ -224,9 +228,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_animator != null)
         {
-            float speed = _moveInput.magnitude * (_isSprinting ? _sprintSpeed : _walkSpeed);
-            _animator.SetFloat("Speed", speed);
-            _animator.SetBool("IsSprinting", _isSprinting);
+            if(_canMove)
+            {
+                float speed = _moveInput.magnitude * (_isSprinting ? _sprintSpeed : _walkSpeed);
+                _animator.SetFloat("Speed", speed);
+                _animator.SetBool("IsSprinting", _isSprinting);
+            }
         }
     }
 }
