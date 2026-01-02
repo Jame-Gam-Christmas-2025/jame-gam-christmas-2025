@@ -42,6 +42,10 @@ public class PlayerCombatController : MonoBehaviour
     private bool _hasQueuedInput = false;
     private Coroutine _comboResetCoroutine;
 
+    private bool _isListeningCombo = false;
+    private bool _isComboTriggered = false;
+    private bool _isAttacking = false;
+
     private void Start()
     {
         _weaponHitbox.SetOwner(gameObject);
@@ -74,23 +78,10 @@ public class PlayerCombatController : MonoBehaviour
 
     public void OnLightAttack(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        if (!_canAttack) return;
-
         // Ne traiter que le moment du press, pas le hold
         if (!context.performed) return;
 
-        // Si on attaque déjà, mettre en queue
-        if (IsAttacking)
-        {
-            if (!_hasQueuedInput)
-            {
-                _hasQueuedInput = true;
-            }
-            return;
-        }
-
-        // Sinon, attaquer directement
-        PerformAttack();
+        InitAttack();
     }
 
     public void OnRangedAttack(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -135,6 +126,55 @@ public class PlayerCombatController : MonoBehaviour
         Play_SFX_MC_AttackHitEnemy.Post(gameObject);
     }
     
+
+    private void InitAttack()
+    {
+        if(!_isAttacking)
+        {
+            // IMPORTANT : Reset trigger avant de le set pour éviter les doubles déclenchements
+            _animator.ResetTrigger("Attack");
+            
+            // Set combo index et trigger
+            _animator.SetInteger("ComboIndex", _currentComboIndex);
+            _animator.SetTrigger("Attack");
+
+            _isAttacking = true;
+        }
+
+        if(_isListeningCombo && !_isComboTriggered)
+        {
+            TriggerNextAttack();
+        }
+    }
+
+    private void AddComboListener()
+    {
+        _isListeningCombo = true;
+    }
+
+    private void RemoveComboListener()
+    {
+        _isListeningCombo = false;
+    }
+
+    private void TriggerNextAttack()
+    {
+        _currentComboIndex++;
+        _isComboTriggered = true;
+    }
+
+    private void OnAttackEnd()
+    {
+        _isAttacking = false;
+        if(_isComboTriggered)
+        {
+            _isComboTriggered = false;
+            InitAttack();
+        } else
+        {
+            _currentComboIndex = 0;
+        }
+    }
     private void PerformAttack()
     {
         if (!_canAttack) return;
@@ -233,7 +273,7 @@ public class PlayerCombatController : MonoBehaviour
     // Called by Animation Event - MUST be at the END of attack animation
     public void OnAttackAnimationEnd()
     {
-        IsAttacking = false;
+        /* IsAttacking = false;
 
         // Si pas d'input en queue, démarrer le timer de reset
         if (!_hasQueuedInput)
@@ -261,7 +301,7 @@ public class PlayerCombatController : MonoBehaviour
                     Debug.Log($"Combo continues to index {_currentComboIndex}");
                 }
             }
-        }
+        } */
     }
 
     // Called by Animation Event
