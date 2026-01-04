@@ -57,7 +57,7 @@ public class PlayerCombatController : MonoBehaviour
         if (_hasQueuedInput && !IsAttacking)
         {
             _hasQueuedInput = false;
-            PerformAttack();
+            /* PerformAttack(); */
         }
     }
 
@@ -89,10 +89,10 @@ public class PlayerCombatController : MonoBehaviour
         if (!_canAttack) return;
 
         if (!context.performed) return;
-        if (IsAttacking) return;
+        if (_isAttacking) return;
 
         _animator.SetTrigger("RangedAttack");
-        IsAttacking = true;
+        _isAttacking = true;
     }
     
     // === ANIMATION EVENT METHODS ===
