@@ -130,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         _moveInput = context.ReadValue<Vector2>();
+        
     }
 
     public void OnDodge(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -137,12 +138,22 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && !_isDodging)
         {
             StartDodge();
+            CameraManager.Instance.ShakeCamera(0);
         }
     }
 
     public void OnSprint(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         _isSprinting = context.performed;
+        
+        if (_isSprinting)
+        {
+            CameraManager.Instance.SetRunningNoise(true);
+        }
+        else
+        {
+            CameraManager.Instance.SetRunningNoise(false);
+        }
     }
 
 

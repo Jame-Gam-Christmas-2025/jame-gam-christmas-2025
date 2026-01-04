@@ -72,6 +72,7 @@ public class ProjectileController : MonoBehaviour
         if (damageable != null)
         {
             damageable.TakeDamage(_damage);
+            CameraManager.Instance.ShakeCamera(CameraManager.ShakeType.RangedAttack);
             Play_SFX_AttackDistanceHit(other.gameObject);
         }
 

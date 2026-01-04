@@ -77,13 +77,16 @@ public class WeaponHitbox : MonoBehaviour
                 {
                     case "Light":
                         SW_MC_AttackMeleeLightHit.SetValue(other.gameObject);
+                        CameraManager.Instance.ShakeCamera(CameraManager.ShakeType.LightAttack);
                         break;
                     case "Heavy":
                         SW_MC_AttackMeleeHeavyHit.SetValue(other.gameObject);
+                        CameraManager.Instance.ShakeCamera(CameraManager.ShakeType.HeavyAttack);
                         break;
                 }
                 Play_Attack_Hit_Enemy.Post(other.gameObject);
             }
+            
 
             Debug.Log($"Hit {other.gameObject.name} for {_currentDamage} damage");
         }
