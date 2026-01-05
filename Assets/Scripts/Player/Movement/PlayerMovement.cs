@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
     private bool _canMove = true;
     private bool _canDodge = true;
 
+    private bool _isMoving = false;
+
     public void PlayFootstep()
     {
         // Sécurité : éviter les pas à l'arrêt
@@ -205,6 +207,14 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        if(_moveInput.Equals(new Vector3(0, 0, 0)))
+        {
+            _isMoving = false;
+        } else
+        {
+            _isMoving = true;
+        }
+
         float currentSpeed = _isSprinting ? _sprintSpeed : _walkSpeed;
         Vector3 targetVelocity = moveDirection * currentSpeed;
         targetVelocity.y = _rb.linearVelocity.y;
@@ -233,6 +243,7 @@ public class PlayerMovement : MonoBehaviour
                 float speed = _moveInput.magnitude * (_isSprinting ? _sprintSpeed : _walkSpeed);
                 _animator.SetFloat("Speed", speed);
                 _animator.SetBool("IsSprinting", _isSprinting);
+                _animator.SetBool("IsMoving", _isMoving);
             }
         }
     }
