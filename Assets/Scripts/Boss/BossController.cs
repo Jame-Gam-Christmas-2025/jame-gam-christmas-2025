@@ -32,6 +32,7 @@ public class BossController : MonoBehaviour
             {
                 if (_config != null)
                 {
+                    BossUIController.Instance.ActivateBossHealthBar(_config.maxHealth, _config.bossName);
                     var impactManager = FindFirstObjectByType<BossImpactFrameManager>();
                     if (impactManager != null)
                     {
@@ -41,6 +42,7 @@ public class BossController : MonoBehaviour
 
                 if (_config.activationBehavior == BossActivation.JumpToPlayer)
                 {
+                    
                     StartCoroutine(ActivationJump());
                 }
                 else

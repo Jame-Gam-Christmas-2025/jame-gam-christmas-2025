@@ -44,6 +44,9 @@ public class BossEnemyState : MonoBehaviour, IDamageable
     /// </summary>
     private void OnDeathEvent()
     {
+        //Hide BossHP
+        BossUIController.Instance.HideBossHealthBar();
+
         // Transition of Post Process Volume
         bossAreaPostProcess.weight = 1f;
         DOTween.To(() => bossAreaPostProcess.weight, x => bossAreaPostProcess.weight = x, 0f, 3f);
@@ -107,6 +110,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
+        BossUIController.Instance.UpdateHealth(CurrentHealth);
         if (IsDead) return;
         if (!_bossController.IsActive) return;
 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29db6d07ab003464e8b6c6e8a7239fca, type: 3}
-  m_Name: Namehage
+  m_Name: Namahage
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
-  bossName: Namehage
+  bossName: Namahage
   maxHealth: 450
   activationBehavior: 1
   moveSpeed: 7
@@ -39,10 +39,10 @@ MonoBehaviour:
     maxRange: 8.88
     damage: 70
     isRanged: 0
-    cooldown: 3
+    cooldown: 2
   - animationTrigger: Attack3
     minRange: 0
     maxRange: 4
     damage: 45
     isRanged: 0
-    cooldown: 2
+    cooldown: 1

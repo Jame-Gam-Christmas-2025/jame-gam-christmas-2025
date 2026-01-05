@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private bool lockCursor = true;
 
-    private string _currentBossName ="YuleCat";
+    private string _currentBossName ="Yule Cat";
     private List<string> _defeatedBossNames = new();
 
     private Vector3? _lastCheckpointPosition;
