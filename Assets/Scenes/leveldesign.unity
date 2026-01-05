@@ -12556,6 +12556,10 @@ PrefabInstance:
       value: 90.00013
       objectReference: {fileID: 0}
     - target: {fileID: 7026369960662279187, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _walkSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026369960662279187, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
       propertyPath: _dodgeForce
       value: 6
       objectReference: {fileID: 0}
