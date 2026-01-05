@@ -235,12 +235,12 @@ public class PlayerCombatController : MonoBehaviour
     // Called by Animation Event
     public void EnableWeaponHitbox()
     {
-        float damage = _comboDamages[_attackIndexForDamage];
+        float damage = _comboDamages[_currentComboIndex];
         _weaponHitbox.SetDamage(damage);
     
         // Set attack type based on combo index
         string attackType = "Light";
-        switch (_attackIndexForDamage)
+        switch (_currentComboIndex)
         {
             case 0:
             case 1:
