@@ -91,6 +91,8 @@ namespace UI
                 _playerInteractor.DisableInteraction();
                 _playerCombatController.DisableAttack();
                 _playerMovement.DisableInput();
+
+
             }
 
             // Show UI

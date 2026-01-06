@@ -1,6 +1,7 @@
 using Unity.Cinemachine;
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class CameraManager : MonoBehaviour
 {
@@ -10,12 +11,16 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private CinemachineCamera _followCamera;
     [SerializeField] private CinemachineCamera _lockOnCamera;
 
+    [Header("Impulse Source (On cameraRig comp)")]
+    [SerializeField] private CinemachineImpulseSource _playerImpulseSource;
+
     [Header("Camera Priorities")]
     [SerializeField] private int _activePriority = 10;
     [SerializeField] private int _inactivePriority = 0;
 
     private CinemachineCamera _currentBossCamera;
     private Coroutine _bossCloseUpCoroutine;
+    private CinemachineBasicMultiChannelPerlin _noiseComponent;
 
     private void Awake()
     {
@@ -27,13 +32,61 @@ public class CameraManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (_followCamera  != null)
+        {
+            _noiseComponent = _followCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
+        }
     }
 
     private void Start()
     {
         SwitchToFollowCamera();
     }
+    public void SetRunningNoise(bool isRunning)
+    {
+        if (_followCamera == null) return;
 
+        _noiseComponent.AmplitudeGain = isRunning ? 2.0f : 0f;
+
+        _noiseComponent.FrequencyGain = 1f;
+    }
+
+    public enum ShakeType
+    {
+        Dodge,
+        LightAttack,
+        HeavyAttack,
+        RangedAttack
+
+    }
+    public void ShakeCamera(ShakeType shakeType)
+    {
+        float force = 0f;
+
+        
+      
+        switch (shakeType)
+        {
+            case ShakeType.Dodge:
+                force = 0.2f;
+                break;
+            case ShakeType.LightAttack:
+                force = 0.4f;
+                break;
+            case ShakeType.RangedAttack:
+                force = 0.5f;
+                break;
+            case ShakeType.HeavyAttack:
+                force = 1f;
+                break;
+        }
+
+        if (_playerImpulseSource != null)
+        {
+            _playerImpulseSource.GenerateImpulse(force);
+        }
+    }
     /// <summary>
     /// Switches to the normal third-person follow camera
     /// </summary>
