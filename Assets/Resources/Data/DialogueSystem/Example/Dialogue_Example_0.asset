@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_Example_0
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 978c01d21067fc1418d0a2e0a4b80889, type: 2}
+  dialogueText:
+    english: Did you see Toad? I did not have any news since 2017...
+    french: As-tu vu Toad? Je n'ai pas eu de nouvelles de lui depuis 2017...
+  choices:
+  - text:
+      english: Yes (+1)
+      french: Oui
+    alignmentBonus: 1
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
+  - text:
+      english: No (+3)
+      french: Non
+    alignmentBonus: 3
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
+  - text:
+      english: Maybe (-2)
+      french: "Peut-\xEAtre"
+    alignmentBonus: -2
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: e99b2858a50448c4696e7459098d3dfa, type: 2}
+  nextDialogue: {fileID: 0}

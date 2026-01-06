@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_Namahage_2_8
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueText:
+    english: So tell me, henchman of Mithra, what does your heart say?
+    french: 
+  choices:
+  - text:
+      english: Welcome to the team, Namahage. It's time to give choice the place
+        it deserves.
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: 0c985d010fe9c124ea80449118b6b353, type: 2}
+  - text:
+      english: "Old traditions are meant to fade. Your armchair philosophy won\u2019t
+        bend the course \nof time. Your powers are mine."
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: ab739ae0579befe408c85bc7e5b23ff0, type: 2}
+  nextDialogue: {fileID: 0}

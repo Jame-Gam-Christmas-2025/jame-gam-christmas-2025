@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_Namahage_3_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueText:
+    english: 'A door opens twice
+
+      Once from fear, once from will
+
+      The
+      world leans anew'
+    french: 
+  choices: []
+  nextDialogue: {fileID: 11400000, guid: d50ca87101a0afe49928d91e62875561, type: 2}

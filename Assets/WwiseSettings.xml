@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
+    <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
+    <WwiseStreamingAssetsPath>Audio/GeneratedSoundBanks</WwiseStreamingAssetsPath>
+    <RootOutputPath>StreamingAssets/Audio/GeneratedSoundBanks</RootOutputPath>
+    <CreatedPicker>true</CreatedPicker>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
+    <LoadSoundEngineInEditMode>true</LoadSoundEngineInEditMode>
+    <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
+    <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+    <WwiseInstallationPathWindows>F:\Applications\Wwise\Wwise2025.1.3.9039</WwiseInstallationPathWindows>
+    <WwiseProjectPath>../../JameGam2025_Wwise/JameGam2025_Wwise/JameGam2025_Wwise.wproj</WwiseProjectPath>
+    <UseWaapi>true</UseWaapi>
+    <WaapiPort>8080</WaapiPort>
+    <WaapiIP>127.0.0.1</WaapiIP>
+    <AutoSyncWaapi>true</AutoSyncWaapi>
+    <WaapiChangePending>false</WaapiChangePending>
+    <InstallationWasRequested>false</InstallationWasRequested>
+    <UseGitRepository>true</UseGitRepository>
+    <PackageSource></PackageSource>
+    <AddressableBankFolder>WwiseData/Bank</AddressableBankFolder>
+    <UseCustomBuildScript>false</UseCustomBuildScript>
+    <AddressableAssetBuilderPath>Assets/AddressableAssetsData/DataBuilders/BuildScriptWwisePacked.asset</AddressableAssetBuilderPath>
+    <AutomaticallyUpdateExternalSourcesPath>false</AutomaticallyUpdateExternalSourcesPath>
+    <ExternalSourcesPath>WwiseData/Bank</ExternalSourcesPath>
+    <EnableUninstallationPrompt>true</EnableUninstallationPrompt>
+    <DisableAsynchronousBankLoading>true</DisableAsynchronousBankLoading>
+    <XMLTranslatorTimeout>0</XMLTranslatorTimeout>
+    <WaapiTranslatorTimeout>0</WaapiTranslatorTimeout>
+</WwiseSettings>

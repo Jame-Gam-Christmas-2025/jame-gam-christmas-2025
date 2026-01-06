@@ -1,0 +1,22 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2490956260",
+    "Type": "User",
+    "GUID": "{ECC99A71-9F9A-4F8A-8096-38F8D0AE70D6}",
+    "Color": "25",
+    "Language": "SFX",
+    "Hash": "{CAE40572-A4D5-E171-C107-1052AA1FBAFC}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Local_WU\\SB_Zone1",
+    "ShortName": "SB_Zone1",
+    "Path": "SB_Zone1.bnk"
+   }
+  ],
+  "FileHash": "{F64F544D-4B57-E0EA-AB6C-5E53764C453E}"
+ }
+}

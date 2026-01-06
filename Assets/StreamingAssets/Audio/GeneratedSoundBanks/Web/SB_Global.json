@@ -1,0 +1,3592 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2711878180",
+    "Type": "User",
+    "GUID": "{C71F5155-0CD0-42B0-AB8B-10BD208F0E12}",
+    "Color": "19",
+    "Language": "SFX",
+    "Hash": "{5445BC8E-4DAA-4F80-0DE1-490B473DFC26}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_Global_WU\\SB_Global",
+    "ShortName": "SB_Global",
+    "Path": "SB_Global.bnk",
+    "Media": [
+     {
+      "Id": "3030880",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_02.wav",
+      "CachePath": "FD/{FD2C612B-787E-E35E-F56F-5150C901C259}.wem"
+     },
+     {
+      "Id": "3434436",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_12.wav",
+      "CachePath": "6A/{6A117615-BF9D-D599-3142-8B8F0E74A8AF}.wem"
+     },
+     {
+      "Id": "9780065",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_02.wav",
+      "CachePath": "BB/{BB38A0E4-35FB-E659-4B81-813B73271161}.wem"
+     },
+     {
+      "Id": "16808915",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_Hit_Player_02.wav",
+      "CachePath": "CE/{CE47B56B-C5DB-5A01-FE03-F87EE75B5B3B}.wem"
+     },
+     {
+      "Id": "20019814",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_08.wav",
+      "CachePath": "A7/{A77E0DEC-51AC-6AA2-BB71-CD802DA9224B}.wem"
+     },
+     {
+      "Id": "30807178",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_07.wav",
+      "CachePath": "78/{7808C005-C4B3-D1F2-951B-AB96764D5ABE}.wem"
+     },
+     {
+      "Id": "41968863",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_16.wav",
+      "CachePath": "55/{5521EA36-265B-ACC2-3DAB-781842F4B076}.wem"
+     },
+     {
+      "Id": "49681000",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_06.wav",
+      "CachePath": "C4/{C4019956-D986-5A34-CFD6-3ED6A6F5F959}.wem"
+     },
+     {
+      "Id": "60187880",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Krampus Boss (2).wav",
+      "CachePath": "79/{79915C33-BB3B-864A-4F35-C3E7DAE703DB}.wem"
+     },
+     {
+      "Id": "62287333",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_09.wav",
+      "CachePath": "CF/{CFF0906C-632A-DA40-8CFD-EC12F2D967EC}.wem"
+     },
+     {
+      "Id": "92653261",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Gravel _02.wav",
+      "CachePath": "AC/{ACE5A56A-B554-7AF4-6EBA-B1D9069BF82F}.wem"
+     },
+     {
+      "Id": "94620058",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Japanese Boss (2).wav",
+      "CachePath": "87/{87154638-4B9D-8547-383A-AA54B5117FFB}.wem"
+     },
+     {
+      "Id": "95403465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_11.wav",
+      "CachePath": "BA/{BAE67965-B5FD-28A4-7209-82222DA91494}.wem"
+     },
+     {
+      "Id": "97988636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_10.wav",
+      "CachePath": "24/{24DD346A-2A4B-2DF7-B694-DA017FB150F3}.wem"
+     },
+     {
+      "Id": "104245989",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_03.wav",
+      "CachePath": "62/{62365FB0-33F6-E48E-FCB8-785AC5E0A7B0}.wem"
+     },
+     {
+      "Id": "111629566",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_01.wav",
+      "CachePath": "19/{1976E0CC-A989-C7C8-CE52-D5F752585F3B}.wem"
+     },
+     {
+      "Id": "126716824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_06.wav",
+      "CachePath": "3A/{3AF9CABA-3A0C-B38F-E497-4CF97FE721F8}.wem"
+     },
+     {
+      "Id": "129656127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX_RingingBell_01.wav",
+      "CachePath": "7E/{7E3EA4C8-4907-7D47-5E11-7C2EA2F66450}.wem"
+     },
+     {
+      "Id": "145139408",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_01.wav",
+      "CachePath": "B9/{B9E49DC2-D1AC-0DA5-A916-1BA17CA6BCB4}.wem"
+     },
+     {
+      "Id": "148228222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_14.wav",
+      "CachePath": "AA/{AA80C9C1-241C-7752-C973-577C8CF0887B}.wem"
+     },
+     {
+      "Id": "153083772",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Good Ending.wav",
+      "CachePath": "48/{4822A20C-18E1-CEE0-7D16-A2E12A21B739}.wem"
+     },
+     {
+      "Id": "163571342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_03.wav",
+      "CachePath": "04/{04681DF0-8A73-2DDA-57C1-2633ED5D3363}.wem"
+     },
+     {
+      "Id": "172412349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_01.wav",
+      "CachePath": "BA/{BAE6E5D5-C082-F2A6-5C89-17200A2BC1BA}.wem"
+     },
+     {
+      "Id": "183270401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_04.wav",
+      "CachePath": "19/{191FFF0E-698A-D0C9-0074-459AC0F9902C}.wem"
+     },
+     {
+      "Id": "186426030",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_10.wav",
+      "CachePath": "80/{801C7B5A-B808-A41C-F71E-8051213F2656}.wem"
+     },
+     {
+      "Id": "191295604",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_14.wav",
+      "CachePath": "1A/{1A815EF1-5BE8-87C6-72EE-1487DBC9BC04}.wem"
+     },
+     {
+      "Id": "203270636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Game Jam Bad Ending.wav",
+      "CachePath": "C4/{C458923D-8243-4B64-5702-4B92F0703F1E}.wem"
+     },
+     {
+      "Id": "213445104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_09.wav",
+      "CachePath": "6D/{6D851193-D606-1092-053B-AC7A2D114711}.wem"
+     },
+     {
+      "Id": "221660205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Icelandic Boss Fight.wav",
+      "CachePath": "BC/{BC8EFFB3-2D56-5A3E-8F73-64C58592DF7D}.wem"
+     },
+     {
+      "Id": "225381729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_01.wav",
+      "CachePath": "9B/{9B8F2DC2-CCCC-2192-5BFD-1AD4BD919F58}.wem"
+     },
+     {
+      "Id": "228997824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_12.wav",
+      "CachePath": "34/{34F36747-997F-A6C8-45B3-69AE45968213}.wem"
+     },
+     {
+      "Id": "230088109",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_16.wav",
+      "CachePath": "33/{337A4410-BDC4-B214-5DF4-B01D4F71AA11}.wem"
+     },
+     {
+      "Id": "231643236",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerDie_01.wav",
+      "CachePath": "B6/{B6DB2A8D-1E58-28A4-A624-79A8A23A4108}.wem"
+     },
+     {
+      "Id": "232594364",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerDie_02.wav",
+      "CachePath": "07/{07260241-7F09-EEFB-4CF1-2E5E2C8D0520}.wem"
+     },
+     {
+      "Id": "237193766",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_01.wav",
+      "CachePath": "E5/{E5757CCA-DD9D-EBA3-0FBF-C8E59A4D295A}.wem"
+     },
+     {
+      "Id": "237199391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_03.wav",
+      "CachePath": "51/{51C605E6-C0A2-7B74-BF0F-4FBD859A2834}.wem"
+     },
+     {
+      "Id": "248979785",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_Attackdistance_01.wav",
+      "CachePath": "D3/{D3449A10-F818-35AC-B72F-FBA5E7BBA48E}.wem"
+     },
+     {
+      "Id": "262694184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_15.wav",
+      "CachePath": "04/{04DC5156-D166-877B-77DA-905773A795D3}.wem"
+     },
+     {
+      "Id": "280841403",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_03.wav",
+      "CachePath": "DF/{DF9147F8-63F4-02EE-D6A6-B40DD4648E22}.wem"
+     },
+     {
+      "Id": "283906744",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX_RingingBell_02.wav",
+      "CachePath": "27/{27715E05-D306-8726-1AB5-6447E5386DA8}.wem"
+     },
+     {
+      "Id": "283941078",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_08.wav",
+      "CachePath": "96/{96EAD6BE-8260-C88F-FBE5-069ACF92BAD9}.wem"
+     },
+     {
+      "Id": "285836161",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_04.wav",
+      "CachePath": "BB/{BB8FF1C5-7CC9-2379-AD94-FDE63A14DADC}.wem"
+     },
+     {
+      "Id": "287596685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_TakeDamage_04.wav",
+      "CachePath": "6E/{6EA544EE-F710-4C6C-763C-962A78EA3A7B}.wem"
+     },
+     {
+      "Id": "293292482",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_14.wav",
+      "CachePath": "30/{30D5CA58-989A-F412-E820-E1D527E96431}.wem"
+     },
+     {
+      "Id": "293638183",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_01.wav",
+      "CachePath": "0F/{0F646DEC-82EB-2D1B-A91B-73491AB23CDE}.wem"
+     },
+     {
+      "Id": "295906540",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_Hit_Player_01.wav",
+      "CachePath": "FF/{FF954E7F-6C7A-91E5-975D-E7E3E238C2AE}.wem"
+     },
+     {
+      "Id": "299809344",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_03.wav",
+      "CachePath": "3E/{3E238D3B-B109-9740-0990-A786D18AFBC1}.wem"
+     },
+     {
+      "Id": "310087946",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Leaf_02.wav",
+      "CachePath": "6A/{6AAE5300-6C9B-8522-2014-8D12A0751744}.wem"
+     },
+     {
+      "Id": "313942892",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_01.wav",
+      "CachePath": "ED/{ED00B817-A86C-B312-FB95-1205A46B9953}.wem"
+     },
+     {
+      "Id": "319059734",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_02.wav",
+      "CachePath": "AF/{AF0FB3A1-3B62-2EAF-E8F3-28546A7B2262}.wem"
+     },
+     {
+      "Id": "326443615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavy_04.wav",
+      "CachePath": "A0/{A0CD9B2E-6966-5E7C-717B-3C8E14D38A2C}.wem"
+     },
+     {
+      "Id": "334207358",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_04.wav",
+      "CachePath": "BD/{BDF9CE69-3C13-7D34-84AD-8107CFBD529D}.wem"
+     },
+     {
+      "Id": "344997668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_01.wav",
+      "CachePath": "DA/{DA71394C-C70C-FCF9-1E28-6638FA06823F}.wem"
+     },
+     {
+      "Id": "350440186",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_07.wav",
+      "CachePath": "6B/{6BB1DC62-9973-B538-B342-EF79FA200350}.wem"
+     },
+     {
+      "Id": "352355886",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_09.wav",
+      "CachePath": "90/{902D90C8-8EF7-4BE6-E939-9D791919930C}.wem"
+     },
+     {
+      "Id": "353540037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_02.wav",
+      "CachePath": "BD/{BD45A523-F805-6B4B-CE6E-3CDA308EF148}.wem"
+     },
+     {
+      "Id": "358614350",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_04.wav",
+      "CachePath": "62/{62E60F39-C075-A84B-95B3-4AA9A13B5494}.wem"
+     },
+     {
+      "Id": "367277238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_05.wav",
+      "CachePath": "11/{11F370D5-CD15-3385-0BB9-FC4AA42CFCD6}.wem"
+     },
+     {
+      "Id": "372468713",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_02.wav",
+      "CachePath": "2A/{2A1479BA-6589-7B85-EAB3-7EC9E4A85862}.wem"
+     },
+     {
+      "Id": "390098488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_05.wav",
+      "CachePath": "A3/{A37F9955-FE35-0E5D-D6EE-636CDC889C4A}.wem"
+     },
+     {
+      "Id": "404103143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_01.wav",
+      "CachePath": "FC/{FCA8DC54-704F-E1A6-2888-28146D06E0A2}.wem"
+     },
+     {
+      "Id": "418819584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_09.wav",
+      "CachePath": "10/{1069B970-2CB3-5846-B6DF-458249B00B3F}.wem"
+     },
+     {
+      "Id": "425332821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_10.wav",
+      "CachePath": "DB/{DB11E31B-648E-5E86-5780-924E28B9EC6F}.wem"
+     },
+     {
+      "Id": "427882681",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_07.wav",
+      "CachePath": "AF/{AF487927-169C-2EF5-6788-3C5831C15E92}.wem"
+     },
+     {
+      "Id": "446198023",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackDistanceHit_01.wav",
+      "CachePath": "07/{07931882-0AE7-AD60-C5AC-77A55F5C2D1C}.wem"
+     },
+     {
+      "Id": "455239519",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_10.wav",
+      "CachePath": "44/{4464D112-642E-06C9-5F0A-BAC64B5C37E0}.wem"
+     },
+     {
+      "Id": "456967774",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_02.wav",
+      "CachePath": "38/{38A7B9FC-2DB5-08D6-8D0D-ABD522A84E71}.wem"
+     },
+     {
+      "Id": "458611526",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavy_03.wav",
+      "CachePath": "96/{96906491-5FDD-6B9B-15FC-4CA3914EFDCA}.wem"
+     },
+     {
+      "Id": "462008002",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_05.wav",
+      "CachePath": "D3/{D3D677B3-56C1-E834-C336-1158CE37BF17}.wem"
+     },
+     {
+      "Id": "463717273",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_PAD_Flower_LP.wav",
+      "CachePath": "E8/{E80C1679-AD56-70CC-5E2C-9E101BF90695}.wem"
+     },
+     {
+      "Id": "465279993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_08.wav",
+      "CachePath": "C7/{C71948BD-B687-E349-3ADC-E6D91B416A7F}.wem"
+     },
+     {
+      "Id": "470052216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_05.wav",
+      "CachePath": "A6/{A6945F90-32DC-8C78-E15D-3093FE5F46B4}.wem"
+     },
+     {
+      "Id": "473990191",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_03.wav",
+      "CachePath": "EA/{EA15E094-099C-074E-7143-071DF6BE9D38}.wem"
+     },
+     {
+      "Id": "474616946",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_05.wav",
+      "CachePath": "A7/{A7CF1EA2-E235-09AC-327D-4347AAF56876}.wem"
+     },
+     {
+      "Id": "479266954",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_05.wav",
+      "CachePath": "73/{734F320A-F4CC-61BA-CB56-944B0690BED5}.wem"
+     },
+     {
+      "Id": "492307395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_PAD_Castle_LP.wav",
+      "CachePath": "D6/{D6610749-47E7-A551-D62B-49E870324ACE}.wem"
+     },
+     {
+      "Id": "499169497",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_04.wav",
+      "CachePath": "83/{830183CE-1468-4FE9-2CF1-D9D54FED36A8}.wem"
+     },
+     {
+      "Id": "499320855",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackDistanceHit_03.wav",
+      "CachePath": "89/{899AA58D-0F9E-F746-497A-4640E7C95D91}.wem"
+     },
+     {
+      "Id": "502236504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_01.wav",
+      "CachePath": "78/{7896EDCD-C170-F653-DA23-58EF6BD49663}.wem"
+     },
+     {
+      "Id": "506313612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_01.wav",
+      "CachePath": "4E/{4EFA9D3B-EBCF-DF17-9A4A-13FF7B01EEC2}.wem"
+     },
+     {
+      "Id": "508848196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_05.wav",
+      "CachePath": "17/{17F96874-3956-C2AC-17F3-338277683FE5}.wem"
+     },
+     {
+      "Id": "511407325",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_10.wav",
+      "CachePath": "2E/{2EC01CA2-3F22-60A5-3D35-7531E49BE5DE}.wem"
+     },
+     {
+      "Id": "511596542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_04.wav",
+      "CachePath": "68/{6850ED40-1B90-AAE5-AFB4-E1A7A0A5B5FC}.wem"
+     },
+     {
+      "Id": "517903892",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_TakeDamage_01.wav",
+      "CachePath": "6B/{6BE2553A-77BE-D7F1-BF78-91A16EF1C851}.wem"
+     },
+     {
+      "Id": "521308304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_09.wav",
+      "CachePath": "6F/{6F696D29-BFDD-4102-5731-EBDD817889EC}.wem"
+     },
+     {
+      "Id": "522220936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_07.wav",
+      "CachePath": "D2/{D27F9973-ED31-064C-69C6-72CF0E012CDF}.wem"
+     },
+     {
+      "Id": "522957038",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_04.wav",
+      "CachePath": "E8/{E8F1563E-C1CA-5F08-987C-B2A8CC841EC5}.wem"
+     },
+     {
+      "Id": "524354383",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_Attackdistance_05.wav",
+      "CachePath": "31/{316CAD83-8A64-9CAE-8855-4E04D524FEC7}.wem"
+     },
+     {
+      "Id": "526363489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_13.wav",
+      "CachePath": "3F/{3F1880A5-095D-D255-6269-1D7E9AFC1A3B}.wem"
+     },
+     {
+      "Id": "529905666",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_04.wav",
+      "CachePath": "7F/{7FD38716-6755-0BD6-221C-39011E40A759}.wem"
+     },
+     {
+      "Id": "530354360",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_Attackdistance_03.wav",
+      "CachePath": "92/{9290C648-49B9-EF8E-4F1A-138899EA0C88}.wem"
+     },
+     {
+      "Id": "530854242",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_01.wav",
+      "CachePath": "75/{755415BA-49FA-E394-D2C5-DECB44BB8810}.wem"
+     },
+     {
+      "Id": "534629551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_04.wav",
+      "CachePath": "F6/{F6D09D0E-5FB7-1347-2F9A-4E6D453C8D9A}.wem"
+     },
+     {
+      "Id": "536770182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_15.wav",
+      "CachePath": "8C/{8CE99EF4-4023-6AC1-9163-A938A76575C7}.wem"
+     },
+     {
+      "Id": "545019265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_TakeDamage_03.wav",
+      "CachePath": "07/{076A005F-0E19-B33E-4F1F-06431E665A48}.wem"
+     },
+     {
+      "Id": "550225039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_06.wav",
+      "CachePath": "AA/{AA364ECF-2ED4-01FC-E73C-E808758342F6}.wem"
+     },
+     {
+      "Id": "551424247",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_10.wav",
+      "CachePath": "4D/{4D714C9A-8E9C-3816-1FF3-A0835BF2FA32}.wem"
+     },
+     {
+      "Id": "560820039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_08.wav",
+      "CachePath": "0A/{0A4FA0EB-2C87-23BF-508C-6E0DEF095085}.wem"
+     },
+     {
+      "Id": "561194563",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_08.wav",
+      "CachePath": "AA/{AA91B5BB-1723-0294-D141-023CDF68B6AF}.wem"
+     },
+     {
+      "Id": "570903100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_04.wav",
+      "CachePath": "41/{41D1161B-63FD-24EF-FEF7-8BB67D7FA04D}.wem"
+     },
+     {
+      "Id": "571658290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_06.wav",
+      "CachePath": "B3/{B3498DFE-DB08-F63F-DFBB-3C22B56946D5}.wem"
+     },
+     {
+      "Id": "573985444",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_06.wav",
+      "CachePath": "B2/{B2D6AF00-3D2B-266D-856B-4B024971AB08}.wem"
+     },
+     {
+      "Id": "579610558",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_02.wav",
+      "CachePath": "38/{387ED32F-EF64-802B-9E52-0F7E0C1CF281}.wem"
+     },
+     {
+      "Id": "596100519",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_02.wav",
+      "CachePath": "87/{873C2EF4-DCD4-9EB8-2AE5-7CCEA0553EC3}.wem"
+     },
+     {
+      "Id": "599503421",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI\\UI_ClicConfirm_02.wav",
+      "CachePath": "3C/{3C9BCDBE-DCEB-55FE-8936-41381180B5EF}.wem"
+     },
+     {
+      "Id": "604962401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_06.wav",
+      "CachePath": "69/{6930E7A2-0E42-DC87-ED94-D262D54C2BDE}.wem"
+     },
+     {
+      "Id": "607676485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_12.wav",
+      "CachePath": "C5/{C5E057F7-94AA-C54B-E5A3-61359A7031E7}.wem"
+     },
+     {
+      "Id": "624765908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_11.wav",
+      "CachePath": "60/{6025F71C-435B-0C27-ACE5-72D793FC65DE}.wem"
+     },
+     {
+      "Id": "625548551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_03.wav",
+      "CachePath": "65/{6520F371-9313-3586-8CAE-204AADA448A4}.wem"
+     },
+     {
+      "Id": "631560684",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_03.wav",
+      "CachePath": "E3/{E35510F4-FB76-3AB4-6782-7AC00FE46C0F}.wem"
+     },
+     {
+      "Id": "640081363",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_07.wav",
+      "CachePath": "F3/{F3F00863-351C-5614-1F3C-D81F0DBCF777}.wem"
+     },
+     {
+      "Id": "645044226",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackDistanceHit_02.wav",
+      "CachePath": "0A/{0ACD5B9E-47F9-C1B1-BEFE-9284A6AE68FA}.wem"
+     },
+     {
+      "Id": "647129184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Santa Boss Fight.wav",
+      "CachePath": "1B/{1B637B24-17E8-3259-5B6C-5B188EFBC293}.wem"
+     },
+     {
+      "Id": "653697373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavy_02.wav",
+      "CachePath": "78/{787D2388-8CED-40C1-F9CB-18F56E554F5D}.wem"
+     },
+     {
+      "Id": "655657487",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_03.wav",
+      "CachePath": "23/{23C447EC-9CF2-D0A2-04AB-009CA59ED1C1}.wem"
+     },
+     {
+      "Id": "662958141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI\\UI_ClicConfirm_01.wav",
+      "CachePath": "B6/{B63FAFC9-3AB9-194E-B702-55798DD48AB7}.wem"
+     },
+     {
+      "Id": "670288010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_07.wav",
+      "CachePath": "4D/{4DB60B7E-30C4-775A-C421-3284176697E8}.wem"
+     },
+     {
+      "Id": "673507645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_06.wav",
+      "CachePath": "A6/{A65CB8FC-47C9-4F76-A802-B11C3BFA6316}.wem"
+     },
+     {
+      "Id": "675059672",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI\\UI_ClicConfirm_03.wav",
+      "CachePath": "B4/{B443EE99-CDFA-1FD0-47C9-7116748B0460}.wem"
+     },
+     {
+      "Id": "680860104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_08.wav",
+      "CachePath": "3F/{3F1167CF-DA6C-0AFE-028C-649BC47DAC20}.wem"
+     },
+     {
+      "Id": "681054972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_12.wav",
+      "CachePath": "45/{458E9915-3DE1-B798-9F03-4EAB8C02C4A6}.wem"
+     },
+     {
+      "Id": "683109271",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_08.wav",
+      "CachePath": "8A/{8AA60646-85C1-BF99-509E-0EF8A25C7C72}.wem"
+     },
+     {
+      "Id": "687823185",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_13.wav",
+      "CachePath": "E7/{E7CD9BF4-BCBC-AD2C-0933-D35B5E6AC48C}.wem"
+     },
+     {
+      "Id": "688956824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_10.wav",
+      "CachePath": "43/{4302787C-DC4B-3C92-0DB1-8FF42DC80EFE}.wem"
+     },
+     {
+      "Id": "691336506",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_11.wav",
+      "CachePath": "E0/{E01A4271-D1F5-F166-468C-A3519A11F7C6}.wem"
+     },
+     {
+      "Id": "700915839",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_13.wav",
+      "CachePath": "69/{69C5D677-0533-309A-5F32-885FF03688B9}.wem"
+     },
+     {
+      "Id": "702145405",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_Attackdistance_04.wav",
+      "CachePath": "73/{739D03C9-57CB-C1C5-E38D-6B6FC1DBAB31}.wem"
+     },
+     {
+      "Id": "712366129",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_02.wav",
+      "CachePath": "E2/{E222D95C-45DE-3E5C-62CD-0D41C7A3E85B}.wem"
+     },
+     {
+      "Id": "716687846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Game Jam Exploration.wav",
+      "CachePath": "F1/{F1F838B7-7DC6-1C99-30CD-83F308634611}.wem"
+     },
+     {
+      "Id": "720550314",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_02.wav",
+      "CachePath": "E8/{E812B04C-E486-BEED-41B7-467BF913AED8}.wem"
+     },
+     {
+      "Id": "729356419",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_07.wav",
+      "CachePath": "06/{06A8F5BD-D8A3-1D9C-0C3B-195331088AB3}.wem"
+     },
+     {
+      "Id": "756009061",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_07.wav",
+      "CachePath": "E1/{E1C89416-CA5B-8811-71AD-7D15AD9593AF}.wem"
+     },
+     {
+      "Id": "761450550",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_11.wav",
+      "CachePath": "5B/{5B43539D-BFEE-41EF-8973-F4C4F7058D58}.wem"
+     },
+     {
+      "Id": "784274814",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_PAD_Village_LP.wav",
+      "CachePath": "DD/{DDFB7DB7-5F7C-52E3-8EDD-7E05CAC3F2BA}.wem"
+     },
+     {
+      "Id": "785163463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerRespawn_02.wav",
+      "CachePath": "9A/{9A10B061-5B58-2F8B-D9C9-623C13F5650D}.wem"
+     },
+     {
+      "Id": "785209016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_14.wav",
+      "CachePath": "30/{30CE503D-782B-146D-3DD7-56C8D69425BF}.wem"
+     },
+     {
+      "Id": "793438356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_09.wav",
+      "CachePath": "3B/{3BCA0868-C421-570E-CE82-1D48347BA91F}.wem"
+     },
+     {
+      "Id": "802787763",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_06.wav",
+      "CachePath": "C3/{C3232477-BFC6-9BC2-23C3-264B912910DA}.wem"
+     },
+     {
+      "Id": "806877309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttakMeleeLight_03.wav",
+      "CachePath": "37/{372C3490-7A02-630F-8338-ACA086338C8D}.wem"
+     },
+     {
+      "Id": "819535937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_13.wav",
+      "CachePath": "23/{238A0AA3-2C77-C4D7-36EF-7E6F2A57EF36}.wem"
+     },
+     {
+      "Id": "820882496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_10.wav",
+      "CachePath": "38/{38A59AC3-5B21-9B73-1471-5FE045F417F9}.wem"
+     },
+     {
+      "Id": "821121654",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_TakeDamage_05.wav",
+      "CachePath": "EE/{EED29B73-C274-60C0-08DE-727B9D30F3F2}.wem"
+     },
+     {
+      "Id": "829079425",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_12.wav",
+      "CachePath": "D1/{D16A2B6E-3F62-DAAE-6EC3-6FA2E256BA09}.wem"
+     },
+     {
+      "Id": "836707253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_04.wav",
+      "CachePath": "79/{79641836-4A65-B2F3-E0E5-FD6E788371E0}.wem"
+     },
+     {
+      "Id": "842627092",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_14.wav",
+      "CachePath": "2B/{2B4FC9BD-09C9-0998-34F3-990850C7AC8C}.wem"
+     },
+     {
+      "Id": "850160418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Gravel _01.wav",
+      "CachePath": "7F/{7F4A204E-7EF0-5B67-3E37-A2EC6FCD4DE5}.wem"
+     },
+     {
+      "Id": "854231748",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackClaw_01.wav",
+      "CachePath": "6D/{6D7F7180-36DC-09C4-63DA-0A50E0AE2299}.wem"
+     },
+     {
+      "Id": "861431005",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Gravel _03.wav",
+      "CachePath": "C6/{C692E808-A6F9-99D4-7546-A9CE1A2FD98E}.wem"
+     },
+     {
+      "Id": "866946131",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_08.wav",
+      "CachePath": "0F/{0F43017B-8681-95A7-18BD-113209382774}.wem"
+     },
+     {
+      "Id": "869516618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_05.wav",
+      "CachePath": "F3/{F36C4094-A6B7-E4D6-7FD2-62BA51AE6BA6}.wem"
+     },
+     {
+      "Id": "870952255",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_03.wav",
+      "CachePath": "CC/{CCA7A7CB-4E35-E64E-3433-80CBF4F393FB}.wem"
+     },
+     {
+      "Id": "875074251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX_RingingBell_03.wav",
+      "CachePath": "50/{5042BD57-6BEE-48D0-D120-7275C83C628D}.wem"
+     },
+     {
+      "Id": "877681428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_RFX_Forest_Mid_03.wav",
+      "CachePath": "8C/{8C1439AE-C688-1315-587F-11141DD67EC2}.wem"
+     },
+     {
+      "Id": "881044852",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Leaf_03.wav",
+      "CachePath": "88/{88A0DBAC-2561-EB96-A1DA-662364BB506B}.wem"
+     },
+     {
+      "Id": "881747019",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_04.wav",
+      "CachePath": "19/{195E198B-CBBB-57A4-5C11-C8BF119C75D5}.wem"
+     },
+     {
+      "Id": "894585158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_05.wav",
+      "CachePath": "92/{92C52D97-529E-D094-4C4D-52836E320EB3}.wem"
+     },
+     {
+      "Id": "898540644",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB\\AMB_PAD_Forest_LP.wav",
+      "CachePath": "9D/{9D639BFB-FD47-3B72-3367-C40B77BE396F}.wem"
+     },
+     {
+      "Id": "898769014",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_11.wav",
+      "CachePath": "7C/{7C22EAB4-6AFD-57E1-4A46-0C5DE7E51A7F}.wem"
+     },
+     {
+      "Id": "907063592",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_04.wav",
+      "CachePath": "25/{258047B8-71DD-E11A-09C0-AD1B827D4D19}.wem"
+     },
+     {
+      "Id": "907935679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS\\Xmas Jam Menu.wav",
+      "CachePath": "A5/{A51CF367-E319-298E-EB5D-3CF7A0E8953E}.wem"
+     },
+     {
+      "Id": "913956106",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_09.wav",
+      "CachePath": "18/{18748703-0A68-92C1-ACD5-C4E82BAE470F}.wem"
+     },
+     {
+      "Id": "925645536",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_11.wav",
+      "CachePath": "48/{48F69EEF-D312-EC19-0B38-2527B73505FE}.wem"
+     },
+     {
+      "Id": "931222370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_TakeDamage_02.wav",
+      "CachePath": "59/{5960FA99-E205-5D1B-73C3-7D1F5E6267D4}.wem"
+     },
+     {
+      "Id": "937703334",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_11.wav",
+      "CachePath": "F9/{F9A27007-76DA-AD2C-329E-05D7DB3E465D}.wem"
+     },
+     {
+      "Id": "949684335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_07.wav",
+      "CachePath": "21/{21D212E6-604E-FF5B-E877-F8698F3996BD}.wem"
+     },
+     {
+      "Id": "954940189",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Action_01.wav",
+      "CachePath": "73/{73F66301-6C79-CB37-518B-5A3E185422E2}.wem"
+     },
+     {
+      "Id": "957895546",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_02.wav",
+      "CachePath": "D5/{D536ED4D-143F-76E2-CFC8-DFB270F9A87A}.wem"
+     },
+     {
+      "Id": "960767963",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_Attackdistance_02.wav",
+      "CachePath": "94/{948A8B76-5142-D701-D895-38F48CB9944C}.wem"
+     },
+     {
+      "Id": "979592972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_Roll_05.wav",
+      "CachePath": "0A/{0A3AFCF4-B556-E3E0-F165-3F44C0148A8E}.wem"
+     },
+     {
+      "Id": "984720994",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_13.wav",
+      "CachePath": "10/{10090647-E94B-F123-A4AD-88D7B5A406CF}.wem"
+     },
+     {
+      "Id": "985602594",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_11.wav",
+      "CachePath": "2A/{2AA1EDA6-F7B0-F417-324F-40C344B995E4}.wem"
+     },
+     {
+      "Id": "990775825",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Yule_Walk_02.wav",
+      "CachePath": "43/{43C4C2D9-D091-DAD6-049A-D7765056FE17}.wem"
+     },
+     {
+      "Id": "997510963",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\SFX_Yule_AttackPounce_03.wav",
+      "CachePath": "6F/{6F293368-F42B-A58F-EF23-7D34442A27DE}.wem"
+     },
+     {
+      "Id": "1002356096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_02.wav",
+      "CachePath": "DB/{DBF55DCD-2B91-8348-4FF9-FB9E3420387B}.wem"
+     },
+     {
+      "Id": "1003556647",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_RunSnow_05.wav",
+      "CachePath": "C0/{C0E1608F-D798-E470-2A2B-34787FD809BA}.wem"
+     },
+     {
+      "Id": "1005721163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_10.wav",
+      "CachePath": "34/{34253375-FA8A-7F71-0ABE-D247174D3179}.wem"
+     },
+     {
+      "Id": "1008063990",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_PlayerRespawn_01.wav",
+      "CachePath": "4A/{4A1ACC60-4A4A-59AB-974C-62E3C7F83BBE}.wem"
+     },
+     {
+      "Id": "1014116135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_08.wav",
+      "CachePath": "78/{783B1C5D-2F7B-42DD-FBE1-41AE2FD89BC7}.wem"
+     },
+     {
+      "Id": "1016620596",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_09.wav",
+      "CachePath": "8F/{8FDE88D4-454B-D4AF-5CA6-A71B8A362B5F}.wem"
+     },
+     {
+      "Id": "1018237124",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavyHit_03.wav",
+      "CachePath": "64/{6449CE5D-FB82-9D22-5E80-E40726E065C5}.wem"
+     },
+     {
+      "Id": "1018719249",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Krampus_Walk_02.wav",
+      "CachePath": "FF/{FF03C2BE-3CBC-374F-B5DA-A7BED54786BA}.wem"
+     },
+     {
+      "Id": "1023270544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_PRES_Run_02.wav",
+      "CachePath": "F0/{F0A59BAE-8DE7-CEAA-E520-95D296A9B58C}.wem"
+     },
+     {
+      "Id": "1025131302",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_JustSnow_06.wav",
+      "CachePath": "06/{067C9521-8DC7-93B9-28A4-820AA4897838}.wem"
+     },
+     {
+      "Id": "1035052216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_Walk_Leaf_01.wav",
+      "CachePath": "E8/{E8DF84CD-F5A9-8EA5-B98F-00B229AE90AB}.wem"
+     },
+     {
+      "Id": "1036216972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOSS\\FOL_FT_Nahagame_Run_01.wav",
+      "CachePath": "A5/{A5F1C482-BBCE-799C-BD9D-005E092FC163}.wem"
+     },
+     {
+      "Id": "1036940016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\FOL_MC_FT_WalkSnow_09.wav",
+      "CachePath": "3C/{3C2E3E01-B34A-9DB1-4E09-1252D9DC5728}.wem"
+     },
+     {
+      "Id": "1038722288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_05.wav",
+      "CachePath": "7A/{7AD4661D-C11F-52C9-F391-756230BB8E00}.wem"
+     },
+     {
+      "Id": "1043558583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeLightHit_03.wav",
+      "CachePath": "F8/{F8575770-6159-0D50-8123-369D9DABCED6}.wem"
+     },
+     {
+      "Id": "1070432537",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MC\\SFX_MC_AttackMeleeHeavy_01.wav",
+      "CachePath": "C8/{C880DACA-2F34-026A-308D-E2CDFD363719}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1661945423",
+      "Name": "Play_AMB_PAD_Castle",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Castle",
+      "GUID": "{F5990873-03B2-4ABB-BF7E-9333B680073C}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "492307395"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2459718302",
+      "Name": "Play_AMB_PAD_Flower",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Flower",
+      "GUID": "{70BB4828-3F5B-4D1D-BA67-900071F425C2}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "463717273"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2928511412",
+      "Name": "Play_AMB_PAD_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Forest",
+      "GUID": "{9432080A-E796-4D13-BB29-11D839BF6E47}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "898540644"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "4196331637",
+      "Name": "Play_AMB_PAD_Village",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_PAD_Village",
+      "GUID": "{E130320C-6A29-47C5-B385-6CDD10BF5869}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "784274814"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2490489396",
+      "Name": "Play_AMB_RFX_ForestFar",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_RFX_ForestFar",
+      "GUID": "{BAA61092-45E0-45AE-AD70-60962E5E7C6D}",
+      "Color": "4",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2760358305",
+      "Name": "Play_AMB_RFX_ForestMid",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB_WU\\Play_AMB_RFX_ForestMid",
+      "GUID": "{364373A8-F69A-46BB-A5C3-97E05C2DC243}",
+      "Color": "4",
+      "DurationType": "OneShot",
+      "DurationMin": "2.7807329",
+      "DurationMax": "10.013057",
+      "MediaRefs": [
+       {
+        "Id": "20019814"
+       },
+       {
+        "Id": "49681000"
+       },
+       {
+        "Id": "319059734"
+       },
+       {
+        "Id": "418819584"
+       },
+       {
+        "Id": "462008002"
+       },
+       {
+        "Id": "502236504"
+       },
+       {
+        "Id": "522957038"
+       },
+       {
+        "Id": "640081363"
+       },
+       {
+        "Id": "688956824"
+       },
+       {
+        "Id": "877681428"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "177135426",
+      "Name": "Play_FOL_FT_Krampus_Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_FOL_FT_Krampus_Run",
+      "GUID": "{9161E0A7-FD8C-4DF0-8C37-FAEB9F0154B1}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26343787",
+      "DurationMax": "0.32246202",
+      "MediaRefs": [
+       {
+        "Id": "213445104"
+       },
+       {
+        "Id": "358614350"
+       },
+       {
+        "Id": "390098488"
+       },
+       {
+        "Id": "506313612"
+       },
+       {
+        "Id": "573985444"
+       },
+       {
+        "Id": "655657487"
+       },
+       {
+        "Id": "683109271"
+       },
+       {
+        "Id": "820882496"
+       },
+       {
+        "Id": "949684335"
+       },
+       {
+        "Id": "985602594"
+       },
+       {
+        "Id": "1018719249"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2026917111",
+      "Name": "Play_FOL_FT_Namahage_Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_FOL_FT_Namahage_Run",
+      "GUID": "{458D0639-D79A-428B-9555-2E7C8D73D2EB}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5502024",
+      "DurationMax": "0.8595823",
+      "MediaRefs": [
+       {
+        "Id": "62287333"
+       },
+       {
+        "Id": "97988636"
+       },
+       {
+        "Id": "163571342"
+       },
+       {
+        "Id": "293292482"
+       },
+       {
+        "Id": "534629551"
+       },
+       {
+        "Id": "571658290"
+       },
+       {
+        "Id": "670288010"
+       },
+       {
+        "Id": "681054972"
+       },
+       {
+        "Id": "691336506"
+       },
+       {
+        "Id": "819535937"
+       },
+       {
+        "Id": "894585158"
+       },
+       {
+        "Id": "957895546"
+       },
+       {
+        "Id": "1014116135"
+       },
+       {
+        "Id": "1036216972"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2425283306",
+      "Name": "Play_FOL_FT_Yule_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_FOL_FT_Yule_Walk",
+      "GUID": "{BEF495F7-15AD-45BA-A697-93E02A99186C}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6724697",
+      "DurationMax": "0.98145694",
+      "MediaRefs": [
+       {
+        "Id": "3434436"
+       },
+       {
+        "Id": "30807178"
+       },
+       {
+        "Id": "104245989"
+       },
+       {
+        "Id": "111629566"
+       },
+       {
+        "Id": "191295604"
+       },
+       {
+        "Id": "228997824"
+       },
+       {
+        "Id": "293638183"
+       },
+       {
+        "Id": "334207358"
+       },
+       {
+        "Id": "350440186"
+       },
+       {
+        "Id": "456967774"
+       },
+       {
+        "Id": "470052216"
+       },
+       {
+        "Id": "474616946"
+       },
+       {
+        "Id": "511407325"
+       },
+       {
+        "Id": "521308304"
+       },
+       {
+        "Id": "526363489"
+       },
+       {
+        "Id": "551424247"
+       },
+       {
+        "Id": "561194563"
+       },
+       {
+        "Id": "673507645"
+       },
+       {
+        "Id": "700915839"
+       },
+       {
+        "Id": "761450550"
+       },
+       {
+        "Id": "785209016"
+       },
+       {
+        "Id": "866946131"
+       },
+       {
+        "Id": "870952255"
+       },
+       {
+        "Id": "881747019"
+       },
+       {
+        "Id": "898769014"
+       },
+       {
+        "Id": "913956106"
+       },
+       {
+        "Id": "990775825"
+       },
+       {
+        "Id": "1025131302"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1271315640",
+      "Name": "Play_MC_AttackHitEnemy",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_AttackHitEnemy",
+      "GUID": "{66054A71-245A-4DAC-A873-1130A62BDDE9}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "1.2347083",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "2734195228",
+         "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+         "Color": "8",
+         "Default": "true"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "295887543",
+           "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "2506029772",
+           "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "397687435",
+           "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "172412349"
+           },
+           {
+            "Id": "353540037"
+           },
+           {
+            "Id": "511596542"
+           },
+           {
+            "Id": "1038722288"
+           },
+           {
+            "Id": "1043558583"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "1907146023",
+         "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+         "Color": "8"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "295887543",
+           "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "446198023"
+           },
+           {
+            "Id": "499320855"
+           },
+           {
+            "Id": "645044226"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "2506029772",
+           "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "446198023"
+           },
+           {
+            "Id": "499320855"
+           },
+           {
+            "Id": "645044226"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "397687435",
+           "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "446198023"
+           },
+           {
+            "Id": "499320855"
+           },
+           {
+            "Id": "645044226"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "3302953275",
+         "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+         "Color": "8"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "295887543",
+           "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "9780065"
+           },
+           {
+            "Id": "404103143"
+           },
+           {
+            "Id": "529905666"
+           },
+           {
+            "Id": "1018237124"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "2506029772",
+           "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "9780065"
+           },
+           {
+            "Id": "404103143"
+           },
+           {
+            "Id": "529905666"
+           },
+           {
+            "Id": "1018237124"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2119059778",
+           "Id": "397687435",
+           "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "9780065"
+           },
+           {
+            "Id": "404103143"
+           },
+           {
+            "Id": "529905666"
+           },
+           {
+            "Id": "1018237124"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1852516592",
+      "Name": "Play_MC_Attacks",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Attacks",
+      "GUID": "{F9770724-7F4B-429E-8264-41DAE00CBF1E}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.36154288",
+      "DurationMax": "2.83532",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "2734195228",
+         "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+         "Color": "8",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "183270401"
+         },
+         {
+          "Id": "508848196"
+         },
+         {
+          "Id": "530854242"
+         },
+         {
+          "Id": "720550314"
+         },
+         {
+          "Id": "806877309"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "1907146023",
+         "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+         "Color": "8"
+        },
+        "MediaRefs": [
+         {
+          "Id": "248979785"
+         },
+         {
+          "Id": "524354383"
+         },
+         {
+          "Id": "530354360"
+         },
+         {
+          "Id": "702145405"
+         },
+         {
+          "Id": "960767963"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4054447005",
+         "Id": "3302953275",
+         "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+         "Color": "8"
+        },
+        "MediaRefs": [
+         {
+          "Id": "326443615"
+         },
+         {
+          "Id": "458611526"
+         },
+         {
+          "Id": "653697373"
+         },
+         {
+          "Id": "1070432537"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2368357634",
+      "Name": "Play_MC_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Footsteps",
+      "GUID": "{2C8CD91D-A507-45E7-BE51-A2B9742E98F4}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.4719246",
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "996959485",
+         "Id": "916436602",
+         "GUID": "{36DA891B-588E-47A4-B9EF-92711D68214E}",
+         "Color": "8"
+        },
+        "Children": []
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "996959485",
+         "Id": "2399563152",
+         "GUID": "{D76FD1AE-D80C-4420-9445-E5FD4425AA8F}",
+         "Color": "8"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2700451361",
+           "Id": "2162921054",
+           "GUID": "{F1B3D11F-0452-464C-91CA-DD8F60222A40}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "310087946"
+           },
+           {
+            "Id": "881044852"
+           },
+           {
+            "Id": "1035052216"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2700451361",
+           "Id": "303207424",
+           "GUID": "{4EBF9B7E-35CB-4189-8471-96177E8BFE3F}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "92653261"
+           },
+           {
+            "Id": "850160418"
+           },
+           {
+            "Id": "861431005"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "996959485",
+         "Id": "3850745462",
+         "GUID": "{DB88FFE9-2BD9-4602-A835-00A93B5358DE}",
+         "Color": "8",
+         "Default": "true"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2700451361",
+           "Id": "2162921054",
+           "GUID": "{F1B3D11F-0452-464C-91CA-DD8F60222A40}",
+           "Color": "8"
+          },
+          "MediaRefs": [
+           {
+            "Id": "3030880"
+           },
+           {
+            "Id": "41968863"
+           },
+           {
+            "Id": "148228222"
+           },
+           {
+            "Id": "237193766"
+           },
+           {
+            "Id": "262694184"
+           },
+           {
+            "Id": "283941078"
+           },
+           {
+            "Id": "425332821"
+           },
+           {
+            "Id": "499169497"
+           },
+           {
+            "Id": "604962401"
+           },
+           {
+            "Id": "607676485"
+           },
+           {
+            "Id": "631560684"
+           },
+           {
+            "Id": "687823185"
+           },
+           {
+            "Id": "756009061"
+           },
+           {
+            "Id": "793438356"
+           },
+           {
+            "Id": "937703334"
+           },
+           {
+            "Id": "1003556647"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2700451361",
+           "Id": "303207424",
+           "GUID": "{4EBF9B7E-35CB-4189-8471-96177E8BFE3F}",
+           "Color": "8",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "126716824"
+           },
+           {
+            "Id": "186426030"
+           },
+           {
+            "Id": "230088109"
+           },
+           {
+            "Id": "237199391"
+           },
+           {
+            "Id": "285836161"
+           },
+           {
+            "Id": "313942892"
+           },
+           {
+            "Id": "465279993"
+           },
+           {
+            "Id": "536770182"
+           },
+           {
+            "Id": "729356419"
+           },
+           {
+            "Id": "829079425"
+           },
+           {
+            "Id": "842627092"
+           },
+           {
+            "Id": "869516618"
+           },
+           {
+            "Id": "925645536"
+           },
+           {
+            "Id": "984720994"
+           },
+           {
+            "Id": "1002356096"
+           },
+           {
+            "Id": "1036940016"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1566142524",
+      "Name": "Play_MC_PlayerDie",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_PlayerDie",
+      "GUID": "{3E0140C2-7326-4A3E-AEB6-18F1B8826268}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "5.6527166",
+      "DurationMax": "6.5441155",
+      "MediaRefs": [
+       {
+        "Id": "231643236"
+       },
+       {
+        "Id": "232594364"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1803431576",
+      "Name": "Play_MC_PlayerReborn",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_PlayerReborn",
+      "GUID": "{904EC495-8F7E-4E3E-A64B-A837DBB6DB81}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "4.026226",
+      "DurationMax": "5.969322",
+      "MediaRefs": [
+       {
+        "Id": "785163463"
+       },
+       {
+        "Id": "1008063990"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "2216081418",
+      "Name": "Play_MC_Presences_Action",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Presences_Action",
+      "GUID": "{8A4209E3-6C88-4EEF-82EB-F765F46D6727}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24102859",
+      "DurationMax": "0.44254786",
+      "MediaRefs": [
+       {
+        "Id": "352355886"
+       },
+       {
+        "Id": "455239519"
+       },
+       {
+        "Id": "473990191"
+       },
+       {
+        "Id": "479266954"
+       },
+       {
+        "Id": "522220936"
+       },
+       {
+        "Id": "560820039"
+       },
+       {
+        "Id": "579610558"
+       },
+       {
+        "Id": "624765908"
+       },
+       {
+        "Id": "802787763"
+       },
+       {
+        "Id": "907063592"
+       },
+       {
+        "Id": "954940189"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "3206799055",
+      "Name": "Play_MC_Presences_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Presences_Walk",
+      "GUID": "{F2D535F3-4D34-4D43-8994-8DFF386DC004}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.39167145",
+      "DurationMax": "0.7453135",
+      "MediaRefs": [
+       {
+        "Id": "95403465"
+       },
+       {
+        "Id": "225381729"
+       },
+       {
+        "Id": "367277238"
+       },
+       {
+        "Id": "427882681"
+       },
+       {
+        "Id": "550225039"
+       },
+       {
+        "Id": "570903100"
+       },
+       {
+        "Id": "625548551"
+       },
+       {
+        "Id": "680860104"
+       },
+       {
+        "Id": "1005721163"
+       },
+       {
+        "Id": "1016620596"
+       },
+       {
+        "Id": "1023270544"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1213444204",
+      "Name": "Play_MC_Roll",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_Roll",
+      "GUID": "{A1B11F64-0636-4FA0-A855-2A95C4F3F96B}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "1.302479",
+      "DurationMax": "1.7657719",
+      "MediaRefs": [
+       {
+        "Id": "280841403"
+       },
+       {
+        "Id": "344997668"
+       },
+       {
+        "Id": "372468713"
+       },
+       {
+        "Id": "836707253"
+       },
+       {
+        "Id": "979592972"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1096879491",
+      "Name": "Play_MC_TakeDamage",
+      "ObjectPath": "\\Events\\Default Work Unit\\MC_WU\\Play_MC_TakeDamage",
+      "GUID": "{DFF76F0E-5621-43A1-B7E1-D28CFEEE697F}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.44047466",
+      "DurationMax": "1.0390441",
+      "MediaRefs": [
+       {
+        "Id": "287596685"
+       },
+       {
+        "Id": "517903892"
+       },
+       {
+        "Id": "545019265"
+       },
+       {
+        "Id": "821121654"
+       },
+       {
+        "Id": "931222370"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "4214630550",
+      "Name": "Play_MUS_BadEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_BadEnding",
+      "GUID": "{A22D1504-1A67-4B31-8725-7AD119A65D55}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "203270636"
+       }
+      ]
+     },
+     {
+      "Id": "2700456189",
+      "Name": "Play_MUS_Exploration",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_Exploration",
+      "GUID": "{A0C16F14-84FA-4014-AB6F-3D8E5D59943E}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "716687846"
+       }
+      ]
+     },
+     {
+      "Id": "4199871780",
+      "Name": "Play_MUS_GoodEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_GoodEnding",
+      "GUID": "{29C5C7F4-C77E-43C9-9D1B-2C6900F35C9E}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "153083772"
+       }
+      ]
+     },
+     {
+      "Id": "3764083256",
+      "Name": "Play_MUS_KrampusBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_KrampusBossFight",
+      "GUID": "{E7C4683E-638F-4058-A891-34580A32DED2}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "60187880"
+       }
+      ]
+     },
+     {
+      "Id": "4249884003",
+      "Name": "Play_MUS_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_Menu",
+      "GUID": "{27B4F307-8128-49DD-BCA5-85735589E511}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "907935679"
+       }
+      ]
+     },
+     {
+      "Id": "2491360697",
+      "Name": "Play_MUS_NamahageBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_NamahageBossFight",
+      "GUID": "{9B09716B-84B6-4F9D-9F65-3911F4DE87F7}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "94620058"
+       }
+      ]
+     },
+     {
+      "Id": "2441382156",
+      "Name": "Play_MUS_SantaBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_SantaBossFight",
+      "GUID": "{241F3D97-C1EE-462C-BB67-B0BA05327CC8}",
+      "Color": "16",
+      "DurationType": "OneShot",
+      "DurationMin": "101.64807",
+      "DurationMax": "101.64807",
+      "MediaRefs": [
+       {
+        "Id": "647129184"
+       }
+      ]
+     },
+     {
+      "Id": "741827436",
+      "Name": "Play_MUS_YuleBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Play_MUS_YuleBossFight",
+      "GUID": "{269434FD-2465-4C8E-A85B-6E2E253E647D}",
+      "Color": "16",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "221660205"
+       }
+      ]
+     },
+     {
+      "Id": "2577559157",
+      "Name": "Play_SFX_BellRinging",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX_WU\\Play_SFX_BellRinging",
+      "GUID": "{46876F09-7DEB-4889-B1AC-21FB3D3AF88E}",
+      "Color": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "5.1913085",
+      "DurationMax": "5.9977927",
+      "MediaRefs": [
+       {
+        "Id": "129656127"
+       },
+       {
+        "Id": "283906744"
+       },
+       {
+        "Id": "875074251"
+       }
+      ]
+     },
+     {
+      "Id": "3295576996",
+      "Name": "Play_SFX_Yule_AttackHitPlayer",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_Yule_AttackHitPlayer",
+      "GUID": "{9FFAB0EC-F0A1-43C5-BDC4-B939CD2DBFFE}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.81347144",
+      "DurationMax": "1.4075885",
+      "MediaRefs": [
+       {
+        "Id": "16808915"
+       },
+       {
+        "Id": "295906540"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1923946266",
+      "Name": "Play_SFX_Yule_AttackPounce",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_Yule_AttackPounce",
+      "GUID": "{6679895C-B743-4389-9B16-4E5AF769376B}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2295144",
+      "DurationMax": "2.7687397",
+      "MediaRefs": [
+       {
+        "Id": "145139408"
+       },
+       {
+        "Id": "712366129"
+       },
+       {
+        "Id": "997510963"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "1023339604",
+      "Name": "Play_SFX_YuleAttackClaw",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOSS_WU\\Play_SFX_YuleAttackClaw",
+      "GUID": "{A583DC6F-F577-4B33-A6F0-B57B283A62F5}",
+      "Color": "19",
+      "DurationType": "OneShot",
+      "DurationMin": "0.98092985",
+      "DurationMax": "1.6462777",
+      "MediaRefs": [
+       {
+        "Id": "299809344"
+       },
+       {
+        "Id": "596100519"
+       },
+       {
+        "Id": "854231748"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1216683595",
+        "Name": "REV_Castle",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Castle",
+        "GUID": "{AFD26C3D-4DBB-47A1-A300-A6FABB3BB966}",
+        "Color": "1"
+       },
+       {
+        "Id": "1574958010",
+        "Name": "REV_Flower",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Flower",
+        "GUID": "{B2F2E053-852D-49D8-A605-144937C455D6}",
+        "Color": "1"
+       },
+       {
+        "Id": "3910197480",
+        "Name": "REV_Forest",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Forest",
+        "GUID": "{0E4FCC17-AD3A-45CD-BF75-5F8401045025}",
+        "Color": "1"
+       },
+       {
+        "Id": "4120165417",
+        "Name": "REV_Village",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master_SD_WU\\Master_SD\\REVERBS_WU\\Reverbs\\REV_Village",
+        "GUID": "{393E18AD-0BFE-4B89-8AC0-2DB3BB6CB102}",
+        "Color": "1"
+       }
+      ]
+     },
+     {
+      "Id": "3498899374",
+      "Name": "Play_UI_ClickConfirmation",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI_WU\\Play_UI_ClickConfirmation",
+      "GUID": "{9F855C27-79AF-4294-9C67-D0C61ECD6D8A}",
+      "Color": "11",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2652984",
+      "DurationMax": "2.506257",
+      "MediaRefs": [
+       {
+        "Id": "599503421"
+       },
+       {
+        "Id": "662958141"
+       },
+       {
+        "Id": "675059672"
+       }
+      ]
+     },
+     {
+      "Id": "1418863968",
+      "Name": "Stop_MUS_BadEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_BadEnding",
+      "GUID": "{E134DE69-68F6-4254-ADBD-30E6AE8D05F3}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2337301191",
+      "Name": "Stop_MUS_Exploration",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_Exploration",
+      "GUID": "{9F6C8CC3-2187-4B4D-9726-A30C666EEF25}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3369502474",
+      "Name": "Stop_MUS_GoodEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_GoodEnding",
+      "GUID": "{DBDF3A6C-4DF0-4877-8743-53063D42328F}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "354356402",
+      "Name": "Stop_MUS_KrampusBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_KrampusBossFight",
+      "GUID": "{4BC1CCD2-F69E-4D91-B40B-E539E60E2442}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "183729989",
+      "Name": "Stop_MUS_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_Menu",
+      "GUID": "{8CCFD652-F614-47F7-A205-6D56ED03C179}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "787210507",
+      "Name": "Stop_MUS_NamahageBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_NamahageBossFight",
+      "GUID": "{117D62C0-E5FE-4914-99BB-5DB9947E27F3}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2519430714",
+      "Name": "Stop_MUS_SantaBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_SantaBossFight",
+      "GUID": "{92803F36-9BA5-4709-98B3-2FA0CF06D7DC}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1324619110",
+      "Name": "Stop_MUS_YuleBossFight",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_WU\\Stop_MUS_YuleBossFight",
+      "GUID": "{ED97E3BA-919B-457A-B118-E2E67C769F6A}",
+      "Color": "16",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "996959485",
+      "Name": "SW_MC_FootstepsMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial",
+      "GUID": "{929E3FEA-8CCA-4FD6-BF71-8F1AD642D091}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "916436602",
+        "Name": "SW_FT_Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Concrete",
+        "GUID": "{36DA891B-588E-47A4-B9EF-92711D68214E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2399563152",
+        "Name": "SW_FT_Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Dirt",
+        "GUID": "{D76FD1AE-D80C-4420-9445-E5FD4425AA8F}",
+        "Color": "8"
+       },
+       {
+        "Id": "3850745462",
+        "Name": "SW_FT_Snow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMaterial\\SW_FT_Snow",
+        "GUID": "{DB88FFE9-2BD9-4602-A835-00A93B5358DE}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "2119059778",
+      "Name": "SW_MC_TypeOfEnemy",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy",
+      "GUID": "{72CE13B6-FA40-49AB-A207-B7DCD2A186B2}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "295887543",
+        "Name": "SW_MC_HitYule",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitYule",
+        "GUID": "{316EE60C-B24C-4CD1-BF3C-D064C5DC2354}",
+        "Color": "8"
+       },
+       {
+        "Id": "397687435",
+        "Name": "SW_MC_HitKrampus",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitKrampus",
+        "GUID": "{083CE0BC-E9E5-47D0-A4D4-63F7A9065D2E}",
+        "Color": "8"
+       },
+       {
+        "Id": "2506029772",
+        "Name": "SW_MC_HitNahagame",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfEnemy\\SW_MC_HitNahagame",
+        "GUID": "{4B492D8E-6EEA-4DB9-A1A5-D7456D20DBB9}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "2700451361",
+      "Name": "SW_MC_FootstepsMovement",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement",
+      "GUID": "{BFFCE3C7-31C3-492A-A0FF-4E73EEF1E68C}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "303207424",
+        "Name": "SW_FT_Walk",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Walk",
+        "GUID": "{4EBF9B7E-35CB-4189-8471-96177E8BFE3F}",
+        "Color": "8"
+       },
+       {
+        "Id": "1388451578",
+        "Name": "SW_FT_Roll",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Roll",
+        "GUID": "{40BECA8B-458F-4A42-855D-825FF1EB843B}",
+        "Color": "8"
+       },
+       {
+        "Id": "2162921054",
+        "Name": "SW_FT_Run",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Run",
+        "GUID": "{F1B3D11F-0452-464C-91CA-DD8F60222A40}",
+        "Color": "8"
+       },
+       {
+        "Id": "4253136415",
+        "Name": "SW_FT_Attack",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_FootstepsMovement\\SW_FT_Attack",
+        "GUID": "{B8EC0148-2299-4C45-A9D2-91FE3B5DDFF1}",
+        "Color": "8"
+       }
+      ]
+     },
+     {
+      "Id": "4054447005",
+      "Name": "SW_MC_TypeOfAttackHit",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit",
+      "GUID": "{DDEF692F-689F-4653-A4AD-1578D21FDC8B}",
+      "Color": "8",
+      "Switches": [
+       {
+        "Id": "1907146023",
+        "Name": "SW_MC_AttackDistanceHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackDistanceHit",
+        "GUID": "{D0E4F995-2DE6-4F83-A0AA-B70A811FAF2C}",
+        "Color": "8"
+       },
+       {
+        "Id": "2734195228",
+        "Name": "SW_MC_AttackMeleeLightHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeLightHit",
+        "GUID": "{58C60009-9142-4954-8440-62EA31DC6617}",
+        "Color": "8"
+       },
+       {
+        "Id": "3302953275",
+        "Name": "SW_MC_AttackMeleeHeavyHit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MC_WU\\SW_MC_TypeOfAttackHit\\SW_MC_AttackMeleeHeavyHit",
+        "GUID": "{8C4B87F8-544A-442C-9FD2-B0A6507115E5}",
+        "Color": "8"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E4CB27E8-EE48-0274-B1EC-D383FF54840E}"
+ }
+}

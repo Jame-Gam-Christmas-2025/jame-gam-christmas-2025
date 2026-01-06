@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca61506fd7cece469a3e15fce9ee14d, type: 3}
+  m_Name: Dialogue_YuleCat_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  characterData: {fileID: 11400000, guid: e70b097da57dd3e49a1e63ccb26cb06a, type: 2}
+  dialogueText:
+    english: Hisssssss Emissary of Mithra... How dare you trample on my whiskers
+      like I'm some kind of house cat!
+    french: 
+  choices:
+  - text:
+      english: Easy now. I am here because our interests align.
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: f9f9f025786571043af493ae5c68b7e0, type: 2}
+  - text:
+      english: Mind your tongue, you glorified furball, or I'll make you disappear
+        for good.
+      french: 
+    alignmentBonus: 0
+    choiceCondition: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: 2672982bacd586444a96787ef28f2ece, type: 2}
+  nextDialogue: {fileID: 0}

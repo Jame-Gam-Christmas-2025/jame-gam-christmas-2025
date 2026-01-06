@@ -83,7 +83,7 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -144,7 +144,9 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: e67c0fa44fe80d744b7eed6fd968b1f5, type: 2}
+  - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -524,7 +526,13 @@ PlayerSettings:
       m_Height: 720
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
+  - m_BuildTarget: WebGL
+    m_StaticBatching: 0
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -825,7 +833,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    EmbeddedLinux: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    GameCoreScarlett: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    GameCoreXboxOne: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Kepler: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    LinuxHeadlessSimulation: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Nintendo Switch: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Nintendo Switch 2: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    PS4: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    PS5: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    QNX: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Standalone: WWISE_ADDRESSABLES_23_1_OR_LATER;WWISE_ADDRESSABLES_24_1_OR_LATER;ADDRESSABLES_API_2025_DEFAULT;WWISE_2024_OR_LATER;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    VisionOS: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    WebGL: ADDRESSABLES_API_2025_DEFAULT;WWISE_ADDRESSABLES_23_1_OR_LATER;WWISE_ADDRESSABLES_24_1_OR_LATER;WWISE_2024_OR_LATER;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Windows Store Apps: DOTWEEN
+    XboxOne: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    iPhone: DOTWEEN
+    tvOS: ADDRESSABLES_API_2025_DEFAULT;UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
