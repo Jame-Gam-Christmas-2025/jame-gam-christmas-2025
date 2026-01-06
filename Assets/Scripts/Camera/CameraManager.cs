@@ -72,13 +72,13 @@ public class CameraManager : MonoBehaviour
                 force = 0.2f;
                 break;
             case ShakeType.LightAttack:
-                force = 0.8f;
+                force = 0.4f;
                 break;
             case ShakeType.RangedAttack:
                 force = 0.5f;
                 break;
             case ShakeType.HeavyAttack:
-                force = 2f;
+                force = 1f;
                 break;
         }
 
