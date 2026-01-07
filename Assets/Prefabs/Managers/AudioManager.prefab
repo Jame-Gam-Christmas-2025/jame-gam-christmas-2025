@@ -105,6 +105,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a6c12de1b59a507409f40eeea08ca683, type: 2}
+  PlayExplorationMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1d07b348d4f557745b998ea94881c7a4, type: 2}
+  StopExplorationMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b61aa6e210c2df14b9f17af4cb2dc63f, type: 2}
   PlayBellAltar:
     idInternal: 0
     valueGuidInternal: 

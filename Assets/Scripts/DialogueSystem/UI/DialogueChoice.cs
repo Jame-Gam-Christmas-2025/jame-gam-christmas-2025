@@ -74,7 +74,7 @@ public class DialogueChoice : MonoBehaviour, IPointerEnterHandler, IPointerClick
         if (_player)
         {
             // Add alignment bonus to player
-            /* GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus); */
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAlignment>().AddAlignmentBonus(_choiceData.alignmentBonus);
         }
 
         // Start next dialogue

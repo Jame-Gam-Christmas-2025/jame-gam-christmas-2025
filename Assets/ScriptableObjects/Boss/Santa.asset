@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Santa
   m_EditorClassIdentifier: Assembly-CSharp::BossConfig
   bossName: Santa
-  maxHealth: 500
+  maxHealth: 400
   activationBehavior: 0
   moveSpeed: 7
   rotationSpeed: 3

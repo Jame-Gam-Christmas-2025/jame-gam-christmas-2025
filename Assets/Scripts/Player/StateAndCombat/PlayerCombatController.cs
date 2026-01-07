@@ -129,7 +129,7 @@ public class PlayerCombatController : MonoBehaviour
 
     private void InitAttack()
     {
-        if(!_isAttacking)
+        if(!_isAttacking && _canAttack)
         {
             // IMPORTANT : Reset trigger avant de le set pour éviter les doubles déclenchements
             _animator.ResetTrigger("Attack");
