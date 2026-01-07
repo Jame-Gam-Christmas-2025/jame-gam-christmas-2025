@@ -150,9 +150,23 @@ public class GameManager : MonoBehaviour
         string lastDefeatedBoss = _defeatedBossNames.Last();
         if(lastDefeatedBoss == "Santa")
         {
-            GameSceneManager.Instance.LoadSceneByName("EndingScene");
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            playerGameObject = GameObject.Find("Player");
+
+            if(playerGameObject != null)
+            {
+                PlayerAlignment playerAlignment = playerGameObject.GetComponent<PlayerAlignment>();
+                if(playerAlignment.AlignmentScore > 0)
+                {
+                    GameSceneManager.Instance.LoadSceneByName("GoodEndingScene");
+                } else
+                {
+                    GameSceneManager.Instance.LoadSceneByName("BadEndingScene");
+                }
+
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            
         }
     }
 

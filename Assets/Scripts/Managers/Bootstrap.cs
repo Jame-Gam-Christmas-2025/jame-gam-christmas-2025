@@ -9,6 +9,10 @@ public class Bootstrap : MonoBehaviour
     public GameObject inputManagerComponent;
     private void Awake() {
         InitializeManagers();
+    }
+
+    void Start()
+    {
         LoadMainScene();
     }
 

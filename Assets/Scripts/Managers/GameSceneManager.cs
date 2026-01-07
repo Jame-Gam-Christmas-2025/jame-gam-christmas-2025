@@ -25,6 +25,10 @@ public class GameSceneManager : MonoBehaviour
     }
 
     private string _currentScene;
+    public string currentScene
+    {
+        get => _currentScene;
+    }
 
     private bool _isMenuOpen = false;
 
@@ -39,6 +43,8 @@ public class GameSceneManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        _currentScene = SceneManager.GetActiveScene().name;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -66,6 +72,9 @@ public class GameSceneManager : MonoBehaviour
     // Apply game logic
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log("loaded");
+        _currentScene = scene.name;
+
         if (scene.name == "leveldesign")
         {
             GameManager.Instance.ApplyLastCheckpoint();
@@ -84,6 +93,8 @@ public class GameSceneManager : MonoBehaviour
         }
 
         Cursor.lockState = newCursorLockState;
+
+        AudioManager.Instance.InitSceneAudio(_currentScene);
     }
 
     public void LoadSceneByName(string sceneName)
@@ -96,7 +107,6 @@ public class GameSceneManager : MonoBehaviour
 
         // Load scene
         SceneManager.LoadScene(sceneName);
-        _currentScene = sceneName;
     }
 
     public void ReloadScene()

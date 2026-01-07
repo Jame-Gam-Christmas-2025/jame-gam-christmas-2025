@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BootstrapScene.unity
     guid: fe580c9039b1bfd4a966b1806d9417a9
   - enabled: 0
@@ -38,15 +38,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/leveldesign.unity
     guid: 026192a3c56ff534ca1886f64d299409
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Features/Feauture-Boss-Yule-Cat.unity
     guid: 19026b6b0a8da3044b96b472988b4881
   - enabled: 0
     path: Assets/Scenes/Features/BellAltar.unity
     guid: 5c71adec5e0757c45b288471cd648b7e
   - enabled: 1
-    path: Assets/Scenes/EndingScene.unity
+    path: Assets/Scenes/GoodEndingScene.unity
     guid: 0870cf169bcbad443a520208938de4ff
+  - enabled: 1
+    path: Assets/Scenes/BadEndingScene.unity
+    guid: ebfb189221801a040b4d3dfec588fea4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e67c0fa44fe80d744b7eed6fd968b1f5, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

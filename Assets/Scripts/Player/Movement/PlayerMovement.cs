@@ -138,7 +138,6 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && !_isDodging)
         {
             StartDodge();
-            CameraManager.Instance.ShakeCamera(0);
         }
     }
 
@@ -146,14 +145,14 @@ public class PlayerMovement : MonoBehaviour
     {
         _isSprinting = context.performed;
         
-        if (_isSprinting)
+        /* if (_isSprinting)
         {
             CameraManager.Instance.SetRunningNoise(true);
         }
         else
         {
             CameraManager.Instance.SetRunningNoise(false);
-        }
+        } */
     }
 
 

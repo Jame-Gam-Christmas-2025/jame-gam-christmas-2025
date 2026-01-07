@@ -24,19 +24,33 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        // Initialize with default values (50 = mid-range if your RTPC is 0-100)
+        SetMasterVolume(100f);
+        SetMusicVolume(100f);
+        SetSFXVolume(100f);
+
+        if (showDebugLogs)
+        {
+            Debug.Log("AudioManager initialized with default volumes at 100");
+        }
     }
 
     void Start()
     {
-        // Initialize with default values (50 = mid-range if your RTPC is 0-100)
-        SetMasterVolume(50f);
-        SetMusicVolume(50f);
-        SetSFXVolume(50f);
+        /* // Initialize with default values (50 = mid-range if your RTPC is 0-100)
+        SetMasterVolume(80f);
+        SetMusicVolume(80f);
+        SetSFXVolume(80f);
 
         if (showDebugLogs)
         {
-            Debug.Log("AudioManager initialized with default volumes at 50");
-        }
+            Debug.Log("AudioManager initialized with default volumes at 80");
+        } */
+
+        #if UNITY_EDITOR
+        InitSceneAudio(GameSceneManager.Instance.currentScene);
+        #endif
     }
     
     /// Set Master Volume (0-100 range recommended)
@@ -108,6 +122,8 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event StopGoodEndingMusic;
     public AK.Wwise.Event PlayMenuMusic;
     public AK.Wwise.Event StopMenuMusic;
+    public AK.Wwise.Event PlayExplorationMusic;
+    public AK.Wwise.Event StopExplorationMusic;
     
     public AK.Wwise.Event PlayBellAltar;
 
@@ -185,6 +201,16 @@ public class AudioManager : MonoBehaviour
     {
         StopMenuMusic.Post(gameObject);
     }
+
+    public void PlayExplorationMUS(GameObject gameObject)
+    {
+        PlayExplorationMusic.Post(gameObject);
+    }
+    
+    public void StopExplorationMUS(GameObject gameObject)
+    {
+        StopExplorationMusic.Post(gameObject);
+    }
     
     // Boss Music Handler
 
@@ -210,6 +236,8 @@ public class AudioManager : MonoBehaviour
             default:
             break;
         }
+
+        StopExplorationMUS(gameObject);
     }
 
     public void StopBossMusic(string bossName)
@@ -234,9 +262,53 @@ public class AudioManager : MonoBehaviour
             default:
             break;
         }
+
+        PlayExplorationMUS(gameObject);
     }
-    ////////// Event Boss /////////
+
+    public void StopAllBossMusic()
+    {
+        StopYuleMUS(gameObject);
+        StopNamahageMUS(gameObject);
+        StopKrampusMUS(gameObject);
+        StopSantsMUS(gameObject);
+    }
+
+
+
+    private uint _menuMusicId;
+
+    public void InitSceneAudio(string sceneName)
+    {
+        Debug.Log("Init scene audio : " + sceneName);
+        switch(sceneName)
+        {
+            case "MainMenuScene":
+                Debug.Log("main");
+                if(_menuMusicId == 0)
+                {
+                    _menuMusicId = PlayMenuMusic.Post(gameObject);
+                }
+                StopExplorationMUS(gameObject);
+                StopAllBossMusic();
+                break;
+
+            case "leveldesign":
+                StopMenuMUS(gameObject);
+                _menuMusicId = 0;
+                PlayExplorationMUS(gameObject);
+                break;
+
+            case "GoodEndingScene":
+                PlayGoodEndingMUS(gameObject);
+                break;
+
+            case "BadEndingScene":
+                PlayBadEndingMUS(gameObject);
+                break;
+
+            default:
+                break;
+        }
+    }
 }
-
-
-   
