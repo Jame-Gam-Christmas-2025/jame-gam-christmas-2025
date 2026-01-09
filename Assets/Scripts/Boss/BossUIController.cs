@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
 using DG.Tweening;
 
 public class BossUIController : MonoBehaviour
@@ -21,10 +21,12 @@ public class BossUIController : MonoBehaviour
 
     [Header("References")]
     public CanvasGroup canvasGroup;
-    public TextMeshProUGUI bossNameText; 
+    public TextMeshProUGUI bossNameText;
     public Slider instantHpSlider;
     public Slider delayedHpSlider;
     public RectTransform containerRect;
+
+    private Sequence _introSequence;
 
     private void Awake()
     {
@@ -38,14 +40,15 @@ public class BossUIController : MonoBehaviour
         if (bossNameText != null) bossNameText.alpha = 0f;
     }
 
-
     public void ActivateBossHealthBar(float maxHealth, string name)
     {
+        if (_introSequence != null) _introSequence.Kill();
+
         canvasGroup.DOKill();
         containerRect.DOKill();
+        bossNameText.DOKill();
         instantHpSlider.DOKill();
         delayedHpSlider.DOKill();
-        bossNameText.DOKill();
 
         bossNameText.text = name;
         bossNameText.alpha = 0f;
@@ -61,30 +64,51 @@ public class BossUIController : MonoBehaviour
         canvasGroup.alpha = 0f;
         containerRect.localScale = startScale;
 
-        Sequence introSequence = DOTween.Sequence();
+        _introSequence = DOTween.Sequence();
 
-        introSequence.Append(canvasGroup.DOFade(1f, appearDuration));
-        introSequence.Join(containerRect.DOScale(Vector3.one, appearDuration).SetEase(appearEase));
+        _introSequence.Append(canvasGroup.DOFade(1f, appearDuration));
+        _introSequence.Join(containerRect.DOScale(Vector3.one, appearDuration).SetEase(appearEase));
+        _introSequence.Join(bossNameText.DOFade(1f, appearDuration));
 
-        introSequence.Join(bossNameText.DOFade(1f, appearDuration));
-
-        introSequence.Append(instantHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
-        introSequence.Join(delayedHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
+        _introSequence.Append(instantHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
+        _introSequence.Join(delayedHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
     }
 
     public void UpdateHealth(float currentHealth)
     {
+        if (_introSequence != null && _introSequence.IsActive())
+        {
+            _introSequence.Kill();
+            canvasGroup.alpha = 1f;
+            containerRect.localScale = Vector3.one;
+            bossNameText.alpha = 1f;
+            instantHpSlider.value = instantHpSlider.maxValue;
+            delayedHpSlider.value = delayedHpSlider.maxValue;
+        }
+
         instantHpSlider.DOKill();
+        delayedHpSlider.DOKill();
+
         instantHpSlider.DOValue(currentHealth, instantUpdateSpeed).SetEase(Ease.OutCubic);
 
-        delayedHpSlider.DOKill();
-        delayedHpSlider.DOValue(currentHealth, delayedBarCatchUpSpeed)
-            .SetDelay(delayedBarWaitTime)
-            .SetEase(Ease.OutCubic);
+        if (currentHealth <= 0)
+        {
+            delayedHpSlider.DOValue(0f, instantUpdateSpeed).SetEase(Ease.OutCubic);
+        }
+        else
+        {
+            delayedHpSlider.DOValue(currentHealth, delayedBarCatchUpSpeed)
+                .SetDelay(delayedBarWaitTime)
+                .SetEase(Ease.Linear);
+        }
     }
 
     public void HideBossHealthBar()
     {
+        if (_introSequence != null) _introSequence.Kill();
+        instantHpSlider.DOKill();
+        delayedHpSlider.DOKill();
+
         canvasGroup.DOFade(0f, 0.5f);
     }
 }
