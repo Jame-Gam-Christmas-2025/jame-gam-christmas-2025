@@ -4419,14 +4419,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 733e6bf50ff416d48bfba851b9e89187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossUIController
+  instantUpdateSpeed: 0.2
+  delayedBarWaitTime: 0.5
+  delayedBarCatchUpSpeed: 1
   appearDuration: 0.8
   appearEase: 27
   fillUpDuration: 1.5
   fillUpEase: 9
-  startScale: {x: 0.5, y: 0.5, z: 0.5}
-  instantUpdateSpeed: 0.2
-  delayedBarWaitTime: 0.5
-  delayedBarCatchUpSpeed: 1
   canvasGroup: {fileID: 1399846709}
   bossNameText: {fileID: 1349705187}
   instantHpSlider: {fileID: 2008271498}

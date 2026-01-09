@@ -7,17 +7,16 @@ public class BossUIController : MonoBehaviour
 {
     public static BossUIController Instance;
 
-    [Header("Entrance Animation")]
+    [Header("Settings")]
+    public float instantUpdateSpeed = 0.2f;
+    public float delayedBarWaitTime = 0.5f;
+    public float delayedBarCatchUpSpeed = 1f;
+
+    [Header("Entrance Settings")]
     public float appearDuration = 0.8f;
     public Ease appearEase = Ease.OutBack;
     public float fillUpDuration = 1.5f;
     public Ease fillUpEase = Ease.OutCubic;
-    public Vector3 startScale = new Vector3(0.5f, 0.5f, 0.5f);
-
-    [Header("Health Bar Settings")]
-    public float instantUpdateSpeed = 0.2f;
-    public float delayedBarWaitTime = 0.5f;
-    public float delayedBarCatchUpSpeed = 1f;
 
     [Header("References")]
     public CanvasGroup canvasGroup;
@@ -27,48 +26,54 @@ public class BossUIController : MonoBehaviour
     public RectTransform containerRect;
 
     private Sequence _introSequence;
+    private float _cachedMaxHealth;
+    private bool _firstHitTaken = false;
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
 
         canvasGroup.alpha = 0f;
-        containerRect.localScale = startScale;
+        containerRect.localScale = Vector3.zero;
         if (bossNameText != null) bossNameText.alpha = 0f;
     }
 
     public void ActivateBossHealthBar(float maxHealth, string name)
     {
+        _cachedMaxHealth = maxHealth;
+        _firstHitTaken = false;
+
         if (_introSequence != null) _introSequence.Kill();
 
         canvasGroup.DOKill();
         containerRect.DOKill();
-        bossNameText.DOKill();
         instantHpSlider.DOKill();
         delayedHpSlider.DOKill();
+        if (bossNameText != null) bossNameText.DOKill();
 
-        bossNameText.text = name;
-        bossNameText.alpha = 0f;
+        if (bossNameText != null)
+        {
+            bossNameText.text = name;
+            bossNameText.alpha = 0f;
+        }
 
         instantHpSlider.minValue = 0f;
         instantHpSlider.maxValue = maxHealth;
+        instantHpSlider.value = 0f;
+
         delayedHpSlider.minValue = 0f;
         delayedHpSlider.maxValue = maxHealth;
-
-        instantHpSlider.value = 0f;
         delayedHpSlider.value = 0f;
 
         canvasGroup.alpha = 0f;
-        containerRect.localScale = startScale;
+        containerRect.localScale = Vector3.zero;
 
         _introSequence = DOTween.Sequence();
 
         _introSequence.Append(canvasGroup.DOFade(1f, appearDuration));
         _introSequence.Join(containerRect.DOScale(Vector3.one, appearDuration).SetEase(appearEase));
-        _introSequence.Join(bossNameText.DOFade(1f, appearDuration));
+        if (bossNameText != null) _introSequence.Join(bossNameText.DOFade(1f, appearDuration));
 
         _introSequence.Append(instantHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
         _introSequence.Join(delayedHpSlider.DOValue(maxHealth, fillUpDuration).SetEase(fillUpEase));
@@ -76,14 +81,23 @@ public class BossUIController : MonoBehaviour
 
     public void UpdateHealth(float currentHealth)
     {
-        if (_introSequence != null && _introSequence.IsActive())
+        instantHpSlider.minValue = 0f;
+        instantHpSlider.maxValue = _cachedMaxHealth;
+        delayedHpSlider.minValue = 0f;
+        delayedHpSlider.maxValue = _cachedMaxHealth;
+
+        if (!_firstHitTaken)
         {
-            _introSequence.Kill();
+            _firstHitTaken = true;
+
+            if (_introSequence != null) _introSequence.Kill();
+
             canvasGroup.alpha = 1f;
             containerRect.localScale = Vector3.one;
-            bossNameText.alpha = 1f;
-            instantHpSlider.value = instantHpSlider.maxValue;
-            delayedHpSlider.value = delayedHpSlider.maxValue;
+            if (bossNameText != null) bossNameText.alpha = 1f;
+
+            instantHpSlider.value = _cachedMaxHealth;
+            delayedHpSlider.value = _cachedMaxHealth;
         }
 
         instantHpSlider.DOKill();
@@ -108,7 +122,6 @@ public class BossUIController : MonoBehaviour
         if (_introSequence != null) _introSequence.Kill();
         instantHpSlider.DOKill();
         delayedHpSlider.DOKill();
-
         canvasGroup.DOFade(0f, 0.5f);
     }
 }

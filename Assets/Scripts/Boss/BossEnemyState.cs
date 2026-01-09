@@ -110,7 +110,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
-        BossUIController.Instance.UpdateHealth(CurrentHealth);
+        
         if (IsDead) return;
         if (!_bossController.IsActive) return;
 
@@ -118,6 +118,7 @@ public class BossEnemyState : MonoBehaviour, IDamageable
         CurrentHealth = Mathf.Max(CurrentHealth, 0);
 
         OnDamageTaken?.Invoke();
+        BossUIController.Instance.UpdateHealth(CurrentHealth);
 
         if (CurrentHealth <= 0)
         {
