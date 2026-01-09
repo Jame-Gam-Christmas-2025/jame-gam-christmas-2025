@@ -3095,6 +3095,11 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &353805905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1565789287776581467, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+  m_PrefabInstance: {fileID: 1750347448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &364612239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10820,6 +10825,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1408565140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8224573869070558438, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+  m_PrefabInstance: {fileID: 1750347448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cff172ec24f59a4789dae7d16bb7be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerState
 --- !u!1001 &1409727331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13198,6 +13214,10 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 734634797}
+    - target: {fileID: 1841854162956723856, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _initialPoolSize
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1945828052552980054, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19999425
@@ -13258,6 +13278,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.009419344
       objectReference: {fileID: 0}
+    - target: {fileID: 4175034551687674507, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _maxScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175034551687674507, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _minScale
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175034551687674507, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _playerState
+      value: 
+      objectReference: {fileID: 1408565140}
+    - target: {fileID: 4175034551687674507, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
+      propertyPath: _vfxTransform
+      value: 
+      objectReference: {fileID: 353805905}
     - target: {fileID: 4326331834284275520, guid: 76e3aa1c54a59bf44be6c7db6b052a58, type: 3}
       propertyPath: m_Name
       value: PlayerSceneEssentials
