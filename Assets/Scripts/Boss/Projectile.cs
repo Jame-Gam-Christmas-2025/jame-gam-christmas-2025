@@ -1,18 +1,12 @@
 using UnityEngine;
 
-/// <summary>
-/// Basic projectile script for boss ranged attacks
-/// Extend this class for custom projectile behaviors
-/// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class Projectile : MonoBehaviour
 {
-    [Header("Projectile Settings")]
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _lifetime = 5f;
     [SerializeField] private bool _useGravity = false;
 
-    [Header("Hit Effects")]
     [SerializeField] private GameObject _hitEffectPrefab;
     [SerializeField] private bool _destroyOnHit = true;
 
@@ -29,9 +23,6 @@ public class Projectile : MonoBehaviour
         _rb.useGravity = _useGravity;
     }
 
-    /// <summary>
-    /// Initialize the projectile (called when spawned from pool)
-    /// </summary>
     public void Initialize(Vector3 direction, float damage, GameObject owner, ObjectPool pool)
     {
         _direction = direction.normalized;
@@ -40,10 +31,8 @@ public class Projectile : MonoBehaviour
         _pool = pool;
         _spawnTime = Time.time;
 
-        // Set velocity
         _rb.linearVelocity = _direction * _speed;
 
-        // Rotate to face direction
         if (_direction != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(_direction);
@@ -52,7 +41,6 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        // Check lifetime
         if (Time.time - _spawnTime > _lifetime)
         {
             ReturnToPool();
@@ -61,18 +49,20 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Don't hit owner
-        if (other.gameObject == _owner) return;
         if (other.isTrigger) return;
 
-        // Try to damage
-        IDamageable damageable = other.GetComponent<IDamageable>();
+        if (_owner != null)
+        {
+            if (other.gameObject == _owner) return;
+            if (other.transform.IsChildOf(_owner.transform)) return;
+        }
+
+        IDamageable damageable = other.GetComponentInParent<IDamageable>();
+
         if (damageable != null)
         {
             damageable.TakeDamage(_damage);
-            Debug.Log($"Projectile hit {other.gameObject.name} for {_damage} damage");
 
-            // Spawn hit effect
             SpawnHitEffect(other.ClosestPoint(transform.position));
 
             if (_destroyOnHit)
@@ -80,8 +70,7 @@ public class Projectile : MonoBehaviour
                 ReturnToPool();
             }
         }
-        // Hit environment
-        else if (!other.isTrigger)
+        else
         {
             SpawnHitEffect(other.ClosestPoint(transform.position));
 
@@ -97,24 +86,21 @@ public class Projectile : MonoBehaviour
         if (_hitEffectPrefab != null)
         {
             GameObject effect = Instantiate(_hitEffectPrefab, hitPoint, Quaternion.identity);
-            Destroy(effect, 2f); // Auto cleanup
+            Destroy(effect, 2f);
         }
     }
 
     private void ReturnToPool()
     {
-        // Reset velocity
         _rb.linearVelocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
 
-        // Return to pool
         if (_pool != null)
         {
             _pool.ReturnObject(gameObject);
         }
         else
         {
-            // Fallback if pool is missing
             gameObject.SetActive(false);
         }
     }
