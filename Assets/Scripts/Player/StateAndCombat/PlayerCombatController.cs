@@ -142,6 +142,25 @@ public class PlayerCombatController : MonoBehaviour
             _attackIndexForDamage = _currentComboIndex;
         }
 
+        switch (_currentComboIndex)
+        {
+            case 0:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                if (showDebugLogs) Debug.Log("Switch set: Light Attack 1");
+                break;
+            case 1:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                if (showDebugLogs) Debug.Log("Switch set: Light Attack 2");
+                break;
+            case 2:
+                SW_MC_Attack_Heavy.SetValue(gameObject);
+                if (showDebugLogs) Debug.Log("Switch set: Heavy Attack (finisher)");
+                break;
+            default:
+                SW_MC_Attack_Light.SetValue(gameObject);
+                break;
+        }
+
         if(_isListeningCombo && !_isComboTriggered)
         {
             TriggerNextAttack();
