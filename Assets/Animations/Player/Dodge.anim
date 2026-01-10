@@ -75988,6 +75988,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
+    functionName: DisableInput
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0
     functionName: SetIsAttackingFalse
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -76001,21 +76008,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.1
+  - time: 0.13333334
     functionName: FOL_MC_Roll
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.1
-    functionName: DisableInput
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.1
+  - time: 0.13333334
     functionName: StartInvincibility
     data: 
     objectReferenceParameter: {fileID: 0}
