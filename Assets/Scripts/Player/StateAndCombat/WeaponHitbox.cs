@@ -5,23 +5,23 @@ public class WeaponHitbox : MonoBehaviour
 {
     private Collider _collider;
     private float _currentDamage;
-    private GameObject _owner; 
-    private List<GameObject> _hitTargets = new List<GameObject>(); 
-    
+    private GameObject _owner;
+    private List<GameObject> _hitTargets = new List<GameObject>();
+
     [Header("Audio")]
     public AK.Wwise.Event Play_Attack_Hit_Enemy;
-    
+
     [Header("Audio - Attack Type Switches")]
     public AK.Wwise.Switch SW_MC_AttackMeleeLightHit;
     public AK.Wwise.Switch SW_MC_AttackMeleeHeavyHit;
 
-    // Current attack type (set from PlayerCombatController)
     private string _currentAttackType = "Light";
+
     void Awake()
     {
         _collider = GetComponent<Collider>();
         _collider.isTrigger = true;
-        DisableHitbox(); 
+        DisableHitbox();
     }
 
     public void SetOwner(GameObject owner)
@@ -33,21 +33,15 @@ public class WeaponHitbox : MonoBehaviour
     {
         _currentDamage = damage;
     }
-    
-    /// <summary>
-    /// Set the current attack type for hit sounds
-    /// Call this from PlayerCombatController before enabling the hitbox
-    /// </summary>
+
     public void SetAttackType(string attackType)
     {
         _currentAttackType = attackType;
-        Debug.Log($"Attack type set to: {attackType}");
     }
-
 
     public void EnableHitbox()
     {
-        _hitTargets.Clear(); 
+        _hitTargets.Clear();
         _collider.enabled = true;
     }
 
@@ -58,19 +52,24 @@ public class WeaponHitbox : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
         if (other.gameObject == _owner) return;
 
-        
-        if (_hitTargets.Contains(other.gameObject)) return;
+        if (other.isTrigger) return;
 
-        
-        IDamageable damageable = other.GetComponent<IDamageable>();
+        IDamageable damageable = other.GetComponentInParent<IDamageable>();
+
         if (damageable != null)
         {
+            var damageableComponent = damageable as Component;
+            if (damageableComponent == null) return;
+
+            GameObject enemyRoot = damageableComponent.gameObject;
+
+            if (_hitTargets.Contains(enemyRoot)) return;
+
             damageable.TakeDamage(_currentDamage);
-            _hitTargets.Add(other.gameObject);
-            
+            _hitTargets.Add(enemyRoot);
+
             if (Play_Attack_Hit_Enemy != null && Play_Attack_Hit_Enemy.IsValid())
             {
                 switch (_currentAttackType)
@@ -86,9 +85,8 @@ public class WeaponHitbox : MonoBehaviour
                 }
                 Play_Attack_Hit_Enemy.Post(other.gameObject);
             }
-            
 
-            Debug.Log($"Hit {other.gameObject.name} for {_currentDamage} damage");
+            Debug.Log($"Hit {enemyRoot.name} part {other.name} for {_currentDamage} damage");
         }
     }
 }

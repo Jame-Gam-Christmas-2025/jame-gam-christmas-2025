@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     private Vector3? _lastCheckpointPosition;
 
+    private int _currentPlayerAlignmentScore;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -73,40 +75,26 @@ public class GameManager : MonoBehaviour
         if(playerGameObject != null)
         {
             // Place Player to last checkpoint position
-            Debug.Log("last cp :" + _lastCheckpointPosition);
             if (_lastCheckpointPosition != null)
             {
                 playerGameObject.transform.position = _lastCheckpointPosition.Value;
-                Debug.Log("Player positioned at last checkpoint: " + playerGameObject.transform.position);
-            } 
-
-            Debug.Log("PlayerPos : " + playerGameObject.transform.position);
-
-            Debug.Log(playerGameObject.name);
-                Debug.Log(playerGameObject.transform.position);
-
-                GameObject player = GameObject.Find("Player");
-                Debug.Log(player.name);
-                Debug.Log(player.transform.position);
-            
-        }
-/*         // Get new player instance
-        if(playerGameObject == null)
-        {
-            playerGameObject = GameObject.Find("PlayerSceneEssentials");
-        }
-
-        // Place Player to last checkpoint position
-        if(_lastCheckpointPosition != null)
-        {
-            playerGameObject.transform.position = _lastCheckpointPosition;
-        } else
-        {
-            if(_initialPlayerPosition != null)
-            {
-                playerGameObject.transform.position = _initialPlayerPosition;
             }
-        } */
+        }
+    }
+
+    public void ApplyPlayerAlignmentScore()
+    {
+        playerGameObject = GameObject.Find("Player");
+
+        if(playerGameObject != null)
+        {
+            PlayerAlignment playerAlignment = playerGameObject.GetComponent<PlayerAlignment>();
+
+            if(playerAlignment != null)
+            {
+                playerAlignment.AlignmentScore = _currentPlayerAlignmentScore;
+            }
+        }
     }
 
     public void SpawnBoss(string bossName, Vector3 checkpointPosition)
@@ -123,12 +111,19 @@ public class GameManager : MonoBehaviour
             BossController bossController = bossGameObject.GetComponent<BossController>();
 
             bossController.IsActive = true;
-        } else
-        {
-            Debug.Log("bossGAmeObject null in SpawnBoss GameManager");
         }
 
-        Debug.Log(_lastCheckpointPosition);
+        playerGameObject = GameObject.Find("Player");
+
+        if(playerGameObject != null)
+        {
+            PlayerAlignment playerAlignment = playerGameObject.GetComponent<PlayerAlignment>();
+
+            if(playerAlignment != null)
+            {
+                _currentPlayerAlignmentScore = playerAlignment.AlignmentScore;
+            }
+        }
     }
 
     public void DefeatBoss(string bossName)
@@ -162,6 +157,8 @@ public class GameManager : MonoBehaviour
                 {
                     GameSceneManager.Instance.LoadSceneByName("BadEndingScene");
                 }
+
+                _currentPlayerAlignmentScore = 0;
 
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
