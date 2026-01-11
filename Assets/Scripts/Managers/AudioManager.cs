@@ -291,6 +291,8 @@ public class AudioManager : MonoBehaviour
                 }
                 StopExplorationMUS(gameObject);
                 StopAllBossMusic();
+                StopBadEndingMUS(gameObject);
+                StopGoodEndingMUS(gameObject);
                 break;
 
             case "leveldesign":
@@ -300,10 +302,12 @@ public class AudioManager : MonoBehaviour
                 break;
 
             case "GoodEndingScene":
+                StopExplorationMUS(gameObject);
                 PlayGoodEndingMUS(gameObject);
                 break;
 
             case "BadEndingScene":
+                StopExplorationMUS(gameObject);
                 PlayBadEndingMUS(gameObject);
                 break;
 

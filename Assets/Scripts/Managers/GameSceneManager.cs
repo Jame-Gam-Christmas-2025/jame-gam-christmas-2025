@@ -72,21 +72,18 @@ public class GameSceneManager : MonoBehaviour
     // Apply game logic
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("loaded");
         _currentScene = scene.name;
-
-        if (scene.name == "leveldesign")
-        {
-            GameManager.Instance.ApplyLastCheckpoint();
-        }
 
         CursorLockMode newCursorLockState;
 
         switch (scene.name)
         {
             case "leveldesign":
+                GameManager.Instance.ApplyLastCheckpoint();
+                GameManager.Instance.ApplyPlayerAlignmentScore();
                 newCursorLockState = CursorLockMode.Locked;
                 break;
+
             default:
                 newCursorLockState = CursorLockMode.None;
                 break;
