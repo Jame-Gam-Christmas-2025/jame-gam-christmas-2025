@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rb;
     private Vector2 _moveInput;
     private bool _isSprinting;
+
+    public bool IsDodging => _isDodging;
     private bool _isDodging;
     private bool _canMove = true;
     private bool _canDodge = true;
@@ -130,7 +132,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         _moveInput = context.ReadValue<Vector2>();
-        
     }
 
     public void OnDodge(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -144,15 +145,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnSprint(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         _isSprinting = context.performed;
-        
-        /* if (_isSprinting)
-        {
-            CameraManager.Instance.SetRunningNoise(true);
-        }
-        else
-        {
-            CameraManager.Instance.SetRunningNoise(false);
-        } */
     }
 
 
@@ -160,7 +152,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Stop method if the player is not able to move
         if (!_canDodge) return;
-
         _isDodging = true;
         GetComponent<PlayerCombatController>().IsAttacking = false;
 
@@ -169,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (_animator != null)
         {
+            _animator.ResetTrigger("RangedAttack");
             _animator.SetTrigger("Dodge");
         }
     }

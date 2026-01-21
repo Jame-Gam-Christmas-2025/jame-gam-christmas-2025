@@ -38,7 +38,14 @@ public class PlayerCombatController : MonoBehaviour
     private bool _canAttack = true;
     private int _currentComboIndex = 0;
     private int _attackIndexForDamage = 0;
-    public bool IsAttacking { get; set; } = false;
+    public bool IsAttacking
+    { 
+        get => _isAttacking;
+        set
+        {
+            _isAttacking = value;
+        }
+    }
     private bool _hasQueuedInput = false;
     private Coroutine _comboResetCoroutine;
 
@@ -91,6 +98,7 @@ public class PlayerCombatController : MonoBehaviour
         if (!context.performed) return;
         if (_isAttacking) return;
 
+        if(GetComponent<PlayerMovement>().IsDodging) return;
         _animator.SetTrigger("RangedAttack");
         _isAttacking = true;
     }
@@ -181,11 +189,18 @@ public class PlayerCombatController : MonoBehaviour
     {
         _currentComboIndex++;
         _isComboTriggered = true;
+
+        if(_currentComboIndex > 2)
+        {
+            _currentComboIndex = 0;
+            _isComboTriggered = false;
+        }
     }
 
     private void OnAttackEnd()
     {
         _isAttacking = false;
+        _animator.ResetTrigger("Attack");
         if(_isComboTriggered)
         {
             _isComboTriggered = false;
